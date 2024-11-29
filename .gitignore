@@ -1,6 +1,6 @@
-"# Archivos y carpetas a ignorar" 
-"conan-2.9.1-windows-x86_64/" 
-"ninja-win/" 
-"conan-2.9.1-windows-x86_64.zip" 
-"ejemplo01_DanielLlumiquinga.rar" 
-"ninja-win.rar" 
+# Archivos y carpetas a ignorar
+conan-2.9.1-windows-x86_64/
+ninja-win/
+conan-2.9.1-windows-x86_64.zip
+ejemplo01_DanielLlumiquinga.rar
+ninja-win.rar
