@@ -1,0 +1,1255 @@
+"C:\Program Files\JetBrains\CLion 2024.2.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Release "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2024.2.3/bin/ninja/win/x64/ninja.exe" -DCMAKE_PROJECT_TOP_LEVEL_INCLUDES=conan_provider.cmake -G Ninja -S C:\Users\Dami\Documents\CLionProjects\ejemplo02_fractal2 -B C:\Users\Dami\Documents\CLionProjects\ejemplo02_fractal2\cmake-build-release
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files/mingw64/bin/gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files/mingw64/bin/c++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- CMake-Conan: first find_package() found. Installing dependencies with Conan
+-- CMake-Conan: Checking if a default profile exists
+C:\Users\Dami\.conan2\profiles\default
+-- CMake-Conan: cmake_system_name=Windows
+-- CMake-Conan: cmake_system_processor=x86_64
+-- CMake-Conan: CMake compiler=GNU
+-- CMake-Conan: CMake compiler version=14.2.0
+-- CMake-Conan: [settings] compiler=gcc
+-- CMake-Conan: [settings] compiler.version=14
+-- Performing Test _conan_is_gnu_libstdcxx
+-- Performing Test _conan_is_gnu_libstdcxx - Success
+-- Performing Test _conan_gnu_libstdcxx_is_cxx11_abi
+-- Performing Test _conan_gnu_libstdcxx_is_cxx11_abi - Success
+-- CMake-Conan: Creating profile C:/Users/Dami/Documents/CLionProjects/ejemplo02_fractal2/cmake-build-release/conan_host_profile
+-- CMake-Conan: Profile: 
+[settings]
+arch=x86_64
+os=Windows
+compiler=gcc
+compiler.version=14
+compiler.cppstd=17
+compiler.libcxx=libstdc++11
+build_type=Release
+[conf]
+tools.cmake.cmaketoolchain:generator=Ninja
+tools.build:compiler_executables={"c":"C:/Program Files/mingw64/bin/gcc.exe","cpp":"C:/Program Files/mingw64/bin/c++.exe","rc":"C:/Program Files/mingw64/bin/windres.exe"}
+
+-- CMake-Conan: Installing single configuration Release
+-- CMake-Conan: conan install C:/Users/Dami/Documents/CLionProjects/ejemplo02_fractal2 -of=C:/Users/Dami/Documents/CLionProjects/ejemplo02_fractal2/cmake-build-release/conan --profile:host=default;--profile:host=C:/Users/Dami/Documents/CLionProjects/ejemplo02_fractal2/cmake-build-release/conan_host_profile;--profile:build=default;--build=missing
+
+======== Input profiles ========
+Profile host:
+[settings]
+arch=x86_64
+build_type=Release
+compiler=gcc
+compiler.cppstd=17
+compiler.libcxx=libstdc++11
+compiler.version=14
+os=Windows
+[conf]
+tools.build:compiler_executables={'c': 'C:/Program Files/mingw64/bin/gcc.exe', 'cpp': 'C:/Program Files/mingw64/bin/c++.exe', 'rc': 'C:/Program Files/mingw64/bin/windres.exe'}
+tools.cmake.cmaketoolchain:generator=Ninja
+
+Profile build:
+[settings]
+arch=x86_64
+build_type=Release
+compiler=gcc
+compiler.cppstd=gnu17
+compiler.libcxx=libstdc++11
+compiler.version=13
+os=Windows
+
+
+======== Computing dependency graph ========
+Graph root
+    conanfile.py: C:/Users/Dami/Documents/CLionProjects/ejemplo02_fractal2\conanfile.py
+Requirements
+    brotli/1.1.0#d56d7bb9ca722942aba17369cb5c0519 - Cache
+    bzip2/1.0.8#d00dac990f08d991998d624be81a9526 - Cache
+    flac/1.4.3#112ca54377880fa91b13268d48e17871 - Cache
+    fmt/11.0.2#5c7438ef4d5d69ab106a41e460ce11f3 - Cache
+    freetype/2.13.2#5d2563803c8558d4ef47271a82c73d20 - Cache
+    glfw/3.3.8#d75a15a362a707163bfaabbf4dc993d8 - Cache
+    libpng/1.6.44#9e1aa08fb46946c7c91e4ae03bd49811 - Cache
+    minimp3/cci.20211201#045f7bf02ba91cce9a8730ce075705e7 - Cache
+    ogg/1.3.5#062626875f5c8c59f069f76f148098ef - Cache
+    openal-soft/1.22.2#506a381e0b805519cba4a7f1ee653fed - Cache
+    opengl/system#4df6fecde4084386beded3ed0e56e4ea - Cache
+    sfml/2.6.1#a09fa95bd90d736d49b2de6418f5e909 - Cache
+    stb/cci.20230920#ed79bd361e974a99137f214efb117eef - Cache
+    vorbis/1.3.7#37e58f52e59a6232199b34ef402714a6 - Cache
+    zlib/1.3.1#f52e03ae3d251dec704634230cd806a2 - Cache
+Build requirements
+    meson/1.2.2#21b73818ba96d9eea465b310b5bbc993 - Cache
+    meson/1.3.2#26ce8a76a36cc275cdfee1d757bc6561 - Cache
+    ninja/1.12.1#fd583651bf0c6a901943495d49878803 - Cache
+    pkgconf/2.1.0#27f44583701117b571307cf5b5fe5605 - Cache
+Resolved version ranges
+    libpng/[>=1.6 <2]: libpng/1.6.44
+    ninja/[>=1.10.2 <2]: ninja/1.12.1
+    zlib/[>=1.2.11 <2]: zlib/1.3.1
+
+======== Computing necessary packages ========
+flac/1.4.3: Main binary package '4e1ddc5ea23caa1049286becef348737d6de2713' missing
+flac/1.4.3: Checking 13 compatible configurations
+flac/1.4.3: Compatible configurations not found in cache, checking servers
+flac/1.4.3: 'a05aaad0b6ef6976958346b469d802c8f12b3a02': compiler.cppstd=98
+flac/1.4.3: '5d3ecfbe147a16ffef2deba14c96c2b433323d4f': compiler.cppstd=gnu98
+flac/1.4.3: '3f47397b237990e35ad990c787a5c951aa8bf96d': compiler.cppstd=11
+flac/1.4.3: '2fea6b7f89d66364d43196101965243cee3a1e84': compiler.cppstd=gnu11
+flac/1.4.3: 'aab803910861ea50fce613c35d3f136dfe5eda39': compiler.cppstd=14
+flac/1.4.3: 'a07b0f4deb4400f4c9877087a7c90a2b6c190735': compiler.cppstd=gnu14
+flac/1.4.3: '131cf7662c357dd2a394835dd5173a099ecdd507': compiler.cppstd=gnu17
+flac/1.4.3: 'd577ed1659c56342dc9e3621d0c2472cd0511ef7': compiler.cppstd=20
+flac/1.4.3: 'da0a481a9549bf1675a71f118528b54ab4472956': compiler.cppstd=gnu20
+flac/1.4.3: 'a36b7f1128ffdbbf27b244db0413104f8935d2a8': compiler.cppstd=23
+flac/1.4.3: '8dd5e5cf6d3c18e7e797604850990632daf02452': compiler.cppstd=gnu23
+flac/1.4.3: '7f6487d83ab0673677f7917c3c182f64eab77920': compiler.cppstd=26
+flac/1.4.3: 'ba67c5def6b18fc4695f8e89197fce5f2dd00e2a': compiler.cppstd=gnu26
+sfml/2.6.1: Main binary package '19d4bab116e32ad19358c0abd27939432d728322' missing
+sfml/2.6.1: Checking 13 compatible configurations
+sfml/2.6.1: Compatible configurations not found in cache, checking servers
+sfml/2.6.1: '7b399f8a9c87bb4632e1b52bea727aa51bac4c8f': compiler.cppstd=98
+sfml/2.6.1: '1e85d42e441ef4ece3054e14c67314d920e04381': compiler.cppstd=gnu98
+sfml/2.6.1: 'c47421cef6be7235387c4bc73ce1403ac9ba2443': compiler.cppstd=11
+sfml/2.6.1: '4ce5d83eec03d71bb06953f6e112fc088c46caf5': compiler.cppstd=gnu11
+sfml/2.6.1: '42ae62f36e073cf9f9a442af47c2b7a3fe4fa1bc': compiler.cppstd=14
+sfml/2.6.1: 'f07bdef0c71cd82c1989d9f7759980aca0e9d857': compiler.cppstd=gnu14
+sfml/2.6.1: '44d0e8e36fd6dc9e8925ee4b20ff9b31b5658915': compiler.cppstd=gnu17
+sfml/2.6.1: 'd76db679e865bd78908cbcf7991cd354c6168281': compiler.cppstd=20
+sfml/2.6.1: '425ae57da9a2660695f48199a38fb038a2ab6243': compiler.cppstd=gnu20
+sfml/2.6.1: '5b1f617c2c60f044f4823f7aee5380ecf7d91e61': compiler.cppstd=23
+sfml/2.6.1: '50ee0e0237c72affaa9f66a5c2132fbc496b824d': compiler.cppstd=gnu23
+sfml/2.6.1: '7aef852f7acd3554af8c91f1dff9623ad15f8b42': compiler.cppstd=26
+sfml/2.6.1: '4182f7c6492a969a9c89b5dd1186503c40c3a88d': compiler.cppstd=gnu26
+Requirements
+    brotli/1.1.0#d56d7bb9ca722942aba17369cb5c0519:edc99cf3a1073e7ca9c6b638374b34ffc251e08b#d1c5bb78c2fc8e3c83ac2e915c9fe203 - Cache
+    bzip2/1.0.8#d00dac990f08d991998d624be81a9526:3784f82c839358eebcdedab0eb64eaa9eb25d01c#9645100f48f8039d2ee9c7267f27de96 - Cache
+    flac/1.4.3#112ca54377880fa91b13268d48e17871:4e1ddc5ea23caa1049286becef348737d6de2713 - Build
+    fmt/11.0.2#5c7438ef4d5d69ab106a41e460ce11f3:dfc57c0b1fdcc4a14ae10691e7a78a7e7c0bc5d3#33a04d9bc7a3db8810a5197c1aa1509e - Cache
+    freetype/2.13.2#5d2563803c8558d4ef47271a82c73d20:7940744f960a506e0ed4c3e1a8cb5b473388f7ca - Build
+    glfw/3.3.8#d75a15a362a707163bfaabbf4dc993d8:9849ab915455abc54c5856498c52e8e2359f3de2#bc03efad501b0c7643398566af7f045a - Cache
+    libpng/1.6.44#9e1aa08fb46946c7c91e4ae03bd49811:3d43a12c715e46b131b7ef84629373a867e1fc37 - Build
+    minimp3/cci.20211201#045f7bf02ba91cce9a8730ce075705e7:da39a3ee5e6b4b0d3255bfef95601890afd80709#8c73b5b9b57bc6ac766061b81216c0cd - Cache
+    ogg/1.3.5#062626875f5c8c59f069f76f148098ef:0534efa715363b456efc91df5dd071bc6eefb323#0f97b54294a35c0fa7e0c96c64bd10d4 - Cache
+    openal-soft/1.22.2#506a381e0b805519cba4a7f1ee653fed:cd8295f7114253d8774ad4cd19123a5571a90f15#1e736a21094cfbdb151ecd888343ce08 - Cache
+    opengl/system#4df6fecde4084386beded3ed0e56e4ea:da39a3ee5e6b4b0d3255bfef95601890afd80709#0ba8627bd47edc3a501e8f0eb9a79e5e - Cache
+    sfml/2.6.1#a09fa95bd90d736d49b2de6418f5e909:19d4bab116e32ad19358c0abd27939432d728322 - Build
+    stb/cci.20230920#ed79bd361e974a99137f214efb117eef:24b381c7532f70c284a2a67cc83f779b3c0042fb#72af46794853f74751a3ba685e1c7ef4 - Cache
+    vorbis/1.3.7#37e58f52e59a6232199b34ef402714a6:12cea71c43c388b7c45a964a576215aa50c600bc - Build
+    zlib/1.3.1#f52e03ae3d251dec704634230cd806a2:0534efa715363b456efc91df5dd071bc6eefb323#a45b4c29371c3505ad8b3367a1270a8f - Cache
+Build requirements
+    meson/1.3.2#26ce8a76a36cc275cdfee1d757bc6561:da39a3ee5e6b4b0d3255bfef95601890afd80709#3ba677cf44c95996f4f326c668f92f00 - Cache
+    ninja/1.12.1#fd583651bf0c6a901943495d49878803:723257509aee8a72faf021920c2874abc738e029#360592e21b5a6812030b65cbdd1c4a8d - Cache
+    pkgconf/2.1.0#27f44583701117b571307cf5b5fe5605:43771b8671ac44479c188dd72670e2eb2d7918a6#302b4a47f55f982ddf140855abd5bf1f - Cache
+Skipped binaries
+    meson/1.2.2
+
+======== Installing packages ========
+brotli/1.1.0: Already installed! (1 of 18)
+bzip2/1.0.8: Already installed! (2 of 18)
+fmt/11.0.2: Already installed! (3 of 18)
+minimp3/cci.20211201: Already installed! (4 of 18)
+ninja/1.12.1: Already installed! (5 of 18)
+ogg/1.3.5: Already installed! (6 of 18)
+openal-soft/1.22.2: Already installed! (7 of 18)
+opengl/system: Already installed! (8 of 18)
+stb/cci.20230920: Already installed! (9 of 18)
+zlib/1.3.1: Already installed! (10 of 18)
+pkgconf/2.1.0: Already installed! (11 of 18)
+pkgconf/2.1.0: WARN: The use of 'unix_path_legacy_compat' is deprecated in Conan 2.0 and does not perform path conversions. This is retained for compatibility with Conan 1.x and will be removed in a future version.
+
+-------- Installing package flac/1.4.3 (12 of 18) --------
+flac/1.4.3: Building from source
+flac/1.4.3: Package flac/1.4.3:4e1ddc5ea23caa1049286becef348737d6de2713
+flac/1.4.3: Copying sources to build folder
+flac/1.4.3: Building your package in C:\Users\Dami\.conan2\p\b\flacdaa40a985c3c7\b
+flac/1.4.3: Calling generate()
+flac/1.4.3: Generators folder: C:\Users\Dami\.conan2\p\b\flacdaa40a985c3c7\b\build\Release\generators
+flac/1.4.3: CMakeToolchain generated: conan_toolchain.cmake
+flac/1.4.3: CMakeToolchain generated: C:\Users\Dami\.conan2\p\b\flacdaa40a985c3c7\b\build\Release\generators\CMakePresets.json
+flac/1.4.3: CMakeToolchain generated: C:\Users\Dami\.conan2\p\b\flacdaa40a985c3c7\b\src\CMakeUserPresets.json
+flac/1.4.3: Generating aggregated env files
+flac/1.4.3: Generated aggregated env files: ['conanbuild.bat', 'conanrun.bat']
+flac/1.4.3: Calling build()
+flac/1.4.3: Apply patch (conan): Ignore autotools-specific DLL_EXPORT define in export.h
+flac/1.4.3: Running CMake.configure()
+flac/1.4.3: RUN: cmake -G "Ninja" -DCMAKE_TOOLCHAIN_FILE="generators/conan_toolchain.cmake" -DCMAKE_INSTALL_PREFIX="C:/Users/Dami/.conan2/p/b/flacdaa40a985c3c7/p" -DCMAKE_POLICY_DEFAULT_CMP0077="NEW" -DCMAKE_POLICY_DEFAULT_CMP0091="NEW" -DCMAKE_BUILD_TYPE="Release" "C:/Users/Dami/.conan2/p/b/flacdaa40a985c3c7/b/src"
+-- Using Conan toolchain: C:/Users/Dami/.conan2/p/b/flacdaa40a985c3c7/b/build/Release/generators/conan_toolchain.cmake
+-- Conan toolchain: Defining architecture flag: -m64
+-- Conan toolchain: C++ Standard 17 with extensions OFF
+-- Conan toolchain: Setting BUILD_SHARED_LIBS = OFF
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files/mingw64/bin/gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files/mingw64/bin/c++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Conan: Component target declared 'Ogg::ogg'
+-- Performing Test HAVE_MBSTATE
+-- Performing Test HAVE_MBSTATE - Success
+-- Performing Test DODEFINE_EXTENSIONS
+-- Performing Test DODEFINE_EXTENSIONS - Success
+-- Looking for byteswap.h
+-- Looking for byteswap.h - not found
+-- Looking for inttypes.h
+-- Looking for inttypes.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stdbool.h
+-- Looking for stdbool.h - found
+-- Looking for arm_neon.h
+-- Looking for arm_neon.h - not found
+-- Looking for x86intrin.h
+-- Looking for x86intrin.h - found
+-- Looking for fseeko
+-- Looking for fseeko - found
+-- Performing Test HAVE_BSWAP16
+-- Performing Test HAVE_BSWAP16 - Success
+-- Performing Test HAVE_BSWAP32
+-- Performing Test HAVE_BSWAP32 - Success
+-- Performing Test HAVE_LANGINFO_CODESET
+-- Performing Test HAVE_LANGINFO_CODESET - Failed
+-- Performing Test HAVE_WERROR_FLAG
+-- Performing Test HAVE_WERROR_FLAG - Success
+-- Performing Test HAVE_DECL_AFTER_STMT_FLAG
+-- Performing Test HAVE_DECL_AFTER_STMT_FLAG - Success
+-- Performing Test HAVE_STACKREALIGN_FLAG
+-- Performing Test HAVE_STACKREALIGN_FLAG - Success
+-- Performing Test HAVE_WEFFCXX_FLAG
+-- Performing Test HAVE_WEFFCXX_FLAG - Success
+-- Looking for __stack_chk_fail in ssp.a
+-- Looking for __stack_chk_fail in ssp.a - found
+-- Performing Test HAVE_STACK_PROTECTOR_FLAG
+-- Performing Test HAVE_STACK_PROTECTOR_FLAG - Success
+-- Looking for cpuid.h
+-- Looking for cpuid.h - found
+-- Looking for sys/param.h
+-- Looking for sys/param.h - found
+-- Looking for lround
+-- Looking for lround - found
+-- Check CPU architecture is x64
+-- Check CPU architecture is x64 - yes
+-- Performing Test HAVE_ASSOC_MATH
+-- Performing Test HAVE_ASSOC_MATH - Success
+-- Looking for string.h
+-- Looking for string.h - found
+-- Looking for sys/ioctl.h
+-- Looking for sys/ioctl.h - not found
+-- Looking for termios.h
+-- Looking for termios.h - not found
+-- Looking for clock_gettime
+-- Looking for clock_gettime - not found
+-- Configuring done (10.3s)
+-- Generating done (0.1s)
+-- Build files have been written to: C:/Users/Dami/.conan2/p/b/flacdaa40a985c3c7/b/build/Release
+
+flac/1.4.3: Running CMake.build()
+flac/1.4.3: RUN: cmake --build "C:\Users\Dami\.conan2\p\b\flacdaa40a985c3c7\b\build\Release" -- -j16
+[1/83] Building C object src/libFLAC/CMakeFiles/FLAC.dir/lpc_intrin_neon.c.obj
+[2/83] Building C object src/libFLAC/CMakeFiles/FLAC.dir/crc.c.obj
+[3/83] Building C object src/libFLAC/CMakeFiles/FLAC.dir/lpc_intrin_sse41.c.obj
+[4/83] Building C object src/libFLAC/CMakeFiles/FLAC.dir/lpc_intrin_fma.c.obj
+[5/83] Building C object src/libFLAC/CMakeFiles/FLAC.dir/lpc_intrin_sse2.c.obj
+[6/83] Building C object src/libFLAC/CMakeFiles/FLAC.dir/bitmath.c.obj
+[7/83] Building C object src/libFLAC/CMakeFiles/FLAC.dir/cpu.c.obj
+[8/83] Building C object src/libFLAC/CMakeFiles/FLAC.dir/float.c.obj
+[9/83] Building C object src/libFLAC/CMakeFiles/FLAC.dir/fixed_intrin_sse2.c.obj
+[10/83] Building C object src/libFLAC/CMakeFiles/FLAC.dir/fixed_intrin_ssse3.c.obj
+[11/83] Building C object src/libFLAC/CMakeFiles/FLAC.dir/fixed_intrin_sse42.c.obj
+[12/83] Building C object src/libFLAC/CMakeFiles/FLAC.dir/fixed_intrin_avx2.c.obj
+[13/83] Building C object src/libFLAC/CMakeFiles/FLAC.dir/format.c.obj
+[14/83] Building C object src/libFLAC/CMakeFiles/FLAC.dir/memory.c.obj
+[15/83] Building C object src/libFLAC/CMakeFiles/FLAC.dir/bitwriter.c.obj
+[16/83] Building RC object src/libFLAC/CMakeFiles/FLAC.dir/version.rc.obj
+[17/83] Building C object src/libFLAC/CMakeFiles/FLAC.dir/fixed.c.obj
+[18/83] Building C object src/libFLAC/CMakeFiles/FLAC.dir/bitreader.c.obj
+[19/83] Building C object src/libFLAC/CMakeFiles/FLAC.dir/md5.c.obj
+[20/83] Building C object src/libFLAC/CMakeFiles/FLAC.dir/lpc_intrin_avx2.c.obj
+[21/83] Building C object src/libFLAC/CMakeFiles/FLAC.dir/stream_encoder_intrin_sse2.c.obj
+[22/83] Building C object src/libFLAC/CMakeFiles/FLAC.dir/stream_encoder_intrin_ssse3.c.obj
+[23/83] Building C object src/libFLAC/CMakeFiles/FLAC.dir/metadata_iterators.c.obj
+[24/83] Building C object src/libFLAC/CMakeFiles/FLAC.dir/stream_encoder_intrin_avx2.c.obj
+[25/83] Building C object src/libFLAC/CMakeFiles/FLAC.dir/stream_encoder_framing.c.obj
+[26/83] Building C object src/libFLAC/CMakeFiles/FLAC.dir/__/share/win_utf8_io/win_utf8_io.c.obj
+C:/Users/Dami/.conan2/p/b/flacdaa40a985c3c7/b/src/src/share/win_utf8_io/win_utf8_io.c: In function 'get_utf8_argv':
+C:/Users/Dami/.conan2/p/b/flacdaa40a985c3c7/b/src/src/share/win_utf8_io/win_utf8_io.c:132:29: warning: cast between incompatible function types from 'FARPROC' {aka 'long long int (*)()'} to 'int (*)(int *, wchar_t ***, wchar_t ***, int,  int *)' {aka 'int (*)(int *, short unsigned int ***, short unsigned int ***, int,  int *)'} [-Wcast-function-type]
+  132 |         if ((wgetmainargs = (wgetmainargs_t)GetProcAddress(handle, "__wgetmainargs")) == NULL) {
+      |                             ^
+[27/83] Building C object src/share/grabbag/CMakeFiles/grabbag.dir/alloc.c.obj
+[28/83] Building C object src/share/getopt/CMakeFiles/getopt.dir/getopt.c.obj
+[29/83] Building C object src/libFLAC/CMakeFiles/FLAC.dir/window.c.obj
+[30/83] Building C object src/libFLAC/CMakeFiles/FLAC.dir/metadata_object.c.obj
+[31/83] Building C object src/share/utf8/CMakeFiles/utf8.dir/charset.c.obj
+[32/83] Building C object src/share/getopt/CMakeFiles/getopt.dir/getopt1.c.obj
+[33/83] Building C object src/share/utf8/CMakeFiles/utf8.dir/iconvert.c.obj
+[34/83] Building C object src/share/grabbag/CMakeFiles/grabbag.dir/file.c.obj
+[35/83] Building RC object src/libFLAC++/CMakeFiles/FLAC++.dir/version.rc.obj
+[36/83] Building C object src/share/grabbag/CMakeFiles/grabbag.dir/picture.c.obj
+[37/83] Building C object src/share/replaygain_analysis/CMakeFiles/replaygain_analysis.dir/replaygain_analysis.c.obj
+[38/83] Linking C static library src\share\getopt\libgetopt.a
+[39/83] Building C object src/share/grabbag/CMakeFiles/grabbag.dir/cuesheet.c.obj
+[40/83] Linking C static library src\share\replaygain_analysis\libreplaygain_analysis.a
+[41/83] Building C object src/share/grabbag/CMakeFiles/grabbag.dir/seektable.c.obj
+[42/83] Building C object src/share/grabbag/CMakeFiles/grabbag.dir/snprintf.c.obj
+[43/83] Building C object src/libFLAC/CMakeFiles/FLAC.dir/stream_decoder.c.obj
+[44/83] Building C object src/share/grabbag/CMakeFiles/grabbag.dir/replaygain.c.obj
+[45/83] Building CXX object src/libFLAC++/CMakeFiles/FLAC++.dir/stream_decoder.cpp.obj
+[46/83] Building C object src/flac/CMakeFiles/flacapp.dir/local_string_utils.c.obj
+[47/83] Building C object src/libFLAC/CMakeFiles/FLAC.dir/stream_encoder.c.obj
+[48/83] Building C object src/libFLAC/CMakeFiles/FLAC.dir/lpc.c.obj
+[49/83] Building CXX object src/libFLAC++/CMakeFiles/FLAC++.dir/stream_encoder.cpp.obj
+[50/83] Building RC object src/flac/CMakeFiles/flacapp.dir/version.rc.obj
+[51/83] Building C object src/share/replaygain_synthesis/CMakeFiles/replaygain_synthesis.dir/replaygain_synthesis.c.obj
+[52/83] Linking C static library src\libFLAC\libFLAC.a
+[53/83] Linking C static library src\share\replaygain_synthesis\libreplaygain_synthesis.a
+[54/83] Linking C static library src\share\grabbag\libgrabbag.a
+[55/83] Building C object src/share/utf8/CMakeFiles/utf8.dir/utf8.c.obj
+[56/83] Linking C static library src\share\utf8\libutf8.a
+[57/83] Building C object src/flac/CMakeFiles/flacapp.dir/analyze.c.obj
+[58/83] Building C object src/flac/CMakeFiles/flacapp.dir/foreign_metadata.c.obj
+C:/Users/Dami/.conan2/p/b/flacdaa40a985c3c7/b/src/src/flac/foreign_metadata.c: In function 'flac__foreign_metadata_new':
+C:/Users/Dami/.conan2/p/b/flacdaa40a985c3c7/b/src/src/flac/foreign_metadata.c:803:47: warning: 'calloc' sizes specified with 'sizeof' in the earlier argument and not in the later argument [-Wcalloc-transposed-args]
+  803 |         foreign_metadata_t *x = calloc(sizeof(foreign_metadata_t), 1);
+      |                                               ^~~~~~~~~~~~~~~~~~
+C:/Users/Dami/.conan2/p/b/flacdaa40a985c3c7/b/src/src/flac/foreign_metadata.c:803:47: note: earlier argument should specify number of elements, later size of each element
+[59/83] Building C object src/metaflac/CMakeFiles/metaflac.dir/main.c.obj
+[60/83] Building C object src/flac/CMakeFiles/flacapp.dir/vorbiscomment.c.obj
+[61/83] Building C object src/metaflac/CMakeFiles/metaflac.dir/operations_shorthand_cuesheet.c.obj
+[62/83] Building C object src/flac/CMakeFiles/flacapp.dir/__/share/win_utf8_io/win_utf8_io.c.obj
+C:/Users/Dami/.conan2/p/b/flacdaa40a985c3c7/b/src/src/share/win_utf8_io/win_utf8_io.c: In function 'get_utf8_argv':
+C:/Users/Dami/.conan2/p/b/flacdaa40a985c3c7/b/src/src/share/win_utf8_io/win_utf8_io.c:132:29: warning: cast between incompatible function types from 'FARPROC' {aka 'long long int (*)()'} to 'int (*)(int *, wchar_t ***, wchar_t ***, int,  int *)' {aka 'int (*)(int *, short unsigned int ***, short unsigned int ***, int,  int *)'} [-Wcast-function-type]
+  132 |         if ((wgetmainargs = (wgetmainargs_t)GetProcAddress(handle, "__wgetmainargs")) == NULL) {
+      |                             ^
+[63/83] Building C object src/metaflac/CMakeFiles/metaflac.dir/operations_shorthand_picture.c.obj
+[64/83] Building RC object src/metaflac/CMakeFiles/metaflac.dir/version.rc.obj
+[65/83] Building C object src/flac/CMakeFiles/flacapp.dir/utils.c.obj
+[66/83] Building C object src/metaflac/CMakeFiles/metaflac.dir/operations_shorthand_seektable.c.obj
+[67/83] Building C object src/flac/CMakeFiles/flacapp.dir/decode.c.obj
+[68/83] Building C object src/metaflac/CMakeFiles/metaflac.dir/operations_shorthand_streaminfo.c.obj
+[69/83] Building C object src/flac/CMakeFiles/flacapp.dir/main.c.obj
+[70/83] Building C object src/metaflac/CMakeFiles/metaflac.dir/operations.c.obj
+[71/83] Building C object src/metaflac/CMakeFiles/metaflac.dir/operations_shorthand_vorbiscomment.c.obj
+[72/83] Building C object src/metaflac/CMakeFiles/metaflac.dir/usage.c.obj
+[73/83] Building C object src/metaflac/CMakeFiles/metaflac.dir/options.c.obj
+[74/83] Building C object src/metaflac/CMakeFiles/metaflac.dir/utils.c.obj
+[75/83] Building C object microbench/CMakeFiles/benchmark_residual.dir/util.c.obj
+[76/83] Building C object microbench/CMakeFiles/benchmark_residual.dir/benchmark_residual.c.obj
+[77/83] Building C object src/metaflac/CMakeFiles/metaflac.dir/__/share/win_utf8_io/win_utf8_io.c.obj
+C:/Users/Dami/.conan2/p/b/flacdaa40a985c3c7/b/src/src/share/win_utf8_io/win_utf8_io.c: In function 'get_utf8_argv':
+C:/Users/Dami/.conan2/p/b/flacdaa40a985c3c7/b/src/src/share/win_utf8_io/win_utf8_io.c:132:29: warning: cast between incompatible function types from 'FARPROC' {aka 'long long int (*)()'} to 'int (*)(int *, wchar_t ***, wchar_t ***, int,  int *)' {aka 'int (*)(int *, short unsigned int ***, short unsigned int ***, int,  int *)'} [-Wcast-function-type]
+  132 |         if ((wgetmainargs = (wgetmainargs_t)GetProcAddress(handle, "__wgetmainargs")) == NULL) {
+      |                             ^
+[78/83] Building CXX object src/libFLAC++/CMakeFiles/FLAC++.dir/metadata.cpp.obj
+[79/83] Linking C executable objs\benchmark_residual.exe
+[80/83] Linking CXX static library src\libFLAC++\libFLAC++.a
+[81/83] Linking C executable objs\metaflac.exe
+[82/83] Building C object src/flac/CMakeFiles/flacapp.dir/encode.c.obj
+[83/83] Linking C executable objs\flac.exe
+
+flac/1.4.3: Package '4e1ddc5ea23caa1049286becef348737d6de2713' built
+flac/1.4.3: Build folder C:\Users\Dami\.conan2\p\b\flacdaa40a985c3c7\b\build\Release
+flac/1.4.3: Generating the package
+flac/1.4.3: Packaging in folder C:\Users\Dami\.conan2\p\b\flacdaa40a985c3c7\p
+flac/1.4.3: Calling package()
+flac/1.4.3: Running CMake.install()
+flac/1.4.3: RUN: cmake --install "C:\Users\Dami\.conan2\p\b\flacdaa40a985c3c7\b\build\Release" --prefix "C:/Users/Dami/.conan2/p/b/flacdaa40a985c3c7/p"
+-- Install configuration: "Release"
+-- Installing: C:/Users/Dami/.conan2/p/b/flacdaa40a985c3c7/p/lib/cmake/FLAC/targets.cmake
+-- Installing: C:/Users/Dami/.conan2/p/b/flacdaa40a985c3c7/p/lib/cmake/FLAC/targets-release.cmake
+-- Installing: C:/Users/Dami/.conan2/p/b/flacdaa40a985c3c7/p/lib/cmake/FLAC/flac-config.cmake
+-- Installing: C:/Users/Dami/.conan2/p/b/flacdaa40a985c3c7/p/lib/cmake/FLAC/flac-config-version.cmake
+-- Up-to-date: C:/Users/Dami/.conan2/p/b/flacdaa40a985c3c7/p/lib/cmake/FLAC/flac-config.cmake
+-- Up-to-date: C:/Users/Dami/.conan2/p/b/flacdaa40a985c3c7/p/lib/cmake/FLAC/flac-config-version.cmake
+-- Installing: C:/Users/Dami/.conan2/p/b/flacdaa40a985c3c7/p/include/FLAC/all.h
+-- Installing: C:/Users/Dami/.conan2/p/b/flacdaa40a985c3c7/p/include/FLAC/assert.h
+-- Installing: C:/Users/Dami/.conan2/p/b/flacdaa40a985c3c7/p/include/FLAC/callback.h
+-- Installing: C:/Users/Dami/.conan2/p/b/flacdaa40a985c3c7/p/include/FLAC/export.h
+-- Installing: C:/Users/Dami/.conan2/p/b/flacdaa40a985c3c7/p/include/FLAC/format.h
+-- Installing: C:/Users/Dami/.conan2/p/b/flacdaa40a985c3c7/p/include/FLAC/metadata.h
+-- Installing: C:/Users/Dami/.conan2/p/b/flacdaa40a985c3c7/p/include/FLAC/ordinals.h
+-- Installing: C:/Users/Dami/.conan2/p/b/flacdaa40a985c3c7/p/include/FLAC/stream_decoder.h
+-- Installing: C:/Users/Dami/.conan2/p/b/flacdaa40a985c3c7/p/include/FLAC/stream_encoder.h
+-- Installing: C:/Users/Dami/.conan2/p/b/flacdaa40a985c3c7/p/include/FLAC++/all.h
+-- Installing: C:/Users/Dami/.conan2/p/b/flacdaa40a985c3c7/p/include/FLAC++/decoder.h
+-- Installing: C:/Users/Dami/.conan2/p/b/flacdaa40a985c3c7/p/include/FLAC++/encoder.h
+-- Installing: C:/Users/Dami/.conan2/p/b/flacdaa40a985c3c7/p/include/FLAC++/export.h
+-- Installing: C:/Users/Dami/.conan2/p/b/flacdaa40a985c3c7/p/include/FLAC++/metadata.h
+-- Installing: C:/Users/Dami/.conan2/p/b/flacdaa40a985c3c7/p/share/man/man1/flac.1
+-- Installing: C:/Users/Dami/.conan2/p/b/flacdaa40a985c3c7/p/share/man/man1/metaflac.1
+-- Installing: C:/Users/Dami/.conan2/p/b/flacdaa40a985c3c7/p/lib/libFLAC.a
+-- Installing: C:/Users/Dami/.conan2/p/b/flacdaa40a985c3c7/p/lib/pkgconfig/flac.pc
+-- Installing: C:/Users/Dami/.conan2/p/b/flacdaa40a985c3c7/p/lib/libFLAC++.a
+-- Installing: C:/Users/Dami/.conan2/p/b/flacdaa40a985c3c7/p/lib/pkgconfig/flac++.pc
+-- Installing: C:/Users/Dami/.conan2/p/b/flacdaa40a985c3c7/p/bin/flac.exe
+-- Installing: C:/Users/Dami/.conan2/p/b/flacdaa40a985c3c7/p/bin/metaflac.exe
+
+flac/1.4.3: package(): Packaged 2 '.exe' files: flac.exe, metaflac.exe
+flac/1.4.3: package(): Packaged 36 '.h' files
+flac/1.4.3: package(): Packaged 2 '.a' files: libFLAC++.a, libFLAC.a
+flac/1.4.3: package(): Packaged 1 '.FDL' file: COPYING.FDL
+flac/1.4.3: package(): Packaged 1 '.GPL' file: COPYING.GPL
+flac/1.4.3: package(): Packaged 1 '.LGPL' file: COPYING.LGPL
+flac/1.4.3: package(): Packaged 1 '.Xiph' file: COPYING.Xiph
+flac/1.4.3: Created package revision 957f1b3d0796ca80751e67a8b467c27a
+flac/1.4.3: Package '4e1ddc5ea23caa1049286becef348737d6de2713' created
+flac/1.4.3: Full package reference: flac/1.4.3#112ca54377880fa91b13268d48e17871:4e1ddc5ea23caa1049286becef348737d6de2713#957f1b3d0796ca80751e67a8b467c27a
+flac/1.4.3: Package folder C:\Users\Dami\.conan2\p\b\flacdaa40a985c3c7\p
+glfw/3.3.8: Already installed! (13 of 18)
+
+-------- Installing package libpng/1.6.44 (14 of 18) --------
+libpng/1.6.44: Building from source
+libpng/1.6.44: Package libpng/1.6.44:3d43a12c715e46b131b7ef84629373a867e1fc37
+libpng/1.6.44: Copying sources to build folder
+libpng/1.6.44: Building your package in C:\Users\Dami\.conan2\p\b\libpn6ca15c2ba630d\b
+libpng/1.6.44: Calling generate()
+libpng/1.6.44: Generators folder: C:\Users\Dami\.conan2\p\b\libpn6ca15c2ba630d\b\build\Release\generators
+libpng/1.6.44: CMakeToolchain generated: conan_toolchain.cmake
+libpng/1.6.44: CMakeToolchain generated: C:\Users\Dami\.conan2\p\b\libpn6ca15c2ba630d\b\build\Release\generators\CMakePresets.json
+libpng/1.6.44: CMakeToolchain generated: C:\Users\Dami\.conan2\p\b\libpn6ca15c2ba630d\b\src\CMakeUserPresets.json
+libpng/1.6.44: Generating aggregated env files
+libpng/1.6.44: Generated aggregated env files: ['conanbuild.bat', 'conanrun.bat']
+libpng/1.6.44: Calling build()
+libpng/1.6.44: apply_conandata_patches(): No patches defined in conandata
+libpng/1.6.44: Running CMake.configure()
+libpng/1.6.44: RUN: cmake -G "Ninja" -DCMAKE_TOOLCHAIN_FILE="generators/conan_toolchain.cmake" -DCMAKE_INSTALL_PREFIX="C:/Users/Dami/.conan2/p/b/libpn6ca15c2ba630d/p" -DPNG_TESTS="OFF" -DPNG_SHARED="OFF" -DPNG_STATIC="ON" -DPNG_DEBUG="OFF" -DPNG_PREFIX="" -DCMAKE_MACOSX_BUNDLE="OFF" -DCMAKE_POLICY_DEFAULT_CMP0091="NEW" -DCMAKE_BUILD_TYPE="Release" "C:/Users/Dami/.conan2/p/b/libpn6ca15c2ba630d/b/src"
+-- Using Conan toolchain: C:/Users/Dami/.conan2/p/b/libpn6ca15c2ba630d/b/build/Release/generators/conan_toolchain.cmake
+-- Conan toolchain: Defining architecture flag: -m64
+-- Conan toolchain: Setting BUILD_SHARED_LIBS = OFF
+-- The C compiler identification is GNU 14.2.0
+-- The ASM compiler identification is GNU
+-- Found assembler: C:/Program Files/mingw64/bin/gcc.exe
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files/mingw64/bin/gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Building for target architecture: amd64
+-- Conan: Target declared 'ZLIB::ZLIB'
+-- Performing Test HAVE_LD_VERSION_SCRIPT
+-- Performing Test HAVE_LD_VERSION_SCRIPT - Failed
+-- Performing Test HAVE_SOLARIS_LD_VERSION_SCRIPT
+-- Performing Test HAVE_SOLARIS_LD_VERSION_SCRIPT - Failed
+-- Could not find an AWK-compatible program
+-- Configuring done (1.7s)
+-- Generating done (0.1s)
+-- Build files have been written to: C:/Users/Dami/.conan2/p/b/libpn6ca15c2ba630d/b/build/Release
+
+libpng/1.6.44: Running CMake.build()
+libpng/1.6.44: RUN: cmake --build "C:\Users\Dami\.conan2\p\b\libpn6ca15c2ba630d\b\build\Release" -- -j16
+[1/18] Building C object CMakeFiles/png_static.dir/intel/intel_init.c.obj
+[2/18] Building C object CMakeFiles/png_static.dir/pngwio.c.obj
+[3/18] Building C object CMakeFiles/png_static.dir/pngrio.c.obj
+[4/18] Building C object CMakeFiles/png_static.dir/pngmem.c.obj
+[5/18] Building C object CMakeFiles/png_static.dir/pngerror.c.obj
+[6/18] Building C object CMakeFiles/png_static.dir/pngget.c.obj
+[7/18] Building C object CMakeFiles/png_static.dir/pngpread.c.obj
+[8/18] Building C object CMakeFiles/png_static.dir/pngtrans.c.obj
+[9/18] Building C object CMakeFiles/png_static.dir/pngwtran.c.obj
+[10/18] Building C object CMakeFiles/png_static.dir/pngset.c.obj
+[11/18] Building C object CMakeFiles/png_static.dir/pngwrite.c.obj
+[12/18] Building C object CMakeFiles/png_static.dir/png.c.obj
+[13/18] Building C object CMakeFiles/png_static.dir/pngread.c.obj
+[14/18] Building C object CMakeFiles/png_static.dir/pngwutil.c.obj
+[15/18] Building C object CMakeFiles/png_static.dir/pngrutil.c.obj
+[16/18] Building C object CMakeFiles/png_static.dir/intel/filter_sse2_intrinsics.c.obj
+[17/18] Building C object CMakeFiles/png_static.dir/pngrtran.c.obj
+[18/18] Linking C static library libpng16.a
+
+libpng/1.6.44: Package '3d43a12c715e46b131b7ef84629373a867e1fc37' built
+libpng/1.6.44: Build folder C:\Users\Dami\.conan2\p\b\libpn6ca15c2ba630d\b\build\Release
+libpng/1.6.44: Generating the package
+libpng/1.6.44: Packaging in folder C:\Users\Dami\.conan2\p\b\libpn6ca15c2ba630d\p
+libpng/1.6.44: Calling package()
+libpng/1.6.44: Running CMake.install()
+libpng/1.6.44: RUN: cmake --install "C:\Users\Dami\.conan2\p\b\libpn6ca15c2ba630d\b\build\Release" --prefix "C:/Users/Dami/.conan2/p/b/libpn6ca15c2ba630d/p"
+-- Install configuration: "Release"
+-- Installing: C:/Users/Dami/.conan2/p/b/libpn6ca15c2ba630d/p/lib/libpng16.a
+-- Installing: C:/Users/Dami/.conan2/p/b/libpn6ca15c2ba630d/p/lib/libpng.a
+-- Installing: C:/Users/Dami/.conan2/p/b/libpn6ca15c2ba630d/p/include/png.h
+-- Installing: C:/Users/Dami/.conan2/p/b/libpn6ca15c2ba630d/p/include/pngconf.h
+-- Installing: C:/Users/Dami/.conan2/p/b/libpn6ca15c2ba630d/p/include/pnglibconf.h
+-- Installing: C:/Users/Dami/.conan2/p/b/libpn6ca15c2ba630d/p/include/libpng16/png.h
+-- Installing: C:/Users/Dami/.conan2/p/b/libpn6ca15c2ba630d/p/include/libpng16/pngconf.h
+-- Installing: C:/Users/Dami/.conan2/p/b/libpn6ca15c2ba630d/p/include/libpng16/pnglibconf.h
+-- Installing: C:/Users/Dami/.conan2/p/b/libpn6ca15c2ba630d/p/bin/libpng-config
+-- Installing: C:/Users/Dami/.conan2/p/b/libpn6ca15c2ba630d/p/bin/libpng16-config
+-- Installing: C:/Users/Dami/.conan2/p/b/libpn6ca15c2ba630d/p/share/man/man3/libpng.3
+-- Installing: C:/Users/Dami/.conan2/p/b/libpn6ca15c2ba630d/p/share/man/man3/libpngpf.3
+-- Installing: C:/Users/Dami/.conan2/p/b/libpn6ca15c2ba630d/p/share/man/man5/png.5
+-- Installing: C:/Users/Dami/.conan2/p/b/libpn6ca15c2ba630d/p/lib/pkgconfig/libpng.pc
+-- Up-to-date: C:/Users/Dami/.conan2/p/b/libpn6ca15c2ba630d/p/bin/libpng-config
+-- Installing: C:/Users/Dami/.conan2/p/b/libpn6ca15c2ba630d/p/lib/pkgconfig/libpng16.pc
+-- Up-to-date: C:/Users/Dami/.conan2/p/b/libpn6ca15c2ba630d/p/bin/libpng16-config
+-- Installing: C:/Users/Dami/.conan2/p/b/libpn6ca15c2ba630d/p/lib/libpng/libpng16.cmake
+-- Installing: C:/Users/Dami/.conan2/p/b/libpn6ca15c2ba630d/p/lib/libpng/libpng16-release.cmake
+-- Up-to-date: C:/Users/Dami/.conan2/p/b/libpn6ca15c2ba630d/p/lib/libpng16.a
+-- Installing: C:/Users/Dami/.conan2/p/b/libpn6ca15c2ba630d/p/lib/cmake/PNG/PNGTargets.cmake
+-- Installing: C:/Users/Dami/.conan2/p/b/libpn6ca15c2ba630d/p/lib/cmake/PNG/PNGTargets-release.cmake
+-- Installing: C:/Users/Dami/.conan2/p/b/libpn6ca15c2ba630d/p/lib/cmake/PNG/PNGConfig.cmake
+-- Installing: C:/Users/Dami/.conan2/p/b/libpn6ca15c2ba630d/p/lib/cmake/PNG/PNGConfigVersion.cmake
+
+libpng/1.6.44: package(): Packaged 6 '.h' files
+libpng/1.6.44: package(): Packaged 2 '.a' files: libpng.a, libpng16.a
+libpng/1.6.44: package(): Packaged 1 file: LICENSE
+libpng/1.6.44: Created package revision fc02815df71136c14e2993f1bcd789b9
+libpng/1.6.44: Package '3d43a12c715e46b131b7ef84629373a867e1fc37' created
+libpng/1.6.44: Full package reference: libpng/1.6.44#9e1aa08fb46946c7c91e4ae03bd49811:3d43a12c715e46b131b7ef84629373a867e1fc37#fc02815df71136c14e2993f1bcd789b9
+libpng/1.6.44: Package folder C:\Users\Dami\.conan2\p\b\libpn6ca15c2ba630d\p
+meson/1.3.2: Already installed! (15 of 18)
+meson/1.3.2: Finalized folder C:\Users\Dami\.conan2\p\meson592fcdbc462a9\f
+
+-------- Installing package vorbis/1.3.7 (16 of 18) --------
+vorbis/1.3.7: Building from source
+vorbis/1.3.7: Package vorbis/1.3.7:12cea71c43c388b7c45a964a576215aa50c600bc
+vorbis/1.3.7: Copying sources to build folder
+vorbis/1.3.7: Building your package in C:\Users\Dami\.conan2\p\b\vorbif0d2434b3446b\b
+vorbis/1.3.7: Calling generate()
+vorbis/1.3.7: Generators folder: C:\Users\Dami\.conan2\p\b\vorbif0d2434b3446b\b\build\Release\generators
+vorbis/1.3.7: CMakeToolchain generated: conan_toolchain.cmake
+vorbis/1.3.7: CMakeToolchain generated: C:\Users\Dami\.conan2\p\b\vorbif0d2434b3446b\b\build\Release\generators\CMakePresets.json
+vorbis/1.3.7: CMakeToolchain generated: C:\Users\Dami\.conan2\p\b\vorbif0d2434b3446b\b\src\CMakeUserPresets.json
+vorbis/1.3.7: Generating aggregated env files
+vorbis/1.3.7: Generated aggregated env files: ['conanbuild.bat', 'conanrun.bat']
+vorbis/1.3.7: Calling build()
+vorbis/1.3.7: Apply patch (portability): MinGW: fix .def file for shared lib
+vorbis/1.3.7: Running CMake.configure()
+vorbis/1.3.7: RUN: cmake -G "Ninja" -DCMAKE_TOOLCHAIN_FILE="generators/conan_toolchain.cmake" -DCMAKE_INSTALL_PREFIX="C:/Users/Dami/.conan2/p/b/vorbif0d2434b3446b/p" -DCMAKE_POLICY_DEFAULT_CMP0042="NEW" -DCMAKE_POLICY_DEFAULT_CMP0091="NEW" -DCMAKE_BUILD_TYPE="Release" "C:/Users/Dami/.conan2/p/b/vorbif0d2434b3446b/b/src"
+CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.5 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+-- Using Conan toolchain: C:/Users/Dami/.conan2/p/b/vorbif0d2434b3446b/b/build/Release/generators/conan_toolchain.cmake
+-- Conan toolchain: Defining architecture flag: -m64
+-- Conan toolchain: Setting BUILD_SHARED_LIBS = OFF
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files/mingw64/bin/gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files/mingw64/bin/c++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring vorbis 1.3.7
+-- Looking for floor in m
+-- Looking for floor in m - found
+-- Conan: Component target declared 'Ogg::ogg'
+-- Configuring done (2.0s)
+-- Generating done (0.1s)
+-- Build files have been written to: C:/Users/Dami/.conan2/p/b/vorbif0d2434b3446b/b/build/Release
+
+vorbis/1.3.7: Running CMake.build()
+vorbis/1.3.7: RUN: cmake --build "C:\Users\Dami\.conan2\p\b\vorbif0d2434b3446b\b\build\Release" -- -j16
+[1/26] Building C object lib/CMakeFiles/vorbis.dir/registry.c.obj
+[2/26] Building C object lib/CMakeFiles/vorbis.dir/analysis.c.obj
+[3/26] Building C object lib/CMakeFiles/vorbis.dir/synthesis.c.obj
+[4/26] Building C object lib/CMakeFiles/vorbis.dir/window.c.obj
+[5/26] Building C object lib/CMakeFiles/vorbis.dir/lpc.c.obj
+[6/26] Building C object lib/CMakeFiles/vorbis.dir/floor0.c.obj
+[7/26] Building C object lib/CMakeFiles/vorbis.dir/envelope.c.obj
+[8/26] Building C object lib/CMakeFiles/vorbis.dir/lookup.c.obj
+[9/26] Building C object lib/CMakeFiles/vorbis.dir/lsp.c.obj
+[10/26] Building C object lib/CMakeFiles/vorbis.dir/info.c.obj
+[11/26] Building C object lib/CMakeFiles/vorbis.dir/mapping0.c.obj
+[12/26] Building C object lib/CMakeFiles/vorbis.dir/bitrate.c.obj
+[13/26] Building C object lib/CMakeFiles/vorbis.dir/codebook.c.obj
+[14/26] Building C object lib/CMakeFiles/vorbis.dir/sharedbook.c.obj
+[15/26] Building C object lib/CMakeFiles/vorbis.dir/block.c.obj
+[16/26] Building C object lib/CMakeFiles/vorbis.dir/res0.c.obj
+[17/26] Building C object lib/CMakeFiles/vorbis.dir/floor1.c.obj
+[18/26] Building C object lib/CMakeFiles/vorbis.dir/mdct.c.obj
+[19/26] Building C object lib/CMakeFiles/vorbis.dir/psy.c.obj
+[20/26] Building C object lib/CMakeFiles/vorbisfile.dir/vorbisfile.c.obj
+[21/26] Building C object lib/CMakeFiles/vorbisenc.dir/vorbisenc.c.obj
+[22/26] Building C object lib/CMakeFiles/vorbis.dir/vorbisenc.c.obj
+[23/26] Building C object lib/CMakeFiles/vorbis.dir/smallft.c.obj
+[24/26] Linking C static library lib\libvorbis.a
+[25/26] Linking C static library lib\libvorbisenc.a
+[26/26] Linking C static library lib\libvorbisfile.a
+
+vorbis/1.3.7: Package '12cea71c43c388b7c45a964a576215aa50c600bc' built
+vorbis/1.3.7: Build folder C:\Users\Dami\.conan2\p\b\vorbif0d2434b3446b\b\build\Release
+vorbis/1.3.7: Generating the package
+vorbis/1.3.7: Packaging in folder C:\Users\Dami\.conan2\p\b\vorbif0d2434b3446b\p
+vorbis/1.3.7: Calling package()
+vorbis/1.3.7: Running CMake.install()
+vorbis/1.3.7: RUN: cmake --install "C:\Users\Dami\.conan2\p\b\vorbif0d2434b3446b\b\build\Release" --prefix "C:/Users/Dami/.conan2/p/b/vorbif0d2434b3446b/p"
+-- Install configuration: "Release"
+-- Installing: C:/Users/Dami/.conan2/p/b/vorbif0d2434b3446b/p/lib/pkgconfig/vorbis.pc
+-- Installing: C:/Users/Dami/.conan2/p/b/vorbif0d2434b3446b/p/lib/pkgconfig/vorbisenc.pc
+-- Installing: C:/Users/Dami/.conan2/p/b/vorbif0d2434b3446b/p/lib/pkgconfig/vorbisfile.pc
+-- Installing: C:/Users/Dami/.conan2/p/b/vorbif0d2434b3446b/p/include/vorbis/codec.h
+-- Installing: C:/Users/Dami/.conan2/p/b/vorbif0d2434b3446b/p/include/vorbis/vorbisenc.h
+-- Installing: C:/Users/Dami/.conan2/p/b/vorbif0d2434b3446b/p/include/vorbis/vorbisfile.h
+-- Installing: C:/Users/Dami/.conan2/p/b/vorbif0d2434b3446b/p/lib/libvorbis.a
+-- Installing: C:/Users/Dami/.conan2/p/b/vorbif0d2434b3446b/p/lib/libvorbisenc.a
+-- Installing: C:/Users/Dami/.conan2/p/b/vorbif0d2434b3446b/p/lib/libvorbisfile.a
+-- Installing: C:/Users/Dami/.conan2/p/b/vorbif0d2434b3446b/p/lib/cmake/Vorbis/VorbisTargets.cmake
+-- Installing: C:/Users/Dami/.conan2/p/b/vorbif0d2434b3446b/p/lib/cmake/Vorbis/VorbisTargets-release.cmake
+-- Installing: C:/Users/Dami/.conan2/p/b/vorbif0d2434b3446b/p/lib/cmake/Vorbis/VorbisConfig.cmake
+-- Installing: C:/Users/Dami/.conan2/p/b/vorbif0d2434b3446b/p/lib/cmake/Vorbis/VorbisConfigVersion.cmake
+
+vorbis/1.3.7: package(): Packaged 3 '.h' files: codec.h, vorbisenc.h, vorbisfile.h
+vorbis/1.3.7: package(): Packaged 3 '.a' files: libvorbis.a, libvorbisenc.a, libvorbisfile.a
+vorbis/1.3.7: package(): Packaged 1 file: COPYING
+vorbis/1.3.7: Created package revision e8d2f41c850420d9c1103c829be75c8f
+vorbis/1.3.7: Package '12cea71c43c388b7c45a964a576215aa50c600bc' created
+vorbis/1.3.7: Full package reference: vorbis/1.3.7#37e58f52e59a6232199b34ef402714a6:12cea71c43c388b7c45a964a576215aa50c600bc#e8d2f41c850420d9c1103c829be75c8f
+vorbis/1.3.7: Package folder C:\Users\Dami\.conan2\p\b\vorbif0d2434b3446b\p
+
+-------- Installing package freetype/2.13.2 (17 of 18) --------
+freetype/2.13.2: Building from source
+freetype/2.13.2: Package freetype/2.13.2:7940744f960a506e0ed4c3e1a8cb5b473388f7ca
+freetype/2.13.2: Copying sources to build folder
+freetype/2.13.2: Building your package in C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b
+freetype/2.13.2: Calling generate()
+freetype/2.13.2: Generators folder: C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\build-release\conan
+freetype/2.13.2: Generating aggregated env files
+freetype/2.13.2: Generated aggregated env files: ['conanbuild.bat', 'conanrun.bat']
+freetype/2.13.2: Calling build()
+freetype/2.13.2: Apply patch (portability): meson: Use the standard dependency mechanism to find bzip2
+freetype/2.13.2: Apply patch (portability): meson: define DLL_EXPORT for shared library only
+freetype/2.13.2: Meson configure cmd: meson setup --native-file "C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\build-release\conan\conan_meson_native.ini" "C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\build-release" "C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\src" --prefix=C:/
+freetype/2.13.2: RUN: meson setup --native-file "C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\build-release\conan\conan_meson_native.ini" "C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\build-release" "C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\src" --prefix=C:/
+The Meson build system
+Version: 1.3.2
+Source dir: C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\src
+Build dir: C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\build-release
+Build type: native build
+Project name: freetype2
+Project version: 2.13.2
+C compiler for the host machine: C:/Program Files/mingw64/bin/gcc.exe (gcc 14.2.0 "gcc.exe (MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders, r2) 14.2.0")
+C linker for the host machine: C:/Program Files/mingw64/bin/gcc.exe ld.bfd 2.43.1
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Program python3 found: YES (C:\Users\Dami\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\python3.EXE)
+Has header "unistd.h" : YES 
+Has header "fcntl.h" : YES 
+Has header "sys/mman.h" : NO 
+Windows resource compiler: GNU windres (Binutils for MinGW-W64 x86_64, built by Brecht Sanders, r2) 2.43.1
+Found pkg-config: YES (C:/Users/Dami/.conan2/p/pkgcoe6fcefd89afdc/p/bin/pkgconf.exe) 2.1.0
+Run-time dependency zlib found: YES 1.3.1
+Run-time dependency bzip2 found: YES 1.0.8
+Run-time dependency libpng found: YES 1.6.44
+Dependency harfbuzz skipped: feature harfbuzz disabled
+Run-time dependency libbrotlidec found: YES 1.1.0
+Build targets in project: 5
+
+freetype2 2.13.2
+
+  Operating System
+    OS          : windows
+
+  Used Libraries
+    Zlib        : system
+    Bzip2       : yes
+    Png         : yes
+    Harfbuzz    : no
+    Brotli      : yes
+
+  User defined options
+    Native files: C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\build-release\conan\conan_meson_native.ini
+    prefix      : C:/
+
+Found ninja-1.12.1 at C:\Users\Dami\.conan2\p\ninjad9a44352249a5\p\bin\ninja.EXE
+
+freetype/2.13.2: Meson build cmd: meson compile -C "C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\build-release" -j16
+freetype/2.13.2: RUN: meson compile -C "C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\build-release" -j16
+[1/46] Generating ftmodule.h with a custom command
+[2/46] Compiling Windows resource src_base_ftver.rc
+[3/46] Generating ftoption.h with a custom command
+[4/46] Compiling C object libfreetype.a.p/src_base_ftinit.c.obj
+[5/46] Compiling C object libfreetype.a.p/src_winfonts_winfnt.c.obj
+[6/46] Compiling C object libfreetype.a.p/src_svg_svg.c.obj
+[7/46] Compiling C object libfreetype.a.p/src_type42_type42.c.obj
+[8/46] Compiling C object libfreetype.a.p/src_smooth_smooth.c.obj
+In file included from ../src/src/smooth/smooth.c:21:
+../src/src/smooth/ftgrays.c: In function 'gray_convert_glyph':
+../src/src/smooth/ftgrays.c:1979:20: warning: storing the address of local variable 'buffer' in '*worker.ycells' [-Wdangling-pointer=]
+ 1979 |     ras.ycells     = (PCell*)buffer;
+      |                    ^
+../src/src/smooth/ftgrays.c:1961:14: note: 'buffer' declared here
+ 1961 |     TCell    buffer[FT_MAX_GRAY_POOL];
+      |              ^~~~~~
+../src/src/smooth/ftgrays.c:316:33: note: 'worker' declared here
+  316 | #define RAS_ARG   gray_PWorker  worker
+      |                   ~~~~~~~~~~~~~~^~~~~~
+../src/src/smooth/ftgrays.c:1956:23: note: in expansion of macro 'RAS_ARG'
+ 1956 |   gray_convert_glyph( RAS_ARG )
+      |                       ^~~~~~~
+../src/src/smooth/ftgrays.c:1972:26: warning: storing the address of local variable 'buffer' in '*worker.cell_null' [-Wdangling-pointer=]
+ 1972 |     ras.cell_null        = buffer + FT_MAX_GRAY_POOL - 1;
+      |                          ^
+../src/src/smooth/ftgrays.c:1961:14: note: 'buffer' declared here
+ 1961 |     TCell    buffer[FT_MAX_GRAY_POOL];
+      |              ^~~~~~
+../src/src/smooth/ftgrays.c:316:33: note: 'worker' declared here
+  316 | #define RAS_ARG   gray_PWorker  worker
+      |                   ~~~~~~~~~~~~~~^~~~~~
+../src/src/smooth/ftgrays.c:1956:23: note: in expansion of macro 'RAS_ARG'
+ 1956 |   gray_convert_glyph( RAS_ARG )
+      |                       ^~~~~~~
+[9/46] Compiling C object libfreetype.a.p/src_cid_type1cid.c.obj
+[10/46] Compiling C object libfreetype.a.p/src_gzip_ftgzip.c.obj
+[11/46] Compiling C object libfreetype.a.p/src_lzw_ftlzw.c.obj
+[12/46] Compiling C object libfreetype.a.p/src_pcf_pcf.c.obj
+[13/46] Compiling C object libfreetype.a.p/src_raster_raster.c.obj
+[14/46] Compiling C object libfreetype.a.p/src_pfr_pfr.c.obj
+[15/46] Compiling C object libfreetype.a.p/src_base_ftbdf.c.obj
+[16/46] Compiling C object libfreetype.a.p/src_base_ftbbox.c.obj
+[17/46] Compiling C object libfreetype.a.p/src_bdf_bdf.c.obj
+[18/46] Compiling C object libfreetype.a.p/src_base_ftcid.c.obj
+[19/46] Compiling C object libfreetype.a.p/src_cache_ftcache.c.obj
+[20/46] Compiling C object libfreetype.a.p/src_base_ftfstype.c.obj
+[21/46] Compiling C object libfreetype.a.p/src_base_ftgasp.c.obj
+[22/46] Compiling C object libfreetype.a.p/src_psnames_psnames.c.obj
+[23/46] Compiling C object libfreetype.a.p/src_base_ftgxval.c.obj
+[24/46] Compiling C object libfreetype.a.p/src_pshinter_pshinter.c.obj
+[25/46] Compiling C object libfreetype.a.p/src_type1_type1.c.obj
+[26/46] Compiling C object libfreetype.a.p/src_base_ftotval.c.obj
+[27/46] Compiling C object libfreetype.a.p/src_base_ftpatent.c.obj
+[28/46] Compiling C object libfreetype.a.p/src_base_ftglyph.c.obj
+[29/46] Compiling C object libfreetype.a.p/src_base_ftpfr.c.obj
+[30/46] Compiling C object libfreetype.a.p/src_base_ftsynth.c.obj
+[31/46] Compiling C object libfreetype.a.p/src_base_ftmm.c.obj
+[32/46] Compiling C object libfreetype.a.p/src_base_fttype1.c.obj
+[33/46] Compiling C object libfreetype.a.p/src_sdf_sdf.c.obj
+[34/46] Compiling C object libfreetype.a.p/src_base_ftwinfnt.c.obj
+[35/46] Compiling C object libfreetype.a.p/builds_windows_ftdebug.c.obj
+[36/46] Compiling C object libfreetype.a.p/src_base_ftbitmap.c.obj
+[37/46] Compiling C object libfreetype.a.p/src_cff_cff.c.obj
+[38/46] Compiling C object libfreetype.a.p/src_base_ftstroke.c.obj
+[39/46] Compiling C object libfreetype.a.p/builds_windows_ftsystem.c.obj
+[40/46] Compiling C object libfreetype.a.p/src_autofit_autofit.c.obj
+[41/46] Compiling C object libfreetype.a.p/src_bzip2_ftbzip2.c.obj
+[42/46] Compiling C object libfreetype.a.p/src_base_ftbase.c.obj
+[43/46] Compiling C object libfreetype.a.p/src_truetype_truetype.c.obj
+In file included from ../src/src/truetype/truetype.c:22:
+../src/src/truetype/ttgload.c: In function 'load_truetype_glyph':
+../src/src/truetype/ttgload.c:1509:22: warning: storing the address of local variable 'inc_stream' in '*loader.stream' [-Wdangling-pointer=]
+ 1509 |       loader->stream = &inc_stream;
+      |       ~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+../src/src/truetype/ttgload.c:1442:21: note: 'inc_stream' declared here
+ 1442 |     FT_StreamRec    inc_stream;
+      |                     ^~~~~~~~~~
+../src/src/truetype/ttgload.c:1428:35: note: 'loader' declared here
+ 1428 |   load_truetype_glyph( TT_Loader  loader,
+      |                        ~~~~~~~~~~~^~~~~~
+[44/46] Compiling C object libfreetype.a.p/src_psaux_psaux.c.obj
+[45/46] Compiling C object libfreetype.a.p/src_sfnt_sfnt.c.obj
+[46/46] Linking static target libfreetype.a
+INFO: autodetecting backend as ninja
+INFO: calculating backend command to run: C:\Users\Dami\.conan2\p\ninjad9a44352249a5\p\bin\ninja.EXE -j 16
+
+freetype/2.13.2: Package '7940744f960a506e0ed4c3e1a8cb5b473388f7ca' built
+freetype/2.13.2: Build folder C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\build-release
+freetype/2.13.2: Generating the package
+freetype/2.13.2: Packaging in folder C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\p
+freetype/2.13.2: Calling package()
+freetype/2.13.2: RUN: meson install -C "C:/Users/Dami/.conan2/p/b/freet336e5ae6d4302/b/build-release" --destdir "C:/Users/Dami/.conan2/p/b/freet336e5ae6d4302/p"
+ninja: Entering directory `C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\build-release'
+ninja: no work to do.
+Installing ftmodule.h to C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\p\include/freetype2/freetype/config
+Installing ftoption.h to C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\p\include/freetype2/freetype/config
+Installing libfreetype.a to C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\p\lib
+Installing C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\src\include/ft2build.h to C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\p\include/freetype2
+Installing C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\src\include/freetype/freetype.h to C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\p\include/freetype2/freetype
+Installing C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\src\include/freetype/ftadvanc.h to C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\p\include/freetype2/freetype
+Installing C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\src\include/freetype/ftbbox.h to C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\p\include/freetype2/freetype
+Installing C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\src\include/freetype/ftbdf.h to C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\p\include/freetype2/freetype
+Installing C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\src\include/freetype/ftbitmap.h to C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\p\include/freetype2/freetype
+Installing C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\src\include/freetype/ftbzip2.h to C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\p\include/freetype2/freetype
+Installing C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\src\include/freetype/ftcache.h to C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\p\include/freetype2/freetype
+Installing C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\src\include/freetype/ftchapters.h to C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\p\include/freetype2/freetype
+Installing C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\src\include/freetype/ftcid.h to C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\p\include/freetype2/freetype
+Installing C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\src\include/freetype/ftcolor.h to C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\p\include/freetype2/freetype
+Installing C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\src\include/freetype/ftdriver.h to C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\p\include/freetype2/freetype
+Installing C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\src\include/freetype/fterrdef.h to C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\p\include/freetype2/freetype
+Installing C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\src\include/freetype/fterrors.h to C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\p\include/freetype2/freetype
+Installing C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\src\include/freetype/ftfntfmt.h to C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\p\include/freetype2/freetype
+Installing C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\src\include/freetype/ftgasp.h to C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\p\include/freetype2/freetype
+Installing C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\src\include/freetype/ftglyph.h to C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\p\include/freetype2/freetype
+Installing C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\src\include/freetype/ftgxval.h to C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\p\include/freetype2/freetype
+Installing C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\src\include/freetype/ftgzip.h to C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\p\include/freetype2/freetype
+Installing C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\src\include/freetype/ftimage.h to C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\p\include/freetype2/freetype
+Installing C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\src\include/freetype/ftincrem.h to C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\p\include/freetype2/freetype
+Installing C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\src\include/freetype/ftlcdfil.h to C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\p\include/freetype2/freetype
+Installing C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\src\include/freetype/ftlist.h to C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\p\include/freetype2/freetype
+Installing C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\src\include/freetype/ftlzw.h to C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\p\include/freetype2/freetype
+Installing C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\src\include/freetype/ftmac.h to C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\p\include/freetype2/freetype
+Installing C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\src\include/freetype/ftmm.h to C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\p\include/freetype2/freetype
+Installing C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\src\include/freetype/ftmodapi.h to C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\p\include/freetype2/freetype
+Installing C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\src\include/freetype/ftmoderr.h to C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\p\include/freetype2/freetype
+Installing C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\src\include/freetype/ftotval.h to C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\p\include/freetype2/freetype
+Installing C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\src\include/freetype/ftoutln.h to C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\p\include/freetype2/freetype
+Installing C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\src\include/freetype/ftparams.h to C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\p\include/freetype2/freetype
+Installing C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\src\include/freetype/ftpfr.h to C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\p\include/freetype2/freetype
+Installing C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\src\include/freetype/ftrender.h to C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\p\include/freetype2/freetype
+Installing C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\src\include/freetype/ftsizes.h to C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\p\include/freetype2/freetype
+Installing C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\src\include/freetype/ftsnames.h to C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\p\include/freetype2/freetype
+Installing C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\src\include/freetype/ftstroke.h to C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\p\include/freetype2/freetype
+Installing C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\src\include/freetype/ftsynth.h to C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\p\include/freetype2/freetype
+Installing C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\src\include/freetype/ftsystem.h to C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\p\include/freetype2/freetype
+Installing C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\src\include/freetype/fttrigon.h to C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\p\include/freetype2/freetype
+Installing C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\src\include/freetype/fttypes.h to C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\p\include/freetype2/freetype
+Installing C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\src\include/freetype/ftwinfnt.h to C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\p\include/freetype2/freetype
+Installing C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\src\include/freetype/otsvg.h to C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\p\include/freetype2/freetype
+Installing C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\src\include/freetype/t1tables.h to C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\p\include/freetype2/freetype
+Installing C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\src\include/freetype/ttnameid.h to C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\p\include/freetype2/freetype
+Installing C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\src\include/freetype/tttables.h to C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\p\include/freetype2/freetype
+Installing C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\src\include/freetype/tttags.h to C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\p\include/freetype2/freetype
+Installing C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\src\include/freetype/config/ftconfig.h to C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\p\include/freetype2/freetype/config
+Installing C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\src\include/freetype/config/ftheader.h to C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\p\include/freetype2/freetype/config
+Installing C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\src\include/freetype/config/ftstdlib.h to C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\p\include/freetype2/freetype/config
+Installing C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\src\include/freetype/config/integer-types.h to C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\p\include/freetype2/freetype/config
+Installing C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\src\include/freetype/config/mac-support.h to C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\p\include/freetype2/freetype/config
+Installing C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\src\include/freetype/config/public-macros.h to C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\p\include/freetype2/freetype/config
+Installing C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\b\build-release\meson-private\freetype2.pc to C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\p\lib\pkgconfig
+
+freetype/2.13.2: package(): Packaged 1 file: freetype-config
+freetype/2.13.2: package(): Packaged 54 '.h' files
+freetype/2.13.2: package(): Packaged 1 '.lib' file: freetype.lib
+freetype/2.13.2: package(): Packaged 2 '.cmake' files: conan-official-freetype-targets.cmake, conan-official-freetype-variables.cmake
+freetype/2.13.2: package(): Packaged 2 '.TXT' files: FTL.TXT, GPLv2.TXT
+freetype/2.13.2: package(): Packaged 1 '.txt' file: freetype-libtool-version.txt
+freetype/2.13.2: Created package revision 3866dbed3e3fad729225e25f6ddaf673
+freetype/2.13.2: Package '7940744f960a506e0ed4c3e1a8cb5b473388f7ca' created
+freetype/2.13.2: Full package reference: freetype/2.13.2#5d2563803c8558d4ef47271a82c73d20:7940744f960a506e0ed4c3e1a8cb5b473388f7ca#3866dbed3e3fad729225e25f6ddaf673
+freetype/2.13.2: Package folder C:\Users\Dami\.conan2\p\b\freet336e5ae6d4302\p
+
+-------- Installing package sfml/2.6.1 (18 of 18) --------
+sfml/2.6.1: Building from source
+sfml/2.6.1: Package sfml/2.6.1:19d4bab116e32ad19358c0abd27939432d728322
+sfml/2.6.1: Copying sources to build folder
+sfml/2.6.1: Building your package in C:\Users\Dami\.conan2\p\b\sfml4c34266175943\b
+sfml/2.6.1: Calling generate()
+sfml/2.6.1: Generators folder: C:\Users\Dami\.conan2\p\b\sfml4c34266175943\b\build\Release\generators
+sfml/2.6.1: CMakeToolchain generated: conan_toolchain.cmake
+sfml/2.6.1: CMakeToolchain generated: C:\Users\Dami\.conan2\p\b\sfml4c34266175943\b\build\Release\generators\CMakePresets.json
+sfml/2.6.1: CMakeToolchain generated: C:\Users\Dami\.conan2\p\b\sfml4c34266175943\b\src\CMakeUserPresets.json
+sfml/2.6.1: Generating aggregated env files
+sfml/2.6.1: Generated aggregated env files: ['conanbuild.bat', 'conanrun.bat']
+sfml/2.6.1: Calling build()
+sfml/2.6.1: Apply patch (conan): Robust discovery of dependencies
+sfml/2.6.1: Apply patch (portability): Allow to build shared SFML with MT runtime
+sfml/2.6.1: Apply patch (portability): Fix iOS detection logic in CMakeLists
+sfml/2.6.1: Apply patch (portability): Disable warning flags which may cause compilation errors
+sfml/2.6.1: Apply patch (conan): use cci minimp3 recipe
+sfml/2.6.1: Running CMake.configure()
+sfml/2.6.1: RUN: cmake -G "Ninja" -DCMAKE_TOOLCHAIN_FILE="generators/conan_toolchain.cmake" -DCMAKE_INSTALL_PREFIX="C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p" -DSFML_DEPENDENCIES_INSTALL_PREFIX="C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p" -DSFML_MISC_INSTALL_PREFIX="C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/licenses" -DCMAKE_POLICY_DEFAULT_CMP0091="NEW" -DCMAKE_BUILD_TYPE="Release" "C:/Users/Dami/.conan2/p/b/sfml4c34266175943/b/src"
+-- Using Conan toolchain: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/b/build/Release/generators/conan_toolchain.cmake
+-- Conan toolchain: Defining architecture flag: -m64
+-- Conan toolchain: C++ Standard 17 with extensions OFF
+-- Conan toolchain: Setting BUILD_SHARED_LIBS = OFF
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files/mingw64/bin/gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files/mingw64/bin/c++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of void*
+-- Check size of void* - done
+-- Found OpenGL: opengl32
+-- Looking for dinput.h
+-- Looking for dinput.h - found
+-- Conan: Target declared 'stb::stb'
+-- Conan: Target declared 'Freetype::Freetype'
+-- Conan: Target declared 'PNG::PNG'
+-- Conan: Target declared 'ZLIB::ZLIB'
+-- Conan: Target declared 'BZip2::BZip2'
+-- Conan: Including build module from 'C:/Users/Dami/.conan2/p/b/bzip2ce095073d81ae/p/lib/cmake/conan-official-bzip2-variables.cmake'
+-- Conan: Component target declared 'brotli::brotlicommon'
+-- Conan: Component target declared 'brotli::brotlidec'
+-- Conan: Component target declared 'brotli::brotlienc'
+-- Conan: Target declared 'brotli::brotli'
+-- Conan: Including build module from 'C:/Users/Dami/.conan2/p/b/freet336e5ae6d4302/p/lib/cmake/conan-official-freetype-variables.cmake'
+-- Conan: Target declared 'OpenAL::OpenAL'
+-- Conan: Including build module from 'C:/Users/Dami/.conan2/p/b/opena8fa4a4d081e75/p/lib/cmake/conan-official-openal-soft-variables.cmake'
+-- Conan: Component target declared 'Vorbis::vorbis'
+-- Conan: Component target declared 'Vorbis::vorbisenc'
+-- Conan: Component target declared 'Vorbis::vorbisfile'
+-- Conan: Component target declared 'vorbis::vorbisenc-alias'
+-- Conan: Component target declared 'vorbis::vorbisfile-alias'
+-- Conan: Target declared 'vorbis::vorbis'
+-- Conan: Component target declared 'Ogg::ogg'
+-- Conan: Component target declared 'FLAC::FLAC'
+-- Conan: Component target declared 'FLAC::FLAC++'
+-- Conan: Target declared 'flac::flac'
+-- Conan: Target declared 'minimp3::minimp3'
+-- Configuring done (4.6s)
+-- Generating done (0.1s)
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    SFML_DEPENDENCIES_INSTALL_PREFIX
+    SFML_MISC_INSTALL_PREFIX
+
+
+-- Build files have been written to: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/b/build/Release
+
+sfml/2.6.1: Running CMake.build()
+sfml/2.6.1: RUN: cmake --build "C:\Users\Dami\.conan2\p\b\sfml4c34266175943\b\build\Release" -- -j16
+[1/110] Building CXX object src/SFML/System/CMakeFiles/sfml-system.dir/Clock.cpp.obj
+[2/110] Building CXX object src/SFML/System/CMakeFiles/sfml-system.dir/Sleep.cpp.obj
+[3/110] Building CXX object src/SFML/System/CMakeFiles/sfml-system.dir/Lock.cpp.obj
+[4/110] Building CXX object src/SFML/System/CMakeFiles/sfml-system.dir/MemoryInputStream.cpp.obj
+[5/110] Building CXX object src/SFML/System/CMakeFiles/sfml-system.dir/Time.cpp.obj
+[6/110] Building CXX object src/SFML/Window/CMakeFiles/sfml-window.dir/Context.cpp.obj
+[7/110] Building CXX object src/SFML/Window/CMakeFiles/sfml-window.dir/GlResource.cpp.obj
+[8/110] Building CXX object src/SFML/System/CMakeFiles/sfml-system.dir/FileInputStream.cpp.obj
+[9/110] Building CXX object src/SFML/System/CMakeFiles/sfml-system.dir/Err.cpp.obj
+[10/110] Building CXX object src/SFML/Window/CMakeFiles/sfml-window.dir/Clipboard.cpp.obj
+[11/110] Building CXX object src/SFML/Window/CMakeFiles/sfml-window.dir/Touch.cpp.obj
+[12/110] Building CXX object src/SFML/Window/CMakeFiles/sfml-window.dir/Keyboard.cpp.obj
+[13/110] Building CXX object src/SFML/Window/CMakeFiles/sfml-window.dir/Sensor.cpp.obj
+[14/110] Building CXX object src/SFML/Window/CMakeFiles/sfml-window.dir/Mouse.cpp.obj
+[15/110] Building CXX object src/SFML/Window/CMakeFiles/sfml-window.dir/Vulkan.cpp.obj
+[16/110] Building CXX object src/SFML/Window/CMakeFiles/sfml-window.dir/SensorManager.cpp.obj
+[17/110] Building CXX object src/SFML/System/CMakeFiles/sfml-system.dir/String.cpp.obj
+[18/110] Building CXX object src/SFML/Window/CMakeFiles/sfml-window.dir/VideoMode.cpp.obj
+[19/110] Building CXX object src/SFML/System/CMakeFiles/sfml-system.dir/Win32/ClockImpl.cpp.obj
+[20/110] Building CXX object src/SFML/System/CMakeFiles/sfml-system.dir/Win32/ThreadLocalImpl.cpp.obj
+[21/110] Building CXX object src/SFML/System/CMakeFiles/sfml-system.dir/ThreadLocal.cpp.obj
+[22/110] Building CXX object src/SFML/System/CMakeFiles/sfml-system.dir/Win32/SleepImpl.cpp.obj
+[23/110] Building CXX object src/SFML/System/CMakeFiles/sfml-system.dir/Thread.cpp.obj
+[24/110] Building CXX object src/SFML/Window/CMakeFiles/sfml-window.dir/Cursor.cpp.obj
+[25/110] Building CXX object src/SFML/System/CMakeFiles/sfml-system.dir/Mutex.cpp.obj
+[26/110] Building CXX object src/SFML/Window/CMakeFiles/sfml-window.dir/Win32/SensorImpl.cpp.obj
+[27/110] Building CXX object src/SFML/System/CMakeFiles/sfml-system.dir/Win32/MutexImpl.cpp.obj
+[28/110] Building CXX object src/SFML/System/CMakeFiles/sfml-system.dir/Win32/ThreadImpl.cpp.obj
+[29/110] Building CXX object src/SFML/Window/CMakeFiles/sfml-window.dir/Joystick.cpp.obj
+[30/110] Building CXX object src/SFML/Window/CMakeFiles/sfml-window.dir/JoystickManager.cpp.obj
+[31/110] Linking CXX static library lib\libsfml-system-s.a
+[32/110] Building CXX object src/SFML/Window/CMakeFiles/sfml-window.dir/GlContext.cpp.obj
+[33/110] Building CXX object src/SFML/Window/CMakeFiles/sfml-window.dir/Win32/VulkanImplWin32.cpp.obj
+[34/110] Building CXX object src/SFML/Main/CMakeFiles/sfml-main.dir/MainWin32.cpp.obj
+[35/110] Building CXX object src/SFML/Window/CMakeFiles/sfml-window.dir/Win32/VideoModeImpl.cpp.obj
+[36/110] Building CXX object src/SFML/Window/CMakeFiles/sfml-window.dir/Win32/CursorImpl.cpp.obj
+[37/110] Building CXX object src/SFML/Window/CMakeFiles/sfml-window.dir/Win32/ClipboardImpl.cpp.obj
+[38/110] Building CXX object src/SFML/Window/CMakeFiles/sfml-window.dir/WindowBase.cpp.obj
+[39/110] Building CXX object src/SFML/Window/CMakeFiles/sfml-window.dir/Window.cpp.obj
+[40/110] Building CXX object src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/BlendMode.cpp.obj
+[41/110] Building CXX object src/SFML/Window/CMakeFiles/sfml-window.dir/Win32/InputImpl.cpp.obj
+[42/110] Building CXX object src/SFML/Network/CMakeFiles/sfml-network.dir/Http.cpp.obj
+[43/110] Building CXX object src/SFML/Window/CMakeFiles/sfml-window.dir/WindowImpl.cpp.obj
+[44/110] Building CXX object src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Color.cpp.obj
+[45/110] Building CXX object src/SFML/Network/CMakeFiles/sfml-network.dir/Ftp.cpp.obj
+[46/110] Building CXX object src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Glsl.cpp.obj
+[47/110] Building CXX object src/SFML/Window/CMakeFiles/sfml-window.dir/Win32/WindowImplWin32.cpp.obj
+[48/110] Building CXX object src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/GLCheck.cpp.obj
+[49/110] Building CXX object src/SFML/Window/CMakeFiles/sfml-window.dir/Win32/JoystickImpl.cpp.obj
+[50/110] Building CXX object src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderStates.cpp.obj
+[51/110] Building CXX object src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Image.cpp.obj
+[52/110] Building CXX object src/SFML/Window/CMakeFiles/sfml-window.dir/Win32/WglContext.cpp.obj
+[53/110] Building CXX object src/SFML/Network/CMakeFiles/sfml-network.dir/IpAddress.cpp.obj
+[54/110] Building CXX object src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTexture.cpp.obj
+[55/110] Building CXX object src/SFML/Network/CMakeFiles/sfml-network.dir/Socket.cpp.obj
+[56/110] Building CXX object src/SFML/Network/CMakeFiles/sfml-network.dir/SocketSelector.cpp.obj
+[57/110] Building CXX object src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/TextureSaver.cpp.obj
+[58/110] Linking CXX static library lib\libsfml-window-s.a
+[59/110] Building CXX object src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Vertex.cpp.obj
+[60/110] Building CXX object src/SFML/Network/CMakeFiles/sfml-network.dir/TcpListener.cpp.obj
+[61/110] Building CXX object src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderWindow.cpp.obj
+[62/110] Building CXX object src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Font.cpp.obj
+[63/110] Building CXX object src/SFML/Network/CMakeFiles/sfml-network.dir/Win32/SocketImpl.cpp.obj
+[64/110] Building CXX object src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTarget.cpp.obj
+[65/110] Building CXX object src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Transformable.cpp.obj
+[66/110] Building CXX object src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/View.cpp.obj
+[67/110] Building CXX object src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Transform.cpp.obj
+[68/110] Building CXX object src/SFML/Network/CMakeFiles/sfml-network.dir/TcpSocket.cpp.obj
+[69/110] Building CXX object src/SFML/Network/CMakeFiles/sfml-network.dir/Packet.cpp.obj
+[70/110] Building CXX object src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/CircleShape.cpp.obj
+[71/110] Building CXX object src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTextureImpl.cpp.obj
+[72/110] Building CXX object src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RectangleShape.cpp.obj
+[73/110] Building CXX object src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/ConvexShape.cpp.obj
+[74/110] Building CXX object src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTextureImplDefault.cpp.obj
+[75/110] Building CXX object src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Texture.cpp.obj
+[76/110] Building CXX object src/SFML/Network/CMakeFiles/sfml-network.dir/UdpSocket.cpp.obj
+[77/110] Building CXX object src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/VertexArray.cpp.obj
+[78/110] Building CXX object src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Shape.cpp.obj
+[79/110] Building CXX object src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Sprite.cpp.obj
+[80/110] Building CXX object src/SFML/Audio/CMakeFiles/sfml-audio.dir/AlResource.cpp.obj
+[81/110] Building CXX object src/SFML/Audio/CMakeFiles/sfml-audio.dir/Listener.cpp.obj
+[82/110] Building CXX object src/SFML/Audio/CMakeFiles/sfml-audio.dir/ALCheck.cpp.obj
+[83/110] Building CXX object src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/GLExtensions.cpp.obj
+[84/110] Building CXX object src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/VertexBuffer.cpp.obj
+[85/110] Building CXX object src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundSource.cpp.obj
+[86/110] Building CXX object src/SFML/Audio/CMakeFiles/sfml-audio.dir/Sound.cpp.obj
+[87/110] Building CXX object src/SFML/Audio/CMakeFiles/sfml-audio.dir/AudioDevice.cpp.obj
+[88/110] Building CXX object src/SFML/Audio/CMakeFiles/sfml-audio.dir/OutputSoundFile.cpp.obj
+[89/110] Building CXX object src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Text.cpp.obj
+[90/110] Building CXX object src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundBufferRecorder.cpp.obj
+[91/110] Building CXX object src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Shader.cpp.obj
+[92/110] Building CXX object src/SFML/Audio/CMakeFiles/sfml-audio.dir/Music.cpp.obj
+[93/110] Building CXX object src/SFML/Audio/CMakeFiles/sfml-audio.dir/InputSoundFile.cpp.obj
+[94/110] Linking CXX static library lib\libsfml-main.a
+[95/110] Building CXX object src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTextureImplFBO.cpp.obj
+[96/110] Linking CXX static library lib\libsfml-network-s.a
+[97/110] Building CXX object src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundStream.cpp.obj
+[98/110] Building CXX object src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileReaderOgg.cpp.obj
+[99/110] Building CXX object src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundRecorder.cpp.obj
+[100/110] Building CXX object src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileReaderFlac.cpp.obj
+[101/110] Building CXX object src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundBuffer.cpp.obj
+[102/110] Building CXX object src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileReaderWav.cpp.obj
+[103/110] Building CXX object src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileWriterOgg.cpp.obj
+[104/110] Building CXX object src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileWriterFlac.cpp.obj
+[105/110] Building CXX object src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileFactory.cpp.obj
+[106/110] Building CXX object src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileWriterWav.cpp.obj
+[107/110] Building CXX object src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileReaderMp3.cpp.obj
+[108/110] Linking CXX static library lib\libsfml-audio-s.a
+[109/110] Building CXX object src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/ImageLoader.cpp.obj
+[110/110] Linking CXX static library lib\libsfml-graphics-s.a
+
+sfml/2.6.1: Package '19d4bab116e32ad19358c0abd27939432d728322' built
+sfml/2.6.1: Build folder C:\Users\Dami\.conan2\p\b\sfml4c34266175943\b\build\Release
+sfml/2.6.1: Generating the package
+sfml/2.6.1: Packaging in folder C:\Users\Dami\.conan2\p\b\sfml4c34266175943\p
+sfml/2.6.1: Calling package()
+sfml/2.6.1: Running CMake.install()
+sfml/2.6.1: RUN: cmake --install "C:\Users\Dami\.conan2\p\b\sfml4c34266175943\b\build\Release" --prefix "C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p"
+-- Install configuration: "Release"
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Audio
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Audio/AlResource.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Audio/Export.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Audio/InputSoundFile.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Audio/Listener.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Audio/Music.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Audio/OutputSoundFile.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Audio/Sound.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Audio/SoundBuffer.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Audio/SoundBufferRecorder.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Audio/SoundFileFactory.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Audio/SoundFileFactory.inl
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Audio/SoundFileReader.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Audio/SoundFileWriter.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Audio/SoundRecorder.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Audio/SoundSource.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Audio/SoundStream.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Audio.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Config.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/GpuPreference.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Graphics
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Graphics/BlendMode.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Graphics/CircleShape.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Graphics/Color.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Graphics/ConvexShape.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Graphics/Drawable.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Graphics/Export.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Graphics/Font.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Graphics/Glsl.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Graphics/Glsl.inl
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Graphics/Glyph.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Graphics/Image.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Graphics/PrimitiveType.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Graphics/Rect.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Graphics/Rect.inl
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Graphics/RectangleShape.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Graphics/RenderStates.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Graphics/RenderTarget.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Graphics/RenderTexture.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Graphics/RenderWindow.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Graphics/Shader.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Graphics/Shape.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Graphics/Sprite.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Graphics/Text.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Graphics/Texture.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Graphics/Transform.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Graphics/Transformable.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Graphics/Vertex.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Graphics/VertexArray.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Graphics/VertexBuffer.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Graphics/View.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Graphics.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Main.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Network
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Network/Export.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Network/Ftp.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Network/Http.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Network/IpAddress.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Network/Packet.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Network/Socket.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Network/SocketHandle.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Network/SocketSelector.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Network/TcpListener.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Network/TcpSocket.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Network/UdpSocket.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Network.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/OpenGL.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/System
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/System/Clock.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/System/Err.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/System/Export.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/System/FileInputStream.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/System/InputStream.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/System/Lock.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/System/MemoryInputStream.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/System/Mutex.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/System/NativeActivity.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/System/NonCopyable.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/System/Sleep.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/System/String.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/System/String.inl
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/System/Thread.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/System/Thread.inl
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/System/ThreadLocal.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/System/ThreadLocalPtr.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/System/ThreadLocalPtr.inl
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/System/Time.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/System/Utf.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/System/Utf.inl
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/System/Vector2.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/System/Vector2.inl
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/System/Vector3.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/System/Vector3.inl
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/System.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Window
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Window/Clipboard.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Window/Context.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Window/ContextSettings.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Window/Cursor.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Window/Event.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Window/Export.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Window/GlResource.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Window/Joystick.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Window/Keyboard.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Window/Mouse.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Window/Sensor.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Window/Touch.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Window/VideoMode.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Window/Vulkan.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Window/Window.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Window/WindowBase.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Window/WindowHandle.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Window/WindowStyle.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/./include/SFML/Window.hpp
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/share/doc/SFML/license.md
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/share/doc/SFML/readme.md
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/lib/cmake/SFML/SFMLStaticTargets.cmake
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/lib/cmake/SFML/SFMLStaticTargets-release.cmake
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/lib/cmake/SFML/SFMLConfig.cmake
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/lib/cmake/SFML/SFMLConfigDependencies.cmake
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/lib/cmake/SFML/SFMLConfigVersion.cmake
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/lib/libsfml-system-s.a
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/lib/libsfml-main.a
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/lib/libsfml-window-s.a
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/lib/libsfml-network-s.a
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/lib/libsfml-graphics-s.a
+-- Installing: C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p/lib/libsfml-audio-s.a
+
+sfml/2.6.1: package(): Packaged 100 '.hpp' files
+sfml/2.6.1: package(): Packaged 9 '.inl' files
+sfml/2.6.1: package(): Packaged 6 '.a' files
+sfml/2.6.1: package(): Packaged 1 '.cmake' file: conan-official-sfml-targets.cmake
+sfml/2.6.1: package(): Packaged 1 '.md' file: license.md
+sfml/2.6.1: Created package revision 65ca6a4e4a29ba45260f89dca3e83305
+sfml/2.6.1: Package '19d4bab116e32ad19358c0abd27939432d728322' created
+sfml/2.6.1: Full package reference: sfml/2.6.1#a09fa95bd90d736d49b2de6418f5e909:19d4bab116e32ad19358c0abd27939432d728322#65ca6a4e4a29ba45260f89dca3e83305
+sfml/2.6.1: Package folder C:\Users\Dami\.conan2\p\b\sfml4c34266175943\p
+WARN: deprecated: Usage of deprecated Conan 1.X features that will be removed in Conan 2.X:
+WARN: deprecated:     'cpp_info.names' used in: flac/1.4.3, fmt/11.0.2, openal-soft/1.22.2, glfw/3.3.8, sfml/2.6.1, libpng/1.6.44, vorbis/1.3.7, freetype/2.13.2, bzip2/1.0.8, ogg/1.3.5, zlib/1.3.1, brotli/1.1.0
+WARN: deprecated:     'cpp_info.build_modules' used in: openal-soft/1.22.2, glfw/3.3.8, sfml/2.6.1, freetype/2.13.2, bzip2/1.0.8
+WARN: deprecated:     'env_info' used in: freetype/2.13.2, bzip2/1.0.8, flac/1.4.3, pkgconf/2.1.0
+WARN: deprecated:     'cpp_info.filenames' used in: glfw/3.3.8, flac/1.4.3, freetype/2.13.2, opengl/system
+WARN: deprecated:     'user_info' used in: freetype/2.13.2
+
+======== Finalizing install (deploy, generators) ========
+conanfile.py: Writing generators to C:\Users\Dami\Documents\CLionProjects\ejemplo02_fractal2\cmake-build-release\conan\build\Release\generators
+conanfile.py: Generator 'CMakeDeps' calling 'generate()'
+conanfile.py: CMakeDeps necessary find_package() and targets for your CMakeLists.txt
+    find_package(glfw3)
+    find_package(SFML)
+    find_package(fmt)
+    target_link_libraries(... glfw sfml::sfml fmt::fmt)
+conanfile.py: Calling generate()
+conanfile.py: Generators folder: C:\Users\Dami\Documents\CLionProjects\ejemplo02_fractal2\cmake-build-release\conan\build\Release\generators
+conanfile.py: CMakeToolchain generated: conan_toolchain.cmake
+conanfile.py: CMakeToolchain: Preset 'conan-release' added to CMakePresets.json.
+    (cmake>=3.23) cmake --preset conan-release
+    (cmake<3.23) cmake <path> -G Ninja -DCMAKE_TOOLCHAIN_FILE=generators\conan_toolchain.cmake  -DCMAKE_POLICY_DEFAULT_CMP0091=NEW -DCMAKE_BUILD_TYPE=Release
+conanfile.py: CMakeToolchain generated: C:\Users\Dami\Documents\CLionProjects\ejemplo02_fractal2\cmake-build-release\conan\build\Release\generators\CMakePresets.json
+conanfile.py: Generating aggregated env files
+conanfile.py: Generated aggregated env files: ['conanbuild.bat', 'conanrun.bat']
+Install finished successfully
+-- CMake-Conan: CONAN_GENERATORS_FOLDER=C:/Users/Dami/Documents/CLionProjects/ejemplo02_fractal2/cmake-build-release/conan/build/Release/generators
+-- CMake-Conan: CONANFILE=C:/Users/Dami/Documents/CLionProjects/ejemplo02_fractal2/conanfile.py
+-- Conan: Component target declared 'fmt::fmt'
+-- CMake-Conan: find_package(SFML) found, 'conan install' already ran
+-- Conan: Component target declared 'sfml-system'
+-- Conan: Component target declared 'sfml-main'
+-- Conan: Component target declared 'sfml-window'
+-- Conan: Component target declared 'sfml-network'
+-- Conan: Component target declared 'sfml-audio'
+-- Conan: Component target declared 'sfml-graphics'
+-- Conan: Target declared 'sfml::sfml'
+-- CMake-Conan: find_package(opengl_system) found, 'conan install' already ran
+-- Conan: Target declared 'opengl::opengl'
+-- CMake-Conan: find_package(freetype) found, 'conan install' already ran
+-- Conan: Target declared 'Freetype::Freetype'
+-- CMake-Conan: find_package(PNG) found, 'conan install' already ran
+-- Conan: Target declared 'PNG::PNG'
+-- CMake-Conan: find_package(ZLIB) found, 'conan install' already ran
+-- Conan: Target declared 'ZLIB::ZLIB'
+-- CMake-Conan: find_package(BZip2) found, 'conan install' already ran
+-- Conan: Target declared 'BZip2::BZip2'
+-- Conan: Including build module from 'C:/Users/Dami/.conan2/p/b/bzip2ce095073d81ae/p/lib/cmake/conan-official-bzip2-variables.cmake'
+-- CMake-Conan: find_package(brotli) found, 'conan install' already ran
+-- Conan: Component target declared 'brotli::brotlicommon'
+-- Conan: Component target declared 'brotli::brotlidec'
+-- Conan: Component target declared 'brotli::brotlienc'
+-- Conan: Target declared 'brotli::brotli'
+-- Conan: Including build module from 'C:/Users/Dami/.conan2/p/b/freet336e5ae6d4302/p/lib/cmake/conan-official-freetype-variables.cmake'
+-- CMake-Conan: find_package(flac) found, 'conan install' already ran
+-- Conan: Component target declared 'FLAC::FLAC'
+-- Conan: Component target declared 'FLAC::FLAC++'
+-- Conan: Target declared 'flac::flac'
+-- CMake-Conan: find_package(Ogg) found, 'conan install' already ran
+-- Conan: Component target declared 'Ogg::ogg'
+-- CMake-Conan: find_package(OpenAL) found, 'conan install' already ran
+-- Conan: Target declared 'OpenAL::OpenAL'
+-- Conan: Including build module from 'C:/Users/Dami/.conan2/p/b/opena8fa4a4d081e75/p/lib/cmake/conan-official-openal-soft-variables.cmake'
+-- CMake-Conan: find_package(Vorbis) found, 'conan install' already ran
+-- Conan: Component target declared 'Vorbis::vorbis'
+-- Conan: Component target declared 'Vorbis::vorbisenc'
+-- Conan: Component target declared 'Vorbis::vorbisfile'
+-- Conan: Component target declared 'vorbis::vorbisenc-alias'
+-- Conan: Component target declared 'vorbis::vorbisfile-alias'
+-- Conan: Target declared 'vorbis::vorbis'
+-- CMake-Conan: find_package(glfw3) found, 'conan install' already ran
+-- Conan: Target declared 'glfw'
+-- Configuring done (108.3s)
+-- Generating done (0.0s)
+-- Build files have been written to: C:/Users/Dami/Documents/CLionProjects/ejemplo02_fractal2/cmake-build-release

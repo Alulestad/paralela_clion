@@ -1,0 +1,206 @@
+"C:\Program Files\JetBrains\CLion 2024.2.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2024.2.3/bin/ninja/win/x64/ninja.exe" -G Ninja -DCMAKE_PROJECT_TOP_LEVEL_INCLUDES=conan_provider.cmake -S C:\Users\Dami\Documents\CLionProjects\ejemplo01 -B C:\Users\Dami\Documents\CLionProjects\ejemplo01\cmake-build-debug
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files/mingw64/bin/gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files/mingw64/bin/c++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- CMake-Conan: first find_package() found. Installing dependencies with Conan
+-- CMake-Conan: Checking if a default profile exists
+C:\Users\Dami\.conan2\profiles\default
+-- CMake-Conan: cmake_system_name=Windows
+-- CMake-Conan: cmake_system_processor=x86_64
+-- CMake-Conan: CMake compiler=GNU
+-- CMake-Conan: CMake compiler version=14.2.0
+-- CMake-Conan: [settings] compiler=gcc
+-- CMake-Conan: [settings] compiler.version=14
+-- Performing Test _conan_is_gnu_libstdcxx
+-- Performing Test _conan_is_gnu_libstdcxx - Success
+-- Performing Test _conan_gnu_libstdcxx_is_cxx11_abi
+-- Performing Test _conan_gnu_libstdcxx_is_cxx11_abi - Success
+-- CMake-Conan: Creating profile C:/Users/Dami/Documents/CLionProjects/ejemplo01/cmake-build-debug/conan_host_profile
+-- CMake-Conan: Profile: 
+[settings]
+arch=x86_64
+os=Windows
+compiler=gcc
+compiler.version=14
+compiler.cppstd=17
+compiler.libcxx=libstdc++11
+build_type=Debug
+[conf]
+tools.cmake.cmaketoolchain:generator=Ninja
+tools.build:compiler_executables={"c":"C:/Program Files/mingw64/bin/gcc.exe","cpp":"C:/Program Files/mingw64/bin/c++.exe","rc":"C:/Program Files/mingw64/bin/windres.exe"}
+
+-- CMake-Conan: Installing single configuration Debug
+-- CMake-Conan: conan install C:/Users/Dami/Documents/CLionProjects/ejemplo01 -of=C:/Users/Dami/Documents/CLionProjects/ejemplo01/cmake-build-debug/conan --profile:host=default;--profile:host=C:/Users/Dami/Documents/CLionProjects/ejemplo01/cmake-build-debug/conan_host_profile;--profile:build=default;--build=missing
+
+======== Input profiles ========
+Profile host:
+[settings]
+arch=x86_64
+build_type=Debug
+compiler=gcc
+compiler.cppstd=17
+compiler.libcxx=libstdc++11
+compiler.version=14
+os=Windows
+[conf]
+tools.build:compiler_executables={'c': 'C:/Program Files/mingw64/bin/gcc.exe', 'cpp': 'C:/Program Files/mingw64/bin/c++.exe', 'rc': 'C:/Program Files/mingw64/bin/windres.exe'}
+tools.cmake.cmaketoolchain:generator=Ninja
+
+Profile build:
+[settings]
+arch=x86_64
+build_type=Release
+compiler=gcc
+compiler.cppstd=gnu17
+compiler.libcxx=libstdc++11
+compiler.version=13
+os=Windows
+
+
+======== Computing dependency graph ========
+Graph root
+    conanfile.py: C:/Users/Dami/Documents/CLionProjects/ejemplo01\conanfile.py
+Requirements
+    fmt/11.0.2#5c7438ef4d5d69ab106a41e460ce11f3 - Cache
+    glfw/3.3.8#d75a15a362a707163bfaabbf4dc993d8 - Cache
+    opengl/system#4df6fecde4084386beded3ed0e56e4ea - Cache
+
+======== Computing necessary packages ========
+Requirements
+    fmt/11.0.2#5c7438ef4d5d69ab106a41e460ce11f3:33f819c02207a748fde0cdb2b48d45c22c3bcef6#66ae2d6c02ad808f846f8a8d7eaf8645 - Cache
+    glfw/3.3.8#d75a15a362a707163bfaabbf4dc993d8:4993d51f61a4b133adbdae8a1215066a8a67ace8 - Build
+    opengl/system#4df6fecde4084386beded3ed0e56e4ea:da39a3ee5e6b4b0d3255bfef95601890afd80709#0ba8627bd47edc3a501e8f0eb9a79e5e - Cache
+
+======== Installing packages ========
+fmt/11.0.2: Already installed! (1 of 3)
+opengl/system: Already installed! (2 of 3)
+
+-------- Installing package glfw/3.3.8 (3 of 3) --------
+glfw/3.3.8: Building from source
+glfw/3.3.8: Package glfw/3.3.8:4993d51f61a4b133adbdae8a1215066a8a67ace8
+glfw/3.3.8: Copying sources to build folder
+glfw/3.3.8: Building your package in C:\Users\Dami\.conan2\p\b\glfw2e1fe0c49e955\b
+glfw/3.3.8: Calling generate()
+glfw/3.3.8: Generators folder: C:\Users\Dami\.conan2\p\b\glfw2e1fe0c49e955\b\build\Debug\generators
+glfw/3.3.8: CMakeToolchain generated: conan_toolchain.cmake
+glfw/3.3.8: CMakeToolchain generated: C:\Users\Dami\.conan2\p\b\glfw2e1fe0c49e955\b\build\Debug\generators\CMakePresets.json
+glfw/3.3.8: CMakeToolchain generated: C:\Users\Dami\.conan2\p\b\glfw2e1fe0c49e955\b\src\CMakeUserPresets.json
+glfw/3.3.8: Generating aggregated env files
+glfw/3.3.8: Generated aggregated env files: ['conanbuild.bat', 'conanrun.bat']
+glfw/3.3.8: Calling build()
+glfw/3.3.8: Apply patch (official): Remove dependency on extra-cmake-modules to fix generation of Wayland Protocols
+glfw/3.3.8: Running CMake.configure()
+glfw/3.3.8: RUN: cmake -G "Ninja" -DCMAKE_TOOLCHAIN_FILE="generators/conan_toolchain.cmake" -DCMAKE_INSTALL_PREFIX="C:/Users/Dami/.conan2/p/b/glfw2e1fe0c49e955/p" -DGLFW_BUILD_DOCS="OFF" -DGLFW_BUILD_EXAMPLES="OFF" -DGLFW_BUILD_TESTS="OFF" -DGLFW_INSTALL="ON" -DGLFW_USE_WAYLAND="OFF" -DCMAKE_POLICY_DEFAULT_CMP0091="NEW" -DCMAKE_BUILD_TYPE="Debug" "C:/Users/Dami/.conan2/p/b/glfw2e1fe0c49e955/b/src"
+-- Using Conan toolchain: C:/Users/Dami/.conan2/p/b/glfw2e1fe0c49e955/b/build/Debug/generators/conan_toolchain.cmake
+-- Conan toolchain: Defining architecture flag: -m64
+-- Conan toolchain: Setting BUILD_SHARED_LIBS = OFF
+-- The C compiler identification is GNU 14.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files/mingw64/bin/gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Looking for dinput.h
+-- Looking for dinput.h - found
+-- Looking for xinput.h
+-- Looking for xinput.h - found
+-- Performing Test _GLFW_HAS_DEP
+-- Performing Test _GLFW_HAS_DEP - Success
+-- Performing Test _GLFW_HAS_ASLR
+-- Performing Test _GLFW_HAS_ASLR - Success
+-- Performing Test _GLFW_HAS_64ASLR
+-- Performing Test _GLFW_HAS_64ASLR - Success
+-- Using Win32 for window creation
+-- Configuring done (22.6s)
+-- Generating done (0.2s)
+-- Build files have been written to: C:/Users/Dami/.conan2/p/b/glfw2e1fe0c49e955/b/build/Debug
+
+glfw/3.3.8: Running CMake.build()
+glfw/3.3.8: RUN: cmake --build "C:\Users\Dami\.conan2\p\b\glfw2e1fe0c49e955\b\build\Debug" -- -j16
+[1/16] Building C object src/CMakeFiles/glfw.dir/osmesa_context.c.obj
+[2/16] Building C object src/CMakeFiles/glfw.dir/win32_monitor.c.obj
+[3/16] Building C object src/CMakeFiles/glfw.dir/win32_time.c.obj
+[4/16] Building C object src/CMakeFiles/glfw.dir/win32_joystick.c.obj
+[5/16] Building C object src/CMakeFiles/glfw.dir/wgl_context.c.obj
+[6/16] Building C object src/CMakeFiles/glfw.dir/context.c.obj
+[7/16] Building C object src/CMakeFiles/glfw.dir/init.c.obj
+[8/16] Building C object src/CMakeFiles/glfw.dir/monitor.c.obj
+[9/16] Building C object src/CMakeFiles/glfw.dir/vulkan.c.obj
+[10/16] Building C object src/CMakeFiles/glfw.dir/egl_context.c.obj
+[11/16] Building C object src/CMakeFiles/glfw.dir/input.c.obj
+[12/16] Building C object src/CMakeFiles/glfw.dir/win32_window.c.obj
+[13/16] Building C object src/CMakeFiles/glfw.dir/win32_thread.c.obj
+[14/16] Building C object src/CMakeFiles/glfw.dir/win32_init.c.obj
+[15/16] Building C object src/CMakeFiles/glfw.dir/window.c.obj
+[16/16] Linking C static library src\libglfw3.a
+
+glfw/3.3.8: Package '4993d51f61a4b133adbdae8a1215066a8a67ace8' built
+glfw/3.3.8: Build folder C:\Users\Dami\.conan2\p\b\glfw2e1fe0c49e955\b\build\Debug
+glfw/3.3.8: Generating the package
+glfw/3.3.8: Packaging in folder C:\Users\Dami\.conan2\p\b\glfw2e1fe0c49e955\p
+glfw/3.3.8: Calling package()
+glfw/3.3.8: Running CMake.install()
+glfw/3.3.8: RUN: cmake --install "C:\Users\Dami\.conan2\p\b\glfw2e1fe0c49e955\b\build\Debug" --prefix "C:/Users/Dami/.conan2/p/b/glfw2e1fe0c49e955/p"
+-- Install configuration: "Debug"
+-- Installing: C:/Users/Dami/.conan2/p/b/glfw2e1fe0c49e955/p/lib/libglfw3.a
+-- Installing: C:/Users/Dami/.conan2/p/b/glfw2e1fe0c49e955/p/include/GLFW
+-- Installing: C:/Users/Dami/.conan2/p/b/glfw2e1fe0c49e955/p/include/GLFW/glfw3.h
+-- Installing: C:/Users/Dami/.conan2/p/b/glfw2e1fe0c49e955/p/include/GLFW/glfw3native.h
+-- Installing: C:/Users/Dami/.conan2/p/b/glfw2e1fe0c49e955/p/lib/cmake/glfw3/glfw3Config.cmake
+-- Installing: C:/Users/Dami/.conan2/p/b/glfw2e1fe0c49e955/p/lib/cmake/glfw3/glfw3ConfigVersion.cmake
+-- Installing: C:/Users/Dami/.conan2/p/b/glfw2e1fe0c49e955/p/lib/cmake/glfw3/glfw3Targets.cmake
+-- Installing: C:/Users/Dami/.conan2/p/b/glfw2e1fe0c49e955/p/lib/cmake/glfw3/glfw3Targets-debug.cmake
+-- Installing: C:/Users/Dami/.conan2/p/b/glfw2e1fe0c49e955/p/lib/pkgconfig/glfw3.pc
+
+glfw/3.3.8: package(): Packaged 2 '.h' files: glfw3.h, glfw3native.h
+glfw/3.3.8: package(): Packaged 1 '.a' file: libglfw3.a
+glfw/3.3.8: package(): Packaged 1 '.cmake' file: conan-official-glfw-targets.cmake
+glfw/3.3.8: package(): Packaged 1 '.md' file: LICENSE.md
+glfw/3.3.8: Created package revision 2503bfed4b46bd561b8990ea1b6d28e1
+glfw/3.3.8: Package '4993d51f61a4b133adbdae8a1215066a8a67ace8' created
+glfw/3.3.8: Full package reference: glfw/3.3.8#d75a15a362a707163bfaabbf4dc993d8:4993d51f61a4b133adbdae8a1215066a8a67ace8#2503bfed4b46bd561b8990ea1b6d28e1
+glfw/3.3.8: Package folder C:\Users\Dami\.conan2\p\b\glfw2e1fe0c49e955\p
+WARN: deprecated: Usage of deprecated Conan 1.X features that will be removed in Conan 2.X:
+WARN: deprecated:     'cpp_info.names' used in: glfw/3.3.8, fmt/11.0.2
+WARN: deprecated:     'cpp_info.filenames' used in: glfw/3.3.8, opengl/system
+WARN: deprecated:     'cpp_info.build_modules' used in: glfw/3.3.8
+
+======== Finalizing install (deploy, generators) ========
+conanfile.py: Writing generators to C:\Users\Dami\Documents\CLionProjects\ejemplo01\cmake-build-debug\conan\build\Debug\generators
+conanfile.py: Generator 'CMakeDeps' calling 'generate()'
+conanfile.py: CMakeDeps necessary find_package() and targets for your CMakeLists.txt
+    find_package(glfw3)
+    find_package(fmt)
+    target_link_libraries(... glfw fmt::fmt)
+conanfile.py: Calling generate()
+conanfile.py: Generators folder: C:\Users\Dami\Documents\CLionProjects\ejemplo01\cmake-build-debug\conan\build\Debug\generators
+conanfile.py: CMakeToolchain generated: conan_toolchain.cmake
+conanfile.py: CMakeToolchain: Preset 'conan-debug' added to CMakePresets.json.
+    (cmake>=3.23) cmake --preset conan-debug
+    (cmake<3.23) cmake <path> -G Ninja -DCMAKE_TOOLCHAIN_FILE=generators\conan_toolchain.cmake  -DCMAKE_POLICY_DEFAULT_CMP0091=NEW -DCMAKE_BUILD_TYPE=Debug
+conanfile.py: CMakeToolchain generated: C:\Users\Dami\Documents\CLionProjects\ejemplo01\cmake-build-debug\conan\build\Debug\generators\CMakePresets.json
+conanfile.py: Generating aggregated env files
+conanfile.py: Generated aggregated env files: ['conanbuild.bat', 'conanrun.bat']
+Install finished successfully
+-- CMake-Conan: CONAN_GENERATORS_FOLDER=C:/Users/Dami/Documents/CLionProjects/ejemplo01/cmake-build-debug/conan/build/Debug/generators
+-- CMake-Conan: CONANFILE=C:/Users/Dami/Documents/CLionProjects/ejemplo01/conanfile.py
+-- Conan: Target declared 'glfw'
+-- CMake-Conan: find_package(opengl_system) found, 'conan install' already ran
+-- Conan: Target declared 'opengl::opengl'
+-- CMake-Conan: find_package(fmt) found, 'conan install' already ran
+-- Conan: Component target declared 'fmt::fmt'
+-- Configuring done (90.5s)
+-- Generating done (0.1s)
+-- Build files have been written to: C:/Users/Dami/Documents/CLionProjects/ejemplo01/cmake-build-debug
