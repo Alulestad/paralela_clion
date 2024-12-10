@@ -13,8 +13,7 @@
 
 namespace ch = std::chrono; // Alias para simplificar el uso de std::chrono.
 
-//
-//
+
 class fps_counter {
 private:
     int frames; // Contador de cuadros procesados desde el último cálculo de FPS.
@@ -25,7 +24,7 @@ private:
 public:
     fps_counter(); // Constructor de la clase.
 
-    void update(); // Método que actualiza el contador de cuadros y calcula los FPS si es necesario.
+    void update(); // Metodo que actualiza el contador de cuadros y calcula los FPS si es necesario.
 
     int get_fps(); // Devuelve el último valor calculado de FPS.
 };

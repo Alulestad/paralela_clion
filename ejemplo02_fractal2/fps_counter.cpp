@@ -2,7 +2,7 @@
 // Created by Dami on 27/11/2024.
 //
 
-#include "fps_counter.h" // Incluye la declaración de la clase.
+#include "fps_counter.h" // // Incluye el archivo de encabezado con la clase fps_counter.
 #include <fmt/core.h>    // Incluye la biblioteca fmt para impresión formateada.
 
 fps_counter::fps_counter() {
@@ -22,12 +22,18 @@ void fps_counter::update() {
     frames++; // Incrementa el número de cuadros procesados.
 
     auto current_time = ch::high_resolution_clock::now();
-    // Captura el tiempo actual.
+    // auto permite al compilador deducir automáticamente el tipo de la variable basado
+    // en su valor de inicialización.
+    // current_time tendrá el tipo de retorno del metodo now() de high_resolution_clock.
+    // Captura el tiempo actual. devuelve time_point de manera mas precisa que el system_clock
+
+    //  high_resolution_clock : Es una clase dentro de std::chrono que representa un reloj de alta resolución.
+    // now():   Es un metodo estatico de la clase high_resolution_clock
 
     ch::duration<double, std::milli> tiempo = current_time - last_time;
     // Calcula la duración (en milisegundos) desde el último cálculo de FPS.
 
-    if (tiempo.count() > 1000) {
+    if (tiempo.count() > 1000) { // devuelve el valor numérico almacenado en el objeto duration y verifica para 1 segundo
         // Si ha pasado más de un segundo (1000 ms):
         fps = frames;               // Almacena el número de cuadros procesados como FPS.
         frames = 0;                 // Reinicia el contador de cuadros.
