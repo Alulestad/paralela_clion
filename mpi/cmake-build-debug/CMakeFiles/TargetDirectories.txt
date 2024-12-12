@@ -1,0 +1,3 @@
+C:/Users/Dami/Documents/CLionProjects/mpi/cmake-build-debug/CMakeFiles/mpi.dir
+C:/Users/Dami/Documents/CLionProjects/mpi/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Dami/Documents/CLionProjects/mpi/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,6 @@
+# Archivos y carpetas a ignorar
+cmake-3.31.2-windows-x86_64/
+conan-2.9.1-windows-x86_64/
+ninja-win/
+
+

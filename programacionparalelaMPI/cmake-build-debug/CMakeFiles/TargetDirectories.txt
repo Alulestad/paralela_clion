@@ -1,0 +1,3 @@
+C:/Users/fing.labcom/CLionProjects/programacionparalelaMPI/cmake-build-debug/CMakeFiles/programacionparalelaMPI.dir
+C:/Users/fing.labcom/CLionProjects/programacionparalelaMPI/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/fing.labcom/CLionProjects/programacionparalelaMPI/cmake-build-debug/CMakeFiles/rebuild_cache.dir
