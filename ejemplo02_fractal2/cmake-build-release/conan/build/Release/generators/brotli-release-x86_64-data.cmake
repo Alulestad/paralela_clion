@@ -12,7 +12,7 @@ endif()
 
 ########### VARIABLES #######################################################################
 #############################################################################################
-set(brotli_PACKAGE_FOLDER_RELEASE "C:/Users/Dami/.conan2/p/b/brotl2980bfdb6be11/p")
+set(brotli_PACKAGE_FOLDER_RELEASE "C:/Users/Dami/.conan2/p/brotl79757a5cae055/p")
 set(brotli_BUILD_MODULES_PATHS_RELEASE )
 
 

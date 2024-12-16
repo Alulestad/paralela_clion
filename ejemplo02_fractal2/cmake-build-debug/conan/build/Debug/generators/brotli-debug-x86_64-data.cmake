@@ -12,7 +12,7 @@ endif()
 
 ########### VARIABLES #######################################################################
 #############################################################################################
-set(brotli_PACKAGE_FOLDER_DEBUG "C:/Users/Dami/.conan2/p/b/brotl4558b90cd1118/p")
+set(brotli_PACKAGE_FOLDER_DEBUG "C:/Users/Dami/.conan2/p/b/brotl78697e6d17d47/p")
 set(brotli_BUILD_MODULES_PATHS_DEBUG )
 
 

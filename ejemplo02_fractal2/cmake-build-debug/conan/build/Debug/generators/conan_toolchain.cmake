@@ -23,25 +23,27 @@ endif()
 
 ########## 'compilers' block #############
 
-set(CMAKE_C_COMPILER "C:/Program Files/mingw64/bin/gcc.exe")
-set(CMAKE_CXX_COMPILER "C:/Program Files/mingw64/bin/c++.exe")
-set(CMAKE_RC_COMPILER "C:/Program Files/mingw64/bin/windres.exe")
-
-
-########## 'arch_flags' block #############
-# Define C++ flags, C flags and linker flags from 'settings.arch'
-
-message(STATUS "Conan toolchain: Defining architecture flag: -m64")
-string(APPEND CONAN_CXX_FLAGS " -m64")
-string(APPEND CONAN_C_FLAGS " -m64")
-string(APPEND CONAN_SHARED_LINKER_FLAGS " -m64")
-string(APPEND CONAN_EXE_LINKER_FLAGS " -m64")
+set(CMAKE_C_COMPILER "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.42.34433/bin/Hostx64/x64/cl.exe")
+set(CMAKE_CXX_COMPILER "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.42.34433/bin/Hostx64/x64/cl.exe")
+set(CMAKE_RC_COMPILER "C:/Program Files (x86)/Windows Kits/10/bin/10.0.22621.0/x64/rc.exe")
 
 
 ########## 'libcxx' block #############
 # Definition of libcxx from 'compiler.libcxx' setting, defining the
 # right CXX_FLAGS for that libcxx
 
+
+
+########## 'vs_runtime' block #############
+# Definition of VS runtime CMAKE_MSVC_RUNTIME_LIBRARY, from settings build_type,
+# compiler.runtime, compiler.runtime_type
+
+cmake_policy(GET CMP0091 POLICY_CMP0091)
+if(NOT "${POLICY_CMP0091}" STREQUAL NEW)
+    message(FATAL_ERROR "The CMake policy CMP0091 must be NEW, but is '${POLICY_CMP0091}'")
+endif()
+message(STATUS "Conan toolchain: Setting CMAKE_MSVC_RUNTIME_LIBRARY=$<$<CONFIG:Debug>:MultiThreadedDebugDLL>")
+set(CMAKE_MSVC_RUNTIME_LIBRARY "$<$<CONFIG:Debug>:MultiThreadedDebugDLL>")
 
 
 ########## 'cppstd' block #############
@@ -137,9 +139,9 @@ list(PREPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_LIST_DIR})
 # Definition of CMAKE_PREFIX_PATH, CMAKE_XXXXX_PATH
 # The Conan local "generators" folder, where this toolchain is saved.
 list(PREPEND CMAKE_PREFIX_PATH ${CMAKE_CURRENT_LIST_DIR} )
-list(PREPEND CMAKE_LIBRARY_PATH "C:/Users/Dami/.conan2/p/b/glfw2e1fe0c49e955/p/lib" "C:/Users/Dami/.conan2/p/b/sfml5a18b07a47e98/p/lib" "C:/Users/Dami/.conan2/p/b/freet8597dfb4ff8e0/p/lib" "C:/Users/Dami/.conan2/p/b/libpnf133f1ebd9860/p/lib" "C:/Users/Dami/.conan2/p/b/zlibbd0ecee327164/p/lib" "C:/Users/Dami/.conan2/p/b/bzip242361b636bf65/p/lib" "C:/Users/Dami/.conan2/p/b/brotl4558b90cd1118/p/lib" "lib" "C:/Users/Dami/.conan2/p/b/flacfc77c48f84cb6/p/lib" "C:/Users/Dami/.conan2/p/b/opena88bbcecde8374/p/lib" "C:/Users/Dami/.conan2/p/b/vorbi409010e116cec/p/lib" "C:/Users/Dami/.conan2/p/b/ogga3482cd742c8d/p/lib" "lib" "C:/Users/Dami/.conan2/p/b/fmt7fba7dc0c9fe1/p/lib")
-list(PREPEND CMAKE_INCLUDE_PATH "C:/Users/Dami/.conan2/p/b/glfw2e1fe0c49e955/p/include" "C:/Users/Dami/.conan2/p/b/sfml5a18b07a47e98/p/include" "C:/Users/Dami/.conan2/p/b/freet8597dfb4ff8e0/p/include" "C:/Users/Dami/.conan2/p/b/freet8597dfb4ff8e0/p/include/freetype2" "C:/Users/Dami/.conan2/p/b/libpnf133f1ebd9860/p/include" "C:/Users/Dami/.conan2/p/b/zlibbd0ecee327164/p/include" "C:/Users/Dami/.conan2/p/b/bzip242361b636bf65/p/include" "C:/Users/Dami/.conan2/p/b/brotl4558b90cd1118/p/include" "C:/Users/Dami/.conan2/p/b/brotl4558b90cd1118/p/include/brotli" "include" "C:/Users/Dami/.conan2/p/b/flacfc77c48f84cb6/p/include" "C:/Users/Dami/.conan2/p/b/opena88bbcecde8374/p/include" "C:/Users/Dami/.conan2/p/b/opena88bbcecde8374/p/include/AL" "C:/Users/Dami/.conan2/p/b/vorbi409010e116cec/p/include" "C:/Users/Dami/.conan2/p/b/ogga3482cd742c8d/p/include" "include" "C:/Users/Dami/.conan2/p/b/fmt7fba7dc0c9fe1/p/include")
-set(CONAN_RUNTIME_LIB_DIRS "C:/Users/Dami/.conan2/p/b/glfw2e1fe0c49e955/p/bin" "C:/Users/Dami/.conan2/p/b/sfml5a18b07a47e98/p/bin" "C:/Users/Dami/.conan2/p/b/freet8597dfb4ff8e0/p/bin" "C:/Users/Dami/.conan2/p/b/libpnf133f1ebd9860/p/bin" "C:/Users/Dami/.conan2/p/b/zlibbd0ecee327164/p/bin" "C:/Users/Dami/.conan2/p/b/bzip242361b636bf65/p/bin" "C:/Users/Dami/.conan2/p/b/brotl4558b90cd1118/p/bin" "bin" "C:/Users/Dami/.conan2/p/b/flacfc77c48f84cb6/p/bin" "C:/Users/Dami/.conan2/p/b/opena88bbcecde8374/p/bin" "C:/Users/Dami/.conan2/p/b/vorbi409010e116cec/p/bin" "C:/Users/Dami/.conan2/p/b/ogga3482cd742c8d/p/bin" "bin" "C:/Users/Dami/.conan2/p/b/fmt7fba7dc0c9fe1/p/bin" )
+list(PREPEND CMAKE_LIBRARY_PATH "C:/Users/Dami/.conan2/p/b/glfwcb089e8906a27/p/lib" "C:/Users/Dami/.conan2/p/b/sfmldfcf0473d26fe/p/lib" "C:/Users/Dami/.conan2/p/b/freetca820d5d8a4cd/p/lib" "C:/Users/Dami/.conan2/p/b/libpn1bdcfcc2a569e/p/lib" "C:/Users/Dami/.conan2/p/b/zlibd8a5d1e90a0f7/p/lib" "C:/Users/Dami/.conan2/p/b/bzip29b056da9d1fd5/p/lib" "C:/Users/Dami/.conan2/p/b/brotl78697e6d17d47/p/lib" "lib" "C:/Users/Dami/.conan2/p/b/flac48c07980a774d/p/lib" "C:/Users/Dami/.conan2/p/b/opena83e857a26f199/p/lib" "C:/Users/Dami/.conan2/p/b/vorbia3fb57a585e5d/p/lib" "C:/Users/Dami/.conan2/p/b/ogg53dccae2a166b/p/lib" "lib" "C:/Users/Dami/.conan2/p/b/fmt60e583c66c9c6/p/lib")
+list(PREPEND CMAKE_INCLUDE_PATH "C:/Users/Dami/.conan2/p/b/glfwcb089e8906a27/p/include" "C:/Users/Dami/.conan2/p/b/sfmldfcf0473d26fe/p/include" "C:/Users/Dami/.conan2/p/b/freetca820d5d8a4cd/p/include" "C:/Users/Dami/.conan2/p/b/freetca820d5d8a4cd/p/include/freetype2" "C:/Users/Dami/.conan2/p/b/libpn1bdcfcc2a569e/p/include" "C:/Users/Dami/.conan2/p/b/zlibd8a5d1e90a0f7/p/include" "C:/Users/Dami/.conan2/p/b/bzip29b056da9d1fd5/p/include" "C:/Users/Dami/.conan2/p/b/brotl78697e6d17d47/p/include" "C:/Users/Dami/.conan2/p/b/brotl78697e6d17d47/p/include/brotli" "include" "C:/Users/Dami/.conan2/p/b/flac48c07980a774d/p/include" "C:/Users/Dami/.conan2/p/b/opena83e857a26f199/p/include" "C:/Users/Dami/.conan2/p/b/opena83e857a26f199/p/include/AL" "C:/Users/Dami/.conan2/p/b/vorbia3fb57a585e5d/p/include" "C:/Users/Dami/.conan2/p/b/ogg53dccae2a166b/p/include" "include" "C:/Users/Dami/.conan2/p/b/fmt60e583c66c9c6/p/include")
+set(CONAN_RUNTIME_LIB_DIRS "C:/Users/Dami/.conan2/p/b/glfwcb089e8906a27/p/bin" "C:/Users/Dami/.conan2/p/b/sfmldfcf0473d26fe/p/bin" "C:/Users/Dami/.conan2/p/b/freetca820d5d8a4cd/p/bin" "C:/Users/Dami/.conan2/p/b/libpn1bdcfcc2a569e/p/bin" "C:/Users/Dami/.conan2/p/b/zlibd8a5d1e90a0f7/p/bin" "C:/Users/Dami/.conan2/p/b/bzip29b056da9d1fd5/p/bin" "C:/Users/Dami/.conan2/p/b/brotl78697e6d17d47/p/bin" "bin" "C:/Users/Dami/.conan2/p/b/flac48c07980a774d/p/bin" "C:/Users/Dami/.conan2/p/b/opena83e857a26f199/p/bin" "C:/Users/Dami/.conan2/p/b/vorbia3fb57a585e5d/p/bin" "C:/Users/Dami/.conan2/p/b/ogg53dccae2a166b/p/bin" "bin" "C:/Users/Dami/.conan2/p/b/fmt60e583c66c9c6/p/bin" )
 
 endif()
 

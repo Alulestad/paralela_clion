@@ -14,7 +14,8 @@ find_package(glfw3)
 
 add_executable(ejemplo02_fractal2 main.cpp
         fps_counter.cpp
-        fps_counter.h)
+        fps_counter.h
+)
 target_link_libraries(ejemplo02_fractal2 fmt::fmt)
 target_link_libraries(ejemplo02_fractal2 sfml::sfml)
 target_link_libraries(ejemplo02_fractal2 glfw)

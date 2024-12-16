@@ -11,7 +11,7 @@ endif()
 
 ########### VARIABLES #######################################################################
 #############################################################################################
-set(zlib_PACKAGE_FOLDER_DEBUG "C:/Users/Dami/.conan2/p/b/zlibbd0ecee327164/p")
+set(zlib_PACKAGE_FOLDER_DEBUG "C:/Users/Dami/.conan2/p/b/zlibd8a5d1e90a0f7/p")
 set(zlib_BUILD_MODULES_PATHS_DEBUG )
 
 
@@ -28,7 +28,7 @@ set(zlib_LIB_DIRS_DEBUG "${zlib_PACKAGE_FOLDER_DEBUG}/lib")
 set(zlib_BIN_DIRS_DEBUG )
 set(zlib_LIBRARY_TYPE_DEBUG STATIC)
 set(zlib_IS_HOST_WINDOWS_DEBUG 1)
-set(zlib_LIBS_DEBUG z)
+set(zlib_LIBS_DEBUG zlib)
 set(zlib_SYSTEM_LIBS_DEBUG )
 set(zlib_FRAMEWORK_DIRS_DEBUG )
 set(zlib_FRAMEWORKS_DEBUG )

@@ -1,26 +1,40 @@
 "C:\Program Files\JetBrains\CLion 2024.2.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Release "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2024.2.3/bin/ninja/win/x64/ninja.exe" -DCMAKE_PROJECT_TOP_LEVEL_INCLUDES=conan_provider.cmake -G Ninja -S C:\Users\Dami\Documents\CLionProjects\ejemplo02_fractal2 -B C:\Users\Dami\Documents\CLionProjects\ejemplo02_fractal2\cmake-build-release
+-- The C compiler identification is MSVC 19.42.34435.0
+-- The CXX compiler identification is MSVC 19.42.34435.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.42.34433/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.42.34433/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
 -- CMake-Conan: first find_package() found. Installing dependencies with Conan
 -- CMake-Conan: Checking if a default profile exists
 C:\Users\Dami\.conan2\profiles\default
 -- CMake-Conan: cmake_system_name=Windows
 -- CMake-Conan: cmake_system_processor=x86_64
--- CMake-Conan: CMake compiler=GNU
--- CMake-Conan: CMake compiler version=14.2.0
--- CMake-Conan: [settings] compiler=gcc
--- CMake-Conan: [settings] compiler.version=14
+-- CMake-Conan: CMake compiler=MSVC
+-- CMake-Conan: CMake compiler version=19.42.34435.0
+-- CMake-Conan: CMake compiler.runtime=dynamic
+-- CMake-Conan: [settings] compiler=msvc
+-- CMake-Conan: [settings] compiler.version=194
+-- CMake-Conan: [settings] compiler.runtime=dynamic
 -- CMake-Conan: Creating profile C:/Users/Dami/Documents/CLionProjects/ejemplo02_fractal2/cmake-build-release/conan_host_profile
 -- CMake-Conan: Profile: 
 [settings]
 arch=x86_64
 os=Windows
-compiler=gcc
-compiler.version=14
+compiler=msvc
+compiler.version=194
+compiler.runtime=dynamic
 compiler.cppstd=17
-compiler.libcxx=libstdc++11
 build_type=Release
 [conf]
 tools.cmake.cmaketoolchain:generator=Ninja
-tools.build:compiler_executables={"c":"C:/Program Files/mingw64/bin/gcc.exe","cpp":"C:/Program Files/mingw64/bin/c++.exe","rc":"C:/Program Files/mingw64/bin/windres.exe"}
+tools.build:compiler_executables={"c":"C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.42.34433/bin/Hostx64/x64/cl.exe","cpp":"C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.42.34433/bin/Hostx64/x64/cl.exe","rc":"C:/Program Files (x86)/Windows Kits/10/bin/10.0.22621.0/x64/rc.exe"}
 
 -- CMake-Conan: Installing single configuration Release
 -- CMake-Conan: conan install C:/Users/Dami/Documents/CLionProjects/ejemplo02_fractal2 -of=C:/Users/Dami/Documents/CLionProjects/ejemplo02_fractal2/cmake-build-release/conan --profile:host=default;--profile:host=C:/Users/Dami/Documents/CLionProjects/ejemplo02_fractal2/cmake-build-release/conan_host_profile;--profile:build=default;--build=missing
@@ -30,13 +44,14 @@ Profile host:
 [settings]
 arch=x86_64
 build_type=Release
-compiler=gcc
+compiler=msvc
 compiler.cppstd=17
-compiler.libcxx=libstdc++11
-compiler.version=14
+compiler.runtime=dynamic
+compiler.runtime_type=Release
+compiler.version=194
 os=Windows
 [conf]
-tools.build:compiler_executables={'c': 'C:/Program Files/mingw64/bin/gcc.exe', 'cpp': 'C:/Program Files/mingw64/bin/c++.exe', 'rc': 'C:/Program Files/mingw64/bin/windres.exe'}
+tools.build:compiler_executables={'c': 'C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.42.34433/bin/Hostx64/x64/cl.exe', 'cpp': 'C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.42.34433/bin/Hostx64/x64/cl.exe', 'rc': 'C:/Program Files (x86)/Windows Kits/10/bin/10.0.22621.0/x64/rc.exe'}
 tools.cmake.cmaketoolchain:generator=Ninja
 
 Profile build:
@@ -80,20 +95,56 @@ Resolved version ranges
     zlib/[>=1.2.11 <2]: zlib/1.3.1
 
 ======== Computing necessary packages ========
+brotli/1.1.0: Main binary package '63fa1378b94465c42f6063f7622f977d75f1988f' missing
+brotli/1.1.0: Checking 1 compatible configurations
+brotli/1.1.0: Found compatible package '75df3523cadfb3cb5a2c1cc2d61e8c640e1f9b96': compiler.version=193
+bzip2/1.0.8: Main binary package '885590b8d4960dd9be0d7cd4c17646ce20f8a9aa' missing
+bzip2/1.0.8: Checking 1 compatible configurations
+bzip2/1.0.8: Found compatible package '67bfcb7b4b78262b9d05495e479dcd92f747316b': compiler.version=193
+fmt/11.0.2: Main binary package '85363c8e7e7e43027bf93aac0c394853de6923e0' missing
+fmt/11.0.2: Checking 7 compatible configurations
+fmt/11.0.2: Found compatible package '1cf057972569a3a443d5b36ba81814a72a6467c9': compiler.cppstd=14, compiler.version=193
+ogg/1.3.5: Main binary package '0d6dd492a7d31822b2f2686ec67bbaef586416a3' missing
+ogg/1.3.5: Checking 1 compatible configurations
+ogg/1.3.5: Found compatible package '7bfde258ff4f62f75668d0896dbddedaa7480a0f': compiler.version=193
+openal-soft/1.22.2: Main binary package '0d6dd492a7d31822b2f2686ec67bbaef586416a3' missing
+openal-soft/1.22.2: Checking 1 compatible configurations
+openal-soft/1.22.2: Found compatible package '7bfde258ff4f62f75668d0896dbddedaa7480a0f': compiler.version=193
+zlib/1.3.1: Main binary package '0d6dd492a7d31822b2f2686ec67bbaef586416a3' missing
+zlib/1.3.1: Checking 1 compatible configurations
+zlib/1.3.1: Found compatible package '7bfde258ff4f62f75668d0896dbddedaa7480a0f': compiler.version=193
+flac/1.4.3: Main binary package 'c0c9752f57bbe847fb99728d7015d290e102806d' missing
+flac/1.4.3: Checking 7 compatible configurations
+flac/1.4.3: Found compatible package 'f710e7f7e8379584a8fbad86de2007f08c1bf892': compiler.cppstd=14, compiler.version=193
+glfw/3.3.8: Main binary package 'a20a18b280099de604cf556e76b640af7b113a2e' missing
+glfw/3.3.8: Checking 1 compatible configurations
+glfw/3.3.8: Found compatible package '297149c43b562095879d245f61d9b2e590276ce7': compiler.version=193
+libpng/1.6.44: Main binary package '8ff616ba4ff1d638b8e6a308f5417275d7fecfba' missing
+libpng/1.6.44: Checking 1 compatible configurations
+libpng/1.6.44: Found compatible package 'e0d2306461d10438fbd847f0556a0f0ac5653d3a': compiler.version=193
+vorbis/1.3.7: Main binary package '72f391b16d5d09a00209f982eaaa0ecf9f82e698' missing
+vorbis/1.3.7: Checking 1 compatible configurations
+vorbis/1.3.7: Found compatible package '5716ed60be3e52a680aebcade966a2d4782db011': compiler.version=193
+freetype/2.13.2: Main binary package 'f12fe537d2457525b972d539f07a3592021673bd' missing
+freetype/2.13.2: Checking 1 compatible configurations
+freetype/2.13.2: Found compatible package '79f73b3fcb4ea3718b05e96b46594ae8f2ec3895': compiler.version=193
+sfml/2.6.1: Main binary package 'a539317afb1a192a01259fb5f3c6664fe31d6583' missing
+sfml/2.6.1: Checking 7 compatible configurations
+sfml/2.6.1: Found compatible package '851403b74edd45e618285de9a25d7d8a7e9d0eba': compiler.cppstd=14, compiler.version=193
 Requirements
-    brotli/1.1.0#d56d7bb9ca722942aba17369cb5c0519:edc99cf3a1073e7ca9c6b638374b34ffc251e08b#d1c5bb78c2fc8e3c83ac2e915c9fe203 - Cache
-    bzip2/1.0.8#d00dac990f08d991998d624be81a9526:3784f82c839358eebcdedab0eb64eaa9eb25d01c#9645100f48f8039d2ee9c7267f27de96 - Cache
-    flac/1.4.3#112ca54377880fa91b13268d48e17871:4e1ddc5ea23caa1049286becef348737d6de2713#957f1b3d0796ca80751e67a8b467c27a - Cache
-    fmt/11.0.2#5c7438ef4d5d69ab106a41e460ce11f3:dfc57c0b1fdcc4a14ae10691e7a78a7e7c0bc5d3#33a04d9bc7a3db8810a5197c1aa1509e - Cache
-    freetype/2.13.2#5d2563803c8558d4ef47271a82c73d20:7940744f960a506e0ed4c3e1a8cb5b473388f7ca#3866dbed3e3fad729225e25f6ddaf673 - Cache
-    glfw/3.3.8#d75a15a362a707163bfaabbf4dc993d8:9849ab915455abc54c5856498c52e8e2359f3de2#bc03efad501b0c7643398566af7f045a - Cache
-    libpng/1.6.44#9e1aa08fb46946c7c91e4ae03bd49811:3d43a12c715e46b131b7ef84629373a867e1fc37#fc02815df71136c14e2993f1bcd789b9 - Cache
-    ogg/1.3.5#062626875f5c8c59f069f76f148098ef:0534efa715363b456efc91df5dd071bc6eefb323#0f97b54294a35c0fa7e0c96c64bd10d4 - Cache
-    openal-soft/1.22.2#506a381e0b805519cba4a7f1ee653fed:cd8295f7114253d8774ad4cd19123a5571a90f15#1e736a21094cfbdb151ecd888343ce08 - Cache
+    brotli/1.1.0#d56d7bb9ca722942aba17369cb5c0519:75df3523cadfb3cb5a2c1cc2d61e8c640e1f9b96#249943a2756eb869cac284274651a4ab - Cache
+    bzip2/1.0.8#d00dac990f08d991998d624be81a9526:67bfcb7b4b78262b9d05495e479dcd92f747316b#e4aa22ae3a31782994f99b4be58625c9 - Cache
+    flac/1.4.3#112ca54377880fa91b13268d48e17871:f710e7f7e8379584a8fbad86de2007f08c1bf892#9e67149ad23e9bbd1b1b3565ca16e4fc - Cache
+    fmt/11.0.2#5c7438ef4d5d69ab106a41e460ce11f3:1cf057972569a3a443d5b36ba81814a72a6467c9#31b7061b462822d18f9e1695678dbeff - Cache
+    freetype/2.13.2#5d2563803c8558d4ef47271a82c73d20:79f73b3fcb4ea3718b05e96b46594ae8f2ec3895#e9b07b14b986a38f75b0b42e3ea40f9e - Cache
+    glfw/3.3.8#d75a15a362a707163bfaabbf4dc993d8:297149c43b562095879d245f61d9b2e590276ce7#54aea5292b6497b47cdfe3c77cc2a295 - Cache
+    libpng/1.6.44#9e1aa08fb46946c7c91e4ae03bd49811:e0d2306461d10438fbd847f0556a0f0ac5653d3a#aae40fd00dee0d85633d5a33c7be64b9 - Cache
+    ogg/1.3.5#062626875f5c8c59f069f76f148098ef:7bfde258ff4f62f75668d0896dbddedaa7480a0f#e927a574838328774c00363480fd0711 - Cache
+    openal-soft/1.22.2#506a381e0b805519cba4a7f1ee653fed:7bfde258ff4f62f75668d0896dbddedaa7480a0f#119df173e15f3e8ac817e718fbec4185 - Cache
     opengl/system#4df6fecde4084386beded3ed0e56e4ea:da39a3ee5e6b4b0d3255bfef95601890afd80709#0ba8627bd47edc3a501e8f0eb9a79e5e - Cache
-    sfml/2.6.1#a09fa95bd90d736d49b2de6418f5e909:19d4bab116e32ad19358c0abd27939432d728322#65ca6a4e4a29ba45260f89dca3e83305 - Cache
-    vorbis/1.3.7#37e58f52e59a6232199b34ef402714a6:12cea71c43c388b7c45a964a576215aa50c600bc#e8d2f41c850420d9c1103c829be75c8f - Cache
-    zlib/1.3.1#f52e03ae3d251dec704634230cd806a2:0534efa715363b456efc91df5dd071bc6eefb323#a45b4c29371c3505ad8b3367a1270a8f - Cache
+    sfml/2.6.1#a09fa95bd90d736d49b2de6418f5e909:851403b74edd45e618285de9a25d7d8a7e9d0eba#6eb1c3b590f2a0adac4e3dc0c0bcb617 - Cache
+    vorbis/1.3.7#37e58f52e59a6232199b34ef402714a6:5716ed60be3e52a680aebcade966a2d4782db011#6bd7f8caee1c94c4eccf2f5b117619d1 - Cache
+    zlib/1.3.1#f52e03ae3d251dec704634230cd806a2:7bfde258ff4f62f75668d0896dbddedaa7480a0f#20d10b761ec15eed7a1d61c86bc7415a - Cache
 Build requirements
 Skipped binaries
     minimp3/cci.20211201, stb/cci.20230920, meson/1.2.2, meson/1.3.2, ninja/1.12.1, pkgconf/2.1.0
@@ -113,9 +164,9 @@ vorbis/1.3.7: Already installed! (11 of 13)
 freetype/2.13.2: Already installed! (12 of 13)
 sfml/2.6.1: Already installed! (13 of 13)
 WARN: deprecated: Usage of deprecated Conan 1.X features that will be removed in Conan 2.X:
-WARN: deprecated:     'cpp_info.names' used in: bzip2/1.0.8, glfw/3.3.8, vorbis/1.3.7, openal-soft/1.22.2, zlib/1.3.1, sfml/2.6.1, flac/1.4.3, ogg/1.3.5, fmt/11.0.2, libpng/1.6.44, freetype/2.13.2, brotli/1.1.0
-WARN: deprecated:     'cpp_info.build_modules' used in: bzip2/1.0.8, glfw/3.3.8, openal-soft/1.22.2, sfml/2.6.1, freetype/2.13.2
-WARN: deprecated:     'env_info' used in: bzip2/1.0.8, freetype/2.13.2, flac/1.4.3
+WARN: deprecated:     'cpp_info.names' used in: bzip2/1.0.8, fmt/11.0.2, flac/1.4.3, glfw/3.3.8, openal-soft/1.22.2, zlib/1.3.1, freetype/2.13.2, ogg/1.3.5, libpng/1.6.44, vorbis/1.3.7, brotli/1.1.0, sfml/2.6.1
+WARN: deprecated:     'cpp_info.build_modules' used in: bzip2/1.0.8, glfw/3.3.8, openal-soft/1.22.2, freetype/2.13.2, sfml/2.6.1
+WARN: deprecated:     'env_info' used in: freetype/2.13.2, bzip2/1.0.8, flac/1.4.3
 WARN: deprecated:     'cpp_info.filenames' used in: glfw/3.3.8, freetype/2.13.2, flac/1.4.3, opengl/system
 WARN: deprecated:     'user_info' used in: freetype/2.13.2
 
@@ -158,13 +209,13 @@ Install finished successfully
 -- Conan: Target declared 'ZLIB::ZLIB'
 -- CMake-Conan: find_package(BZip2) found, 'conan install' already ran
 -- Conan: Target declared 'BZip2::BZip2'
--- Conan: Including build module from 'C:/Users/Dami/.conan2/p/b/bzip2ce095073d81ae/p/lib/cmake/conan-official-bzip2-variables.cmake'
+-- Conan: Including build module from 'C:/Users/Dami/.conan2/p/bzip25d2dbaf142a52/p/lib/cmake/conan-official-bzip2-variables.cmake'
 -- CMake-Conan: find_package(brotli) found, 'conan install' already ran
 -- Conan: Component target declared 'brotli::brotlicommon'
 -- Conan: Component target declared 'brotli::brotlidec'
 -- Conan: Component target declared 'brotli::brotlienc'
 -- Conan: Target declared 'brotli::brotli'
--- Conan: Including build module from 'C:/Users/Dami/.conan2/p/b/freet336e5ae6d4302/p/lib/cmake/conan-official-freetype-variables.cmake'
+-- Conan: Including build module from 'C:/Users/Dami/.conan2/p/freetf35e04f91db9d/p/lib/cmake/conan-official-freetype-variables.cmake'
 -- CMake-Conan: find_package(flac) found, 'conan install' already ran
 -- Conan: Component target declared 'FLAC::FLAC'
 -- Conan: Component target declared 'FLAC::FLAC++'
@@ -173,7 +224,7 @@ Install finished successfully
 -- Conan: Component target declared 'Ogg::ogg'
 -- CMake-Conan: find_package(OpenAL) found, 'conan install' already ran
 -- Conan: Target declared 'OpenAL::OpenAL'
--- Conan: Including build module from 'C:/Users/Dami/.conan2/p/b/opena8fa4a4d081e75/p/lib/cmake/conan-official-openal-soft-variables.cmake'
+-- Conan: Including build module from 'C:/Users/Dami/.conan2/p/opena005d0fd6b1bf8/p/lib/cmake/conan-official-openal-soft-variables.cmake'
 -- CMake-Conan: find_package(Vorbis) found, 'conan install' already ran
 -- Conan: Component target declared 'Vorbis::vorbis'
 -- Conan: Component target declared 'Vorbis::vorbisenc'
@@ -183,6 +234,15 @@ Install finished successfully
 -- Conan: Target declared 'vorbis::vorbis'
 -- CMake-Conan: find_package(glfw3) found, 'conan install' already ran
 -- Conan: Target declared 'glfw'
--- Configuring done (2.3s)
--- Generating done (0.0s)
--- Build files have been written to: C:/Users/Dami/Documents/CLionProjects/ejemplo02_fractal2/cmake-build-release
+-- Configuring done (5.4s)
+CMake Error at CMakeLists.txt:15 (add_executable):
+  Cannot find source file:
+
+    suma_mp.h
+
+
+CMake Error at CMakeLists.txt:15 (add_executable):
+  No SOURCES given to target: ejemplo02_fractal2
+
+
+CMake Generate step failed.  Build files cannot be regenerated correctly.
