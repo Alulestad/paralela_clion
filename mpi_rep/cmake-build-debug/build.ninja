@@ -41,41 +41,79 @@ include CMakeFiles\rules.ninja
 
 cmake_ninja_workdir = C$:\Users\Dami\Documents\CLionProjects\mpi_rep\cmake-build-debug\
 # =============================================================================
-# Object build statements for EXECUTABLE target mpi_rep
+# Object build statements for EXECUTABLE target mpi
 
 
 #############################################
-# Order-only phony target for mpi_rep
+# Order-only phony target for mpi
 
-build cmake_object_order_depends_target_mpi_rep: phony || .
+build cmake_object_order_depends_target_mpi: phony || .
 
-build CMakeFiles\mpi_rep.dir\main.cpp.obj: CXX_COMPILER__mpi_rep_unscanned_Debug C$:\Users\Dami\Documents\CLionProjects\mpi_rep\main.cpp || cmake_object_order_depends_target_mpi_rep
+build CMakeFiles\mpi.dir\mpi.cpp.obj: CXX_COMPILER__mpi_unscanned_Debug C$:\Users\Dami\Documents\CLionProjects\mpi_rep\mpi.cpp || cmake_object_order_depends_target_mpi
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++17 -MDd -Zi
-  INCLUDES = -I"C:\Program Files (x86)\Microsoft SDKs\MPI\Include"
-  OBJECT_DIR = CMakeFiles\mpi_rep.dir
-  OBJECT_FILE_DIR = CMakeFiles\mpi_rep.dir
-  TARGET_COMPILE_PDB = CMakeFiles\mpi_rep.dir\
-  TARGET_PDB = mpi_rep.pdb
+  INCLUDES = -I"C:\Program Files (x86)\Intel\oneAPI\mpi\latest\include" -I"C:\Program Files (x86)\Intel\oneAPI\mpi\latest\include\mpi"
+  OBJECT_DIR = CMakeFiles\mpi.dir
+  OBJECT_FILE_DIR = CMakeFiles\mpi.dir
+  TARGET_COMPILE_PDB = CMakeFiles\mpi.dir\
+  TARGET_PDB = mpi.pdb
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target mpi_rep
+# Link build statements for EXECUTABLE target mpi
 
 
 #############################################
-# Link the executable mpi_rep.exe
+# Link the executable mpi.exe
 
-build mpi_rep.exe: CXX_EXECUTABLE_LINKER__mpi_rep_Debug CMakeFiles\mpi_rep.dir\main.cpp.obj | C$:\Program$ Files$ (x86)\Microsoft$ SDKs\MPI\Lib\x64\msmpi.lib
+build mpi.exe: CXX_EXECUTABLE_LINKER__mpi_Debug CMakeFiles\mpi.dir\mpi.cpp.obj | C$:\Program$ Files$ (x86)\Intel\oneAPI\mpi\latest\lib\impi.lib C$:\Program$ Files$ (x86)\Intel\oneAPI\mpi\latest\lib\impicxx.lib
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
-  LINK_LIBRARIES = "C:\Program Files (x86)\Microsoft SDKs\MPI\Lib\x64\msmpi.lib"  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
-  OBJECT_DIR = CMakeFiles\mpi_rep.dir
+  LINK_LIBRARIES = "C:\Program Files (x86)\Intel\oneAPI\mpi\latest\lib\impi.lib"  "C:\Program Files (x86)\Intel\oneAPI\mpi\latest\lib\impicxx.lib"  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = CMakeFiles\mpi.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\mpi_rep.dir\
-  TARGET_FILE = mpi_rep.exe
-  TARGET_IMPLIB = mpi_rep.lib
-  TARGET_PDB = mpi_rep.pdb
+  TARGET_COMPILE_PDB = CMakeFiles\mpi.dir\
+  TARGET_FILE = mpi.exe
+  TARGET_IMPLIB = mpi.lib
+  TARGET_PDB = mpi.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target matrices_multi
+
+
+#############################################
+# Order-only phony target for matrices_multi
+
+build cmake_object_order_depends_target_matrices_multi: phony || .
+
+build CMakeFiles\matrices_multi.dir\matrices_multi.cpp.obj: CXX_COMPILER__matrices_multi_unscanned_Debug C$:\Users\Dami\Documents\CLionProjects\mpi_rep\matrices_multi.cpp || cmake_object_order_depends_target_matrices_multi
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++17 -MDd -Zi /utf-8
+  INCLUDES = -I"C:\Program Files (x86)\Intel\oneAPI\mpi\latest\include" -I"C:\Program Files (x86)\Intel\oneAPI\mpi\latest\include\mpi" -external:IC:\Users\Dami\.conan2\p\b\fmt60e583c66c9c6\p\include -external:W0
+  OBJECT_DIR = CMakeFiles\matrices_multi.dir
+  OBJECT_FILE_DIR = CMakeFiles\matrices_multi.dir
+  TARGET_COMPILE_PDB = CMakeFiles\matrices_multi.dir\
+  TARGET_PDB = matrices_multi.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target matrices_multi
+
+
+#############################################
+# Link the executable matrices_multi.exe
+
+build matrices_multi.exe: CXX_EXECUTABLE_LINKER__matrices_multi_Debug CMakeFiles\matrices_multi.dir\matrices_multi.cpp.obj | C$:\Program$ Files$ (x86)\Intel\oneAPI\mpi\latest\lib\impi.lib C$:\Program$ Files$ (x86)\Intel\oneAPI\mpi\latest\lib\impicxx.lib C$:\Users\Dami\.conan2\p\b\fmt60e583c66c9c6\p\lib\fmtd.lib
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = "C:\Program Files (x86)\Intel\oneAPI\mpi\latest\lib\impi.lib"  "C:\Program Files (x86)\Intel\oneAPI\mpi\latest\lib\impicxx.lib"  C:\Users\Dami\.conan2\p\b\fmt60e583c66c9c6\p\lib\fmtd.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  LINK_PATH = -LIBPATH:C:\Users\Dami\.conan2\p\b\fmt60e583c66c9c6\p\lib
+  OBJECT_DIR = CMakeFiles\matrices_multi.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\matrices_multi.dir\
+  TARGET_FILE = matrices_multi.exe
+  TARGET_IMPLIB = matrices_multi.lib
+  TARGET_PDB = matrices_multi.pdb
 
 
 #############################################
@@ -103,7 +141,9 @@ build rebuild_cache: phony CMakeFiles\rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build mpi_rep: phony mpi_rep.exe
+build matrices_multi: phony matrices_multi.exe
+
+build mpi: phony mpi.exe
 
 # =============================================================================
 # Folder targets.
@@ -113,7 +153,7 @@ build mpi_rep: phony mpi_rep.exe
 #############################################
 # Folder: C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-debug
 
-build all: phony mpi_rep.exe
+build all: phony mpi.exe matrices_multi.exe
 
 # =============================================================================
 # Built-in targets
@@ -122,14 +162,14 @@ build all: phony mpi_rep.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeCInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeRCInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Compiler\MSVC.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\FindMPI.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\FindPackageMessage.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\FindPkgConfig.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\Windows.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake C$:\Users\Dami\Documents\CLionProjects\mpi_rep\CMakeLists.txt CMakeCache.txt CMakeFiles\3.29.6\CMakeCCompiler.cmake CMakeFiles\3.29.6\CMakeCXXCompiler.cmake CMakeFiles\3.29.6\CMakeRCCompiler.cmake CMakeFiles\3.29.6\CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeCInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeFindDependencyMacro.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeRCInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CheckCXXSourceCompiles.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Compiler\MSVC.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\FindMPI.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\FindPackageMessage.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\FindPkgConfig.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Internal\CheckSourceCompiles.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\Windows.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake C$:\Users\Dami\Documents\CLionProjects\mpi_rep\CMakeLists.txt C$:\Users\Dami\Documents\CLionProjects\mpi_rep\conan_provider.cmake C$:\Users\Dami\Documents\CLionProjects\mpi_rep\conanfile.py CMakeCache.txt CMakeFiles\3.29.6\CMakeCCompiler.cmake CMakeFiles\3.29.6\CMakeCXXCompiler.cmake CMakeFiles\3.29.6\CMakeRCCompiler.cmake CMakeFiles\3.29.6\CMakeSystem.cmake conan\build\Debug\generators\cmakedeps_macros.cmake conan\build\Debug\generators\fmt-Target-debug.cmake conan\build\Debug\generators\fmt-config-version.cmake conan\build\Debug\generators\fmt-config.cmake conan\build\Debug\generators\fmt-debug-x86_64-data.cmake conan\build\Debug\generators\fmtTargets.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeCInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeRCInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Compiler\MSVC.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\FindMPI.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\FindPackageMessage.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\FindPkgConfig.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\Windows.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake C$:\Users\Dami\Documents\CLionProjects\mpi_rep\CMakeLists.txt CMakeCache.txt CMakeFiles\3.29.6\CMakeCCompiler.cmake CMakeFiles\3.29.6\CMakeCXXCompiler.cmake CMakeFiles\3.29.6\CMakeRCCompiler.cmake CMakeFiles\3.29.6\CMakeSystem.cmake: phony
+build C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeCInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeFindDependencyMacro.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeRCInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CheckCXXSourceCompiles.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Compiler\MSVC.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\FindMPI.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\FindPackageMessage.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\FindPkgConfig.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Internal\CheckSourceCompiles.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\Windows.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake C$:\Users\Dami\Documents\CLionProjects\mpi_rep\CMakeLists.txt C$:\Users\Dami\Documents\CLionProjects\mpi_rep\conan_provider.cmake C$:\Users\Dami\Documents\CLionProjects\mpi_rep\conanfile.py CMakeCache.txt CMakeFiles\3.29.6\CMakeCCompiler.cmake CMakeFiles\3.29.6\CMakeCXXCompiler.cmake CMakeFiles\3.29.6\CMakeRCCompiler.cmake CMakeFiles\3.29.6\CMakeSystem.cmake conan\build\Debug\generators\cmakedeps_macros.cmake conan\build\Debug\generators\fmt-Target-debug.cmake conan\build\Debug\generators\fmt-config-version.cmake conan\build\Debug\generators\fmt-config.cmake conan\build\Debug\generators\fmt-debug-x86_64-data.cmake conan\build\Debug\generators\fmtTargets.cmake: phony
 
 
 #############################################

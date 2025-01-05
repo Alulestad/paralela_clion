@@ -94,7 +94,7 @@ CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/mpi_rep
 CMAKE_LINKER:FILEPATH=C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.42.34433/bin/Hostx64/x64/link.exe
 
 //make program
-CMAKE_MAKE_PROGRAM:FILEPATH=C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/ninja/win/x64/ninja.exe
+CMAKE_MAKE_PROGRAM:FILEPATH=C:/Program Files/JetBrains/CLion 2024.2.3/bin/ninja/win/x64/ninja.exe
 
 //Flags used by the linker during the creation of modules during
 // all build types.
@@ -127,6 +127,9 @@ CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
 CMAKE_PROJECT_NAME:STATIC=mpi_rep
+
+//No help, variable specified on the command line.
+CMAKE_PROJECT_TOP_LEVEL_INCLUDES:UNINITIALIZED=conan_provider.cmake
 
 //RC compiler
 CMAKE_RC_COMPILER:FILEPATH=C:/Program Files (x86)/Windows Kits/10/bin/10.0.22621.0/x64/rc.exe
@@ -199,8 +202,20 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//Conan build profile
+CONAN_BUILD_PROFILE:STRING=default
+
+//Path to a program.
+CONAN_COMMAND:FILEPATH=C:/Users/Dami/AppData/Local/Conan/conan/conan.exe
+
+//Conan host profile
+CONAN_HOST_PROFILE:STRING=default;auto-cmake
+
+//Command line arguments for conan install
+CONAN_INSTALL_ARGS:STRING=--build=missing
+
 //Executable for running MPI programs.
-MPIEXEC_EXECUTABLE:FILEPATH=C:/Program Files/Microsoft MPI/Bin/mpiexec.exe
+MPIEXEC_EXECUTABLE:FILEPATH=C:/Program Files (x86)/Intel/oneAPI/mpi/latest/bin/mpiexec.exe
 
 //Maximum number of processors available to run MPI applications.
 MPIEXEC_MAX_NUMPROCS:STRING=8
@@ -220,22 +235,22 @@ MPIEXEC_PREFLAGS:STRING=
 MPI_CXX_ADDITIONAL_INCLUDE_DIRS:STRING=
 
 //MPI compiler for CXX
-MPI_CXX_COMPILER:FILEPATH=MPI_CXX_COMPILER-NOTFOUND
+MPI_CXX_COMPILER:FILEPATH=C:/Program Files (x86)/Intel/oneAPI/mpi/latest/bin/mpicl.bat
 
 //MPI CXX compiler wrapper include directories
-MPI_CXX_COMPILER_INCLUDE_DIRS:STRING=
+MPI_CXX_COMPILER_INCLUDE_DIRS:STRING=C:/Program Files (x86)/Intel/oneAPI/mpi/latest/include;C:/Program Files (x86)/Intel/oneAPI/mpi/latest/include/mpi
 
 //MPI CXX compilation definitions
 MPI_CXX_COMPILE_DEFINITIONS:STRING=
 
-//MPI CXX compilation flags
+//MPI CXX compilation options
 MPI_CXX_COMPILE_OPTIONS:STRING=
 
 //Path to a file.
-MPI_CXX_HEADER_DIR:PATH=C:/Program Files (x86)/Microsoft SDKs/MPI/Include
+MPI_CXX_HEADER_DIR:PATH=C:/Program Files (x86)/Intel/oneAPI/mpi/latest/include
 
 //MPI CXX libraries to link against
-MPI_CXX_LIB_NAMES:STRING=msmpi
+MPI_CXX_LIB_NAMES:STRING=impi;impicxx
 
 //MPI CXX linker flags
 MPI_CXX_LINK_FLAGS:STRING=
@@ -247,34 +262,49 @@ MPI_CXX_SKIP_MPICXX:BOOL=OFF
 MPI_C_ADDITIONAL_INCLUDE_DIRS:STRING=
 
 //MPI compiler for C
-MPI_C_COMPILER:FILEPATH=MPI_C_COMPILER-NOTFOUND
+MPI_C_COMPILER:FILEPATH=C:/Program Files (x86)/Intel/oneAPI/mpi/latest/bin/mpicl.bat
 
 //MPI C compiler wrapper include directories
-MPI_C_COMPILER_INCLUDE_DIRS:STRING=
+MPI_C_COMPILER_INCLUDE_DIRS:STRING=C:/Program Files (x86)/Intel/oneAPI/mpi/latest/include;C:/Program Files (x86)/Intel/oneAPI/mpi/latest/include/mpi
 
 //MPI C compilation definitions
 MPI_C_COMPILE_DEFINITIONS:STRING=
 
-//MPI C compilation flags
+//MPI C compilation options
 MPI_C_COMPILE_OPTIONS:STRING=
 
 //Path to a file.
-MPI_C_HEADER_DIR:PATH=C:/Program Files (x86)/Microsoft SDKs/MPI/Include
+MPI_C_HEADER_DIR:PATH=C:/Program Files (x86)/Intel/oneAPI/mpi/latest/include
 
 //MPI C libraries to link against
-MPI_C_LIB_NAMES:STRING=msmpi
+MPI_C_LIB_NAMES:STRING=impi;impicxx
 
 //MPI C linker flags
 MPI_C_LINK_FLAGS:STRING=
 
-//Location of the msmpi library for Microsoft MPI
-MPI_msmpi_LIBRARY:FILEPATH=C:/Program Files (x86)/Microsoft SDKs/MPI/Lib/x64/msmpi.lib
+//The directory containing a CMake configuration file for MPI.
+MPI_DIR:PATH=MPI_DIR-NOTFOUND
+
+//Location of the impi library for MPI
+MPI_impi_LIBRARY:FILEPATH=C:/Program Files (x86)/Intel/oneAPI/mpi/latest/lib/impi.lib
+
+//Location of the impicxx library for MPI
+MPI_impicxx_LIBRARY:FILEPATH=C:/Program Files (x86)/Intel/oneAPI/mpi/latest/lib/impicxx.lib
 
 //Arguments to supply to pkg-config
 PKG_CONFIG_ARGN:STRING=
 
 //pkg-config executable
 PKG_CONFIG_EXECUTABLE:FILEPATH=PKG_CONFIG_EXECUTABLE-NOTFOUND
+
+//The directory containing a CMake configuration file for PkgConfig.
+PkgConfig_DIR:PATH=PkgConfig_DIR-NOTFOUND
+
+//Path to a program.
+_cmake_program:FILEPATH=C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/bin/cmake.exe
+
+//The directory containing a CMake configuration file for fmt.
+fmt_DIR:PATH=C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-debug/conan/build/Debug/generators
 
 //Value Computed by CMake
 mpi_rep_BINARY_DIR:STATIC=C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-debug
@@ -423,11 +453,11 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding MPI
-FIND_PACKAGE_MESSAGE_DETAILS_MPI:INTERNAL=[TRUE][TRUE][c ][v2.0()]
+FIND_PACKAGE_MESSAGE_DETAILS_MPI:INTERNAL=[TRUE][TRUE][c ][v3.1()]
 //Details about finding MPI_C
-FIND_PACKAGE_MESSAGE_DETAILS_MPI_C:INTERNAL=[C:/Program Files (x86)/Microsoft SDKs/MPI/Lib/x64/msmpi.lib][msmpi][C:/Program Files (x86)/Microsoft SDKs/MPI/Include][TRUE][v2.0()]
+FIND_PACKAGE_MESSAGE_DETAILS_MPI_C:INTERNAL=[C:/Program Files (x86)/Intel/oneAPI/mpi/latest/lib/impi.lib][C:/Program Files (x86)/Intel/oneAPI/mpi/latest/lib/impicxx.lib][impi;impicxx][C:/Program Files (x86)/Intel/oneAPI/mpi/latest/include][TRUE][v3.1()]
 //Details about finding MPI_CXX
-FIND_PACKAGE_MESSAGE_DETAILS_MPI_CXX:INTERNAL=[C:/Program Files (x86)/Microsoft SDKs/MPI/Lib/x64/msmpi.lib][msmpi][C:/Program Files (x86)/Microsoft SDKs/MPI/Include][TRUE][v2.0()]
+FIND_PACKAGE_MESSAGE_DETAILS_MPI_CXX:INTERNAL=[C:/Program Files (x86)/Intel/oneAPI/mpi/latest/lib/impi.lib][C:/Program Files (x86)/Intel/oneAPI/mpi/latest/lib/impicxx.lib][impi;impicxx][C:/Program Files (x86)/Intel/oneAPI/mpi/latest/include][TRUE][v3.1()]
 //ADVANCED property for variable: MPIEXEC_EXECUTABLE
 MPIEXEC_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MPIEXEC_MAX_NUMPROCS
@@ -478,8 +508,10 @@ MPI_RESULT_CXX_test_mpi_MPICXX:INTERNAL=TRUE
 MPI_RESULT_CXX_test_mpi_normal:INTERNAL=TRUE
 //Result of TRY_COMPILE
 MPI_RESULT_C_test_mpi_normal:INTERNAL=TRUE
-//ADVANCED property for variable: MPI_msmpi_LIBRARY
-MPI_msmpi_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MPI_impi_LIBRARY
+MPI_impi_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MPI_impicxx_LIBRARY
+MPI_impicxx_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PKG_CONFIG_ARGN
 PKG_CONFIG_ARGN-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PKG_CONFIG_EXECUTABLE

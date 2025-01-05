@@ -1,138 +1,181 @@
 #include <iostream>
-#include <fstream>
-#include <string>
-#include <vector>
-#include <algorithm> // Para std::min y std::max
-#include <numeric>   // Para std::accumulate
 #include <fmt/core.h>
-#include <omp.h>     // Para OpenMP
+#include <GLFW/glfw3.h>
+#include <omp.h>
 
-// Función para leer los datos desde un archivo
-std::vector<int> read_file(const std::string& file_path) {
-    std::fstream fs(file_path, std::ios::in);
-    std::string line;
+///////////////////////////////////////////// EJERCICIO 1 /////////////////////////////////////////////
+/////Que imagen genera el siguiente programa?
+// La imagen tiene WIDTH x HEIGHT píxeles.
+// Se calcula index = i * PALETTE_SIZE / WIDTH, lo que asigna los colores en función de la coordenada horizontal 𝑖
+// Luego, el color se selecciona usando PALETTE_SIZE - index - 1, invirtiendo el orden de los colores de la paleta.
+// El resultado es un gradiente horizontal donde el lado izquierdo comienza con el último color de la paleta, y progresa hacia el primer color de la paleta al moverse hacia la derecha.
+// es decir una paleta de colores de izquierda a derecha.
 
-    std::vector<int> data;
-    while (std::getline(fs, line)) {
-        data.push_back(std::stoi(line));
-    }
-    fs.close();
-
-    return data;
+/////2. Implementación con OpenMP
+//--------------------------------------------------------
+// Función para invertir los bytes de un entero de 32 bits
+uint32_t _bswap32(uint32_t a) {
+    return
+        ((a & 0X000000FF) << 24) |
+        ((a & 0X0000FF00) <<  8) |
+        ((a & 0x00FF0000) >>  8) |
+        ((a & 0xFF000000) >> 24);
 }
 
-// Función para calcular y mostrar la tabla de frecuencias (serial)
-void calculate_frequencies_serial(const std::vector<int>& data) {
-    std::vector<int> frequencies(101, 0); //uso el constructor con 101 elementos 0, 1, 2, .... 100 y valor 0
+//--------------------------------------------------------
+// Definición de macros y constantes
+#define WIDTH 1600      // Ancho de la ventana
+#define HEIGHT 900      // Altura de la ventana
+#define PALETTE_SIZE 16 // Tamaño de la paleta de colores
 
-    // Contar frecuencias de forma serial
-    for (int value : data) {
-        frequencies[value]++;
-    }
+// Paleta de colores en formato RGBA
+const GLuint color_ramp[PALETTE_SIZE] = {
+    _bswap32(0xFFFF1010), _bswap32(0xFFF31017), _bswap32(0xFFE8101E), _bswap32(0xFFDC1126),
+    _bswap32(0xFFD1112D), _bswap32(0xFFC51235), _bswap32(0xFFBA123C), _bswap32(0xFFAE1343),
+    _bswap32(0xFFA3134B), _bswap32(0xFF971452), _bswap32(0xFF8C145A), _bswap32(0xFF801461),
+    _bswap32(0xFF751568), _bswap32(0xFF691570), _bswap32(0xFF5E1677), _bswap32(0xFF54167D),
+};
 
-    // Imprimir tabla de frecuencias
-    fmt::print("+-------+--------+\n");
-    fmt::print("| Valor | Conteo |\n");
-    fmt::print("+-------+--------+\n");
-    for (size_t i = 0; i < frequencies.size(); ++i) {
-        fmt::print("| {:5d} | {:6d} |\n", i, frequencies[i]);
-    }
-    fmt::print("+-------+--------+\n");
+//--------------------------------------------------------
+// Variables globales
+static GLFWwindow* window = NULL;
+GLuint textureID;
+GLuint* pixel_buffer = nullptr;
+
+//--------------------------------------------------------
+// Función para inicializar texturas
+void initTextures() {
+    glGenTextures(1, &textureID);
+    glBindTexture(GL_TEXTURE_2D, textureID);
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA8, WIDTH, HEIGHT, 0, GL_RGBA, GL_UNSIGNED_BYTE, NULL);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+    glBindTexture(GL_TEXTURE_2D, 0);
 }
 
-// Función para calcular el promedio, mínimo y máximo (serial)
-void calculate_statistics_serial(const std::vector<int>& data) {
-    // Calcular promedio
-    double average = std::accumulate(data.begin(), data.end(), 0.0) / data.size();
+//--------------------------------------------------------
+// Inicialización de GLFW
+void initGLFW() {
+    if (!glfwInit()) {
+        std::cerr << "Failed to initialize GLFW!" << std::endl;
+        exit(-1);
+    }
 
-    // Calcular mínimo y máximo
-    int min_value = *std::min_element(data.begin(), data.end());
-    int max_value = *std::max_element(data.begin(), data.end());
+    window = glfwCreateWindow(WIDTH, HEIGHT, "Gradiente OpenGL", NULL, NULL);
+    if (!window) {
+        glfwTerminate();
+        std::cerr << "Failed to create GLFW window!" << std::endl;
+        exit(-1);
+    }
 
-    fmt::print("Promedio (serial): {:.2f}\n", average);
-    fmt::print("Mínimo (serial): {}\n", min_value);
-    fmt::print("Máximo (serial): {}\n", max_value);
+    glfwMakeContextCurrent(window);
+    glfwSetFramebufferSizeCallback(window, [](GLFWwindow*, int width, int height) {
+        glViewport(0, 0, width, height);
+    });
+
+    glMatrixMode(GL_PROJECTION);
+    glLoadIdentity();
+    glOrtho(-1, 1, -1, 1, -1, 1);
+    glMatrixMode(GL_MODELVIEW);
+    glLoadIdentity();
+
+    glEnable(GL_TEXTURE_2D);
+    glfwSwapInterval(1);
+    initTextures();
 }
 
-// Función para calcular y mostrar estadísticas usando OpenMP secciones
-void calculate_statistics_parallel_sections(const std::vector<int>& data) {
-    double average = 0.0;
-    int min_value = 0, max_value = 0;
+////------------------------- 2.1 Loop Work Sharing  -------------------------------
+// Función para generar el gradiente horizontal
+void generateGradientLoopWorkSharing() {
+    #pragma omp parallel for
+    for (int idx = 0; idx < WIDTH * HEIGHT; idx++) {
+        int i = idx % WIDTH;                      // Coordenada X
+        int j = idx / WIDTH;                      // Coordenada Y
+        int index = i * PALETTE_SIZE / WIDTH;     // Cálculo del índice de color
+        pixel_buffer[j * WIDTH + i] = color_ramp[PALETTE_SIZE - index - 1];
+    }
+}
 
-    #pragma omp parallel sections
+////------------------------- 2.2 Parallel Regions  -------------------------------
+void generateGradientParallelRegions() {
+#pragma omp parallel
     {
-        // Calcular promedio en una sección
-        #pragma omp section
-        {
-            average = std::accumulate(data.begin(), data.end(), 0.0) / data.size();
-        }
-
-        // Calcular mínimo en otra sección
-        #pragma omp section
-        {
-            min_value = *std::min_element(data.begin(), data.end());
-        }
-
-        // Calcular máximo en otra sección
-        #pragma omp section
-        {
-            max_value = *std::max_element(data.begin(), data.end());
+        for (int idx = 0; idx < WIDTH * HEIGHT; idx++) {
+            int i = idx % WIDTH;
+            int j = idx / WIDTH;
+            int index = i * PALETTE_SIZE / WIDTH;
+            pixel_buffer[j * WIDTH + i] = color_ramp[PALETTE_SIZE - index - 1];
         }
     }
-
-    fmt::print("Promedio (paralelo - secciones): {:.2f}\n", average);
-    fmt::print("Mínimo (paralelo - secciones): {}\n", min_value);
-    fmt::print("Máximo (paralelo - secciones): {}\n", max_value);
 }
 
-
-// Función para calcular frecuencias usando OpenMP bucles paralelos
-void calculate_frequencies_parallel(const std::vector<int>& data) {
-    std::vector<int> frequencies(101, 0);
-
-    #pragma omp parallel
+////------------------------- 2.3 Parallel Regions y Work Sharing  -------------------------------
+void generateGradientParallelRegionsAndWorkSharing() {
+#pragma omp parallel
     {
-        // Crear un vector de frecuencias local para cada hilo
-        std::vector<int> local_frequencies(101, 0);
-
-        #pragma omp for
-        for (size_t i = 0; i < data.size(); ++i) {
-            local_frequencies[data[i]]++;
-        }
-
-        // Reducir los resultados locales a un vector global
-        #pragma omp critical
-        {
-            for (size_t i = 0; i < frequencies.size(); ++i) {
-                frequencies[i] += local_frequencies[i];
-            }
+#pragma omp for
+        for (int idx = 0; idx < WIDTH * HEIGHT; idx++) {
+            int i = idx % WIDTH;
+            int j = idx / WIDTH;
+            int index = i * PALETTE_SIZE / WIDTH;
+            pixel_buffer[j * WIDTH + i] = color_ramp[PALETTE_SIZE - index - 1];
         }
     }
-
-    // Imprimir tabla de frecuencias
-    fmt::print("+-------+--------+\n");
-    fmt::print("| Valor | Conteo |\n");
-    fmt::print("+-------+--------+\n");
-    for (size_t i = 0; i < frequencies.size(); ++i) {
-        fmt::print("| {:5d} | {:6d} |\n", i, frequencies[i]);
-    }
-    fmt::print("+-------+--------+\n");
 }
 
+//--------------------------------------------------------
+// Renderizado
+void renderFrame() {
+    generateGradientParallelRegions();  // Generar gradiente
+
+    // Actualizar textura con los datos del buffer de píxeles
+    glBindTexture(GL_TEXTURE_2D, textureID);
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, WIDTH, HEIGHT, 0, GL_RGBA, GL_UNSIGNED_BYTE, pixel_buffer);
+
+    // Dibujar un cuadrado con la textura
+    glBegin(GL_QUADS);
+    glTexCoord2f(0, 1); glVertex3f(-1, -1, 0);
+    glTexCoord2f(0, 0); glVertex3f(-1, 1, 0);
+    glTexCoord2f(1, 0); glVertex3f(1, 1, 0);
+    glTexCoord2f(1, 1); glVertex3f(1, -1, 0);
+    glEnd();
+
+    glBindTexture(GL_TEXTURE_2D, 0);
+}
+
+//--------------------------------------------------------
+// Bucle principal
+void mainLoop() {
+    while (!glfwWindowShouldClose(window)) {
+        glClear(GL_COLOR_BUFFER_BIT);
+        renderFrame();  // Renderizar el gradiente
+        glfwSwapBuffers(window);
+        glfwPollEvents();
+    }
+}
+
+//--------------------------------------------------------
+// Función principal
 int main() {
-    // Leer los datos del archivo
-    const std::string file_path = "C:/Users/Dami/Documents/CLionProjects/ejemplo02_fractal2/datos.txt";
-    std::vector<int> data = read_file(file_path);
+    // Inicializar buffer de píxeles
+    pixel_buffer = new GLuint[WIDTH * HEIGHT];
 
-    // Calcular frecuencias y estadísticas de forma serial
-    calculate_frequencies_serial(data);
-    calculate_statistics_serial(data);
+    fmt::print("Inicializando Gradiente con OpenGL y OpenMP...\n");
+    initGLFW();
+    mainLoop();
 
-    // Calcular estadísticas con OpenMP (secciones paralelas)
-    calculate_statistics_parallel_sections(data);
-
-    // Calcular frecuencias con OpenMP (bucles paralelos)
-    calculate_frequencies_parallel(data);
-
+    // Liberar memoria
+    delete[] pixel_buffer;
+    glfwTerminate();
     return 0;
 }
+
+//color_map:16
+//rojo-azul
+//pixel_buffer
+//W*H
+
+void correc() {
+    i=idx%W
+}
+

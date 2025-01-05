@@ -1,3 +1,4 @@
-C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-debug/CMakeFiles/mpi_rep.dir
+C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-debug/CMakeFiles/mpi.dir
+C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-debug/CMakeFiles/matrices_multi.dir
 C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-debug/CMakeFiles/rebuild_cache.dir

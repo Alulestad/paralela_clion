@@ -1,16 +1,4 @@
 "C:\Program Files\JetBrains\CLion 2024.2.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2024.2.3/bin/ninja/win/x64/ninja.exe" -DCMAKE_PROJECT_TOP_LEVEL_INCLUDES=conan_provider.cmake -G Ninja -S C:\Users\Dami\Documents\CLionProjects\ejemplo02_fractal2 -B C:\Users\Dami\Documents\CLionProjects\ejemplo02_fractal2\cmake-build-debug
--- The C compiler identification is MSVC 19.42.34435.0
--- The CXX compiler identification is MSVC 19.42.34435.0
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.42.34433/bin/Hostx64/x64/cl.exe - skipped
--- Detecting C compile features
--- Detecting C compile features - done
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.42.34433/bin/Hostx64/x64/cl.exe - skipped
--- Detecting CXX compile features
--- Detecting CXX compile features - done
 -- CMake-Conan: first find_package() found. Installing dependencies with Conan
 -- CMake-Conan: Checking if a default profile exists
 C:\Users\Dami\.conan2\profiles\default
@@ -128,10 +116,10 @@ vorbis/1.3.7: Already installed! (11 of 13)
 freetype/2.13.2: Already installed! (12 of 13)
 sfml/2.6.1: Already installed! (13 of 13)
 WARN: deprecated: Usage of deprecated Conan 1.X features that will be removed in Conan 2.X:
-WARN: deprecated:     'cpp_info.names' used in: fmt/11.0.2, ogg/1.3.5, bzip2/1.0.8, brotli/1.1.0, libpng/1.6.44, freetype/2.13.2, vorbis/1.3.7, zlib/1.3.1, openal-soft/1.22.2, sfml/2.6.1, flac/1.4.3, glfw/3.3.8
-WARN: deprecated:     'cpp_info.build_modules' used in: bzip2/1.0.8, freetype/2.13.2, sfml/2.6.1, openal-soft/1.22.2, glfw/3.3.8
-WARN: deprecated:     'env_info' used in: flac/1.4.3, freetype/2.13.2, bzip2/1.0.8
-WARN: deprecated:     'cpp_info.filenames' used in: opengl/system, flac/1.4.3, freetype/2.13.2, glfw/3.3.8
+WARN: deprecated:     'cpp_info.names' used in: fmt/11.0.2, libpng/1.6.44, ogg/1.3.5, openal-soft/1.22.2, flac/1.4.3, glfw/3.3.8, zlib/1.3.1, brotli/1.1.0, bzip2/1.0.8, vorbis/1.3.7, freetype/2.13.2, sfml/2.6.1
+WARN: deprecated:     'cpp_info.build_modules' used in: openal-soft/1.22.2, glfw/3.3.8, bzip2/1.0.8, freetype/2.13.2, sfml/2.6.1
+WARN: deprecated:     'env_info' used in: bzip2/1.0.8, flac/1.4.3, freetype/2.13.2
+WARN: deprecated:     'cpp_info.filenames' used in: opengl/system, flac/1.4.3, glfw/3.3.8, freetype/2.13.2
 WARN: deprecated:     'user_info' used in: freetype/2.13.2
 
 ======== Finalizing install (deploy, generators) ========
@@ -198,15 +186,6 @@ Install finished successfully
 -- Conan: Target declared 'vorbis::vorbis'
 -- CMake-Conan: find_package(glfw3) found, 'conan install' already ran
 -- Conan: Target declared 'glfw'
--- Configuring done (3.9s)
-CMake Error at CMakeLists.txt:15 (add_executable):
-  Cannot find source file:
-
-    suma_mp.h
-
-
-CMake Error at CMakeLists.txt:15 (add_executable):
-  No SOURCES given to target: ejemplo02_fractal2
-
-
-CMake Generate step failed.  Build files cannot be regenerated correctly.
+-- Configuring done (4.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: C:/Users/Dami/Documents/CLionProjects/ejemplo02_fractal2/cmake-build-debug
