@@ -11,7 +11,7 @@ endif()
 
 ########### VARIABLES #######################################################################
 #############################################################################################
-set(openal-soft_PACKAGE_FOLDER_RELEASE "C:/Users/Dami/.conan2/p/opena005d0fd6b1bf8/p")
+set(openal-soft_PACKAGE_FOLDER_RELEASE "C:/Users/Dami/.conan2/p/b/opena8fa4a4d081e75/p")
 set(openal-soft_BUILD_MODULES_PATHS_RELEASE "${openal-soft_PACKAGE_FOLDER_RELEASE}/lib/cmake/conan-official-openal-soft-variables.cmake")
 
 
@@ -29,7 +29,7 @@ set(openal-soft_BIN_DIRS_RELEASE )
 set(openal-soft_LIBRARY_TYPE_RELEASE STATIC)
 set(openal-soft_IS_HOST_WINDOWS_RELEASE 1)
 set(openal-soft_LIBS_RELEASE OpenAL32)
-set(openal-soft_SYSTEM_LIBS_RELEASE winmm ole32 shell32 user32)
+set(openal-soft_SYSTEM_LIBS_RELEASE winmm ole32 shell32 user32 stdc++ atomic)
 set(openal-soft_FRAMEWORK_DIRS_RELEASE )
 set(openal-soft_FRAMEWORKS_RELEASE )
 set(openal-soft_BUILD_DIRS_RELEASE )

@@ -15,7 +15,10 @@
 ########################
 
 //Path to a program.
-CMAKE_AR:FILEPATH=C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.42.34433/bin/Hostx64/x64/lib.exe
+CMAKE_ADDR2LINE:FILEPATH=C:/Program Files/mingw64/bin/addr2line.exe
+
+//Path to a program.
+CMAKE_AR:FILEPATH=C:/Program Files/mingw64/bin/ar.exe
 
 //Choose the type of build, options are: None Debug Release RelWithDebInfo
 // MinSizeRel ...
@@ -25,61 +28,80 @@ CMAKE_BUILD_TYPE:STRING=Debug
 CMAKE_COLOR_DIAGNOSTICS:BOOL=ON
 
 //CXX compiler
-CMAKE_CXX_COMPILER:FILEPATH=C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.42.34433/bin/Hostx64/x64/cl.exe
+CMAKE_CXX_COMPILER:FILEPATH=C:/Program Files/mingw64/bin/c++.exe
+
+//A wrapper around 'ar' adding the appropriate '--plugin' option
+// for the GCC compiler
+CMAKE_CXX_COMPILER_AR:FILEPATH=C:/Program Files/mingw64/bin/gcc-ar.exe
+
+//A wrapper around 'ranlib' adding the appropriate '--plugin' option
+// for the GCC compiler
+CMAKE_CXX_COMPILER_RANLIB:FILEPATH=C:/Program Files/mingw64/bin/gcc-ranlib.exe
 
 //Flags used by the CXX compiler during all build types.
-CMAKE_CXX_FLAGS:STRING=/DWIN32 /D_WINDOWS /EHsc
+CMAKE_CXX_FLAGS:STRING=
 
 //Flags used by the CXX compiler during DEBUG builds.
-CMAKE_CXX_FLAGS_DEBUG:STRING=/Ob0 /Od /RTC1
+CMAKE_CXX_FLAGS_DEBUG:STRING=-g
 
 //Flags used by the CXX compiler during MINSIZEREL builds.
-CMAKE_CXX_FLAGS_MINSIZEREL:STRING=/O1 /Ob1 /DNDEBUG
+CMAKE_CXX_FLAGS_MINSIZEREL:STRING=-Os -DNDEBUG
 
 //Flags used by the CXX compiler during RELEASE builds.
-CMAKE_CXX_FLAGS_RELEASE:STRING=/O2 /Ob2 /DNDEBUG
+CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 
 //Flags used by the CXX compiler during RELWITHDEBINFO builds.
-CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=/O2 /Ob1 /DNDEBUG
+CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
 //Libraries linked by default with all C++ applications.
-CMAKE_CXX_STANDARD_LIBRARIES:STRING=kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+CMAKE_CXX_STANDARD_LIBRARIES:STRING=-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
 
 //C compiler
-CMAKE_C_COMPILER:FILEPATH=C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.42.34433/bin/Hostx64/x64/cl.exe
+CMAKE_C_COMPILER:FILEPATH=C:/Program Files/mingw64/bin/gcc.exe
+
+//A wrapper around 'ar' adding the appropriate '--plugin' option
+// for the GCC compiler
+CMAKE_C_COMPILER_AR:FILEPATH=C:/Program Files/mingw64/bin/gcc-ar.exe
+
+//A wrapper around 'ranlib' adding the appropriate '--plugin' option
+// for the GCC compiler
+CMAKE_C_COMPILER_RANLIB:FILEPATH=C:/Program Files/mingw64/bin/gcc-ranlib.exe
 
 //Flags used by the C compiler during all build types.
-CMAKE_C_FLAGS:STRING=/DWIN32 /D_WINDOWS
+CMAKE_C_FLAGS:STRING=
 
 //Flags used by the C compiler during DEBUG builds.
-CMAKE_C_FLAGS_DEBUG:STRING=/Ob0 /Od /RTC1
+CMAKE_C_FLAGS_DEBUG:STRING=-g
 
 //Flags used by the C compiler during MINSIZEREL builds.
-CMAKE_C_FLAGS_MINSIZEREL:STRING=/O1 /Ob1 /DNDEBUG
+CMAKE_C_FLAGS_MINSIZEREL:STRING=-Os -DNDEBUG
 
 //Flags used by the C compiler during RELEASE builds.
-CMAKE_C_FLAGS_RELEASE:STRING=/O2 /Ob2 /DNDEBUG
+CMAKE_C_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 
 //Flags used by the C compiler during RELWITHDEBINFO builds.
-CMAKE_C_FLAGS_RELWITHDEBINFO:STRING=/O2 /Ob1 /DNDEBUG
+CMAKE_C_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
 //Libraries linked by default with all C applications.
-CMAKE_C_STANDARD_LIBRARIES:STRING=kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+CMAKE_C_STANDARD_LIBRARIES:STRING=-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+
+//Path to a program.
+CMAKE_DLLTOOL:FILEPATH=C:/Program Files/mingw64/bin/dlltool.exe
 
 //Flags used by the linker during all build types.
-CMAKE_EXE_LINKER_FLAGS:STRING=/machine:x64
+CMAKE_EXE_LINKER_FLAGS:STRING=
 
 //Flags used by the linker during DEBUG builds.
-CMAKE_EXE_LINKER_FLAGS_DEBUG:STRING=/debug /INCREMENTAL
+CMAKE_EXE_LINKER_FLAGS_DEBUG:STRING=
 
 //Flags used by the linker during MINSIZEREL builds.
-CMAKE_EXE_LINKER_FLAGS_MINSIZEREL:STRING=/INCREMENTAL:NO
+CMAKE_EXE_LINKER_FLAGS_MINSIZEREL:STRING=
 
 //Flags used by the linker during RELEASE builds.
-CMAKE_EXE_LINKER_FLAGS_RELEASE:STRING=/INCREMENTAL:NO
+CMAKE_EXE_LINKER_FLAGS_RELEASE:STRING=
 
 //Flags used by the linker during RELWITHDEBINFO builds.
-CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=/debug /INCREMENTAL
+CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //Enable/Disable output of compile commands during generation.
 CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=
@@ -87,37 +109,46 @@ CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=
 //Value Computed by CMake.
 CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-debug/CMakeFiles/pkgRedirects
 
+//Convert GNU import libraries to MS format (requires Visual Studio)
+CMAKE_GNUtoMS:BOOL=OFF
+
 //Install path prefix, prepended onto install directories.
 CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/mpi_rep
 
 //Path to a program.
-CMAKE_LINKER:FILEPATH=C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.42.34433/bin/Hostx64/x64/link.exe
+CMAKE_LINKER:FILEPATH=C:/Program Files/mingw64/bin/ld.exe
 
 //make program
 CMAKE_MAKE_PROGRAM:FILEPATH=C:/Program Files/JetBrains/CLion 2024.2.3/bin/ninja/win/x64/ninja.exe
 
 //Flags used by the linker during the creation of modules during
 // all build types.
-CMAKE_MODULE_LINKER_FLAGS:STRING=/machine:x64
+CMAKE_MODULE_LINKER_FLAGS:STRING=
 
 //Flags used by the linker during the creation of modules during
 // DEBUG builds.
-CMAKE_MODULE_LINKER_FLAGS_DEBUG:STRING=/debug /INCREMENTAL
+CMAKE_MODULE_LINKER_FLAGS_DEBUG:STRING=
 
 //Flags used by the linker during the creation of modules during
 // MINSIZEREL builds.
-CMAKE_MODULE_LINKER_FLAGS_MINSIZEREL:STRING=/INCREMENTAL:NO
+CMAKE_MODULE_LINKER_FLAGS_MINSIZEREL:STRING=
 
 //Flags used by the linker during the creation of modules during
 // RELEASE builds.
-CMAKE_MODULE_LINKER_FLAGS_RELEASE:STRING=/INCREMENTAL:NO
+CMAKE_MODULE_LINKER_FLAGS_RELEASE:STRING=
 
 //Flags used by the linker during the creation of modules during
 // RELWITHDEBINFO builds.
-CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO:STRING=/debug /INCREMENTAL
+CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //Path to a program.
-CMAKE_MT:FILEPATH=C:/Program Files (x86)/Windows Kits/10/bin/10.0.22621.0/x64/mt.exe
+CMAKE_NM:FILEPATH=C:/Program Files/mingw64/bin/nm.exe
+
+//Path to a program.
+CMAKE_OBJCOPY:FILEPATH=C:/Program Files/mingw64/bin/objcopy.exe
+
+//Path to a program.
+CMAKE_OBJDUMP:FILEPATH=C:/Program Files/mingw64/bin/objdump.exe
 
 //Value Computed by CMake
 CMAKE_PROJECT_DESCRIPTION:STATIC=
@@ -131,14 +162,17 @@ CMAKE_PROJECT_NAME:STATIC=mpi_rep
 //No help, variable specified on the command line.
 CMAKE_PROJECT_TOP_LEVEL_INCLUDES:UNINITIALIZED=conan_provider.cmake
 
+//Path to a program.
+CMAKE_RANLIB:FILEPATH=C:/Program Files/mingw64/bin/ranlib.exe
+
 //RC compiler
-CMAKE_RC_COMPILER:FILEPATH=C:/Program Files (x86)/Windows Kits/10/bin/10.0.22621.0/x64/rc.exe
+CMAKE_RC_COMPILER:FILEPATH=C:/Program Files/mingw64/bin/windres.exe
 
 //Flags for Windows Resource Compiler during all build types.
-CMAKE_RC_FLAGS:STRING=-DWIN32
+CMAKE_RC_FLAGS:STRING=
 
 //Flags for Windows Resource Compiler during DEBUG builds.
-CMAKE_RC_FLAGS_DEBUG:STRING=-D_DEBUG
+CMAKE_RC_FLAGS_DEBUG:STRING=
 
 //Flags for Windows Resource Compiler during MINSIZEREL builds.
 CMAKE_RC_FLAGS_MINSIZEREL:STRING=
@@ -149,25 +183,28 @@ CMAKE_RC_FLAGS_RELEASE:STRING=
 //Flags for Windows Resource Compiler during RELWITHDEBINFO builds.
 CMAKE_RC_FLAGS_RELWITHDEBINFO:STRING=
 
+//Path to a program.
+CMAKE_READELF:FILEPATH=C:/Program Files/mingw64/bin/readelf.exe
+
 //Flags used by the linker during the creation of shared libraries
 // during all build types.
-CMAKE_SHARED_LINKER_FLAGS:STRING=/machine:x64
+CMAKE_SHARED_LINKER_FLAGS:STRING=
 
 //Flags used by the linker during the creation of shared libraries
 // during DEBUG builds.
-CMAKE_SHARED_LINKER_FLAGS_DEBUG:STRING=/debug /INCREMENTAL
+CMAKE_SHARED_LINKER_FLAGS_DEBUG:STRING=
 
 //Flags used by the linker during the creation of shared libraries
 // during MINSIZEREL builds.
-CMAKE_SHARED_LINKER_FLAGS_MINSIZEREL:STRING=/INCREMENTAL:NO
+CMAKE_SHARED_LINKER_FLAGS_MINSIZEREL:STRING=
 
 //Flags used by the linker during the creation of shared libraries
 // during RELEASE builds.
-CMAKE_SHARED_LINKER_FLAGS_RELEASE:STRING=/INCREMENTAL:NO
+CMAKE_SHARED_LINKER_FLAGS_RELEASE:STRING=
 
 //Flags used by the linker during the creation of shared libraries
 // during RELWITHDEBINFO builds.
-CMAKE_SHARED_LINKER_FLAGS_RELWITHDEBINFO:STRING=/debug /INCREMENTAL
+CMAKE_SHARED_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //If set, runtime paths are not added when installing shared libraries,
 // but are added when building.
@@ -178,7 +215,7 @@ CMAKE_SKIP_RPATH:BOOL=NO
 
 //Flags used by the linker during the creation of static libraries
 // during all build types.
-CMAKE_STATIC_LINKER_FLAGS:STRING=/machine:x64
+CMAKE_STATIC_LINKER_FLAGS:STRING=
 
 //Flags used by the linker during the creation of static libraries
 // during DEBUG builds.
@@ -195,6 +232,12 @@ CMAKE_STATIC_LINKER_FLAGS_RELEASE:STRING=
 //Flags used by the linker during the creation of static libraries
 // during RELWITHDEBINFO builds.
 CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
+
+//Path to a program.
+CMAKE_STRIP:FILEPATH=C:/Program Files/mingw64/bin/strip.exe
+
+//Path to a program.
+CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 
 //If this value is on, makefiles will be generated without the
 // .SILENT directive, and all commands will be echoed to the console
@@ -215,7 +258,7 @@ CONAN_HOST_PROFILE:STRING=default;auto-cmake
 CONAN_INSTALL_ARGS:STRING=--build=missing
 
 //Executable for running MPI programs.
-MPIEXEC_EXECUTABLE:FILEPATH=C:/Program Files (x86)/Intel/oneAPI/mpi/latest/bin/mpiexec.exe
+MPIEXEC_EXECUTABLE:FILEPATH=C:/Program Files/Microsoft MPI/Bin/mpiexec.exe
 
 //Maximum number of processors available to run MPI applications.
 MPIEXEC_MAX_NUMPROCS:STRING=8
@@ -235,22 +278,22 @@ MPIEXEC_PREFLAGS:STRING=
 MPI_CXX_ADDITIONAL_INCLUDE_DIRS:STRING=
 
 //MPI compiler for CXX
-MPI_CXX_COMPILER:FILEPATH=C:/Program Files (x86)/Intel/oneAPI/mpi/latest/bin/mpicl.bat
+MPI_CXX_COMPILER:FILEPATH=MPI_CXX_COMPILER-NOTFOUND
 
 //MPI CXX compiler wrapper include directories
-MPI_CXX_COMPILER_INCLUDE_DIRS:STRING=C:/Program Files (x86)/Intel/oneAPI/mpi/latest/include;C:/Program Files (x86)/Intel/oneAPI/mpi/latest/include/mpi
+MPI_CXX_COMPILER_INCLUDE_DIRS:STRING=
 
 //MPI CXX compilation definitions
 MPI_CXX_COMPILE_DEFINITIONS:STRING=
 
-//MPI CXX compilation options
+//MPI CXX compilation flags
 MPI_CXX_COMPILE_OPTIONS:STRING=
 
 //Path to a file.
-MPI_CXX_HEADER_DIR:PATH=C:/Program Files (x86)/Intel/oneAPI/mpi/latest/include
+MPI_CXX_HEADER_DIR:PATH=C:/Program Files (x86)/Microsoft SDKs/MPI/Include
 
 //MPI CXX libraries to link against
-MPI_CXX_LIB_NAMES:STRING=impi;impicxx
+MPI_CXX_LIB_NAMES:STRING=msmpi
 
 //MPI CXX linker flags
 MPI_CXX_LINK_FLAGS:STRING=
@@ -262,22 +305,22 @@ MPI_CXX_SKIP_MPICXX:BOOL=OFF
 MPI_C_ADDITIONAL_INCLUDE_DIRS:STRING=
 
 //MPI compiler for C
-MPI_C_COMPILER:FILEPATH=C:/Program Files (x86)/Intel/oneAPI/mpi/latest/bin/mpicl.bat
+MPI_C_COMPILER:FILEPATH=MPI_C_COMPILER-NOTFOUND
 
 //MPI C compiler wrapper include directories
-MPI_C_COMPILER_INCLUDE_DIRS:STRING=C:/Program Files (x86)/Intel/oneAPI/mpi/latest/include;C:/Program Files (x86)/Intel/oneAPI/mpi/latest/include/mpi
+MPI_C_COMPILER_INCLUDE_DIRS:STRING=
 
 //MPI C compilation definitions
 MPI_C_COMPILE_DEFINITIONS:STRING=
 
-//MPI C compilation options
+//MPI C compilation flags
 MPI_C_COMPILE_OPTIONS:STRING=
 
 //Path to a file.
-MPI_C_HEADER_DIR:PATH=C:/Program Files (x86)/Intel/oneAPI/mpi/latest/include
+MPI_C_HEADER_DIR:PATH=C:/Program Files (x86)/Microsoft SDKs/MPI/Include
 
 //MPI C libraries to link against
-MPI_C_LIB_NAMES:STRING=impi;impicxx
+MPI_C_LIB_NAMES:STRING=msmpi
 
 //MPI C linker flags
 MPI_C_LINK_FLAGS:STRING=
@@ -285,11 +328,8 @@ MPI_C_LINK_FLAGS:STRING=
 //The directory containing a CMake configuration file for MPI.
 MPI_DIR:PATH=MPI_DIR-NOTFOUND
 
-//Location of the impi library for MPI
-MPI_impi_LIBRARY:FILEPATH=C:/Program Files (x86)/Intel/oneAPI/mpi/latest/lib/impi.lib
-
-//Location of the impicxx library for MPI
-MPI_impicxx_LIBRARY:FILEPATH=C:/Program Files (x86)/Intel/oneAPI/mpi/latest/lib/impicxx.lib
+//Location of the msmpi library for Microsoft MPI
+MPI_msmpi_LIBRARY:FILEPATH=C:/Program Files (x86)/Microsoft SDKs/MPI/Lib/x64/msmpi.lib
 
 //Arguments to supply to pkg-config
 PKG_CONFIG_ARGN:STRING=
@@ -301,7 +341,7 @@ PKG_CONFIG_EXECUTABLE:FILEPATH=PKG_CONFIG_EXECUTABLE-NOTFOUND
 PkgConfig_DIR:PATH=PkgConfig_DIR-NOTFOUND
 
 //Path to a program.
-_cmake_program:FILEPATH=C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/bin/cmake.exe
+_cmake_program:FILEPATH=C:/Program Files/mingw64/bin/cmake.exe
 
 //The directory containing a CMake configuration file for fmt.
 fmt_DIR:PATH=C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-debug/conan/build/Debug/generators
@@ -320,6 +360,8 @@ mpi_rep_SOURCE_DIR:STATIC=C:/Users/Dami/Documents/CLionProjects/mpi_rep
 # INTERNAL cache entries
 ########################
 
+//ADVANCED property for variable: CMAKE_ADDR2LINE
+CMAKE_ADDR2LINE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_AR
 CMAKE_AR-ADVANCED:INTERNAL=1
 //This is the directory where this CMakeCache.txt was created
@@ -338,6 +380,10 @@ CMAKE_CPACK_COMMAND:INTERNAL=C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake
 CMAKE_CTEST_COMMAND:INTERNAL=C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/bin/ctest.exe
 //ADVANCED property for variable: CMAKE_CXX_COMPILER
 CMAKE_CXX_COMPILER-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_CXX_COMPILER_AR
+CMAKE_CXX_COMPILER_AR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_CXX_COMPILER_RANLIB
+CMAKE_CXX_COMPILER_RANLIB-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_CXX_FLAGS
 CMAKE_CXX_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_CXX_FLAGS_DEBUG
@@ -352,6 +398,10 @@ CMAKE_CXX_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 CMAKE_CXX_STANDARD_LIBRARIES-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_COMPILER
 CMAKE_C_COMPILER-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_C_COMPILER_AR
+CMAKE_C_COMPILER_AR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_C_COMPILER_RANLIB
+CMAKE_C_COMPILER_RANLIB-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_FLAGS
 CMAKE_C_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_FLAGS_DEBUG
@@ -364,6 +414,8 @@ CMAKE_C_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 CMAKE_C_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_STANDARD_LIBRARIES
 CMAKE_C_STANDARD_LIBRARIES-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_DLLTOOL
+CMAKE_DLLTOOL-ADVANCED:INTERNAL=1
 //Executable file format
 CMAKE_EXECUTABLE_FORMAT:INTERNAL=Unknown
 //ADVANCED property for variable: CMAKE_EXE_LINKER_FLAGS
@@ -403,14 +455,18 @@ CMAKE_MODULE_LINKER_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
 CMAKE_MODULE_LINKER_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO
 CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_MT
-CMAKE_MT-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_NM
+CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
 CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+//ADVANCED property for variable: CMAKE_OBJCOPY
+CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_OBJDUMP
+CMAKE_OBJDUMP-ADVANCED:INTERNAL=1
 //Platform information initialized
 CMAKE_PLATFORM_INFO_INITIALIZED:INTERNAL=1
-//noop for ranlib
-CMAKE_RANLIB:INTERNAL=:
+//ADVANCED property for variable: CMAKE_RANLIB
+CMAKE_RANLIB-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_RC_COMPILER
 CMAKE_RC_COMPILER-ADVANCED:INTERNAL=1
 CMAKE_RC_COMPILER_WORKS:INTERNAL=1
@@ -424,6 +480,8 @@ CMAKE_RC_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
 CMAKE_RC_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_RC_FLAGS_RELWITHDEBINFO
 CMAKE_RC_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_READELF
+CMAKE_READELF-ADVANCED:INTERNAL=1
 //Path to CMake installation.
 CMAKE_ROOT:INTERNAL=C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29
 //ADVANCED property for variable: CMAKE_SHARED_LINKER_FLAGS
@@ -450,16 +508,18 @@ CMAKE_STATIC_LINKER_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
 CMAKE_STATIC_LINKER_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO
 CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_STRIP
+CMAKE_STRIP-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_TAPI
+CMAKE_TAPI-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding MPI
-FIND_PACKAGE_MESSAGE_DETAILS_MPI:INTERNAL=[TRUE][TRUE][c ][v3.1()]
+FIND_PACKAGE_MESSAGE_DETAILS_MPI:INTERNAL=[TRUE][TRUE][c ][v2.0()]
 //Details about finding MPI_C
-FIND_PACKAGE_MESSAGE_DETAILS_MPI_C:INTERNAL=[C:/Program Files (x86)/Intel/oneAPI/mpi/latest/lib/impi.lib][C:/Program Files (x86)/Intel/oneAPI/mpi/latest/lib/impicxx.lib][impi;impicxx][C:/Program Files (x86)/Intel/oneAPI/mpi/latest/include][TRUE][v3.1()]
+FIND_PACKAGE_MESSAGE_DETAILS_MPI_C:INTERNAL=[C:/Program Files (x86)/Microsoft SDKs/MPI/Lib/x64/msmpi.lib][msmpi][C:/Program Files (x86)/Microsoft SDKs/MPI/Include][TRUE][v2.0()]
 //Details about finding MPI_CXX
-FIND_PACKAGE_MESSAGE_DETAILS_MPI_CXX:INTERNAL=[C:/Program Files (x86)/Intel/oneAPI/mpi/latest/lib/impi.lib][C:/Program Files (x86)/Intel/oneAPI/mpi/latest/lib/impicxx.lib][impi;impicxx][C:/Program Files (x86)/Intel/oneAPI/mpi/latest/include][TRUE][v3.1()]
-//ADVANCED property for variable: MPIEXEC_EXECUTABLE
-MPIEXEC_EXECUTABLE-ADVANCED:INTERNAL=1
+FIND_PACKAGE_MESSAGE_DETAILS_MPI_CXX:INTERNAL=[C:/Program Files (x86)/Microsoft SDKs/MPI/Lib/x64/msmpi.lib][msmpi][C:/Program Files (x86)/Microsoft SDKs/MPI/Include][TRUE][v2.0()]
 //ADVANCED property for variable: MPIEXEC_MAX_NUMPROCS
 MPIEXEC_MAX_NUMPROCS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MPIEXEC_NUMPROC_FLAG
@@ -508,12 +568,16 @@ MPI_RESULT_CXX_test_mpi_MPICXX:INTERNAL=TRUE
 MPI_RESULT_CXX_test_mpi_normal:INTERNAL=TRUE
 //Result of TRY_COMPILE
 MPI_RESULT_C_test_mpi_normal:INTERNAL=TRUE
-//ADVANCED property for variable: MPI_impi_LIBRARY
-MPI_impi_LIBRARY-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: MPI_impicxx_LIBRARY
-MPI_impicxx_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MPI_msmpi_LIBRARY
+MPI_msmpi_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PKG_CONFIG_ARGN
 PKG_CONFIG_ARGN-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
 PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
+//linker supports push/pop state
+_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED:INTERNAL=TRUE
+//Test _conan_gnu_libstdcxx_is_cxx11_abi
+_conan_gnu_libstdcxx_is_cxx11_abi:INTERNAL=1
+//Test _conan_is_gnu_libstdcxx
+_conan_is_gnu_libstdcxx:INTERNAL=1
 

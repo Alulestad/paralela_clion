@@ -12,7 +12,7 @@ set(ZLIB_FIND_MODE "NO_MODULE")
 
 ########### VARIABLES #######################################################################
 #############################################################################################
-set(libpng_PACKAGE_FOLDER_DEBUG "C:/Users/Dami/.conan2/p/b/libpn1bdcfcc2a569e/p")
+set(libpng_PACKAGE_FOLDER_DEBUG "C:/Users/Dami/.conan2/p/b/libpnf133f1ebd9860/p")
 set(libpng_BUILD_MODULES_PATHS_DEBUG )
 
 
@@ -29,7 +29,7 @@ set(libpng_LIB_DIRS_DEBUG "${libpng_PACKAGE_FOLDER_DEBUG}/lib")
 set(libpng_BIN_DIRS_DEBUG )
 set(libpng_LIBRARY_TYPE_DEBUG STATIC)
 set(libpng_IS_HOST_WINDOWS_DEBUG 1)
-set(libpng_LIBS_DEBUG libpng16_staticd)
+set(libpng_LIBS_DEBUG png16d)
 set(libpng_SYSTEM_LIBS_DEBUG )
 set(libpng_FRAMEWORK_DIRS_DEBUG )
 set(libpng_FRAMEWORKS_DEBUG )

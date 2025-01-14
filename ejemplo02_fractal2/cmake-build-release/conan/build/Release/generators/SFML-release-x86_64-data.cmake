@@ -17,7 +17,7 @@ set(Vorbis_FIND_MODE "NO_MODULE")
 
 ########### VARIABLES #######################################################################
 #############################################################################################
-set(sfml_PACKAGE_FOLDER_RELEASE "C:/Users/Dami/.conan2/p/sfml2029fced886b7/p")
+set(sfml_PACKAGE_FOLDER_RELEASE "C:/Users/Dami/.conan2/p/b/sfml4c34266175943/p")
 set(sfml_BUILD_MODULES_PATHS_RELEASE )
 
 

@@ -1,23 +1,7 @@
 # ninja log v6
 613	1227	7564092685806973	mpi_rep.exe	aba114aaf32fd94a
-46	4052	7578111954923518	build.ninja	3ec43591bcfe6e07
+46	4052	7582224424892924	build.ninja	3ec43591bcfe6e07
 24	463	7565116086628227	CMakeFiles/mpi.dir/mpi.cpp.obj	e6f0f5c75e710a5f
-3	531	7578111445231996	CMakeFiles/matrices_multi.dir/matrices_multi.cpp.obj	65eb6193d0789388
-531	863	7578111450503439	matrices_multi.exe	70d35f68abb4814
+38	686	7579585427963273	CMakeFiles/matrices_multi.dir/matrices_multi.cpp.obj	65eb6193d0789388
+687	990	7579585434446091	matrices_multi.exe	70d35f68abb4814
 464	712	7565116091026723	mpi.exe	8c2b9558c5be9f7b
-4	620	7578112329836270	CMakeFiles/matrices_multi.dir/matrices_multi.cpp.obj	65eb6193d0789388
-621	756	7578112336011297	matrices_multi.exe	70d35f68abb4814
-9	607	7578114857855463	CMakeFiles/matrices_multi.dir/matrices_multi.cpp.obj	65eb6193d0789388
-608	855	7578114863836748	matrices_multi.exe	70d35f68abb4814
-11	637	7578115463731392	CMakeFiles/matrices_multi.dir/matrices_multi.cpp.obj	65eb6193d0789388
-637	787	7578115469988521	matrices_multi.exe	70d35f68abb4814
-10	625	7578115600889652	CMakeFiles/matrices_multi.dir/matrices_multi.cpp.obj	65eb6193d0789388
-625	843	7578115607039727	matrices_multi.exe	70d35f68abb4814
-10	693	7578115891794795	CMakeFiles/matrices_multi.dir/matrices_multi.cpp.obj	65eb6193d0789388
-693	842	7578115898628043	matrices_multi.exe	70d35f68abb4814
-13	606	7578116703270110	CMakeFiles/matrices_multi.dir/matrices_multi.cpp.obj	65eb6193d0789388
-607	798	7578116709208026	matrices_multi.exe	70d35f68abb4814
-12	628	7578119331062080	CMakeFiles/matrices_multi.dir/matrices_multi.cpp.obj	65eb6193d0789388
-628	769	7578119337225179	matrices_multi.exe	70d35f68abb4814
-11	630	7578120882267325	CMakeFiles/matrices_multi.dir/matrices_multi.cpp.obj	65eb6193d0789388
-630	858	7578120888462274	matrices_multi.exe	70d35f68abb4814

@@ -12,7 +12,7 @@ endif()
 
 ########### VARIABLES #######################################################################
 #############################################################################################
-set(fmt_PACKAGE_FOLDER_DEBUG "C:/Users/Dami/.conan2/p/b/fmt60e583c66c9c6/p")
+set(fmt_PACKAGE_FOLDER_DEBUG "C:/Users/Dami/.conan2/p/b/fmt7fba7dc0c9fe1/p")
 set(fmt_BUILD_MODULES_PATHS_DEBUG )
 
 
@@ -24,7 +24,7 @@ set(fmt_EXE_LINK_FLAGS_DEBUG )
 set(fmt_OBJECTS_DEBUG )
 set(fmt_COMPILE_DEFINITIONS_DEBUG )
 set(fmt_COMPILE_OPTIONS_C_DEBUG )
-set(fmt_COMPILE_OPTIONS_CXX_DEBUG /utf-8)
+set(fmt_COMPILE_OPTIONS_CXX_DEBUG )
 set(fmt_LIB_DIRS_DEBUG "${fmt_PACKAGE_FOLDER_DEBUG}/lib")
 set(fmt_BIN_DIRS_DEBUG )
 set(fmt_LIBRARY_TYPE_DEBUG STATIC)
@@ -60,7 +60,7 @@ set(fmt_fmt_fmt_DEFINITIONS_DEBUG )
 set(fmt_fmt_fmt_OBJECTS_DEBUG )
 set(fmt_fmt_fmt_COMPILE_DEFINITIONS_DEBUG )
 set(fmt_fmt_fmt_COMPILE_OPTIONS_C_DEBUG "")
-set(fmt_fmt_fmt_COMPILE_OPTIONS_CXX_DEBUG "/utf-8")
+set(fmt_fmt_fmt_COMPILE_OPTIONS_CXX_DEBUG "")
 set(fmt_fmt_fmt_LIBS_DEBUG fmtd)
 set(fmt_fmt_fmt_SYSTEM_LIBS_DEBUG )
 set(fmt_fmt_fmt_FRAMEWORK_DIRS_DEBUG )

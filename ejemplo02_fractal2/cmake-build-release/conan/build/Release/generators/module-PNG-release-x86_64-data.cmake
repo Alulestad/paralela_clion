@@ -12,7 +12,7 @@ set(ZLIB_FIND_MODE "MODULE")
 
 ########### VARIABLES #######################################################################
 #############################################################################################
-set(libpng_PACKAGE_FOLDER_RELEASE "C:/Users/Dami/.conan2/p/libpn9bfcc2eca1f06/p")
+set(libpng_PACKAGE_FOLDER_RELEASE "C:/Users/Dami/.conan2/p/b/libpn6ca15c2ba630d/p")
 set(libpng_BUILD_MODULES_PATHS_RELEASE )
 
 
@@ -29,7 +29,7 @@ set(libpng_LIB_DIRS_RELEASE "${libpng_PACKAGE_FOLDER_RELEASE}/lib")
 set(libpng_BIN_DIRS_RELEASE )
 set(libpng_LIBRARY_TYPE_RELEASE STATIC)
 set(libpng_IS_HOST_WINDOWS_RELEASE 1)
-set(libpng_LIBS_RELEASE libpng16_static)
+set(libpng_LIBS_RELEASE png16)
 set(libpng_SYSTEM_LIBS_RELEASE )
 set(libpng_FRAMEWORK_DIRS_RELEASE )
 set(libpng_FRAMEWORKS_RELEASE )

@@ -18,14 +18,6 @@
                 "CMAKE_POLICY_DEFAULT_CMP0091": "NEW",
                 "CMAKE_BUILD_TYPE": "Debug"
             },
-            "toolset": {
-                "value": "v143",
-                "strategy": "external"
-            },
-            "architecture": {
-                "value": "x64",
-                "strategy": "external"
-            },
             "toolchainFile": "generators\\conan_toolchain.cmake",
             "binaryDir": "C:\\Users\\Dami\\Documents\\CLionProjects\\mpi_rep\\cmake-build-debug\\conan\\build\\Debug"
         }

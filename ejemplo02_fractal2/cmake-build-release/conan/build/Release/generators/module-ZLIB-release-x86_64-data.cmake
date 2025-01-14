@@ -11,7 +11,7 @@ endif()
 
 ########### VARIABLES #######################################################################
 #############################################################################################
-set(zlib_PACKAGE_FOLDER_RELEASE "C:/Users/Dami/.conan2/p/zlib6f797a4dd16fb/p")
+set(zlib_PACKAGE_FOLDER_RELEASE "C:/Users/Dami/.conan2/p/b/zlib24177c8a194d6/p")
 set(zlib_BUILD_MODULES_PATHS_RELEASE )
 
 
@@ -28,7 +28,7 @@ set(zlib_LIB_DIRS_RELEASE "${zlib_PACKAGE_FOLDER_RELEASE}/lib")
 set(zlib_BIN_DIRS_RELEASE )
 set(zlib_LIBRARY_TYPE_RELEASE STATIC)
 set(zlib_IS_HOST_WINDOWS_RELEASE 1)
-set(zlib_LIBS_RELEASE zlib)
+set(zlib_LIBS_RELEASE z)
 set(zlib_SYSTEM_LIBS_RELEASE )
 set(zlib_FRAMEWORK_DIRS_RELEASE )
 set(zlib_FRAMEWORKS_RELEASE )

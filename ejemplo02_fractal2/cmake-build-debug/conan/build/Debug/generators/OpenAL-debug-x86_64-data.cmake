@@ -11,7 +11,7 @@ endif()
 
 ########### VARIABLES #######################################################################
 #############################################################################################
-set(openal-soft_PACKAGE_FOLDER_DEBUG "C:/Users/Dami/.conan2/p/b/opena83e857a26f199/p")
+set(openal-soft_PACKAGE_FOLDER_DEBUG "C:/Users/Dami/.conan2/p/b/opena88bbcecde8374/p")
 set(openal-soft_BUILD_MODULES_PATHS_DEBUG "${openal-soft_PACKAGE_FOLDER_DEBUG}/lib/cmake/conan-official-openal-soft-variables.cmake")
 
 
@@ -29,7 +29,7 @@ set(openal-soft_BIN_DIRS_DEBUG )
 set(openal-soft_LIBRARY_TYPE_DEBUG STATIC)
 set(openal-soft_IS_HOST_WINDOWS_DEBUG 1)
 set(openal-soft_LIBS_DEBUG OpenAL32)
-set(openal-soft_SYSTEM_LIBS_DEBUG winmm ole32 shell32 user32)
+set(openal-soft_SYSTEM_LIBS_DEBUG winmm ole32 shell32 user32 stdc++ atomic)
 set(openal-soft_FRAMEWORK_DIRS_DEBUG )
 set(openal-soft_FRAMEWORKS_DEBUG )
 set(openal-soft_BUILD_DIRS_DEBUG )
