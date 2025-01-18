@@ -7,6 +7,7 @@ int random_value() {
     srand(time(nullptr)); // Inicializar semilla para rand()
     return rand() % 100; // Generar un número aleatorio entre 0 y 99
 }
+
 int main(int argc, char* argv[]) {
     int rank, size, value;
 
@@ -14,6 +15,8 @@ int main(int argc, char* argv[]) {
     MPI_Init(&argc, &argv);
     MPI_Comm_rank(MPI_COMM_WORLD, &rank); // Obtener el rank del proceso
     MPI_Comm_size(MPI_COMM_WORLD, &size); // Obtener el número total de procesos
+
+    std::cout<<"Rank: "<<rank<<" Size: "<<size<<std::endl;
 
     if (size < 2) {
         std::cerr << "Este programa requiere al menos 2 procesos." << std::endl;

@@ -1,0 +1,2 @@
+#pragma code_page(65001)
+1 /* CREATEPROCESS_MANIFEST_RESOURCE_ID */ 24 /* RT_MANIFEST */ "C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-debug/CMakeFiles/omp_suma.dir/embed.manifest"

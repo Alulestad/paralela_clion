@@ -1,5 +1,5 @@
 # ninja log v6
-656	885	7561046117869454	ejemplo02_fractal2.exe	682711733ee1fac5
-28	629	7561037898107619	CMakeFiles/ejemplo02_fractal2.dir/fps_counter.cpp.obj	fa7469104fb848c7
-31	2584	7582224538490618	build.ninja	94ba8a8bc25558b9
-21	655	7561046111524821	CMakeFiles/ejemplo02_fractal2.dir/main.cpp.obj	eb4ebe76ca8a437f
+749	971	7588418772779277	ejemplo02_fractal2.exe	682711733ee1fac5
+17	668	7588421769045290	CMakeFiles/main_fractal.dir/fps_counter.cpp.obj	80fa6b0157a48ad0
+3	2498	7588654402466196	build.ninja	94ba8a8bc25558b9
+20	610	7588527581570862	CMakeFiles/main_fractal.dir/main_fractal.cpp.obj	18b98f9fcfc8bdb3

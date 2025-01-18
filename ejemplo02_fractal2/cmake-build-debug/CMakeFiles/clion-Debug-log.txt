@@ -1,14 +1,14 @@
 "C:\Program Files\JetBrains\CLion 2024.2.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2024.2.3/bin/ninja/win/x64/ninja.exe" -DCMAKE_PROJECT_TOP_LEVEL_INCLUDES=conan_provider.cmake -G Ninja -S C:\Users\Dami\Documents\CLionProjects\ejemplo02_fractal2 -B C:\Users\Dami\Documents\CLionProjects\ejemplo02_fractal2\cmake-build-debug
--- The C compiler identification is GNU 14.2.0
--- The CXX compiler identification is GNU 14.2.0
+-- The C compiler identification is MSVC 19.42.34436.0
+-- The CXX compiler identification is MSVC 19.42.34436.0
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
--- Check for working C compiler: C:/Program Files/mingw64/bin/gcc.exe - skipped
+-- Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.42.34433/bin/Hostx64/x64/cl.exe - skipped
 -- Detecting C compile features
 -- Detecting C compile features - done
 -- Detecting CXX compiler ABI info
 -- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: C:/Program Files/mingw64/bin/c++.exe - skipped
+-- Check for working CXX compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.42.34433/bin/Hostx64/x64/cl.exe - skipped
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
 -- CMake-Conan: first find_package() found. Installing dependencies with Conan
@@ -16,27 +16,25 @@
 C:\Users\Dami\.conan2\profiles\default
 -- CMake-Conan: cmake_system_name=Windows
 -- CMake-Conan: cmake_system_processor=x86_64
--- CMake-Conan: CMake compiler=GNU
--- CMake-Conan: CMake compiler version=14.2.0
--- CMake-Conan: [settings] compiler=gcc
--- CMake-Conan: [settings] compiler.version=14
--- Performing Test _conan_is_gnu_libstdcxx
--- Performing Test _conan_is_gnu_libstdcxx - Success
--- Performing Test _conan_gnu_libstdcxx_is_cxx11_abi
--- Performing Test _conan_gnu_libstdcxx_is_cxx11_abi - Success
+-- CMake-Conan: CMake compiler=MSVC
+-- CMake-Conan: CMake compiler version=19.42.34436.0
+-- CMake-Conan: CMake compiler.runtime=dynamic
+-- CMake-Conan: [settings] compiler=msvc
+-- CMake-Conan: [settings] compiler.version=194
+-- CMake-Conan: [settings] compiler.runtime=dynamic
 -- CMake-Conan: Creating profile C:/Users/Dami/Documents/CLionProjects/ejemplo02_fractal2/cmake-build-debug/conan_host_profile
 -- CMake-Conan: Profile: 
 [settings]
 arch=x86_64
 os=Windows
-compiler=gcc
-compiler.version=14
+compiler=msvc
+compiler.version=194
+compiler.runtime=dynamic
 compiler.cppstd=17
-compiler.libcxx=libstdc++11
 build_type=Debug
 [conf]
 tools.cmake.cmaketoolchain:generator=Ninja
-tools.build:compiler_executables={"c":"C:/Program Files/mingw64/bin/gcc.exe","cpp":"C:/Program Files/mingw64/bin/c++.exe","rc":"C:/Program Files/mingw64/bin/windres.exe"}
+tools.build:compiler_executables={"c":"C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.42.34433/bin/Hostx64/x64/cl.exe","cpp":"C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.42.34433/bin/Hostx64/x64/cl.exe","rc":"C:/Program Files (x86)/Windows Kits/10/bin/10.0.22621.0/x64/rc.exe"}
 
 -- CMake-Conan: Installing single configuration Debug
 -- CMake-Conan: conan install C:/Users/Dami/Documents/CLionProjects/ejemplo02_fractal2 -of=C:/Users/Dami/Documents/CLionProjects/ejemplo02_fractal2/cmake-build-debug/conan --profile:host=default;--profile:host=C:/Users/Dami/Documents/CLionProjects/ejemplo02_fractal2/cmake-build-debug/conan_host_profile;--profile:build=default;--build=missing
@@ -46,13 +44,14 @@ Profile host:
 [settings]
 arch=x86_64
 build_type=Debug
-compiler=gcc
+compiler=msvc
 compiler.cppstd=17
-compiler.libcxx=libstdc++11
-compiler.version=14
+compiler.runtime=dynamic
+compiler.runtime_type=Debug
+compiler.version=194
 os=Windows
 [conf]
-tools.build:compiler_executables={'c': 'C:/Program Files/mingw64/bin/gcc.exe', 'cpp': 'C:/Program Files/mingw64/bin/c++.exe', 'rc': 'C:/Program Files/mingw64/bin/windres.exe'}
+tools.build:compiler_executables={'c': 'C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.42.34433/bin/Hostx64/x64/cl.exe', 'cpp': 'C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.42.34433/bin/Hostx64/x64/cl.exe', 'rc': 'C:/Program Files (x86)/Windows Kits/10/bin/10.0.22621.0/x64/rc.exe'}
 tools.cmake.cmaketoolchain:generator=Ninja
 
 Profile build:
@@ -97,19 +96,19 @@ Resolved version ranges
 
 ======== Computing necessary packages ========
 Requirements
-    brotli/1.1.0#d56d7bb9ca722942aba17369cb5c0519:c5941f64e3e03611f8494b6dc677b1cd0c499fac#e65c144f53315fd87337d20ab1579e9c - Cache
-    bzip2/1.0.8#d00dac990f08d991998d624be81a9526:3dfcca3b97d4a79e711affc4565b88c9ae15f14f#c7eedb91979db1c664d6df9017fef085 - Cache
-    flac/1.4.3#112ca54377880fa91b13268d48e17871:236c27e3391a2ecc4709256c94d61acf9ef718d7#a1cf9c8ecdf73a0a171b81956c3cf231 - Cache
-    fmt/11.0.2#5c7438ef4d5d69ab106a41e460ce11f3:33f819c02207a748fde0cdb2b48d45c22c3bcef6#66ae2d6c02ad808f846f8a8d7eaf8645 - Cache
-    freetype/2.13.2#5d2563803c8558d4ef47271a82c73d20:d638b2947789d37800ca6531ce21c0a5a459889c#7824d7b524c8dc8f620d3f6bb75fe118 - Cache
-    glfw/3.3.8#d75a15a362a707163bfaabbf4dc993d8:4993d51f61a4b133adbdae8a1215066a8a67ace8#2503bfed4b46bd561b8990ea1b6d28e1 - Cache
-    libpng/1.6.44#9e1aa08fb46946c7c91e4ae03bd49811:39a78521cbc88d5e876f2fae1de396d7871df32f#40ead413bda78727594968d6ad3d1913 - Cache
-    ogg/1.3.5#062626875f5c8c59f069f76f148098ef:91bc30bd1cf5cf6f7eaa458587e5f3f49727ce3e#6a356624a3324feea7d4c53cf5ca0d8b - Cache
-    openal-soft/1.22.2#506a381e0b805519cba4a7f1ee653fed:0c36c7ca24e6bc59a325e36fda469ef4aad79336#b19215bed21c656fc188ab13a6206f7b - Cache
+    brotli/1.1.0#d56d7bb9ca722942aba17369cb5c0519:e61b328c57a7dac78df341bc28d447e08bf608e7#164f02306ce62745405d97b91cbdf15c - Cache
+    bzip2/1.0.8#d00dac990f08d991998d624be81a9526:dd62ce301c6ef0d8f7729c263acbaf3a11b7c621#7fb7f4cda174d41b27272757db5731b4 - Cache
+    flac/1.4.3#112ca54377880fa91b13268d48e17871:ec76f3a606170941ebf092dbefc5b976353c1432#9262949eec524bf1b2de144cab0ada42 - Cache
+    fmt/11.0.2#5c7438ef4d5d69ab106a41e460ce11f3:ed24bd5ddcb539c4a46096000a2fbd622370d034#f836740e6f1f0aae58770f23e4c0162d - Cache
+    freetype/2.13.2#5d2563803c8558d4ef47271a82c73d20:8c8e819f72bf238a61323610becf843e3fd7289a#330237d1da6fabb86ca09a99f86f1463 - Cache
+    glfw/3.3.8#d75a15a362a707163bfaabbf4dc993d8:ee8ddfc1a6035d30dc67d6422a1a1c9220db1abc#759768b517a501a1dbec1f142ed0fa3d - Cache
+    libpng/1.6.44#9e1aa08fb46946c7c91e4ae03bd49811:34b444759868b4ce4f04f81d4ad4927bd78d7d3e#c26c6d3bf995d125e3910f164de362f5 - Cache
+    ogg/1.3.5#062626875f5c8c59f069f76f148098ef:8b7e35f91e516e42ed736c6dd52a9263da3a5dad#0822b900213b7eaf61bf4a574aa56ed5 - Cache
+    openal-soft/1.22.2#506a381e0b805519cba4a7f1ee653fed:8b7e35f91e516e42ed736c6dd52a9263da3a5dad#a10833f1d06b4f3ab80608e8998f0781 - Cache
     opengl/system#4df6fecde4084386beded3ed0e56e4ea:da39a3ee5e6b4b0d3255bfef95601890afd80709#0ba8627bd47edc3a501e8f0eb9a79e5e - Cache
-    sfml/2.6.1#a09fa95bd90d736d49b2de6418f5e909:17d1ed2a7959446a6871c6263efff98269f4fec3#0ff0d5c93223f4825f0bdc4a3cc1c3a5 - Cache
-    vorbis/1.3.7#37e58f52e59a6232199b34ef402714a6:d1c9d6a7cedc9d055836fafac2f63472ed678803#067c409838b5dec510b03e393dff65e9 - Cache
-    zlib/1.3.1#f52e03ae3d251dec704634230cd806a2:91bc30bd1cf5cf6f7eaa458587e5f3f49727ce3e#fd2e3b5c34734feeaaf3ccd1cea3e8a1 - Cache
+    sfml/2.6.1#a09fa95bd90d736d49b2de6418f5e909:2616441629bd9e9e81a2c02fe49df96eb9b19e3b#b4a6fee5c60edbcf7388938e5271f0fc - Cache
+    vorbis/1.3.7#37e58f52e59a6232199b34ef402714a6:bb6071f9f2be46b80f5a89df16ef8b448ccb8a9e#bef5624e73525f82da92499e7c2ee18a - Cache
+    zlib/1.3.1#f52e03ae3d251dec704634230cd806a2:8b7e35f91e516e42ed736c6dd52a9263da3a5dad#3829824b59f8f4a6ae5a4d10154f9d79 - Cache
 Build requirements
 Skipped binaries
     minimp3/cci.20211201, stb/cci.20230920, meson/1.2.2, meson/1.3.2, ninja/1.12.1, pkgconf/2.1.0
@@ -129,10 +128,10 @@ vorbis/1.3.7: Already installed! (11 of 13)
 freetype/2.13.2: Already installed! (12 of 13)
 sfml/2.6.1: Already installed! (13 of 13)
 WARN: deprecated: Usage of deprecated Conan 1.X features that will be removed in Conan 2.X:
-WARN: deprecated:     'cpp_info.names' used in: fmt/11.0.2, brotli/1.1.0, libpng/1.6.44, ogg/1.3.5, glfw/3.3.8, openal-soft/1.22.2, flac/1.4.3, sfml/2.6.1, bzip2/1.0.8, zlib/1.3.1, vorbis/1.3.7, freetype/2.13.2
-WARN: deprecated:     'cpp_info.build_modules' used in: glfw/3.3.8, openal-soft/1.22.2, sfml/2.6.1, bzip2/1.0.8, freetype/2.13.2
-WARN: deprecated:     'env_info' used in: flac/1.4.3, bzip2/1.0.8, freetype/2.13.2
-WARN: deprecated:     'cpp_info.filenames' used in: opengl/system, flac/1.4.3, glfw/3.3.8, freetype/2.13.2
+WARN: deprecated:     'cpp_info.names' used in: freetype/2.13.2, brotli/1.1.0, flac/1.4.3, ogg/1.3.5, fmt/11.0.2, openal-soft/1.22.2, libpng/1.6.44, glfw/3.3.8, zlib/1.3.1, sfml/2.6.1, vorbis/1.3.7, bzip2/1.0.8
+WARN: deprecated:     'cpp_info.build_modules' used in: freetype/2.13.2, openal-soft/1.22.2, glfw/3.3.8, sfml/2.6.1, bzip2/1.0.8
+WARN: deprecated:     'env_info' used in: freetype/2.13.2, flac/1.4.3, bzip2/1.0.8
+WARN: deprecated:     'cpp_info.filenames' used in: freetype/2.13.2, glfw/3.3.8, opengl/system, flac/1.4.3
 WARN: deprecated:     'user_info' used in: freetype/2.13.2
 
 ======== Finalizing install (deploy, generators) ========
@@ -174,13 +173,13 @@ Install finished successfully
 -- Conan: Target declared 'ZLIB::ZLIB'
 -- CMake-Conan: find_package(BZip2) found, 'conan install' already ran
 -- Conan: Target declared 'BZip2::BZip2'
--- Conan: Including build module from 'C:/Users/Dami/.conan2/p/b/bzip242361b636bf65/p/lib/cmake/conan-official-bzip2-variables.cmake'
+-- Conan: Including build module from 'C:/Users/Dami/.conan2/p/b/bzip29b056da9d1fd5/p/lib/cmake/conan-official-bzip2-variables.cmake'
 -- CMake-Conan: find_package(brotli) found, 'conan install' already ran
 -- Conan: Component target declared 'brotli::brotlicommon'
 -- Conan: Component target declared 'brotli::brotlidec'
 -- Conan: Component target declared 'brotli::brotlienc'
 -- Conan: Target declared 'brotli::brotli'
--- Conan: Including build module from 'C:/Users/Dami/.conan2/p/b/freet8597dfb4ff8e0/p/lib/cmake/conan-official-freetype-variables.cmake'
+-- Conan: Including build module from 'C:/Users/Dami/.conan2/p/b/freetca820d5d8a4cd/p/lib/cmake/conan-official-freetype-variables.cmake'
 -- CMake-Conan: find_package(flac) found, 'conan install' already ran
 -- Conan: Component target declared 'FLAC::FLAC'
 -- Conan: Component target declared 'FLAC::FLAC++'
@@ -189,7 +188,7 @@ Install finished successfully
 -- Conan: Component target declared 'Ogg::ogg'
 -- CMake-Conan: find_package(OpenAL) found, 'conan install' already ran
 -- Conan: Target declared 'OpenAL::OpenAL'
--- Conan: Including build module from 'C:/Users/Dami/.conan2/p/b/opena88bbcecde8374/p/lib/cmake/conan-official-openal-soft-variables.cmake'
+-- Conan: Including build module from 'C:/Users/Dami/.conan2/p/b/opena83e857a26f199/p/lib/cmake/conan-official-openal-soft-variables.cmake'
 -- CMake-Conan: find_package(Vorbis) found, 'conan install' already ran
 -- Conan: Component target declared 'Vorbis::vorbis'
 -- Conan: Component target declared 'Vorbis::vorbisenc'
@@ -199,6 +198,6 @@ Install finished successfully
 -- Conan: Target declared 'vorbis::vorbis'
 -- CMake-Conan: find_package(glfw3) found, 'conan install' already ran
 -- Conan: Target declared 'glfw'
--- Configuring done (20.1s)
--- Generating done (0.0s)
+-- Configuring done (11.8s)
+-- Generating done (0.1s)
 -- Build files have been written to: C:/Users/Dami/Documents/CLionProjects/ejemplo02_fractal2/cmake-build-debug

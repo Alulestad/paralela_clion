@@ -1,7 +1,20 @@
 # ninja log v6
-613	1227	7564092685806973	mpi_rep.exe	aba114aaf32fd94a
-46	4052	7582224424892924	build.ninja	3ec43591bcfe6e07
-24	463	7565116086628227	CMakeFiles/mpi.dir/mpi.cpp.obj	e6f0f5c75e710a5f
-38	686	7579585427963273	CMakeFiles/matrices_multi.dir/matrices_multi.cpp.obj	65eb6193d0789388
-687	990	7579585434446091	matrices_multi.exe	70d35f68abb4814
-464	712	7565116091026723	mpi.exe	8c2b9558c5be9f7b
+6	664	7589296480785690	CMakeFiles/omp_promedio.dir/omp_promedio.cpp.obj	41482d4c0a5638a7
+665	1010	7589296487380355	omp_promedio.exe	6fe9e12d986606dd
+59	800	7589297972563622	CMakeFiles/omp_suma.dir/omp_suma.cpp.obj	789fa59b1b5bf85e
+15	815	7589297972129674	CMakeFiles/mpi_correccion.dir/mpi_correccion.cpp.obj	6aaee6f79ca831a0
+48	832	7589297972461565	CMakeFiles/omp_fractal.dir/omp_fps_counter.cpp.obj	5f2b776945ba153d
+21	844	7589297972180606	CMakeFiles/mpi_correccion_profe.dir/mpi_correccion_profe.cpp.obj	992fffd6d6212a2d
+37	857	7589297972339300	CMakeFiles/mpi_suma.dir/mpi_suma.cpp.obj	ec82d45c4d0f32db
+43	1139	7589297972400461	CMakeFiles/omp_fractal.dir/omp_fractal.cpp.obj	c6c59b2ef2df8df0
+30	1160	7589297972273161	CMakeFiles/mpi_promedio.dir/mpi_promedio.cpp.obj	7774db57a5bc375e
+25	1171	7589297972221743	CMakeFiles/mpi_matrices_multi.dir/mpi_matrices_multi.cpp.obj	adb48d3c10caeb3b
+54	1188	7589297972512685	CMakeFiles/omp_promedio.dir/omp_promedio.cpp.obj	41482d4c0a5638a7
+815	1415	7589297980127655	mpi_correccion.exe	3276d0bb2cd47371
+801	1431	7589297979986446	omp_suma.exe	e6db11352f01531e
+844	1444	7589297980423412	mpi_correccion_profe.exe	57d068518de511e1
+858	1446	7589297980553421	mpi_suma.exe	dcd8163550614307
+1189	1575	7589297983859887	omp_promedio.exe	6fe9e12d986606dd
+1161	1685	7589297983580010	mpi_promedio.exe	d9d81006712c38e9
+1172	1705	7589297983690007	mpi_matrices_multi.exe	fc278e00d1cf752a
+1140	1785	7589297983370004	omp_fractal.exe	5ca4c93486f75484

@@ -175,7 +175,7 @@ int main() {
 //pixel_buffer
 //W*H
 
-void correc() {
+/*void correc() {
     i=idx%W
-}
+}*/
 
