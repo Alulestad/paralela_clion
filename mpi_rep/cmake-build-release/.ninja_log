@@ -4,6 +4,7 @@
 21	849	7589298433143983	CMakeFiles/mpi_correccion.dir/mpi_correccion.cpp.obj	3a2c23b7c5651c38
 62	870	7589298433555774	CMakeFiles/omp_suma.dir/omp_suma.cpp.obj	316c6112c55396bc
 41	884	7589298433342068	CMakeFiles/mpi_suma.dir/mpi_suma.cpp.obj	cd96cf634b22a01
+32	1452	7589298433250969	CMakeFiles/mpi_matrices_multi.dir/mpi_matrices_multi.cpp.obj	9b377822f5d4051a
 870	1123	7589298441632799	omp_suma.exe	11ba79b4b7478dad
 849	1140	7589298441427533	mpi_correccion.exe	f61526ab1f49cc24
 837	1154	7589298441307647	mpi_correccion_profe.exe	e1edeaa6d38f92ed
@@ -13,6 +14,7 @@
 57	1339	7589298433504688	CMakeFiles/omp_promedio.dir/omp_promedio.cpp.obj	87440b775f0b6565
 1171	1420	7589298444637913	omp_fractal.exe	8a034f4266dcd241
 1281	1444	7589298445743420	mpi_promedio.exe	57108b80331cc60a
-32	1452	7589298433250969	CMakeFiles/mpi_matrices_multi.dir/mpi_matrices_multi.cpp.obj	9b377822f5d4051a
 1340	1492	7589298446329081	omp_promedio.exe	de06b9b93aab2bb2
 1452	1580	7589298447454639	mpi_matrices_multi.exe	81968a9332aee448
+4	664	7590296928125189	CMakeFiles/omp_paleta.dir/omp_paleta.cpp.obj	6fbe655b12888e18
+665	935	7590296934732368	omp_paleta.exe	7d60f03e6b128752

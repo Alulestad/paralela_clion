@@ -1,0 +1,6 @@
+# ninja log v6
+3	1338	7591925349174743	build.ninja	55c006b7628b5061
+3835	5482	7591925306320058	CMakeFiles/cuda.dir/cmake_device_link.obj	376158c51e4f8506
+7	419	7591925268039475	CMakeFiles/cuda.dir/main.cpp.obj	6bd4f0c005bf5620
+3	3834	7591925267999463	CMakeFiles/cuda.dir/kernel.cu.obj	9624e478a820f36d
+5482	5794	7591925322791203	cuda.exe	edda1eaf34baf6c9
