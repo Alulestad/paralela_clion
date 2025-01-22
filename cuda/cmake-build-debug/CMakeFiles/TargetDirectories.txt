@@ -1,3 +1,4 @@
-C:/Users/Dami/Documents/CLionProjects/cuda/cmake-build-debug/CMakeFiles/cuda.dir
-C:/Users/Dami/Documents/CLionProjects/cuda/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Dami/Documents/CLionProjects/cuda/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/CMakeFiles/cuda.dir
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/CMakeFiles/cl_01.dir
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -15,7 +15,8 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -30,12 +31,20 @@
 					"name" : "cuda",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
 			"targets" : 
 			[
+				{
+					"directoryIndex" : 0,
+					"id" : "cl_01::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cl_01-Debug-9422ff4ad4eba81f7551.json",
+					"name" : "cl_01",
+					"projectIndex" : 0
+				},
 				{
 					"directoryIndex" : 0,
 					"id" : "cuda::@6890427a1f51a3e7e1df",
@@ -49,8 +58,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/Dami/Documents/CLionProjects/cuda/cmake-build-debug",
-		"source" : "C:/Users/Dami/Documents/CLionProjects/cuda"
+		"build" : "C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug",
+		"source" : "C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda"
 	},
 	"version" : 
 	{
