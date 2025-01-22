@@ -12,7 +12,7 @@ endif()
 
 ########### VARIABLES #######################################################################
 #############################################################################################
-set(fmt_PACKAGE_FOLDER_RELEASE "C:/Users/Dami/.conan2/p/b/fmt2b256f1257dd2/p")
+set(fmt_PACKAGE_FOLDER_RELEASE "C:/Users/Dami/.conan2/p/fmt0c230d64c2e0f/p")
 set(fmt_BUILD_MODULES_PATHS_RELEASE )
 
 
@@ -24,7 +24,7 @@ set(fmt_EXE_LINK_FLAGS_RELEASE )
 set(fmt_OBJECTS_RELEASE )
 set(fmt_COMPILE_DEFINITIONS_RELEASE )
 set(fmt_COMPILE_OPTIONS_C_RELEASE )
-set(fmt_COMPILE_OPTIONS_CXX_RELEASE )
+set(fmt_COMPILE_OPTIONS_CXX_RELEASE /utf-8)
 set(fmt_LIB_DIRS_RELEASE "${fmt_PACKAGE_FOLDER_RELEASE}/lib")
 set(fmt_BIN_DIRS_RELEASE )
 set(fmt_LIBRARY_TYPE_RELEASE STATIC)
@@ -60,7 +60,7 @@ set(fmt_fmt_fmt_DEFINITIONS_RELEASE )
 set(fmt_fmt_fmt_OBJECTS_RELEASE )
 set(fmt_fmt_fmt_COMPILE_DEFINITIONS_RELEASE )
 set(fmt_fmt_fmt_COMPILE_OPTIONS_C_RELEASE "")
-set(fmt_fmt_fmt_COMPILE_OPTIONS_CXX_RELEASE "")
+set(fmt_fmt_fmt_COMPILE_OPTIONS_CXX_RELEASE "/utf-8")
 set(fmt_fmt_fmt_LIBS_RELEASE fmt)
 set(fmt_fmt_fmt_SYSTEM_LIBS_RELEASE )
 set(fmt_fmt_fmt_FRAMEWORK_DIRS_RELEASE )

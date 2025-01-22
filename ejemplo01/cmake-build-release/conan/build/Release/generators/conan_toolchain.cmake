@@ -23,25 +23,27 @@ endif()
 
 ########## 'compilers' block #############
 
-set(CMAKE_C_COMPILER "C:/Program Files/mingw64/bin/gcc.exe")
-set(CMAKE_CXX_COMPILER "C:/Program Files/mingw64/bin/c++.exe")
-set(CMAKE_RC_COMPILER "C:/Program Files/mingw64/bin/windres.exe")
-
-
-########## 'arch_flags' block #############
-# Define C++ flags, C flags and linker flags from 'settings.arch'
-
-message(STATUS "Conan toolchain: Defining architecture flag: -m64")
-string(APPEND CONAN_CXX_FLAGS " -m64")
-string(APPEND CONAN_C_FLAGS " -m64")
-string(APPEND CONAN_SHARED_LINKER_FLAGS " -m64")
-string(APPEND CONAN_EXE_LINKER_FLAGS " -m64")
+set(CMAKE_C_COMPILER "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.42.34433/bin/Hostx64/x64/cl.exe")
+set(CMAKE_CXX_COMPILER "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.42.34433/bin/Hostx64/x64/cl.exe")
+set(CMAKE_RC_COMPILER "C:/Program Files (x86)/Windows Kits/10/bin/10.0.22621.0/x64/rc.exe")
 
 
 ########## 'libcxx' block #############
 # Definition of libcxx from 'compiler.libcxx' setting, defining the
 # right CXX_FLAGS for that libcxx
 
+
+
+########## 'vs_runtime' block #############
+# Definition of VS runtime CMAKE_MSVC_RUNTIME_LIBRARY, from settings build_type,
+# compiler.runtime, compiler.runtime_type
+
+cmake_policy(GET CMP0091 POLICY_CMP0091)
+if(NOT "${POLICY_CMP0091}" STREQUAL NEW)
+    message(FATAL_ERROR "The CMake policy CMP0091 must be NEW, but is '${POLICY_CMP0091}'")
+endif()
+message(STATUS "Conan toolchain: Setting CMAKE_MSVC_RUNTIME_LIBRARY=$<$<CONFIG:Release>:MultiThreadedDLL>")
+set(CMAKE_MSVC_RUNTIME_LIBRARY "$<$<CONFIG:Release>:MultiThreadedDLL>")
 
 
 ########## 'cppstd' block #############
@@ -137,9 +139,9 @@ list(PREPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_LIST_DIR})
 # Definition of CMAKE_PREFIX_PATH, CMAKE_XXXXX_PATH
 # The Conan local "generators" folder, where this toolchain is saved.
 list(PREPEND CMAKE_PREFIX_PATH ${CMAKE_CURRENT_LIST_DIR} )
-list(PREPEND CMAKE_LIBRARY_PATH "C:/Users/Dami/.conan2/p/b/glfw65f808f0e076e/p/lib" "C:/Users/Dami/.conan2/p/b/fmt2b256f1257dd2/p/lib")
-list(PREPEND CMAKE_INCLUDE_PATH "C:/Users/Dami/.conan2/p/b/glfw65f808f0e076e/p/include" "C:/Users/Dami/.conan2/p/b/fmt2b256f1257dd2/p/include")
-set(CONAN_RUNTIME_LIB_DIRS "C:/Users/Dami/.conan2/p/b/glfw65f808f0e076e/p/bin" "C:/Users/Dami/.conan2/p/b/fmt2b256f1257dd2/p/bin" )
+list(PREPEND CMAKE_LIBRARY_PATH "C:/Users/Dami/.conan2/p/glfwb849653fc074f/p/lib" "C:/Users/Dami/.conan2/p/fmt0c230d64c2e0f/p/lib")
+list(PREPEND CMAKE_INCLUDE_PATH "C:/Users/Dami/.conan2/p/glfwb849653fc074f/p/include" "C:/Users/Dami/.conan2/p/fmt0c230d64c2e0f/p/include")
+set(CONAN_RUNTIME_LIB_DIRS "C:/Users/Dami/.conan2/p/glfwb849653fc074f/p/bin" "C:/Users/Dami/.conan2/p/fmt0c230d64c2e0f/p/bin" )
 
 endif()
 

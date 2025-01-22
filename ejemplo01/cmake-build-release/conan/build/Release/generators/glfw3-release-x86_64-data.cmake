@@ -12,7 +12,7 @@ set(opengl_system_FIND_MODE "NO_MODULE")
 
 ########### VARIABLES #######################################################################
 #############################################################################################
-set(glfw_PACKAGE_FOLDER_RELEASE "C:/Users/Dami/.conan2/p/b/glfw65f808f0e076e/p")
+set(glfw_PACKAGE_FOLDER_RELEASE "C:/Users/Dami/.conan2/p/glfwb849653fc074f/p")
 set(glfw_BUILD_MODULES_PATHS_RELEASE )
 
 

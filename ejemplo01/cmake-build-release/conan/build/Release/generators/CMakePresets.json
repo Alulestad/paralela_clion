@@ -18,6 +18,14 @@
                 "CMAKE_POLICY_DEFAULT_CMP0091": "NEW",
                 "CMAKE_BUILD_TYPE": "Release"
             },
+            "toolset": {
+                "value": "v143",
+                "strategy": "external"
+            },
+            "architecture": {
+                "value": "x64",
+                "strategy": "external"
+            },
             "toolchainFile": "generators\\conan_toolchain.cmake",
             "binaryDir": "C:\\Users\\Dami\\Documents\\CLionProjects\\ejemplo01\\cmake-build-release\\conan\\build\\Release"
         }

@@ -52,6 +52,9 @@ target_link_libraries(mpi_suma ${MPI_LIBRARIES})
 add_executable(omp_fractal omp_fractal.cpp omp_fps_counter.cpp omp_fps_counter.h )
 target_link_libraries(omp_fractal fmt::fmt sfml::sfml glfw OpenMP::OpenMP_CXX)
 
+add_executable(omp_paleta omp_paleta.cpp)
+target_link_libraries(omp_paleta fmt::fmt sfml::sfml glfw OpenMP::OpenMP_CXX)
+
 add_executable(omp_promedio omp_promedio.cpp)
 target_link_libraries(omp_promedio fmt::fmt OpenMP::OpenMP_CXX)
 
