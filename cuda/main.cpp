@@ -5,7 +5,7 @@
 
 
 //#define VECTOR_SIZE 1024*1024
-const size_t VECTOR_SIZE = 1024*1024*1024;
+const size_t VECTOR_SIZE = 1024*1024*2;
 
 void suma_serial(float* x, float* y, float* z, int size) {
     for (int i=0;i<size;i++) {
