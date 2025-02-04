@@ -5,7 +5,7 @@
 #include <ctime>   // Para time()
 #include <fmt/core.h>
 
-#define MATRIX_DIM 25
+#define MATRIX_DIM 500
 
 void imprimir_vector(const std::string msg, double* v, int size) {
     fmt::print("{} [",msg);

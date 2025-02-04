@@ -3,6 +3,11 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BackendCodeEditorMiscSettings">
+    <option name="/Default/RiderDebugger/RiderRestoreDecompile/RestoreDecompileSetting/@EntryValue" value="false" type="bool" />
+    <option name="/Default/Housekeeping/GlobalSettingsUpgraded/IsUpgraded/@EntryValue" value="true" type="bool" />
+    <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexedValue" value="true" type="bool" />
+  </component>
   <component name="CMakePresetLoader">{
   &quot;useNewFormat&quot;: true
 }</component>
@@ -14,68 +19,280 @@
   </component>
   <component name="CMakeRunConfigurationManager">
     <generated>
-      <config projectName="cuda" targetName="cl_01" />
+      <config projectName="cuda" targetName="suma_vectores_cl" />
+      <config projectName="cuda" targetName="suma_vectores_cuda" />
       <config projectName="cuda" targetName="cuda" />
     </generated>
   </component>
   <component name="CMakeSettings">
     <configurations>
-      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" GENERATION_OPTIONS="-DCMAKE_PROJECT_TOP_LEVEL_INCLUDES=&quot;conan_provider.cmake&quot; (2)\conan.exe&quot;" NO_GENERATOR="true" />
     </configurations>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="255fb2bb-86ff-4dfb-a80b-8662d0c66f30" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/kernel.cl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main_cl.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kernel_suma_vectores.cu" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main_suma_vectores.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cache-v2-da3a8b34b91b203453d7.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-1c89ca225b8690cf328e.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-f7c8c3d5e19597c2b124.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2025-01-21T19-55-34-0971.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/toolchains-v1-aa3d1ba71abbb0f12024.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cache-v2-92a3c222dd458ecf391e.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-e4c44a1a5e361fdf00b3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-a3abc52a86d7715ab847.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2025-01-22T13-01-59-0380.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-cl_01-Debug-9422ff4ad4eba81f7551.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-cuda-Debug-3046e203b4ad176ffac4.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CMakeCUDACompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CMakeCUDACompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CMakeCXXCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CMakeCXXCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CMakeDetermineCompilerABI_CUDA.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CMakeDetermineCompilerABI_CUDA.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCUDA/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCUDA/a.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCUDA/a.exp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCUDA/a.exp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCUDA/a.lib" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCUDA/a.lib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCUDA/tmp/CMakeCUDACompilerId.cpp1.ii" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCUDA/tmp/CMakeCUDACompilerId.cpp1.ii" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCUDA/tmp/CMakeCUDACompilerId.cpp4.ii" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCUDA/tmp/CMakeCUDACompilerId.cpp4.ii" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCUDA/tmp/CMakeCUDACompilerId.cudafe1.c" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCUDA/tmp/CMakeCUDACompilerId.cudafe1.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCUDA/tmp/CMakeCUDACompilerId.cudafe1.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCUDA/tmp/CMakeCUDACompilerId.cudafe1.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCUDA/tmp/CMakeCUDACompilerId.cudafe1.gpu" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCUDA/tmp/CMakeCUDACompilerId.cudafe1.gpu" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCUDA/tmp/CMakeCUDACompilerId.module_id" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCUDA/tmp/CMakeCUDACompilerId.module_id" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCUDA/tmp/CMakeCUDACompilerId.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCUDA/tmp/CMakeCUDACompilerId.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCUDA/tmp/CMakeCUDACompilerId.obj.res" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCUDA/tmp/CMakeCUDACompilerId.obj.res" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCUDA/tmp/a.exe.res" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCUDA/tmp/a.exe.res" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCUDA/tmp/a_dlink.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCUDA/tmp/a_dlink.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCXX/CMakeCXXCompilerId.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCXX/CMakeCXXCompilerId.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCXX/CMakeCXXCompilerId.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCXX/CMakeCXXCompilerId.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CMakeCUDACompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CMakeDetermineCompilerABI_CUDA.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CMakeRCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCUDA/CMakeCUDACompilerId.cu" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCUDA/a.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCUDA/a.exp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCUDA/a.lib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCUDA/tmp/CMakeCUDACompilerId.cpp1.ii" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCUDA/tmp/CMakeCUDACompilerId.cpp1.ii.res" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCUDA/tmp/CMakeCUDACompilerId.cpp4.ii" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCUDA/tmp/CMakeCUDACompilerId.cpp4.ii.res" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCUDA/tmp/CMakeCUDACompilerId.cudafe1.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCUDA/tmp/CMakeCUDACompilerId.cudafe1.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCUDA/tmp/CMakeCUDACompilerId.cudafe1.gpu" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCUDA/tmp/CMakeCUDACompilerId.cudafe1.stub.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCUDA/tmp/CMakeCUDACompilerId.fatbin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCUDA/tmp/CMakeCUDACompilerId.fatbin.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCUDA/tmp/CMakeCUDACompilerId.module_id" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCUDA/tmp/CMakeCUDACompilerId.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCUDA/tmp/CMakeCUDACompilerId.obj.res" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCUDA/tmp/CMakeCUDACompilerId.ptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCUDA/tmp/CMakeCUDACompilerId.sm_52.cubin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCUDA/tmp/a.exe.res" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCUDA/tmp/a_dlink.fatbin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCUDA/tmp/a_dlink.fatbin.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCUDA/tmp/a_dlink.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCUDA/tmp/a_dlink.obj.res" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCUDA/tmp/a_dlink.reg.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCUDA/tmp/a_dlink.sm_52.cubin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCUDA/tmp/a_dlink.sm_52.cubin.optf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCXX/CMakeCXXCompilerId.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCXX/CMakeCXXCompilerId.obj" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ShowIncludes/main.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ShowIncludes/main.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ShowIncludes/foo.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ShowIncludes/main.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ShowIncludes/main.obj" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cl_01.dir/embed.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cl_01.dir/intermediate.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cl_01.dir/main_cl.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cl_01.dir/manifest.rc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cl_01.dir/manifest.res" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cl_01.dir/vc140.pdb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cuda.dir/cmake_device_link.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cuda.dir/cmake_device_link.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cuda.dir/kernel.cu.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cuda.dir/kernel.cu.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cuda.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cuda.dir/main.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cuda.dir/manifest.rc" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cuda.dir/manifest.rc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cuda.dir/vc140.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cuda.dir/vc140.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cuda.dir/cmake_device_link.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cuda.dir/embed.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cuda.dir/intermediate.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cuda.dir/kernel.cu.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cuda.dir/main.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cuda.dir/manifest.rc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cuda.dir/manifest.res" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cuda.dir/vc140.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cuda.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cuda.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cuda.exp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cuda.exp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cuda.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cuda.ilk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cuda.lib" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cuda.lib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cuda.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cuda.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kernel.cl" beforeDir="false" afterPath="$PROJECT_DIR$/kernel_suma_vectores.cl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kernel.cu" beforeDir="false" afterPath="$PROJECT_DIR$/kernel.cu" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_cl.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main_cl_suma_vectores.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/.cmake/api/v1/reply/cache-v2-3884669c275b1e8452da.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-099e5d780a7883171482.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-e8c7e03ffc4de13d7160.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/.cmake/api/v1/reply/index-2025-01-19T22-41-02-0770.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/.cmake/api/v1/reply/target-mpi_matrices_multi-Debug-668437c75e40662d8bfd.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/.cmake/api/v1/reply/target-omp_fractal-Debug-4e4240f62400ec5efec5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/.cmake/api/v1/reply/target-omp_paleta-Debug-2d0919cb4a832f49e5de.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/.cmake/api/v1/reply/target-omp_promedio-Debug-1dcc71596bf0dc2959dd.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/.cmake/api/v1/reply/toolchains-v1-b454928ab40b8594c0b4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/3.29.6/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/3.29.6/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/3.29.6/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/3.29.6/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/3.29.6/CMakeRCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/3.29.6/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdC/CMakeCCompilerId.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdC/CMakeCCompilerId.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCXX/CMakeCXXCompilerId.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCXX/CMakeCXXCompilerId.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/FindMPI/test_mpi_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/FindMPI/test_mpi_C.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/FindMPI/test_mpi_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/FindMPI/test_mpi_CXX.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/FindOpenMP/ompver_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/FindOpenMP/ompver_C.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/FindOpenMP/ompver_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/FindOpenMP/ompver_CXX.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/ShowIncludes/main.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/ShowIncludes/main.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/mpi_correccion.dir/embed.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/mpi_correccion.dir/intermediate.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/mpi_correccion.dir/manifest.rc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/mpi_correccion.dir/manifest.res" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/mpi_correccion.dir/mpi_correccion.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/mpi_correccion.dir/vc140.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/mpi_correccion_profe.dir/embed.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/mpi_correccion_profe.dir/intermediate.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/mpi_correccion_profe.dir/manifest.rc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/mpi_correccion_profe.dir/manifest.res" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/mpi_correccion_profe.dir/mpi_correccion_profe.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/mpi_correccion_profe.dir/vc140.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/mpi_matrices_multi.dir/embed.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/mpi_matrices_multi.dir/intermediate.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/mpi_matrices_multi.dir/manifest.rc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/mpi_matrices_multi.dir/manifest.res" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/mpi_matrices_multi.dir/mpi_matrices_multi.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/mpi_matrices_multi.dir/vc140.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/mpi_promedio.dir/embed.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/mpi_promedio.dir/intermediate.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/mpi_promedio.dir/manifest.rc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/mpi_promedio.dir/manifest.res" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/mpi_promedio.dir/mpi_promedio.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/mpi_promedio.dir/vc140.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/mpi_suma.dir/embed.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/mpi_suma.dir/intermediate.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/mpi_suma.dir/manifest.rc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/mpi_suma.dir/manifest.res" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/mpi_suma.dir/mpi_suma.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/mpi_suma.dir/vc140.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/omp_fractal.dir/embed.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/omp_fractal.dir/intermediate.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/omp_fractal.dir/manifest.rc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/omp_fractal.dir/manifest.res" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/omp_fractal.dir/omp_fps_counter.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/omp_fractal.dir/omp_fractal.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/omp_fractal.dir/vc140.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/omp_promedio.dir/embed.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/omp_promedio.dir/intermediate.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/omp_promedio.dir/manifest.rc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/omp_promedio.dir/manifest.res" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/omp_promedio.dir/omp_promedio.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/omp_promedio.dir/vc140.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/omp_suma.dir/embed.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/omp_suma.dir/intermediate.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/omp_suma.dir/manifest.rc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/omp_suma.dir/manifest.res" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/omp_suma.dir/omp_suma.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/omp_suma.dir/vc140.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/BZip2-Target-debug.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/BZip2-Target-debug.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/BZip2-debug-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/BZip2-debug-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/BZip2Config.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/BZip2Config.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/BZip2ConfigVersion.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/BZip2ConfigVersion.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/BZip2Targets.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/BZip2Targets.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/CMakePresets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/CMakePresets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/FindBZip2.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/FindBZip2.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/FindFreetype.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/FindFreetype.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/FindOpenAL.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/FindOpenAL.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/FindPNG.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/FindPNG.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/FindZLIB.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/FindZLIB.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/Ogg-Target-debug.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/Ogg-Target-debug.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/Ogg-debug-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/Ogg-debug-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/OggConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/OggConfig.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/OggConfigVersion.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/OggConfigVersion.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/OggTargets.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/OggTargets.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/OpenAL-Target-debug.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/OpenAL-Target-debug.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/OpenAL-debug-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/OpenAL-debug-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/OpenALConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/OpenALConfig.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/OpenALConfigVersion.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/OpenALConfigVersion.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/OpenALTargets.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/OpenALTargets.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/PNG-Target-debug.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/PNG-Target-debug.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/PNG-debug-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/PNG-debug-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/PNGConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/PNGConfig.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/PNGConfigVersion.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/PNGConfigVersion.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/PNGTargets.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/PNGTargets.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/SFML-Target-debug.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/SFML-Target-debug.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/SFML-debug-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/SFML-debug-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/SFMLConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/SFMLConfig.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/SFMLConfigVersion.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/SFMLConfigVersion.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/SFMLTargets.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/SFMLTargets.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/Vorbis-Target-debug.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/Vorbis-Target-debug.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/Vorbis-debug-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/Vorbis-debug-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/VorbisConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/VorbisConfig.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/VorbisConfigVersion.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/VorbisConfigVersion.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/VorbisTargets.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/VorbisTargets.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/ZLIB-Target-debug.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/ZLIB-Target-debug.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/ZLIB-debug-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/ZLIB-debug-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/ZLIBConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/ZLIBConfig.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/ZLIBConfigVersion.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/ZLIBConfigVersion.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/ZLIBTargets.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/ZLIBTargets.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/brotli-Target-debug.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/brotli-Target-debug.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/brotli-config-version.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/brotli-config-version.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/brotli-config.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/brotli-config.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/brotli-debug-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/brotli-debug-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/brotliTargets.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/brotliTargets.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/cmakedeps_macros.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/cmakedeps_macros.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/conan_toolchain.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/conan_toolchain.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/conandeps_legacy.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/conandeps_legacy.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/conanvcvars.bat" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/conanvcvars.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/flac-Target-debug.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/flac-Target-debug.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/flac-config-version.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/flac-config-version.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/flac-config.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/flac-config.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/flac-debug-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/flac-debug-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/flacTargets.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/flacTargets.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/fmt-Target-debug.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/fmt-Target-debug.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/fmt-config-version.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/fmt-config-version.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/fmt-config.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/fmt-config.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/fmt-debug-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/fmt-debug-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/fmtTargets.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/fmtTargets.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/freetype-Target-debug.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/freetype-Target-debug.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/freetype-config-version.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/freetype-config-version.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/freetype-config.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/freetype-config.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/freetype-debug-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/freetype-debug-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/freetypeTargets.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/freetypeTargets.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/glfw3-Target-debug.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/glfw3-Target-debug.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/glfw3-config-version.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/glfw3-config-version.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/glfw3-config.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/glfw3-config.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/glfw3-debug-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/glfw3-debug-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/glfw3Targets.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/glfw3Targets.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/module-BZip2-Target-debug.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/module-BZip2-Target-debug.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/module-BZip2-debug-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/module-BZip2-debug-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/module-BZip2Targets.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/module-BZip2Targets.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/module-Freetype-Target-debug.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/module-Freetype-Target-debug.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/module-Freetype-debug-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/module-Freetype-debug-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/module-FreetypeTargets.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/module-FreetypeTargets.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/module-OpenAL-Target-debug.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/module-OpenAL-Target-debug.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/module-OpenAL-debug-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/module-OpenAL-debug-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/module-OpenALTargets.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/module-OpenALTargets.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/module-PNG-Target-debug.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/module-PNG-Target-debug.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/module-PNG-debug-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/module-PNG-debug-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/module-PNGTargets.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/module-PNGTargets.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/module-ZLIB-Target-debug.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/module-ZLIB-Target-debug.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/module-ZLIB-debug-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/module-ZLIB-debug-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/module-ZLIBTargets.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/module-ZLIBTargets.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/opengl_system-Target-debug.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/opengl_system-Target-debug.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/opengl_system-config-version.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/opengl_system-config-version.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/opengl_system-config.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/opengl_system-config.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/opengl_system-debug-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/opengl_system-debug-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/opengl_systemTargets.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan/build/Debug/generators/opengl_systemTargets.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan_host_profile" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/conan_host_profile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/mpi_matrices_multi.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/mpi_matrices_multi.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/mpi_matrices_multi.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/mpi_matrices_multi.ilk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/mpi_matrices_multi.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/mpi_matrices_multi.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/omp_fractal.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/omp_fractal.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/omp_fractal.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/omp_fractal.ilk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/omp_fractal.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/cmake-build-debug/omp_fractal.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mpi_rep/mpi_matrices_multi.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../mpi_rep/mpi_matrices_multi.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,16 +307,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/main_cl_suma_vectores.cpp" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectApplicationVersion">
     <option name="ide" value="CLion" />
@@ -119,30 +327,37 @@
   "keyToString": {
     "CMake Application.cl_01.executor": "Run",
     "CMake Application.cuda.executor": "Run",
+    "CMake Application.suma_vectores_cuda.executor": "Run",
     "RunOnceActivity.RadMigrateCodeStyle": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "RunOnceActivity.west.config.association.type.startup.service": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
+    "com.jfrog.conanplugin.addconansupport": "true",
+    "com.jfrog.conanplugin.automanage.cmake.advanced.settings": "true",
+    "com.jfrog.conanplugin.conanexecutable": "conan",
+    "com.jfrog.conanplugin.hasbeensetup": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda",
+    "last_opened_file_path": "C:/Users/fing.labcom/CLionProjects/conan-2.10.1-windows-x86_64 (2)/conan.exe",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "CPPToolchains",
+    "settings.editor.selected.configurable": "CMakeSettings",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="CMake Application.cl_01">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\fing.labcom\CLionProjects\clones\paralela_clion\cuda" />
+    </key>
+  </component>
+  <component name="RunManager" selected="CMake Application.cuda">
     <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="cl_01" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cuda" TARGET_NAME="cl_01" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cuda" RUN_TARGET_NAME="cl_01">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -152,9 +367,20 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="suma_vectores_cl" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cuda" TARGET_NAME="suma_vectores_cl" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cuda" RUN_TARGET_NAME="suma_vectores_cl">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="suma_vectores_cuda" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cuda" TARGET_NAME="suma_vectores_cuda" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cuda" RUN_TARGET_NAME="suma_vectores_cuda">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="CMake Application.cl_01" />
       <item itemvalue="CMake Application.cuda" />
+      <item itemvalue="CMake Application.suma_vectores_cl" />
+      <item itemvalue="CMake Application.suma_vectores_cuda" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -166,7 +392,9 @@
       <option name="presentableId" value="Default" />
       <updated>1737461924159</updated>
       <workItem from="1737461926390" duration="5471000" />
-      <workItem from="1737548747723" duration="5462000" />
+      <workItem from="1737548747723" duration="5668000" />
+      <workItem from="1738152917910" duration="3910000" />
+      <workItem from="1738671302709" duration="4125000" />
     </task>
     <servers />
   </component>

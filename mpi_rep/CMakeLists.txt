@@ -8,7 +8,7 @@ set(CMAKE_CXX_STANDARD 17)
 find_package(OpenMP)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /openmp")
 if(OpenMP_CXX_FOUND)
-    message(STATUS "MPI Link Flags: ${MPI_lINK_FLAGS}")
+    message(STATUS "MPI Link Flags: ${MPI_LINK_FLAGS}")
 endif()
 
 find_package(MPI)

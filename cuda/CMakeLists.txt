@@ -5,6 +5,9 @@ set(CMAKE_CUDA_STANDARD 17)
 
 enable_language(CXX CUDA)
 
+find_package(fmt)
+find_package(SFML)
+
 add_executable(cuda
         kernel.cu
         main.cpp
@@ -16,6 +19,8 @@ target_include_directories(cuda PUBLIC
 
 set_target_properties(cuda PROPERTIES
         CUDA_SEPARABLE_COMPILATION ON)
+
+target_link_libraries(cuda fmt::fmt sfml::sfml)
 
 #--------------------------------------------------------------
 #[[find_package(OpenCl)
@@ -29,7 +34,24 @@ target_include_directories(cl_001 PUBLIC
 
 #CMAKE_CUDA_TOOLKIT_INCLUDE_DIRECTORIES
 
+#---------------------------------------------------------
+
+add_executable(suma_vectores_cuda
+        kernel_suma_vectores.cu
+        main_suma_vectores.cpp
+)
+
+target_include_directories(suma_vectores_cuda PUBLIC
+        ${CMAKE_CUDA_TOOLKIT_INCLUDE_DIRECTORIES})
+#este directorio es donde estan los .h de cuda
+
+set_target_properties(suma_vectores_cuda PROPERTIES
+        CUDA_SEPARABLE_COMPILATION ON)
+
+
+
 find_package(OpenCL)
-add_executable(cl_01 main_cl.cpp)
-target_link_libraries(cl_01 ${OpenCL_LIBRARIES})
-target_include_directories(cl_01 PUBLIC ${OpenCL_INCLUDE_DIRS})
+add_executable(suma_vectores_cl main_cl_suma_vectores.cpp)
+target_link_libraries(suma_vectores_cl ${OpenCL_LIBRARIES})
+target_include_directories(suma_vectores_cl PUBLIC ${OpenCL_INCLUDE_DIRS})
+

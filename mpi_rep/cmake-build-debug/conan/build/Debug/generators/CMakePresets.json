@@ -12,8 +12,8 @@
         {
             "name": "conan-debug",
             "displayName": "'conan-debug' config",
-            "description": "'conan-debug' configure using 'Ninja' generator",
-            "generator": "Ninja",
+            "description": "'conan-debug' configure using 'NMake Makefiles' generator",
+            "generator": "NMake Makefiles",
             "cacheVariables": {
                 "CMAKE_POLICY_DEFAULT_CMP0091": "NEW",
                 "CMAKE_BUILD_TYPE": "Debug"
@@ -27,14 +27,14 @@
                 "strategy": "external"
             },
             "toolchainFile": "generators\\conan_toolchain.cmake",
-            "binaryDir": "C:\\Users\\Dami\\Documents\\CLionProjects\\mpi_rep\\cmake-build-debug\\conan\\build\\Debug"
+            "binaryDir": "C:\\Users\\fing.labcom\\CLionProjects\\clones\\paralela_clion\\mpi_rep\\cmake-build-debug\\conan\\build\\Debug"
         }
     ],
     "buildPresets": [
         {
             "name": "conan-debug",
             "configurePreset": "conan-debug",
-            "jobs": 16
+            "jobs": 24
         }
     ],
     "testPresets": [

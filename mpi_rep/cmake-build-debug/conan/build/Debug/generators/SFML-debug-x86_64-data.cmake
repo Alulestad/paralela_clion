@@ -17,7 +17,7 @@ set(opengl_system_FIND_MODE "NO_MODULE")
 
 ########### VARIABLES #######################################################################
 #############################################################################################
-set(sfml_PACKAGE_FOLDER_DEBUG "C:/Users/Dami/.conan2/p/b/sfmldfcf0473d26fe/p")
+set(sfml_PACKAGE_FOLDER_DEBUG "C:/Users/fing.labcom/.conan2/p/b/sfml375310c1c6ccf/p")
 set(sfml_BUILD_MODULES_PATHS_DEBUG )
 
 

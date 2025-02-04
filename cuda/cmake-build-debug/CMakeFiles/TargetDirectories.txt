@@ -1,4 +1,5 @@
 C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/CMakeFiles/cuda.dir
-C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/CMakeFiles/cl_01.dir
-C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/CMakeFiles/suma_vectores_cuda.dir
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/CMakeFiles/suma_vectores_cl.dir
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/CMakeFiles/ALL_BUILD.dir
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/CMakeFiles/ZERO_CHECK.dir
