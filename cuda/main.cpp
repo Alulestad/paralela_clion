@@ -5,6 +5,8 @@
 #include <fmt/core.h>
 #include <sfml/graphics.hpp>
 #include <cuda_runtime.h>
+#include "fps_counter.h"
+
 
 
 
@@ -59,9 +61,17 @@ static unsigned int* device_pixel_buffer=nullptr;
 
 
 
-//--------------------------------------------------------
+#define CHECK(expr){           \
+    auto internal_error = (expr);        \
+    if (internal_error!=cudaSuccess){    \
+        fmt::println("{}: {} in (en) {} at line (en la linea) {}",(int )error, cudaGetErrorString(error), __FILE__, __LINE__); \
+        exit(EXIT_FAILURE);     \
+    }                           \
+}                               \
+
+
 //mandelbrot
-int divergente(double cx, double cy) {
+unsigned int divergente(double cx, double cy) {
     int iter = 0;
     double vx = cx;
     double vy = cy;
@@ -99,7 +109,7 @@ void mandelbrotCpu() {
 //#pragma omp parallel for default(none)
 //#pragma omp parallel for  shared(pixel_buffer,dx,dy)
 
-#pragma omp parallel for default(none) shared(pixel_buffer,dx,dy)
+//#pragma omp parallel for default(none) shared(pixel_buffer,dx,dy)
 // - `default(none)` asegura que todas las variables utilizadas en el bloque deben estar explícitamente declaradas.
 // - `shared(pixel_buffer, dx, dy)` especifica que estas variables son compartidas entre los hilos.
     for (int i = 0; i < WIDTH; i++) {
@@ -111,25 +121,39 @@ void mandelbrotCpu() {
             // Calculamos el color de acuerdo a la función de divergencia.
             int color = divergente(x, y);
             // Asignamos el color al buffer de píxeles en la posición correspondiente.
-            //pixel_buffer[j * WIDTH + i] = color;
+            host_pixel_buffer[j * WIDTH + i] = color;
         }
     }
 
 }
 
-//--------------------------------------------------------
 
-#define CHECK(expr){           \
-    auto internal_error = (expr);        \
-    if (internal_error!=cudaSuccess){    \
-        fmt::println("{}: {} in (en) {} at line (en la linea) {}",(int )error, cudaGetErrorString(error), __FILE__, __LINE__); \
-        exit(EXIT_FAILURE);     \
-    }                           \
-}                               \
+extern "C" void mandelbrotGpuKernel(unsigned int* biffer,
+    unsigned int width, unsigned int height,
+    double x_min, double x_max, double y_min, double y_max,
+    int max_iterations);
+
+
+extern "C"  void copy_pallete(unsigned int* h_pallete);
+
+cudaError_t error;
+void mandelbrotGpu() {
+    mandelbrotGpuKernel(device_pixel_buffer,WIDTH,HEIGHT,x_min,x_max,y_min,y_max,max_iterations);
+
+
+    CHECK(cudaGetLastError());
+
+    CHECK(cudaMemcpy(host_pixel_buffer,device_pixel_buffer,WIDTH*HEIGHT*sizeof(unsigned int),cudaMemcpyDeviceToHost));
+}
+
+
+void copy_palleteCpu() {
+    //copy_pallete(color_ramp);
+}
+
 
 
 int main() {
-
     int device=0;
     cudaSetDevice(device);
 
@@ -146,6 +170,8 @@ int main() {
     size_t buffer_size=WIDTH*HEIGHT*sizeof(unsigned int); // el tamanio del buffer
 
     host_pixel_buffer=(unsigned int *) malloc(buffer_size); // reservar memoria en el host es decir la ram
+    memset(host_pixel_buffer,0,buffer_size);// inzializamos con ceros
+
     cudaError_t error=cudaMalloc(&device_pixel_buffer,buffer_size); // reservar memoria en el device es decir la targeta grafica
     CHECK(error); //si lo hacemos como macro
     // esta copia el codigo de la macro a esta linea
@@ -156,12 +182,43 @@ int main() {
 
 
     // Create the main window
-    sf::RenderWindow window(sf::VideoMode(800, 600), "SFML Mandelrrot CUDA");
+    // -- inicializacion de la interfaz grafia
+    sf::RenderWindow window(sf::VideoMode(WIDTH, HEIGHT), "SFML Mandelrrot CUDA");
 
+
+    copy_palleteCpu();
+    mandelbrotGpu();
+
+
+    //creamos la textura
+    sf::Texture texture;
+    texture.create(WIDTH,HEIGHT);
+    texture.update((const sf::Uint8 *) host_pixel_buffer);
+
+    sf::Sprite sprite;
+    sprite.setTexture(texture);
+
+
+    sf::Font font;
+    font.loadFromFile("../arial.ttf"); //cargamos la fuente
+    sf::Text text;
+    {
+
+        text.setFont(font); //fuente del texto
+        text.setString("Mandelbrot set");
+        text.setCharacterSize(24); //tamanio del texto
+        text.setFillColor(sf::Color::White); //color del texto
+        text.setStyle(sf::Text::Bold); //estilo del texto
+        text.setPosition(10,10); //posicion del texto
+    }
+
+    // --FPS
+    sf::Clock clock;
+    int frames=0;
+    int fps=0;
 
     // Start the game loop
-    while (window.isOpen())
-    {
+    while (window.isOpen()) {
         // Process events
         sf::Event event;
         while (window.pollEvent(event))
@@ -171,8 +228,27 @@ int main() {
                 window.close();
         }
 
+        //--regenrar el dibujo
+        mandelbrotCpu();
+        texture.update((const sf::Uint8 *) host_pixel_buffer);
+
+        // --contador FPS
+        frames++;
+
+        if (clock.getElapsedTime().asSeconds()>=1) {
+            fps=frames;
+            frames=0;
+            clock.restart();
+        }
+
+        auto msg = fmt::format("Mandelbrot set - Iterations={} - FPS: {}",max_iterations,fps);
+        text.setString(msg);
         // Clear screen
         window.clear();
+        {
+            window.draw(sprite);
+            window.draw(text);
+        }
 
         // Update the window
         window.display();

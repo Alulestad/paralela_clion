@@ -4,6 +4,14 @@
     <ClCompile Include="C:\Users\fing.labcom\CLionProjects\clones\paralela_clion\cuda\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\fing.labcom\CLionProjects\clones\paralela_clion\cuda\fps_counter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\fing.labcom\CLionProjects\clones\paralela_clion\cuda\fps_counter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CudaCompile Include="..\kernel.cu">
@@ -14,6 +22,9 @@
     <CustomBuild Include="C:\Users\fing.labcom\CLionProjects\clones\paralela_clion\cuda\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{F68F322F-D57F-391B-A237-296043C702F6}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Source Files">
       <UniqueIdentifier>{B651D982-16FA-3785-BBAC-4BFA70B93221}</UniqueIdentifier>
     </Filter>

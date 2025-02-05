@@ -27,9 +27,9 @@ C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Mod
 C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-NVIDIA-CUDA.cmake
 C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows.cmake
 C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/WindowsPaths.cmake
-C:/Users/fing.labcom/.conan2/p/b/bzip2eb48568a760e2/p/lib/cmake/conan-official-bzip2-variables.cmake
-C:/Users/fing.labcom/.conan2/p/b/freet248b0bbbb1a51/p/lib/cmake/conan-official-freetype-variables.cmake
-C:/Users/fing.labcom/.conan2/p/b/opena1a499321057a0/p/lib/cmake/conan-official-openal-soft-variables.cmake
+C:/Users/fing.labcom/.conan2/p/b/bzip27ec75aa32c59b/p/lib/cmake/conan-official-bzip2-variables.cmake
+C:/Users/fing.labcom/.conan2/p/b/freet450ae7bb95eff/p/lib/cmake/conan-official-freetype-variables.cmake
+C:/Users/fing.labcom/.conan2/p/b/openad4f43ee373ebf/p/lib/cmake/conan-official-openal-soft-variables.cmake
 C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/CMakeLists.txt
 C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/CMakeFiles/3.30.5/CMakeCUDACompiler.cmake
 C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/CMakeFiles/3.30.5/CMakeCXXCompiler.cmake

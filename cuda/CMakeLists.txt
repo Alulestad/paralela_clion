@@ -11,6 +11,8 @@ find_package(SFML)
 add_executable(cuda
         kernel.cu
         main.cpp
+        fps_counter.cpp
+        fps_counter.h
 )
 
 target_include_directories(cuda PUBLIC

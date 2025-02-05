@@ -161,10 +161,10 @@ vorbis/1.3.7: Already installed! (10 of 12)
 freetype/2.13.2: Already installed! (11 of 12)
 sfml/2.6.1: Already installed! (12 of 12)
 WARN: deprecated: Usage of deprecated Conan 1.X features that will be removed in Conan 2.X:
-WARN: deprecated:     'cpp_info.names' used in: vorbis/1.3.7, freetype/2.13.2, flac/1.4.3, brotli/1.1.0, ogg/1.3.5, zlib/1.3.1, libpng/1.6.45, bzip2/1.0.8, openal-soft/1.22.2
-WARN: deprecated:     'cpp_info.build_modules' used in: freetype/2.13.2, bzip2/1.0.8, openal-soft/1.22.2
+WARN: deprecated:     'cpp_info.names' used in: brotli/1.1.0, libpng/1.6.45, vorbis/1.3.7, zlib/1.3.1, openal-soft/1.22.2, ogg/1.3.5, freetype/2.13.2, bzip2/1.0.8, flac/1.4.3
+WARN: deprecated:     'cpp_info.build_modules' used in: openal-soft/1.22.2, freetype/2.13.2, bzip2/1.0.8
 WARN: deprecated:     'env_info' used in: freetype/2.13.2, bzip2/1.0.8, flac/1.4.3
-WARN: deprecated:     'cpp_info.filenames' used in: freetype/2.13.2, opengl/system, flac/1.4.3
+WARN: deprecated:     'cpp_info.filenames' used in: opengl/system, freetype/2.13.2, flac/1.4.3
 WARN: deprecated:     'user_info' used in: freetype/2.13.2
 
 ======== Finalizing install (deploy, generators) ========
@@ -244,28 +244,19 @@ Resolved version ranges
     zlib/[>=1.2.11 <2]: zlib/1.3.1
 
 ======== Computing necessary packages ========
-fmt/11.0.2: Main binary package '3f06b5409d8a0c177248fd61aa7c6d256c3d8c2d' missing
-fmt/11.0.2: Checking 7 compatible configurations
-fmt/11.0.2: Found compatible package 'ed24bd5ddcb539c4a46096000a2fbd622370d034': compiler.cppstd=17
-flac/1.4.3: Main binary package '8716c272e05543df6572898f4af14734173ddbcb' missing
-flac/1.4.3: Checking 7 compatible configurations
-flac/1.4.3: Found compatible package 'ec76f3a606170941ebf092dbefc5b976353c1432': compiler.cppstd=17
-sfml/2.6.1: Main binary package 'adc656b2e38b562ecb0093cc2471a617641ad871' missing
-sfml/2.6.1: Checking 7 compatible configurations
-sfml/2.6.1: Found compatible package '2616441629bd9e9e81a2c02fe49df96eb9b19e3b': compiler.cppstd=17
 Requirements
-    brotli/1.1.0#d56d7bb9ca722942aba17369cb5c0519:e61b328c57a7dac78df341bc28d447e08bf608e7#749b1e8799938e65926f708886c632cf - Cache
-    bzip2/1.0.8#d00dac990f08d991998d624be81a9526:dd62ce301c6ef0d8f7729c263acbaf3a11b7c621#22cb56a2324bd9a2e9e6f7a047588b76 - Cache
-    flac/1.4.3#828dbd8368d4108efed1b17a6eed9969:ec76f3a606170941ebf092dbefc5b976353c1432#aa41e49e1f9267c83b40fee93af7f685 - Cache
-    fmt/11.0.2#b4a24d70b93466b9b508ddb7b014643b:ed24bd5ddcb539c4a46096000a2fbd622370d034#237f912e6efcb876e0c8e24f80321ef3 - Cache
-    freetype/2.13.2#5d2563803c8558d4ef47271a82c73d20:8c8e819f72bf238a61323610becf843e3fd7289a#8cc6b851cd508bf850acfc4c93ed13cc - Cache
-    libpng/1.6.45#7e4a946509700c2c83e82819b7abbf02:34b444759868b4ce4f04f81d4ad4927bd78d7d3e#bb6636c2ec907c10e45457ee993990d7 - Cache
-    ogg/1.3.5#062626875f5c8c59f069f76f148098ef:8b7e35f91e516e42ed736c6dd52a9263da3a5dad#d4b19cc25403496a677a30b2990d43e7 - Cache
-    openal-soft/1.22.2#506a381e0b805519cba4a7f1ee653fed:8b7e35f91e516e42ed736c6dd52a9263da3a5dad#3c8e703a2f96124382279cb83843ca57 - Cache
+    brotli/1.1.0#d56d7bb9ca722942aba17369cb5c0519:e61b328c57a7dac78df341bc28d447e08bf608e7#5769665d99e824ce5a4e317902a8d86b - Cache
+    bzip2/1.0.8#d00dac990f08d991998d624be81a9526:dd62ce301c6ef0d8f7729c263acbaf3a11b7c621#d950105c872cc1000b7669bcdedad9ac - Cache
+    flac/1.4.3#828dbd8368d4108efed1b17a6eed9969:8716c272e05543df6572898f4af14734173ddbcb#bf170243de4ed335dc3cc0de1abeade8 - Cache
+    fmt/11.0.2#b4a24d70b93466b9b508ddb7b014643b:3f06b5409d8a0c177248fd61aa7c6d256c3d8c2d#3e457b1a66739ef1cb8ed5f522bf82ea - Cache
+    freetype/2.13.2#5d2563803c8558d4ef47271a82c73d20:8c8e819f72bf238a61323610becf843e3fd7289a#e5c5c571c3779112b645c195315f7dbb - Cache
+    libpng/1.6.45#7e4a946509700c2c83e82819b7abbf02:34b444759868b4ce4f04f81d4ad4927bd78d7d3e#20c6486bebf896910f5ab0744dc5aca5 - Cache
+    ogg/1.3.5#062626875f5c8c59f069f76f148098ef:8b7e35f91e516e42ed736c6dd52a9263da3a5dad#9852db6ba893d8b217ea59ffab555a03 - Cache
+    openal-soft/1.22.2#506a381e0b805519cba4a7f1ee653fed:8b7e35f91e516e42ed736c6dd52a9263da3a5dad#d1bd0178a32257149b6f8e7716fe6ce2 - Cache
     opengl/system#7c02ea6ef926fd04844af53622a30541:da39a3ee5e6b4b0d3255bfef95601890afd80709#0ba8627bd47edc3a501e8f0eb9a79e5e - Cache
-    sfml/2.6.1#1c6fdf1586e3b3a7bf08fcf1a4a1bc1d:2616441629bd9e9e81a2c02fe49df96eb9b19e3b#e0e69530cd1bcb652e3b9710a25d9ead - Cache
-    vorbis/1.3.7#37e58f52e59a6232199b34ef402714a6:bb6071f9f2be46b80f5a89df16ef8b448ccb8a9e#b594b67dc056f5f6a4471adfa651e0c5 - Cache
-    zlib/1.3.1#b8bc2603263cf7eccbd6e17e66b0ed76:8b7e35f91e516e42ed736c6dd52a9263da3a5dad#13f7042964a4102c678ff1990b2667be - Cache
+    sfml/2.6.1#1c6fdf1586e3b3a7bf08fcf1a4a1bc1d:adc656b2e38b562ecb0093cc2471a617641ad871#736c11b68b07ade93c5da5714e642b0e - Cache
+    vorbis/1.3.7#37e58f52e59a6232199b34ef402714a6:bb6071f9f2be46b80f5a89df16ef8b448ccb8a9e#5cb2d7efb8f13a5aad77ced3dcd85a6d - Cache
+    zlib/1.3.1#b8bc2603263cf7eccbd6e17e66b0ed76:8b7e35f91e516e42ed736c6dd52a9263da3a5dad#746d0fe4fc0ac19be1b8ba7622b80107 - Cache
 Build requirements
 Skipped binaries
     minimp3/cci.20211201, stb/cci.20230920, meson/1.2.2, meson/1.3.2, ninja/1.12.1, pkgconf/2.1.0
@@ -284,10 +275,10 @@ vorbis/1.3.7: Already installed! (10 of 12)
 freetype/2.13.2: Already installed! (11 of 12)
 sfml/2.6.1: Already installed! (12 of 12)
 WARN: deprecated: Usage of deprecated Conan 1.X features that will be removed in Conan 2.X:
-WARN: deprecated:     'cpp_info.names' used in: libpng/1.6.45, openal-soft/1.22.2, ogg/1.3.5, freetype/2.13.2, bzip2/1.0.8, zlib/1.3.1, brotli/1.1.0, flac/1.4.3, vorbis/1.3.7
-WARN: deprecated:     'cpp_info.build_modules' used in: freetype/2.13.2, openal-soft/1.22.2, bzip2/1.0.8
-WARN: deprecated:     'env_info' used in: flac/1.4.3, freetype/2.13.2, bzip2/1.0.8
-WARN: deprecated:     'cpp_info.filenames' used in: flac/1.4.3, opengl/system, freetype/2.13.2
+WARN: deprecated:     'cpp_info.names' used in: flac/1.4.3, freetype/2.13.2, vorbis/1.3.7, zlib/1.3.1, ogg/1.3.5, brotli/1.1.0, openal-soft/1.22.2, bzip2/1.0.8, libpng/1.6.45
+WARN: deprecated:     'cpp_info.build_modules' used in: openal-soft/1.22.2, bzip2/1.0.8, freetype/2.13.2
+WARN: deprecated:     'env_info' used in: flac/1.4.3, bzip2/1.0.8, freetype/2.13.2
+WARN: deprecated:     'cpp_info.filenames' used in: flac/1.4.3, freetype/2.13.2, opengl/system
 WARN: deprecated:     'user_info' used in: freetype/2.13.2
 
 ======== Finalizing install (deploy, generators) ========
@@ -328,13 +319,13 @@ Install finished successfully
 -- Conan: Target declared 'ZLIB::ZLIB'
 -- CMake-Conan: find_package(BZip2) found, 'conan install' already ran
 -- Conan: Target declared 'BZip2::BZip2'
--- Conan: Including build module from 'C:/Users/fing.labcom/.conan2/p/b/bzip2eb48568a760e2/p/lib/cmake/conan-official-bzip2-variables.cmake'
+-- Conan: Including build module from 'C:/Users/fing.labcom/.conan2/p/b/bzip27ec75aa32c59b/p/lib/cmake/conan-official-bzip2-variables.cmake'
 -- CMake-Conan: find_package(brotli) found, 'conan install' already ran
 -- Conan: Component target declared 'brotli::brotlicommon'
 -- Conan: Component target declared 'brotli::brotlidec'
 -- Conan: Component target declared 'brotli::brotlienc'
 -- Conan: Target declared 'brotli::brotli'
--- Conan: Including build module from 'C:/Users/fing.labcom/.conan2/p/b/freet248b0bbbb1a51/p/lib/cmake/conan-official-freetype-variables.cmake'
+-- Conan: Including build module from 'C:/Users/fing.labcom/.conan2/p/b/freet450ae7bb95eff/p/lib/cmake/conan-official-freetype-variables.cmake'
 -- CMake-Conan: find_package(flac) found, 'conan install' already ran
 -- Conan: Component target declared 'FLAC::FLAC'
 -- Conan: Component target declared 'FLAC::FLAC++'
@@ -343,7 +334,7 @@ Install finished successfully
 -- Conan: Component target declared 'Ogg::ogg'
 -- CMake-Conan: find_package(OpenAL) found, 'conan install' already ran
 -- Conan: Target declared 'OpenAL::OpenAL'
--- Conan: Including build module from 'C:/Users/fing.labcom/.conan2/p/b/opena1a499321057a0/p/lib/cmake/conan-official-openal-soft-variables.cmake'
+-- Conan: Including build module from 'C:/Users/fing.labcom/.conan2/p/b/openad4f43ee373ebf/p/lib/cmake/conan-official-openal-soft-variables.cmake'
 -- CMake-Conan: find_package(Vorbis) found, 'conan install' already ran
 -- Conan: Component target declared 'Vorbis::vorbis'
 -- Conan: Component target declared 'Vorbis::vorbisenc'
@@ -353,6 +344,6 @@ Install finished successfully
 -- Conan: Target declared 'vorbis::vorbis'
 -- CMake-Conan: find_package(OpenCL) found, 'conan install' already ran
 -- Could NOT find OpenCL (missing: OpenCL_DIR)
--- Configuring done (3.2s)
+-- Configuring done (2.9s)
 -- Generating done (0.1s)
 -- Build files have been written to: C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug

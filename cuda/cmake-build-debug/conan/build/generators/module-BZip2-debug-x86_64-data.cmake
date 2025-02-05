@@ -11,7 +11,7 @@ endif()
 
 ########### VARIABLES #######################################################################
 #############################################################################################
-set(bzip2_PACKAGE_FOLDER_DEBUG "C:/Users/fing.labcom/.conan2/p/b/bzip2eb48568a760e2/p")
+set(bzip2_PACKAGE_FOLDER_DEBUG "C:/Users/fing.labcom/.conan2/p/b/bzip27ec75aa32c59b/p")
 set(bzip2_BUILD_MODULES_PATHS_DEBUG "${bzip2_PACKAGE_FOLDER_DEBUG}/lib/cmake/conan-official-bzip2-variables.cmake")
 
 
