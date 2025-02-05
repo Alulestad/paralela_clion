@@ -5,7 +5,7 @@
 #include <fmt/core.h>
 #include <sfml/graphics.hpp>
 #include <cuda_runtime.h>
-#include "fps_counter.h"
+//#include "fps_counter.h"
 
 
 
@@ -134,7 +134,11 @@ extern "C" void mandelbrotGpuKernel(unsigned int* biffer,
     int max_iterations);
 
 
-extern "C"  void copy_pallete(unsigned int* h_pallete);
+extern "C"  void copu_pallete_to_gpu(unsigned int* h_pallete);
+
+void copu_pallete(unsigned int* h_pallete) {
+    copu_pallete_to_gpu(h_pallete);
+}
 
 cudaError_t error;
 void mandelbrotGpu() {
@@ -147,9 +151,7 @@ void mandelbrotGpu() {
 }
 
 
-void copy_palleteCpu() {
-    //copy_pallete(color_ramp);
-}
+
 
 
 
@@ -186,7 +188,7 @@ int main() {
     sf::RenderWindow window(sf::VideoMode(WIDTH, HEIGHT), "SFML Mandelrrot CUDA");
 
 
-    copy_palleteCpu();
+    copu_pallete((unsigned int*)color_ramp);
     mandelbrotGpu();
 
 

@@ -80,6 +80,7 @@ void mandelbrotKernel(unsigned int* buffer,
 }
 
 
+extern "C"
 void copu_pallete_to_gpu(unsigned int* h_pallete){
     cudaMemcpyToSymbol(d_Pallete, h_pallete, PALETE_SIZE * sizeof(unsigned int));
 }
