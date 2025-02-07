@@ -3,7 +3,7 @@
 #include <cuda_runtime.h>
 #include <iostream>
 #include <fmt/core.h>
-#include <sfml/graphics.hpp>
+#include <SFML/Graphics.hpp>
 #include <cuda_runtime.h>
 //#include "fps_counter.h"
 
@@ -54,24 +54,24 @@ const uint32_t color_ramp[PALETE_SIZE] = {
     _bswap32(0xFF54167D),
 };
 
-static unsigned int* host_pixel_buffer=nullptr;
-static unsigned int* device_pixel_buffer=nullptr;
+static unsigned int* host_pixel_buffer = nullptr;
+static unsigned int* device_pixel_buffer = nullptr;
 
 //--------------------------------------------------------
 
 
 
 #define CHECK(expr){           \
-    auto internal_error = (expr);        \
-    if (internal_error!=cudaSuccess){    \
-        fmt::println("{}: {} in (en) {} at line (en la linea) {}",(int )error, cudaGetErrorString(error), __FILE__, __LINE__); \
+    auto error = (expr);        \
+    if (error!=cudaSuccess){    \
+        fmt::println("{}: {} in (en) {} at line (en la linea) {}",(int )error, (char*)cudaGetErrorString(error), __FILE__, __LINE__); \
         exit(EXIT_FAILURE);     \
     }                           \
 }                               \
 
 
 //mandelbrot
-unsigned int divergente(double cx, double cy) {
+unsigned int divergente(double cx, double cy, int max_iterations) {
     int iter = 0;
     double vx = cx;
     double vy = cy;
@@ -119,7 +119,7 @@ void mandelbrotCpu() {
             double y = y_max - j * dy;  // Invertimos y para que la parte superior sea `y_max`.
 
             // Calculamos el color de acuerdo a la función de divergencia.
-            int color = divergente(x, y);
+            unsigned int color = divergente(x, y,max_iterations);
             // Asignamos el color al buffer de píxeles en la posición correspondiente.
             host_pixel_buffer[j * WIDTH + i] = color;
         }
@@ -128,26 +128,29 @@ void mandelbrotCpu() {
 }
 
 
-extern "C" void mandelbrotGpuKernel(unsigned int* biffer,
+extern "C" void mandelbrotGpuKernel(unsigned int* buffer,
     unsigned int width, unsigned int height,
     double x_min, double x_max, double y_min, double y_max,
+    double dx, double dy,
     int max_iterations);
 
 
-extern "C"  void copu_pallete_to_gpu(unsigned int* h_pallete);
+extern "C" void copy_pallete_to_gpu(unsigned int* h_pallete);
 
-void copu_pallete(unsigned int* h_pallete) {
-    copu_pallete_to_gpu(h_pallete);
-}
 
-cudaError_t error;
+
 void mandelbrotGpu() {
-    mandelbrotGpuKernel(device_pixel_buffer,WIDTH,HEIGHT,x_min,x_max,y_min,y_max,max_iterations);
-
-
+    // Calcular dx y dy fuera del kernel
+    double dx = (x_max - x_min) / WIDTH;
+    double dy = (y_max - y_min) / HEIGHT;
+    // Llamar al kernel con todos los parámetros
+    mandelbrotGpuKernel(device_pixel_buffer, WIDTH, HEIGHT, x_min, x_max, y_min, y_max, dx, dy, max_iterations);
+    // Verificar errores
     CHECK(cudaGetLastError());
+    // Copiar el resultado desde la GPU al host
 
-    CHECK(cudaMemcpy(host_pixel_buffer,device_pixel_buffer,WIDTH*HEIGHT*sizeof(unsigned int),cudaMemcpyDeviceToHost));
+    CHECK(cudaMemcpy(host_pixel_buffer, device_pixel_buffer, WIDTH * HEIGHT * sizeof(unsigned int), cudaMemcpyDeviceToHost));
+
 }
 
 
@@ -174,8 +177,8 @@ int main() {
     host_pixel_buffer=(unsigned int *) malloc(buffer_size); // reservar memoria en el host es decir la ram
     memset(host_pixel_buffer,0,buffer_size);// inzializamos con ceros
 
-    cudaError_t error=cudaMalloc(&device_pixel_buffer,buffer_size); // reservar memoria en el device es decir la targeta grafica
-    CHECK(error); //si lo hacemos como macro
+    //cudaError_t error=cudaMalloc(&device_pixel_buffer,buffer_size); // reservar memoria en el device es decir la targeta grafica
+    CHECK(cudaMalloc(&device_pixel_buffer,buffer_size)); //si lo hacemos como macro
     // esta copia el codigo de la macro a esta linea
 
     //check(error); //si lo hacemos como metodo
@@ -188,7 +191,7 @@ int main() {
     sf::RenderWindow window(sf::VideoMode(WIDTH, HEIGHT), "SFML Mandelrrot CUDA");
 
 
-    copu_pallete((unsigned int*)color_ramp);
+    copy_pallete_to_gpu((unsigned int*)color_ramp);
     mandelbrotGpu();
 
 

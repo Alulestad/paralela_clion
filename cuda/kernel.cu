@@ -43,8 +43,8 @@ void mandelbrotKernel(unsigned int* buffer,
      ) {
     // Calculamos el paso en el eje x y en el eje
     // y según el rango definido y las dimensiones de la ventana.
-    dx = (x_max - x_min) / width;
-    dy = (y_max - y_min) / height;
+    // dx = (x_max - x_min) / width;
+    // dy = (y_max - y_min) / height;
 
     // #pragma omp parallel for num_threads(16)
     //#pragma omp parallel for collapse(2)
@@ -81,7 +81,7 @@ void mandelbrotKernel(unsigned int* buffer,
 
 
 extern "C"
-void copu_pallete_to_gpu(unsigned int* h_pallete){
+void copy_pallete_to_gpu(unsigned int* h_pallete){
     cudaMemcpyToSymbol(d_Pallete, h_pallete, PALETE_SIZE * sizeof(unsigned int));
 }
 
@@ -95,7 +95,7 @@ void mandelbrotGpuKernel(unsigned int* buffer,
     // double dy = (y_max - y_min) / height;
 
     int threads_per_block = 1024;
-    int blocks_in_grid=std::ceil(float(width*height)/threads_per_block);
+    int blocks_in_grid = std::ceil(float(width * height) / threads_per_block);
 
     printf("blocks=%d, threads=%d\n",blocks_in_grid,threads_per_block);
 

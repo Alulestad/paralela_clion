@@ -11,8 +11,6 @@ find_package(SFML)
 add_executable(cuda
         kernel.cu
         main.cpp
-        fps_counter.cpp
-        fps_counter.h
 )
 
 target_include_directories(cuda PUBLIC
@@ -22,7 +20,8 @@ target_include_directories(cuda PUBLIC
 set_target_properties(cuda PROPERTIES
         CUDA_SEPARABLE_COMPILATION ON)
 
-target_link_libraries(cuda fmt::fmt sfml::sfml)
+target_link_libraries(cuda fmt::fmt sfml::sfml ${CUDA_LIBRARIES} cudart)
+#target_link_libraries(cuda PRIVATE /NODEFAULTLIB:LIBCMT)
 
 #--------------------------------------------------------------
 #[[find_package(OpenCl)
@@ -50,8 +49,25 @@ target_include_directories(suma_vectores_cuda PUBLIC
 set_target_properties(suma_vectores_cuda PROPERTIES
         CUDA_SEPARABLE_COMPILATION ON)
 
+#------frantal con cuda
+
+add_executable(cuda_fractal
+        kernel_w.cu
+        main_w.cpp
+)
+
+target_include_directories(cuda_fractal PUBLIC
+        ${CMAKE_CUDA_TOOLKIT_INCLUDE_DIRECTORIES})
+#este directorio es donde estan los .h de cuda
+
+set_target_properties(cuda_fractal PROPERTIES
+        CUDA_SEPARABLE_COMPILATION ON)
+
+target_link_libraries(cuda_fractal fmt::fmt sfml::sfml)
 
 
+
+#---Open CL
 find_package(OpenCL)
 add_executable(suma_vectores_cl main_cl_suma_vectores.cpp)
 target_link_libraries(suma_vectores_cl ${OpenCL_LIBRARIES})

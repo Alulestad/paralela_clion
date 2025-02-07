@@ -178,6 +178,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Project>{E6A28479-FF20-3C6B-AADB-1FCC72085658}</Project>
       <Name>cuda</Name>
     </ProjectReference>
+    <ProjectReference Include="C:\Users\fing.labcom\CLionProjects\clones\paralela_clion\cuda\cmake-build-release\cuda_fractal.vcxproj">
+      <Project>{BA7F047C-FA0B-30B5-A024-3138A69F894B}</Project>
+      <Name>cuda_fractal</Name>
+    </ProjectReference>
     <ProjectReference Include="C:\Users\fing.labcom\CLionProjects\clones\paralela_clion\cuda\cmake-build-release\suma_vectores_cl.vcxproj">
       <Project>{E63A1558-2D24-3420-A81E-53315786E199}</Project>
       <Name>suma_vectores_cl</Name>
