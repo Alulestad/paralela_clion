@@ -217,6 +217,9 @@ CONAN_HOST_PROFILE:STRING=default;auto-cmake
 //Command line arguments for conan install
 CONAN_INSTALL_ARGS:STRING=--build=missing
 
+//The directory containing a CMake configuration file for FreeGLUT.
+FreeGLUT_DIR:PATH=C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/conan/build/Release/generators
+
 //Executable for running MPI programs.
 MPIEXEC_EXECUTABLE:FILEPATH=C:/Program Files (x86)/Intel/oneAPI/mpi/latest/bin/mpiexec.exe
 
@@ -353,6 +356,9 @@ freetype_DIR:PATH=C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-rele
 
 //The directory containing a CMake configuration file for glfw3.
 glfw3_DIR:PATH=C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/conan/build/Release/generators
+
+//The directory containing a CMake configuration file for glu.
+glu_DIR:PATH=C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/conan/build/Release/generators
 
 //Value Computed by CMake
 mpi_rep_BINARY_DIR:STATIC=C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release

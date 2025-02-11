@@ -3,9 +3,14 @@ C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-debug/CMakeFiles/mpi_c
 C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-debug/CMakeFiles/mpi_matrices_multi.dir
 C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-debug/CMakeFiles/mpi_promedio.dir
 C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-debug/CMakeFiles/mpi_suma.dir
+C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-debug/CMakeFiles/mpi_fractal.dir
+C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-debug/CMakeFiles/mpi_fractal_other.dir
+C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-debug/CMakeFiles/mpi_fractal_full.dir
+C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-debug/CMakeFiles/mpi_fractal_willan.dir
 C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-debug/CMakeFiles/omp_fractal.dir
 C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-debug/CMakeFiles/omp_paleta.dir
 C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-debug/CMakeFiles/omp_promedio.dir
 C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-debug/CMakeFiles/omp_suma.dir
+C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-debug/CMakeFiles/omp_reduccion_vectores.dir
 C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-debug/CMakeFiles/rebuild_cache.dir

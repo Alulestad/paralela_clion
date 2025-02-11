@@ -1,0 +1,7 @@
+# ninja log v6
+10	5256	7606578929550731	build.ninja	dab293adee75d906
+43	556	7606578931130816	CMakeFiles/Grupal_PPC_G1.dir/fps_counter.cpp.obj	aa34068a1d9baf0b
+39	770	7606578931089865	CMakeFiles/Grupal_PPC_G1.dir/main.cpp.obj	e42b4de9127f28de
+770	946	7606578938399711	Grupal_PPC_G1.exe	c14990b4f6cad676
+22	720	7606582136397740	CMakeFiles/Grupal_PPC_G1.dir/main.cpp.obj	e42b4de9127f28de
+720	922	7606582143371059	Grupal_PPC_G1.exe	c14990b4f6cad676

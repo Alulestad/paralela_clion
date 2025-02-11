@@ -61,8 +61,10 @@ Requirements
     bzip2/1.0.8#d00dac990f08d991998d624be81a9526 - Cache
     flac/1.4.3#112ca54377880fa91b13268d48e17871 - Cache
     fmt/11.0.2#5c7438ef4d5d69ab106a41e460ce11f3 - Cache
+    freeglut/3.4.0#5674e666d6bb21d45e778c6b710a213d - Cache
     freetype/2.13.2#5d2563803c8558d4ef47271a82c73d20 - Cache
     glfw/3.3.8#d75a15a362a707163bfaabbf4dc993d8 - Cache
+    glu/system#ee50fc2ade0e1c0c8ebb3be3ea60e0f5 - Cache
     libpng/1.6.44#9e1aa08fb46946c7c91e4ae03bd49811 - Cache
     minimp3/cci.20211201#045f7bf02ba91cce9a8730ce075705e7 - Cache
     ogg/1.3.5#062626875f5c8c59f069f76f148098ef - Cache
@@ -113,6 +115,9 @@ libpng/1.6.44: Found compatible package 'e0d2306461d10438fbd847f0556a0f0ac5653d3
 vorbis/1.3.7: Main binary package '72f391b16d5d09a00209f982eaaa0ecf9f82e698' missing
 vorbis/1.3.7: Checking 1 compatible configurations
 vorbis/1.3.7: Found compatible package '5716ed60be3e52a680aebcade966a2d4782db011': compiler.version=193
+freeglut/3.4.0: Main binary package '2ffa08c47939cdb5405d1af42d81f93eab3c345f' missing
+freeglut/3.4.0: Checking 1 compatible configurations
+freeglut/3.4.0: Found compatible package '7a4d0dfd391266f367d69444552921bbba82c3fd': compiler.version=193
 freetype/2.13.2: Main binary package 'f12fe537d2457525b972d539f07a3592021673bd' missing
 freetype/2.13.2: Checking 1 compatible configurations
 freetype/2.13.2: Found compatible package '79f73b3fcb4ea3718b05e96b46594ae8f2ec3895': compiler.version=193
@@ -124,8 +129,10 @@ Requirements
     bzip2/1.0.8#d00dac990f08d991998d624be81a9526:67bfcb7b4b78262b9d05495e479dcd92f747316b#e4aa22ae3a31782994f99b4be58625c9 - Cache
     flac/1.4.3#112ca54377880fa91b13268d48e17871:f710e7f7e8379584a8fbad86de2007f08c1bf892#9e67149ad23e9bbd1b1b3565ca16e4fc - Cache
     fmt/11.0.2#5c7438ef4d5d69ab106a41e460ce11f3:1cf057972569a3a443d5b36ba81814a72a6467c9#31b7061b462822d18f9e1695678dbeff - Cache
+    freeglut/3.4.0#5674e666d6bb21d45e778c6b710a213d:7a4d0dfd391266f367d69444552921bbba82c3fd#5bcdf03b514e69325d470c34c60fc5e1 - Cache
     freetype/2.13.2#5d2563803c8558d4ef47271a82c73d20:79f73b3fcb4ea3718b05e96b46594ae8f2ec3895#e9b07b14b986a38f75b0b42e3ea40f9e - Cache
     glfw/3.3.8#d75a15a362a707163bfaabbf4dc993d8:297149c43b562095879d245f61d9b2e590276ce7#54aea5292b6497b47cdfe3c77cc2a295 - Cache
+    glu/system#ee50fc2ade0e1c0c8ebb3be3ea60e0f5:da39a3ee5e6b4b0d3255bfef95601890afd80709#0ba8627bd47edc3a501e8f0eb9a79e5e - Cache
     libpng/1.6.44#9e1aa08fb46946c7c91e4ae03bd49811:e0d2306461d10438fbd847f0556a0f0ac5653d3a#aae40fd00dee0d85633d5a33c7be64b9 - Cache
     ogg/1.3.5#062626875f5c8c59f069f76f148098ef:7bfde258ff4f62f75668d0896dbddedaa7480a0f#e927a574838328774c00363480fd0711 - Cache
     openal-soft/1.22.2#506a381e0b805519cba4a7f1ee653fed:7bfde258ff4f62f75668d0896dbddedaa7480a0f#119df173e15f3e8ac817e718fbec4185 - Cache
@@ -138,34 +145,37 @@ Skipped binaries
     minimp3/cci.20211201, stb/cci.20230920, meson/1.2.2, meson/1.3.2, ninja/1.12.1, pkgconf/2.1.0
 
 ======== Installing packages ========
-brotli/1.1.0: Already installed! (1 of 13)
-bzip2/1.0.8: Already installed! (2 of 13)
-fmt/11.0.2: Already installed! (3 of 13)
-ogg/1.3.5: Already installed! (4 of 13)
-openal-soft/1.22.2: Already installed! (5 of 13)
-opengl/system: Already installed! (6 of 13)
-zlib/1.3.1: Already installed! (7 of 13)
-flac/1.4.3: Already installed! (8 of 13)
-glfw/3.3.8: Already installed! (9 of 13)
-libpng/1.6.44: Already installed! (10 of 13)
-vorbis/1.3.7: Already installed! (11 of 13)
-freetype/2.13.2: Already installed! (12 of 13)
-sfml/2.6.1: Already installed! (13 of 13)
+brotli/1.1.0: Already installed! (1 of 15)
+bzip2/1.0.8: Already installed! (2 of 15)
+fmt/11.0.2: Already installed! (3 of 15)
+ogg/1.3.5: Already installed! (4 of 15)
+openal-soft/1.22.2: Already installed! (5 of 15)
+opengl/system: Already installed! (6 of 15)
+zlib/1.3.1: Already installed! (7 of 15)
+flac/1.4.3: Already installed! (8 of 15)
+glfw/3.3.8: Already installed! (9 of 15)
+glu/system: Already installed! (10 of 15)
+libpng/1.6.44: Already installed! (11 of 15)
+vorbis/1.3.7: Already installed! (12 of 15)
+freeglut/3.4.0: Already installed! (13 of 15)
+freetype/2.13.2: Already installed! (14 of 15)
+sfml/2.6.1: Already installed! (15 of 15)
 WARN: deprecated: Usage of deprecated Conan 1.X features that will be removed in Conan 2.X:
-WARN: deprecated:     'cpp_info.names' used in: bzip2/1.0.8, sfml/2.6.1, freetype/2.13.2, ogg/1.3.5, brotli/1.1.0, openal-soft/1.22.2, fmt/11.0.2, zlib/1.3.1, vorbis/1.3.7, flac/1.4.3, libpng/1.6.44, glfw/3.3.8
-WARN: deprecated:     'cpp_info.build_modules' used in: bzip2/1.0.8, sfml/2.6.1, freetype/2.13.2, openal-soft/1.22.2, glfw/3.3.8
-WARN: deprecated:     'env_info' used in: bzip2/1.0.8, freetype/2.13.2, flac/1.4.3
-WARN: deprecated:     'cpp_info.filenames' used in: opengl/system, freetype/2.13.2, flac/1.4.3, glfw/3.3.8
+WARN: deprecated:     'cpp_info.names' used in: openal-soft/1.22.2, glfw/3.3.8, vorbis/1.3.7, sfml/2.6.1, brotli/1.1.0, ogg/1.3.5, flac/1.4.3, freetype/2.13.2, freeglut/3.4.0, libpng/1.6.44, zlib/1.3.1, fmt/11.0.2, bzip2/1.0.8
+WARN: deprecated:     'cpp_info.build_modules' used in: openal-soft/1.22.2, sfml/2.6.1, glfw/3.3.8, freetype/2.13.2, bzip2/1.0.8
+WARN: deprecated:     'env_info' used in: freetype/2.13.2, flac/1.4.3, bzip2/1.0.8
+WARN: deprecated:     'cpp_info.filenames' used in: glfw/3.3.8, freetype/2.13.2, flac/1.4.3, opengl/system
 WARN: deprecated:     'user_info' used in: freetype/2.13.2
 
 ======== Finalizing install (deploy, generators) ========
 conanfile.py: Writing generators to C:\Users\Dami\Documents\CLionProjects\mpi_rep\cmake-build-release\conan\build\Release\generators
 conanfile.py: Generator 'CMakeDeps' calling 'generate()'
 conanfile.py: CMakeDeps necessary find_package() and targets for your CMakeLists.txt
+    find_package(FreeGLUT)
     find_package(SFML)
     find_package(glfw3)
     find_package(fmt)
-    target_link_libraries(... sfml::sfml glfw fmt::fmt)
+    target_link_libraries(... FreeGLUT::freeglut_static sfml::sfml glfw fmt::fmt)
 conanfile.py: Calling generate()
 conanfile.py: Generators folder: C:\Users\Dami\Documents\CLionProjects\mpi_rep\cmake-build-release\conan\build\Release\generators
 conanfile.py: CMakeToolchain generated: conan_toolchain.cmake
@@ -228,12 +238,16 @@ Install finished successfully
 -- Conan: Target declared 'opengl::opengl'
 -- CMake-Conan: find_package(glfw3) found, 'conan install' already ran
 -- Conan: Target declared 'glfw'
+-- CMake-Conan: find_package(FreeGLUT) found, 'conan install' already ran
+-- Conan: Component target declared 'FreeGLUT::freeglut_static'
+-- CMake-Conan: find_package(glu) found, 'conan install' already ran
+-- Conan: Target declared 'glu::glu'
 -- MPI FOUD
 -- MPI version: 3.1
 -- MPI Include path: C:/Program Files (x86)/Intel/oneAPI/mpi/latest/include;C:/Program Files (x86)/Intel/oneAPI/mpi/latest/include/mpi
 -- MPI Libraries: C:/Program Files (x86)/Intel/oneAPI/mpi/latest/lib/impi.lib;C:/Program Files (x86)/Intel/oneAPI/mpi/latest/lib/impicxx.lib
 -- MPI Include path: C:/Program Files (x86)/Intel/oneAPI/mpi/latest/bin/mpicl.bat
 -- MPI Link Flags: 
--- Configuring done (5.1s)
--- Generating done (0.0s)
+-- Configuring done (32.0s)
+-- Generating done (0.2s)
 -- Build files have been written to: C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release

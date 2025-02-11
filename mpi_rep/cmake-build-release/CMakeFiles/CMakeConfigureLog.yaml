@@ -109,8 +109,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-be64b1"
-      binary: "C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-be64b1"
+      source: "C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-odc5jo"
+      binary: "C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-odc5jo"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
@@ -119,11 +119,11 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-be64b1'
+        Change Dir: 'C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-odc5jo'
         
-        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.2.3/bin/ninja/win/x64/ninja.exe" -v cmTC_08869
-        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_08869.dir\\CMakeCCompilerABI.c.obj /FdCMakeFiles\\cmTC_08869.dir\\ /FS -c "C:\\Program Files\\JetBrains\\CLion 2024.2.3\\bin\\cmake\\win\\x64\\share\\cmake-3.29\\Modules\\CMakeCCompilerABI.c"
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\JetBrains\\CLion 2024.2.3\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_08869.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_08869.dir\\CMakeCCompilerABI.c.obj  /out:cmTC_08869.exe /implib:cmTC_08869.lib /pdb:cmTC_08869.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.2.3/bin/ninja/win/x64/ninja.exe" -v cmTC_332a7
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_332a7.dir\\CMakeCCompilerABI.c.obj /FdCMakeFiles\\cmTC_332a7.dir\\ /FS -c "C:\\Program Files\\JetBrains\\CLion 2024.2.3\\bin\\cmake\\win\\x64\\share\\cmake-3.29\\Modules\\CMakeCCompilerABI.c"
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\JetBrains\\CLion 2024.2.3\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_332a7.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_332a7.dir\\CMakeCCompilerABI.c.obj  /out:cmTC_332a7.exe /implib:cmTC_332a7.lib /pdb:cmTC_332a7.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
@@ -163,8 +163,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-cizt3v"
-      binary: "C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-cizt3v"
+      source: "C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-bzz9jl"
+      binary: "C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-bzz9jl"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
@@ -174,11 +174,11 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-cizt3v'
+        Change Dir: 'C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-bzz9jl'
         
-        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.2.3/bin/ninja/win/x64/ninja.exe" -v cmTC_6c174
-        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /EHsc  /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_6c174.dir\\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\\cmTC_6c174.dir\\ /FS -c "C:\\Program Files\\JetBrains\\CLion 2024.2.3\\bin\\cmake\\win\\x64\\share\\cmake-3.29\\Modules\\CMakeCXXCompilerABI.cpp"
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\JetBrains\\CLion 2024.2.3\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_6c174.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_6c174.dir\\CMakeCXXCompilerABI.cpp.obj  /out:cmTC_6c174.exe /implib:cmTC_6c174.lib /pdb:cmTC_6c174.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.2.3/bin/ninja/win/x64/ninja.exe" -v cmTC_81915
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /EHsc  /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_81915.dir\\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\\cmTC_81915.dir\\ /FS -c "C:\\Program Files\\JetBrains\\CLion 2024.2.3\\bin\\cmake\\win\\x64\\share\\cmake-3.29\\Modules\\CMakeCXXCompilerABI.cpp"
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\JetBrains\\CLion 2024.2.3\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_81915.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_81915.dir\\CMakeCXXCompilerABI.cpp.obj  /out:cmTC_81915.exe /implib:cmTC_81915.lib /pdb:cmTC_81915.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
@@ -218,8 +218,8 @@ events:
       - "CMakeLists.txt:8 (find_package)"
     description: "Detecting C OpenMP compiler info"
     directories:
-      source: "C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-jogg66"
-      binary: "C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-jogg66"
+      source: "C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-abmoxc"
+      binary: "C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-abmoxc"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
@@ -229,11 +229,11 @@ events:
       variable: "OpenMP_COMPILE_RESULT_C_openmp"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-jogg66'
+        Change Dir: 'C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-abmoxc'
         
-        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.2.3/bin/ninja/win/x64/ninja.exe" -v cmTC_d51d0
-        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS -openmp /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_d51d0.dir\\OpenMPTryFlag.c.obj /FdCMakeFiles\\cmTC_d51d0.dir\\ /FS -c C:\\Users\\Dami\\Documents\\CLionProjects\\mpi_rep\\cmake-build-release\\CMakeFiles\\CMakeScratch\\TryCompile-jogg66\\OpenMPTryFlag.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\JetBrains\\CLion 2024.2.3\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_d51d0.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_d51d0.dir\\OpenMPTryFlag.c.obj  /out:cmTC_d51d0.exe /implib:cmTC_d51d0.lib /pdb:cmTC_d51d0.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.2.3/bin/ninja/win/x64/ninja.exe" -v cmTC_80137
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS -openmp /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_80137.dir\\OpenMPTryFlag.c.obj /FdCMakeFiles\\cmTC_80137.dir\\ /FS -c C:\\Users\\Dami\\Documents\\CLionProjects\\mpi_rep\\cmake-build-release\\CMakeFiles\\CMakeScratch\\TryCompile-abmoxc\\OpenMPTryFlag.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\JetBrains\\CLion 2024.2.3\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_80137.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_80137.dir\\OpenMPTryFlag.c.obj  /out:cmTC_80137.exe /implib:cmTC_80137.lib /pdb:cmTC_80137.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
@@ -245,8 +245,8 @@ events:
       - "CMakeLists.txt:8 (find_package)"
     description: "Detecting CXX OpenMP compiler info"
     directories:
-      source: "C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-fwuuuu"
-      binary: "C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-fwuuuu"
+      source: "C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-y8rd3i"
+      binary: "C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-y8rd3i"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
@@ -256,11 +256,11 @@ events:
       variable: "OpenMP_COMPILE_RESULT_CXX_openmp"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-fwuuuu'
+        Change Dir: 'C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-y8rd3i'
         
-        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.2.3/bin/ninja/win/x64/ninja.exe" -v cmTC_5fd7e
-        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /EHsc -openmp /Ob0 /Od /RTC1 -std:c++17 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_5fd7e.dir\\OpenMPTryFlag.cpp.obj /FdCMakeFiles\\cmTC_5fd7e.dir\\ /FS -c C:\\Users\\Dami\\Documents\\CLionProjects\\mpi_rep\\cmake-build-release\\CMakeFiles\\CMakeScratch\\TryCompile-fwuuuu\\OpenMPTryFlag.cpp
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\JetBrains\\CLion 2024.2.3\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_5fd7e.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_5fd7e.dir\\OpenMPTryFlag.cpp.obj  /out:cmTC_5fd7e.exe /implib:cmTC_5fd7e.lib /pdb:cmTC_5fd7e.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.2.3/bin/ninja/win/x64/ninja.exe" -v cmTC_a3fb3
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /EHsc -openmp /Ob0 /Od /RTC1 -std:c++17 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_a3fb3.dir\\OpenMPTryFlag.cpp.obj /FdCMakeFiles\\cmTC_a3fb3.dir\\ /FS -c C:\\Users\\Dami\\Documents\\CLionProjects\\mpi_rep\\cmake-build-release\\CMakeFiles\\CMakeScratch\\TryCompile-y8rd3i\\OpenMPTryFlag.cpp
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\JetBrains\\CLion 2024.2.3\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_a3fb3.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_a3fb3.dir\\OpenMPTryFlag.cpp.obj  /out:cmTC_a3fb3.exe /implib:cmTC_a3fb3.lib /pdb:cmTC_a3fb3.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
@@ -272,8 +272,8 @@ events:
       - "CMakeLists.txt:8 (find_package)"
     description: "Detecting C OpenMP version"
     directories:
-      source: "C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-99518n"
-      binary: "C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-99518n"
+      source: "C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-3d3wio"
+      binary: "C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-3d3wio"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
@@ -283,11 +283,11 @@ events:
       variable: "OpenMP_SPECTEST_C_"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-99518n'
+        Change Dir: 'C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-3d3wio'
         
-        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.2.3/bin/ninja/win/x64/ninja.exe" -v cmTC_4c764
-        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS -openmp /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_4c764.dir\\OpenMPCheckVersion.c.obj /FdCMakeFiles\\cmTC_4c764.dir\\ /FS -c C:\\Users\\Dami\\Documents\\CLionProjects\\mpi_rep\\cmake-build-release\\CMakeFiles\\CMakeScratch\\TryCompile-99518n\\OpenMPCheckVersion.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\JetBrains\\CLion 2024.2.3\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_4c764.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_4c764.dir\\OpenMPCheckVersion.c.obj  /out:cmTC_4c764.exe /implib:cmTC_4c764.lib /pdb:cmTC_4c764.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.2.3/bin/ninja/win/x64/ninja.exe" -v cmTC_6ef9f
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS -openmp /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_6ef9f.dir\\OpenMPCheckVersion.c.obj /FdCMakeFiles\\cmTC_6ef9f.dir\\ /FS -c C:\\Users\\Dami\\Documents\\CLionProjects\\mpi_rep\\cmake-build-release\\CMakeFiles\\CMakeScratch\\TryCompile-3d3wio\\OpenMPCheckVersion.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\JetBrains\\CLion 2024.2.3\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_6ef9f.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_6ef9f.dir\\OpenMPCheckVersion.c.obj  /out:cmTC_6ef9f.exe /implib:cmTC_6ef9f.lib /pdb:cmTC_6ef9f.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
@@ -299,8 +299,8 @@ events:
       - "CMakeLists.txt:8 (find_package)"
     description: "Detecting CXX OpenMP version"
     directories:
-      source: "C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-7pvbrv"
-      binary: "C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-7pvbrv"
+      source: "C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-a4vy2l"
+      binary: "C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-a4vy2l"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
@@ -310,11 +310,11 @@ events:
       variable: "OpenMP_SPECTEST_CXX_"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-7pvbrv'
+        Change Dir: 'C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-a4vy2l'
         
-        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.2.3/bin/ninja/win/x64/ninja.exe" -v cmTC_cec3e
-        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /EHsc -openmp /Ob0 /Od /RTC1 -std:c++17 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_cec3e.dir\\OpenMPCheckVersion.cpp.obj /FdCMakeFiles\\cmTC_cec3e.dir\\ /FS -c C:\\Users\\Dami\\Documents\\CLionProjects\\mpi_rep\\cmake-build-release\\CMakeFiles\\CMakeScratch\\TryCompile-7pvbrv\\OpenMPCheckVersion.cpp
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\JetBrains\\CLion 2024.2.3\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_cec3e.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_cec3e.dir\\OpenMPCheckVersion.cpp.obj  /out:cmTC_cec3e.exe /implib:cmTC_cec3e.lib /pdb:cmTC_cec3e.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.2.3/bin/ninja/win/x64/ninja.exe" -v cmTC_8d7f6
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /EHsc -openmp /Ob0 /Od /RTC1 -std:c++17 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_8d7f6.dir\\OpenMPCheckVersion.cpp.obj /FdCMakeFiles\\cmTC_8d7f6.dir\\ /FS -c C:\\Users\\Dami\\Documents\\CLionProjects\\mpi_rep\\cmake-build-release\\CMakeFiles\\CMakeScratch\\TryCompile-a4vy2l\\OpenMPCheckVersion.cpp
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\JetBrains\\CLion 2024.2.3\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_8d7f6.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_8d7f6.dir\\OpenMPCheckVersion.cpp.obj  /out:cmTC_8d7f6.exe /implib:cmTC_8d7f6.lib /pdb:cmTC_8d7f6.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
@@ -327,8 +327,8 @@ events:
       - "CMakeLists.txt:14 (find_package)"
     description: "The MPI test test_mpi for C in mode normal"
     directories:
-      source: "C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-9clphn"
-      binary: "C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-9clphn"
+      source: "C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-qagult"
+      binary: "C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-qagult"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
@@ -338,11 +338,11 @@ events:
       variable: "MPI_RESULT_C_test_mpi_normal"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-9clphn'
+        Change Dir: 'C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-qagult'
         
-        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.2.3/bin/ninja/win/x64/ninja.exe" -v cmTC_acc6b
-        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\Hostx64\\x64\\cl.exe  /nologo  -external:I"C:\\Program Files (x86)\\Intel\\oneAPI\\mpi\\latest\\include" -external:I"C:\\Program Files (x86)\\Intel\\oneAPI\\mpi\\latest\\include\\mpi" -external:W0 /DWIN32 /D_WINDOWS  /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_acc6b.dir\\test_mpi.c.obj /FdCMakeFiles\\cmTC_acc6b.dir\\ /FS -c C:\\Users\\Dami\\Documents\\CLionProjects\\mpi_rep\\cmake-build-release\\CMakeFiles\\CMakeScratch\\TryCompile-9clphn\\test_mpi.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\JetBrains\\CLion 2024.2.3\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_acc6b.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_acc6b.dir\\test_mpi.c.obj  /out:cmTC_acc6b.exe /implib:cmTC_acc6b.lib /pdb:cmTC_acc6b.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  "C:\\Program Files (x86)\\Intel\\oneAPI\\mpi\\latest\\lib\\impi.lib"  "C:\\Program Files (x86)\\Intel\\oneAPI\\mpi\\latest\\lib\\impicxx.lib"  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.2.3/bin/ninja/win/x64/ninja.exe" -v cmTC_9ffd7
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\Hostx64\\x64\\cl.exe  /nologo  -external:I"C:\\Program Files (x86)\\Intel\\oneAPI\\mpi\\latest\\include" -external:I"C:\\Program Files (x86)\\Intel\\oneAPI\\mpi\\latest\\include\\mpi" -external:W0 /DWIN32 /D_WINDOWS  /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_9ffd7.dir\\test_mpi.c.obj /FdCMakeFiles\\cmTC_9ffd7.dir\\ /FS -c C:\\Users\\Dami\\Documents\\CLionProjects\\mpi_rep\\cmake-build-release\\CMakeFiles\\CMakeScratch\\TryCompile-qagult\\test_mpi.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\JetBrains\\CLion 2024.2.3\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_9ffd7.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_9ffd7.dir\\test_mpi.c.obj  /out:cmTC_9ffd7.exe /implib:cmTC_9ffd7.lib /pdb:cmTC_9ffd7.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  "C:\\Program Files (x86)\\Intel\\oneAPI\\mpi\\latest\\lib\\impi.lib"  "C:\\Program Files (x86)\\Intel\\oneAPI\\mpi\\latest\\lib\\impicxx.lib"  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
@@ -355,8 +355,8 @@ events:
       - "CMakeLists.txt:14 (find_package)"
     description: "The MPI test test_mpi for CXX in mode normal"
     directories:
-      source: "C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-1rbko0"
-      binary: "C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-1rbko0"
+      source: "C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-5m8ryi"
+      binary: "C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-5m8ryi"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc /openmp"
       CMAKE_CXX_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
@@ -366,11 +366,11 @@ events:
       variable: "MPI_RESULT_CXX_test_mpi_normal"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-1rbko0'
+        Change Dir: 'C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-5m8ryi'
         
-        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.2.3/bin/ninja/win/x64/ninja.exe" -v cmTC_596de
-        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP  -external:I"C:\\Program Files (x86)\\Intel\\oneAPI\\mpi\\latest\\include" -external:I"C:\\Program Files (x86)\\Intel\\oneAPI\\mpi\\latest\\include\\mpi" -external:W0 /DWIN32 /D_WINDOWS /EHsc /openmp  /Ob0 /Od /RTC1 -std:c++17 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_596de.dir\\test_mpi.cpp.obj /FdCMakeFiles\\cmTC_596de.dir\\ /FS -c C:\\Users\\Dami\\Documents\\CLionProjects\\mpi_rep\\cmake-build-release\\CMakeFiles\\CMakeScratch\\TryCompile-1rbko0\\test_mpi.cpp
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\JetBrains\\CLion 2024.2.3\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_596de.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_596de.dir\\test_mpi.cpp.obj  /out:cmTC_596de.exe /implib:cmTC_596de.lib /pdb:cmTC_596de.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  "C:\\Program Files (x86)\\Intel\\oneAPI\\mpi\\latest\\lib\\impi.lib"  "C:\\Program Files (x86)\\Intel\\oneAPI\\mpi\\latest\\lib\\impicxx.lib"  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.2.3/bin/ninja/win/x64/ninja.exe" -v cmTC_df1dd
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP  -external:I"C:\\Program Files (x86)\\Intel\\oneAPI\\mpi\\latest\\include" -external:I"C:\\Program Files (x86)\\Intel\\oneAPI\\mpi\\latest\\include\\mpi" -external:W0 /DWIN32 /D_WINDOWS /EHsc /openmp  /Ob0 /Od /RTC1 -std:c++17 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_df1dd.dir\\test_mpi.cpp.obj /FdCMakeFiles\\cmTC_df1dd.dir\\ /FS -c C:\\Users\\Dami\\Documents\\CLionProjects\\mpi_rep\\cmake-build-release\\CMakeFiles\\CMakeScratch\\TryCompile-5m8ryi\\test_mpi.cpp
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\JetBrains\\CLion 2024.2.3\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_df1dd.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_df1dd.dir\\test_mpi.cpp.obj  /out:cmTC_df1dd.exe /implib:cmTC_df1dd.lib /pdb:cmTC_df1dd.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  "C:\\Program Files (x86)\\Intel\\oneAPI\\mpi\\latest\\lib\\impi.lib"  "C:\\Program Files (x86)\\Intel\\oneAPI\\mpi\\latest\\lib\\impicxx.lib"  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
@@ -382,8 +382,8 @@ events:
       - "CMakeLists.txt:14 (find_package)"
     description: "The MPI test test_mpi for CXX in mode MPICXX"
     directories:
-      source: "C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-nxmvox"
-      binary: "C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-nxmvox"
+      source: "C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-4ppn6v"
+      binary: "C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-4ppn6v"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc /openmp"
       CMAKE_CXX_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
@@ -393,11 +393,11 @@ events:
       variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-nxmvox'
+        Change Dir: 'C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-4ppn6v'
         
-        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.2.3/bin/ninja/win/x64/ninja.exe" -v cmTC_34856
-        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP  -external:I"C:\\Program Files (x86)\\Intel\\oneAPI\\mpi\\latest\\include" -external:I"C:\\Program Files (x86)\\Intel\\oneAPI\\mpi\\latest\\include\\mpi" -external:W0 /DWIN32 /D_WINDOWS /EHsc /openmp  /Ob0 /Od /RTC1 -std:c++17 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_34856.dir\\test_mpi.cpp.obj /FdCMakeFiles\\cmTC_34856.dir\\ /FS -c C:\\Users\\Dami\\Documents\\CLionProjects\\mpi_rep\\cmake-build-release\\CMakeFiles\\CMakeScratch\\TryCompile-nxmvox\\test_mpi.cpp
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\JetBrains\\CLion 2024.2.3\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_34856.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_34856.dir\\test_mpi.cpp.obj  /out:cmTC_34856.exe /implib:cmTC_34856.lib /pdb:cmTC_34856.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  "C:\\Program Files (x86)\\Intel\\oneAPI\\mpi\\latest\\lib\\impi.lib"  "C:\\Program Files (x86)\\Intel\\oneAPI\\mpi\\latest\\lib\\impicxx.lib"  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.2.3/bin/ninja/win/x64/ninja.exe" -v cmTC_ef539
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP  -external:I"C:\\Program Files (x86)\\Intel\\oneAPI\\mpi\\latest\\include" -external:I"C:\\Program Files (x86)\\Intel\\oneAPI\\mpi\\latest\\include\\mpi" -external:W0 /DWIN32 /D_WINDOWS /EHsc /openmp  /Ob0 /Od /RTC1 -std:c++17 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_ef539.dir\\test_mpi.cpp.obj /FdCMakeFiles\\cmTC_ef539.dir\\ /FS -c C:\\Users\\Dami\\Documents\\CLionProjects\\mpi_rep\\cmake-build-release\\CMakeFiles\\CMakeScratch\\TryCompile-4ppn6v\\test_mpi.cpp
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\JetBrains\\CLion 2024.2.3\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_ef539.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_ef539.dir\\test_mpi.cpp.obj  /out:cmTC_ef539.exe /implib:cmTC_ef539.lib /pdb:cmTC_ef539.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  "C:\\Program Files (x86)\\Intel\\oneAPI\\mpi\\latest\\lib\\impi.lib"  "C:\\Program Files (x86)\\Intel\\oneAPI\\mpi\\latest\\lib\\impicxx.lib"  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
 ...
@@ -411,11 +411,11 @@ events:
       - "C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
       - "C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
       - "conan_provider.cmake:635 (find_package)"
-      - "CMakeLists.txt:14 (find_package)"
+      - "CMakeLists.txt:16 (find_package)"
     description: "The MPI test test_mpi for C in mode normal"
     directories:
-      source: "C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-iniper"
-      binary: "C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-iniper"
+      source: "C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-ghw5il"
+      binary: "C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-ghw5il"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
@@ -425,11 +425,11 @@ events:
       variable: "MPI_RESULT_C_test_mpi_normal"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-iniper'
+        Change Dir: 'C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-ghw5il'
         
-        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.2.3/bin/ninja/win/x64/ninja.exe" -v cmTC_312c4
-        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\Hostx64\\x64\\cl.exe  /nologo  -external:I"C:\\Program Files (x86)\\Intel\\oneAPI\\mpi\\latest\\include" -external:I"C:\\Program Files (x86)\\Intel\\oneAPI\\mpi\\latest\\include\\mpi" -external:W0 /DWIN32 /D_WINDOWS  /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_312c4.dir\\test_mpi.c.obj /FdCMakeFiles\\cmTC_312c4.dir\\ /FS -c C:\\Users\\Dami\\Documents\\CLionProjects\\mpi_rep\\cmake-build-release\\CMakeFiles\\CMakeScratch\\TryCompile-iniper\\test_mpi.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\JetBrains\\CLion 2024.2.3\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_312c4.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_312c4.dir\\test_mpi.c.obj  /out:cmTC_312c4.exe /implib:cmTC_312c4.lib /pdb:cmTC_312c4.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  "C:\\Program Files (x86)\\Intel\\oneAPI\\mpi\\latest\\lib\\impi.lib"  "C:\\Program Files (x86)\\Intel\\oneAPI\\mpi\\latest\\lib\\impicxx.lib"  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.2.3/bin/ninja/win/x64/ninja.exe" -v cmTC_a6b8c
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\Hostx64\\x64\\cl.exe  /nologo  -external:I"C:\\Program Files (x86)\\Intel\\oneAPI\\mpi\\latest\\include" -external:I"C:\\Program Files (x86)\\Intel\\oneAPI\\mpi\\latest\\include\\mpi" -external:W0 /DWIN32 /D_WINDOWS  /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_a6b8c.dir\\test_mpi.c.obj /FdCMakeFiles\\cmTC_a6b8c.dir\\ /FS -c C:\\Users\\Dami\\Documents\\CLionProjects\\mpi_rep\\cmake-build-release\\CMakeFiles\\CMakeScratch\\TryCompile-ghw5il\\test_mpi.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\JetBrains\\CLion 2024.2.3\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_a6b8c.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_a6b8c.dir\\test_mpi.c.obj  /out:cmTC_a6b8c.exe /implib:cmTC_a6b8c.lib /pdb:cmTC_a6b8c.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  "C:\\Program Files (x86)\\Intel\\oneAPI\\mpi\\latest\\lib\\impi.lib"  "C:\\Program Files (x86)\\Intel\\oneAPI\\mpi\\latest\\lib\\impicxx.lib"  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
@@ -439,11 +439,11 @@ events:
       - "C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
       - "C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
       - "conan_provider.cmake:635 (find_package)"
-      - "CMakeLists.txt:14 (find_package)"
+      - "CMakeLists.txt:16 (find_package)"
     description: "The MPI test test_mpi for CXX in mode normal"
     directories:
-      source: "C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-1mj4c8"
-      binary: "C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-1mj4c8"
+      source: "C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-njqm2r"
+      binary: "C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-njqm2r"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc /openmp"
       CMAKE_CXX_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
@@ -453,11 +453,11 @@ events:
       variable: "MPI_RESULT_CXX_test_mpi_normal"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-1mj4c8'
+        Change Dir: 'C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-njqm2r'
         
-        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.2.3/bin/ninja/win/x64/ninja.exe" -v cmTC_fbb65
-        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP  -external:I"C:\\Program Files (x86)\\Intel\\oneAPI\\mpi\\latest\\include" -external:I"C:\\Program Files (x86)\\Intel\\oneAPI\\mpi\\latest\\include\\mpi" -external:W0 /DWIN32 /D_WINDOWS /EHsc /openmp  /Ob0 /Od /RTC1 -std:c++17 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_fbb65.dir\\test_mpi.cpp.obj /FdCMakeFiles\\cmTC_fbb65.dir\\ /FS -c C:\\Users\\Dami\\Documents\\CLionProjects\\mpi_rep\\cmake-build-release\\CMakeFiles\\CMakeScratch\\TryCompile-1mj4c8\\test_mpi.cpp
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\JetBrains\\CLion 2024.2.3\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_fbb65.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_fbb65.dir\\test_mpi.cpp.obj  /out:cmTC_fbb65.exe /implib:cmTC_fbb65.lib /pdb:cmTC_fbb65.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  "C:\\Program Files (x86)\\Intel\\oneAPI\\mpi\\latest\\lib\\impi.lib"  "C:\\Program Files (x86)\\Intel\\oneAPI\\mpi\\latest\\lib\\impicxx.lib"  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.2.3/bin/ninja/win/x64/ninja.exe" -v cmTC_15295
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP  -external:I"C:\\Program Files (x86)\\Intel\\oneAPI\\mpi\\latest\\include" -external:I"C:\\Program Files (x86)\\Intel\\oneAPI\\mpi\\latest\\include\\mpi" -external:W0 /DWIN32 /D_WINDOWS /EHsc /openmp  /Ob0 /Od /RTC1 -std:c++17 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_15295.dir\\test_mpi.cpp.obj /FdCMakeFiles\\cmTC_15295.dir\\ /FS -c C:\\Users\\Dami\\Documents\\CLionProjects\\mpi_rep\\cmake-build-release\\CMakeFiles\\CMakeScratch\\TryCompile-njqm2r\\test_mpi.cpp
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\JetBrains\\CLion 2024.2.3\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_15295.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_15295.dir\\test_mpi.cpp.obj  /out:cmTC_15295.exe /implib:cmTC_15295.lib /pdb:cmTC_15295.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  "C:\\Program Files (x86)\\Intel\\oneAPI\\mpi\\latest\\lib\\impi.lib"  "C:\\Program Files (x86)\\Intel\\oneAPI\\mpi\\latest\\lib\\impicxx.lib"  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
@@ -466,11 +466,11 @@ events:
       - "C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/FindMPI.cmake:1278 (try_compile)"
       - "C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/FindMPI.cmake:1672 (_MPI_try_staged_settings)"
       - "conan_provider.cmake:635 (find_package)"
-      - "CMakeLists.txt:14 (find_package)"
+      - "CMakeLists.txt:16 (find_package)"
     description: "The MPI test test_mpi for CXX in mode MPICXX"
     directories:
-      source: "C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-ffj2mx"
-      binary: "C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-ffj2mx"
+      source: "C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-20my0s"
+      binary: "C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-20my0s"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc /openmp"
       CMAKE_CXX_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
@@ -480,11 +480,11 @@ events:
       variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-ffj2mx'
+        Change Dir: 'C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-20my0s'
         
-        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.2.3/bin/ninja/win/x64/ninja.exe" -v cmTC_69006
-        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP  -external:I"C:\\Program Files (x86)\\Intel\\oneAPI\\mpi\\latest\\include" -external:I"C:\\Program Files (x86)\\Intel\\oneAPI\\mpi\\latest\\include\\mpi" -external:W0 /DWIN32 /D_WINDOWS /EHsc /openmp  /Ob0 /Od /RTC1 -std:c++17 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_69006.dir\\test_mpi.cpp.obj /FdCMakeFiles\\cmTC_69006.dir\\ /FS -c C:\\Users\\Dami\\Documents\\CLionProjects\\mpi_rep\\cmake-build-release\\CMakeFiles\\CMakeScratch\\TryCompile-ffj2mx\\test_mpi.cpp
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\JetBrains\\CLion 2024.2.3\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_69006.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_69006.dir\\test_mpi.cpp.obj  /out:cmTC_69006.exe /implib:cmTC_69006.lib /pdb:cmTC_69006.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  "C:\\Program Files (x86)\\Intel\\oneAPI\\mpi\\latest\\lib\\impi.lib"  "C:\\Program Files (x86)\\Intel\\oneAPI\\mpi\\latest\\lib\\impicxx.lib"  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.2.3/bin/ninja/win/x64/ninja.exe" -v cmTC_31072
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP  -external:I"C:\\Program Files (x86)\\Intel\\oneAPI\\mpi\\latest\\include" -external:I"C:\\Program Files (x86)\\Intel\\oneAPI\\mpi\\latest\\include\\mpi" -external:W0 /DWIN32 /D_WINDOWS /EHsc /openmp  /Ob0 /Od /RTC1 -std:c++17 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_31072.dir\\test_mpi.cpp.obj /FdCMakeFiles\\cmTC_31072.dir\\ /FS -c C:\\Users\\Dami\\Documents\\CLionProjects\\mpi_rep\\cmake-build-release\\CMakeFiles\\CMakeScratch\\TryCompile-20my0s\\test_mpi.cpp
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\JetBrains\\CLion 2024.2.3\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_31072.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_31072.dir\\test_mpi.cpp.obj  /out:cmTC_31072.exe /implib:cmTC_31072.lib /pdb:cmTC_31072.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  "C:\\Program Files (x86)\\Intel\\oneAPI\\mpi\\latest\\lib\\impi.lib"  "C:\\Program Files (x86)\\Intel\\oneAPI\\mpi\\latest\\lib\\impicxx.lib"  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
 ...

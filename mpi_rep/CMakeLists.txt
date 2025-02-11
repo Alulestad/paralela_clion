@@ -6,6 +6,8 @@ set(CMAKE_CXX_STANDARD 17)
 #habilitar OpemMp
 #set(CMAKE_CXX_FLAGS "${CXX_CMAKE_FLAGS} -fopenmp")
 find_package(OpenMP)
+
+#habilitar las banderas de OMP
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /openmp")
 if(OpenMP_CXX_FOUND)
     message(STATUS "MPI Link Flags: ${MPI_lINK_FLAGS}")
@@ -16,6 +18,9 @@ find_package(fmt)
 
 find_package(SFML)
 find_package(glfw3)
+
+find_package(FreeGLUT)
+
 
 if (MPI_FOUND)
     message(STATUS "MPI FOUD")
@@ -46,6 +51,18 @@ target_link_libraries(mpi_promedio ${MPI_LIBRARIES})
 add_executable(mpi_suma mpi_suma.cpp)
 target_link_libraries(mpi_suma ${MPI_LIBRARIES})
 
+add_executable(mpi_fractal mpi_fractal.cpp omp_fps_counter.cpp omp_fps_counter.h )
+target_link_libraries(mpi_fractal ${MPI_LIBRARIES} fmt::fmt sfml::sfml glfw)
+
+add_executable(mpi_fractal_other mpi_fractal_other.cpp omp_fps_counter.cpp omp_fps_counter.h )
+target_link_libraries(mpi_fractal_other ${MPI_LIBRARIES} fmt::fmt sfml::sfml glfw)
+
+add_executable(mpi_fractal_full mpi_fractal_full.cpp omp_fps_counter.cpp omp_fps_counter.h )
+target_link_libraries(mpi_fractal_full ${MPI_LIBRARIES} fmt::fmt sfml::sfml glfw FreeGLUT::freeglut_static)
+
+add_executable(mpi_fractal_willan mpi_fractal_willan.cpp)
+target_link_libraries(mpi_fractal_willan ${MPI_LIBRARIES} fmt::fmt sfml::sfml glfw FreeGLUT::freeglut_static)
+
 
 
 #OMP
@@ -61,4 +78,7 @@ target_link_libraries(omp_promedio fmt::fmt OpenMP::OpenMP_CXX)
 add_executable(omp_suma omp_suma.cpp )
 target_link_libraries(omp_suma OpenMP::OpenMP_CXX)
 
+#-- prueba 2023-2023 reduccion de vectores
+add_executable(omp_reduccion_vectores omp_reduccion_vectores.cpp)
+target_link_libraries(omp_reduccion_vectores OpenMP::OpenMP_CXX)
 

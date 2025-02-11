@@ -1,0 +1,177 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Release-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.24"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "mpi_rep",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "mpi_correccion::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mpi_correccion-Release-337e692f1b52ae6414f2.json",
+					"name" : "mpi_correccion",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mpi_correccion_profe::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mpi_correccion_profe-Release-486478af9d364c974628.json",
+					"name" : "mpi_correccion_profe",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mpi_fractal::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mpi_fractal-Release-45166d0b3278c3689846.json",
+					"name" : "mpi_fractal",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mpi_fractal_full::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mpi_fractal_full-Release-4fb38a4b0e1ccaffa831.json",
+					"name" : "mpi_fractal_full",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mpi_fractal_other::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mpi_fractal_other-Release-64c5734ca3bac67434a6.json",
+					"name" : "mpi_fractal_other",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mpi_fractal_willan::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mpi_fractal_willan-Release-cd507f7143f18433b27f.json",
+					"name" : "mpi_fractal_willan",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mpi_matrices_multi::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mpi_matrices_multi-Release-3600705da7882540393e.json",
+					"name" : "mpi_matrices_multi",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mpi_promedio::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mpi_promedio-Release-04452ca195c2f4fdfbbc.json",
+					"name" : "mpi_promedio",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mpi_suma::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mpi_suma-Release-764f3069ee642da93da3.json",
+					"name" : "mpi_suma",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "omp_fractal::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-omp_fractal-Release-3e1ab1356880e7cb9810.json",
+					"name" : "omp_fractal",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "omp_paleta::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-omp_paleta-Release-0b46942e6baf39f97598.json",
+					"name" : "omp_paleta",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "omp_promedio::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-omp_promedio-Release-3b671740a2f14ffa9899.json",
+					"name" : "omp_promedio",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "omp_reduccion_vectores::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-omp_reduccion_vectores-Release-1101753e495902ef2b28.json",
+					"name" : "omp_reduccion_vectores",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "omp_suma::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-omp_suma-Release-aecb5ef93d395cc241f5.json",
+					"name" : "omp_suma",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-release",
+		"source" : "C:/Users/Dami/Documents/CLionProjects/mpi_rep"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

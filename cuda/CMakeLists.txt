@@ -33,3 +33,4 @@ find_package(OpenCL)
 add_executable(cl_01 main_cl.cpp)
 target_link_libraries(cl_01 ${OpenCL_LIBRARIES})
 target_include_directories(cl_01 PUBLIC ${OpenCL_INCLUDE_DIRS})
+

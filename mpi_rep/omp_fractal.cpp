@@ -60,6 +60,9 @@ omp_fps_counter fps;  // Instancia del contador de FPS
 //--------------------------------------------------------
 // Función para inicializar las texturas de OpenGL
 void initTextures() {
+    //tesetura es una imagen 2D o 3D que se mapea sobre una superficie para dar detalle y apariencia.
+    // pueden ser colores creo.
+    // sí, da colores, sompras, patrones.
     glGenTextures(1, &textureID);  // Genera un identificador para la textura
     glBindTexture(GL_TEXTURE_2D, textureID);  // Enlaza la textura como 2D
 
@@ -77,7 +80,14 @@ void initTextures() {
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 
+    // GL_LINEAR: Proporciona una mejor calidad visual, especialmente útil para fractales con detalles finos.
+    // GL_TEXTURE_MIN_FILTER: Para reducir la textura. Se usa cuando la textura se reduce
+    // GL_TEXTURE_MAG_FILTER: Para ampliar la textura. Se usa cuando la textura se amplía
+
+
+
     glBindTexture(GL_TEXTURE_2D, 0);  // Desenlaza la textura
+    //Esto evita que operaciones posteriores afecten accidentalmente a esta textura.
 }
 
 //--------------------------------------------------------
@@ -109,7 +119,9 @@ void init() {
     });
 
 
-    glfwMakeContextCurrent(window);  // Asocia OpenGL a la ventana actual
+    glfwMakeContextCurrent(window);  // asociar el contexto de OpenGL a una ventana específica.
+    //contexto es un entorno que almacena toda la información necesaria para renderizar gráficos
+    // en OpenGL, incluidos los estados de renderizado, los shaders y los buffers de geometría.
     std::string version = (char *)glGetString(GL_VERSION);  // Obtiene la versión de OpenGL
     std::string vendor = (char *)glGetString(GL_VENDOR);  // Obtiene el proveedor de GPU
     std::string render = (char *)glGetString(GL_RENDERER);  // Obtiene el nombre del renderizador
@@ -119,13 +131,16 @@ void init() {
     fmt::print("Vendor : {}\n", vendor);
     fmt::print("Renderer : {}\n", render);
 
-    // Configuración de la proyección ortogonal
+    // cambia al modo de matriz de proyección
+    // define cómo los objetos 3D se proyectan en la pantalla 2D.
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
     glOrtho(-1,1,-1,1,-1,1);
+//cambia el área visible de la escena
 
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
+    // establece la matriz actual como la matriz identidad, lo que elimina cualquier transformación previa.
 
     glEnable(GL_TEXTURE_2D); // Habilita texturas 2D
 
@@ -174,9 +189,12 @@ void mandelbrotCpu() {
 //#pragma omp parallel for default(none)
 //#pragma omp parallel for  shared(pixel_buffer,dx,dy)
 
-#pragma omp parallel for default(none) shared(pixel_buffer,dx,dy)
-// - `default(none)` asegura que todas las variables utilizadas en el bloque deben estar explícitamente declaradas.
-// - `shared(pixel_buffer, dx, dy)` especifica que estas variables son compartidas entre los hilos.
+    #pragma omp parallel for default(none) shared(pixel_buffer,dx,dy)
+    // - `default(none)` asegura que todas las variables utilizadas en el bloque deben estar explícitamente declaradas.
+    // - `shared(pixel_buffer, dx, dy)` especifica que estas variables son compartidas entre los hilos.
+    // Sin default(none), OpenMP asume que todas las variables son compartidas (shared)
+
+
     for (int i = 0; i < WIDTH; i++) {
         for (int j = 0; j < HEIGHT; j++) {
             // Convertimos las coordenadas del píxel (i, j) a coordenadas del plano complejo.

@@ -61,8 +61,10 @@ Requirements
     bzip2/1.0.8#d00dac990f08d991998d624be81a9526 - Cache
     flac/1.4.3#112ca54377880fa91b13268d48e17871 - Cache
     fmt/11.0.2#5c7438ef4d5d69ab106a41e460ce11f3 - Cache
+    freeglut/3.4.0#5674e666d6bb21d45e778c6b710a213d - Cache
     freetype/2.13.2#5d2563803c8558d4ef47271a82c73d20 - Cache
     glfw/3.3.8#d75a15a362a707163bfaabbf4dc993d8 - Cache
+    glu/system#ee50fc2ade0e1c0c8ebb3be3ea60e0f5 - Cache
     libpng/1.6.44#9e1aa08fb46946c7c91e4ae03bd49811 - Cache
     minimp3/cci.20211201#045f7bf02ba91cce9a8730ce075705e7 - Cache
     ogg/1.3.5#062626875f5c8c59f069f76f148098ef - Cache
@@ -88,8 +90,10 @@ Requirements
     bzip2/1.0.8#d00dac990f08d991998d624be81a9526:dd62ce301c6ef0d8f7729c263acbaf3a11b7c621#7fb7f4cda174d41b27272757db5731b4 - Cache
     flac/1.4.3#112ca54377880fa91b13268d48e17871:ec76f3a606170941ebf092dbefc5b976353c1432#9262949eec524bf1b2de144cab0ada42 - Cache
     fmt/11.0.2#5c7438ef4d5d69ab106a41e460ce11f3:ed24bd5ddcb539c4a46096000a2fbd622370d034#f836740e6f1f0aae58770f23e4c0162d - Cache
+    freeglut/3.4.0#5674e666d6bb21d45e778c6b710a213d:bdd43cc357fb64af415c1c19b7f3539ca11d01b3#e54fc399ef6f7326f7c97a271963913d - Cache
     freetype/2.13.2#5d2563803c8558d4ef47271a82c73d20:8c8e819f72bf238a61323610becf843e3fd7289a#330237d1da6fabb86ca09a99f86f1463 - Cache
     glfw/3.3.8#d75a15a362a707163bfaabbf4dc993d8:ee8ddfc1a6035d30dc67d6422a1a1c9220db1abc#759768b517a501a1dbec1f142ed0fa3d - Cache
+    glu/system#ee50fc2ade0e1c0c8ebb3be3ea60e0f5:da39a3ee5e6b4b0d3255bfef95601890afd80709#0ba8627bd47edc3a501e8f0eb9a79e5e - Cache
     libpng/1.6.44#9e1aa08fb46946c7c91e4ae03bd49811:34b444759868b4ce4f04f81d4ad4927bd78d7d3e#c26c6d3bf995d125e3910f164de362f5 - Cache
     ogg/1.3.5#062626875f5c8c59f069f76f148098ef:8b7e35f91e516e42ed736c6dd52a9263da3a5dad#0822b900213b7eaf61bf4a574aa56ed5 - Cache
     openal-soft/1.22.2#506a381e0b805519cba4a7f1ee653fed:8b7e35f91e516e42ed736c6dd52a9263da3a5dad#a10833f1d06b4f3ab80608e8998f0781 - Cache
@@ -102,34 +106,37 @@ Skipped binaries
     minimp3/cci.20211201, stb/cci.20230920, meson/1.2.2, meson/1.3.2, ninja/1.12.1, pkgconf/2.1.0
 
 ======== Installing packages ========
-brotli/1.1.0: Already installed! (1 of 13)
-bzip2/1.0.8: Already installed! (2 of 13)
-fmt/11.0.2: Already installed! (3 of 13)
-ogg/1.3.5: Already installed! (4 of 13)
-openal-soft/1.22.2: Already installed! (5 of 13)
-opengl/system: Already installed! (6 of 13)
-zlib/1.3.1: Already installed! (7 of 13)
-flac/1.4.3: Already installed! (8 of 13)
-glfw/3.3.8: Already installed! (9 of 13)
-libpng/1.6.44: Already installed! (10 of 13)
-vorbis/1.3.7: Already installed! (11 of 13)
-freetype/2.13.2: Already installed! (12 of 13)
-sfml/2.6.1: Already installed! (13 of 13)
+brotli/1.1.0: Already installed! (1 of 15)
+bzip2/1.0.8: Already installed! (2 of 15)
+fmt/11.0.2: Already installed! (3 of 15)
+ogg/1.3.5: Already installed! (4 of 15)
+openal-soft/1.22.2: Already installed! (5 of 15)
+opengl/system: Already installed! (6 of 15)
+zlib/1.3.1: Already installed! (7 of 15)
+flac/1.4.3: Already installed! (8 of 15)
+glfw/3.3.8: Already installed! (9 of 15)
+glu/system: Already installed! (10 of 15)
+libpng/1.6.44: Already installed! (11 of 15)
+vorbis/1.3.7: Already installed! (12 of 15)
+freeglut/3.4.0: Already installed! (13 of 15)
+freetype/2.13.2: Already installed! (14 of 15)
+sfml/2.6.1: Already installed! (15 of 15)
 WARN: deprecated: Usage of deprecated Conan 1.X features that will be removed in Conan 2.X:
-WARN: deprecated:     'cpp_info.names' used in: ogg/1.3.5, zlib/1.3.1, fmt/11.0.2, sfml/2.6.1, brotli/1.1.0, vorbis/1.3.7, flac/1.4.3, glfw/3.3.8, freetype/2.13.2, bzip2/1.0.8, openal-soft/1.22.2, libpng/1.6.44
-WARN: deprecated:     'cpp_info.build_modules' used in: sfml/2.6.1, glfw/3.3.8, freetype/2.13.2, bzip2/1.0.8, openal-soft/1.22.2
-WARN: deprecated:     'env_info' used in: freetype/2.13.2, flac/1.4.3, bzip2/1.0.8
-WARN: deprecated:     'cpp_info.filenames' used in: opengl/system, freetype/2.13.2, glfw/3.3.8, flac/1.4.3
+WARN: deprecated:     'cpp_info.names' used in: openal-soft/1.22.2, vorbis/1.3.7, freeglut/3.4.0, fmt/11.0.2, ogg/1.3.5, glfw/3.3.8, bzip2/1.0.8, freetype/2.13.2, brotli/1.1.0, sfml/2.6.1, flac/1.4.3, zlib/1.3.1, libpng/1.6.44
+WARN: deprecated:     'cpp_info.build_modules' used in: openal-soft/1.22.2, freetype/2.13.2, glfw/3.3.8, bzip2/1.0.8, sfml/2.6.1
+WARN: deprecated:     'env_info' used in: flac/1.4.3, bzip2/1.0.8, freetype/2.13.2
+WARN: deprecated:     'cpp_info.filenames' used in: flac/1.4.3, opengl/system, freetype/2.13.2, glfw/3.3.8
 WARN: deprecated:     'user_info' used in: freetype/2.13.2
 
 ======== Finalizing install (deploy, generators) ========
 conanfile.py: Writing generators to C:\Users\Dami\Documents\CLionProjects\mpi_rep\cmake-build-debug\conan\build\Debug\generators
 conanfile.py: Generator 'CMakeDeps' calling 'generate()'
 conanfile.py: CMakeDeps necessary find_package() and targets for your CMakeLists.txt
+    find_package(FreeGLUT)
     find_package(SFML)
     find_package(glfw3)
     find_package(fmt)
-    target_link_libraries(... sfml::sfml glfw fmt::fmt)
+    target_link_libraries(... FreeGLUT::freeglut_static sfml::sfml glfw fmt::fmt)
 conanfile.py: Calling generate()
 conanfile.py: Generators folder: C:\Users\Dami\Documents\CLionProjects\mpi_rep\cmake-build-debug\conan\build\Debug\generators
 conanfile.py: CMakeToolchain generated: conan_toolchain.cmake
@@ -192,12 +199,16 @@ Install finished successfully
 -- Conan: Target declared 'opengl::opengl'
 -- CMake-Conan: find_package(glfw3) found, 'conan install' already ran
 -- Conan: Target declared 'glfw'
+-- CMake-Conan: find_package(FreeGLUT) found, 'conan install' already ran
+-- Conan: Component target declared 'FreeGLUT::freeglut_static'
+-- CMake-Conan: find_package(glu) found, 'conan install' already ran
+-- Conan: Target declared 'glu::glu'
 -- MPI FOUD
 -- MPI version: 3.1
 -- MPI Include path: C:/Program Files (x86)/Intel/oneAPI/mpi/latest/include;C:/Program Files (x86)/Intel/oneAPI/mpi/latest/include/mpi
 -- MPI Libraries: C:/Program Files (x86)/Intel/oneAPI/mpi/latest/lib/impi.lib;C:/Program Files (x86)/Intel/oneAPI/mpi/latest/lib/impicxx.lib
 -- MPI Include path: C:/Program Files (x86)/Intel/oneAPI/mpi/latest/bin/mpicl.bat
 -- MPI Link Flags: 
--- Configuring done (5.3s)
--- Generating done (0.0s)
+-- Configuring done (23.8s)
+-- Generating done (0.1s)
 -- Build files have been written to: C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-debug

@@ -20,7 +20,7 @@ void suma_kernel(float* a, float* b, float* c, int size) {
     }
 }
 
-extern "C"
+    extern "C"
 void suma_paralela(float* a, float* b, float* c, int size) {
     int thread_num=1024;
     int block_sum=std::ceil(size/ (float)thread_num);

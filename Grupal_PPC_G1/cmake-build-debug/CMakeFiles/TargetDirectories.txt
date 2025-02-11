@@ -1,0 +1,3 @@
+C:/Users/Dami/Documents/CLionProjects/Grupal_PPC_G1/cmake-build-debug/CMakeFiles/Grupal_PPC_G1.dir
+C:/Users/Dami/Documents/CLionProjects/Grupal_PPC_G1/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Dami/Documents/CLionProjects/Grupal_PPC_G1/cmake-build-debug/CMakeFiles/rebuild_cache.dir

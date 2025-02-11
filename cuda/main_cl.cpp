@@ -244,7 +244,7 @@ int main() {
     // Seleccionamos el dispositivo que vamos a usar (GPU)
     std::printf("\n---------------------------------------------\n");
 
-    cl_platform_id platform_id = platforms[4]; // Es el índice de la plataforma nvidia
+    cl_platform_id platform_id = platforms[0]; // Es el índice de la plataforma nvidia
     cl_device_id device_id = nullptr;
     cl_context context = nullptr;
     cl_command_queue commands_queue = nullptr;
@@ -287,7 +287,7 @@ int main() {
 
     // Operaciones hostToDevice y viceversa
     // Allocate memory for the host vectors
-    const size_t VECTOR_SIZE = 1024 * 1024;
+    const size_t VECTOR_SIZE = 1024 * 1024 *100 ;
     float *h_A = new float[VECTOR_SIZE];
     float *h_B = new float[VECTOR_SIZE];
     float *h_C = new float[VECTOR_SIZE];

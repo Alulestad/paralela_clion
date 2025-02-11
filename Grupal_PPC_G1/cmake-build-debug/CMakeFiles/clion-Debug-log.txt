@@ -1,0 +1,116 @@
+"C:\Program Files\JetBrains\CLion 2024.2.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2024.2.3/bin/ninja/win/x64/ninja.exe" -DCMAKE_PROJECT_TOP_LEVEL_INCLUDES=conan_provider.cmake -G Ninja -S C:\Users\Dami\Documents\CLionProjects\Grupal_PPC_G1 -B C:\Users\Dami\Documents\CLionProjects\Grupal_PPC_G1\cmake-build-debug
+-- CMake-Conan: first find_package() found. Installing dependencies with Conan
+-- CMake-Conan: Checking if a default profile exists
+C:\Users\Dami\.conan2\profiles\default
+-- CMake-Conan: cmake_system_name=Windows
+-- CMake-Conan: cmake_system_processor=x86_64
+-- CMake-Conan: CMake compiler=MSVC
+-- CMake-Conan: CMake compiler version=19.42.34436.0
+-- CMake-Conan: CMake compiler.runtime=dynamic
+-- CMake-Conan: [settings] compiler=msvc
+-- CMake-Conan: [settings] compiler.version=194
+-- CMake-Conan: [settings] compiler.runtime=dynamic
+-- CMake-Conan: Creating profile C:/Users/Dami/Documents/CLionProjects/Grupal_PPC_G1/cmake-build-debug/conan_host_profile
+-- CMake-Conan: Profile: 
+[settings]
+arch=x86_64
+os=Windows
+compiler=msvc
+compiler.version=194
+compiler.runtime=dynamic
+compiler.cppstd=17
+build_type=Debug
+[conf]
+tools.cmake.cmaketoolchain:generator=Ninja
+tools.build:compiler_executables={"c":"C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.42.34433/bin/Hostx64/x64/cl.exe","cpp":"C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.42.34433/bin/Hostx64/x64/cl.exe","rc":"C:/Program Files (x86)/Windows Kits/10/bin/10.0.22621.0/x64/rc.exe"}
+
+-- CMake-Conan: Installing single configuration Debug
+-- CMake-Conan: conan install C:/Users/Dami/Documents/CLionProjects/Grupal_PPC_G1 -of=C:/Users/Dami/Documents/CLionProjects/Grupal_PPC_G1/cmake-build-debug/conan --profile:host=default;--profile:host=C:/Users/Dami/Documents/CLionProjects/Grupal_PPC_G1/cmake-build-debug/conan_host_profile;--profile:build=default;--build=missing
+
+======== Input profiles ========
+Profile host:
+[settings]
+arch=x86_64
+build_type=Debug
+compiler=msvc
+compiler.cppstd=17
+compiler.runtime=dynamic
+compiler.runtime_type=Debug
+compiler.version=194
+os=Windows
+[conf]
+tools.build:compiler_executables={'c': 'C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.42.34433/bin/Hostx64/x64/cl.exe', 'cpp': 'C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.42.34433/bin/Hostx64/x64/cl.exe', 'rc': 'C:/Program Files (x86)/Windows Kits/10/bin/10.0.22621.0/x64/rc.exe'}
+tools.cmake.cmaketoolchain:generator=Ninja
+
+Profile build:
+[settings]
+arch=x86_64
+build_type=Release
+compiler=gcc
+compiler.cppstd=gnu17
+compiler.libcxx=libstdc++11
+compiler.version=13
+os=Windows
+
+
+======== Computing dependency graph ========
+Graph root
+    conanfile.py: C:/Users/Dami/Documents/CLionProjects/Grupal_PPC_G1\conanfile.py
+Requirements
+    fmt/11.0.2#5c7438ef4d5d69ab106a41e460ce11f3 - Cache
+    glfw/3.3.8#d75a15a362a707163bfaabbf4dc993d8 - Cache
+    opengl/system#4df6fecde4084386beded3ed0e56e4ea - Cache
+
+======== Computing necessary packages ========
+Requirements
+    fmt/11.0.2#5c7438ef4d5d69ab106a41e460ce11f3:ed24bd5ddcb539c4a46096000a2fbd622370d034#f836740e6f1f0aae58770f23e4c0162d - Cache
+    glfw/3.3.8#d75a15a362a707163bfaabbf4dc993d8:ee8ddfc1a6035d30dc67d6422a1a1c9220db1abc#759768b517a501a1dbec1f142ed0fa3d - Cache
+    opengl/system#4df6fecde4084386beded3ed0e56e4ea:da39a3ee5e6b4b0d3255bfef95601890afd80709#0ba8627bd47edc3a501e8f0eb9a79e5e - Cache
+
+======== Installing packages ========
+fmt/11.0.2: Already installed! (1 of 3)
+opengl/system: Already installed! (2 of 3)
+glfw/3.3.8: Already installed! (3 of 3)
+WARN: deprecated: Usage of deprecated Conan 1.X features that will be removed in Conan 2.X:
+WARN: deprecated:     'cpp_info.names' used in: fmt/11.0.2, glfw/3.3.8
+WARN: deprecated:     'cpp_info.filenames' used in: glfw/3.3.8, opengl/system
+WARN: deprecated:     'cpp_info.build_modules' used in: glfw/3.3.8
+
+======== Finalizing install (deploy, generators) ========
+conanfile.py: Writing generators to C:\Users\Dami\Documents\CLionProjects\Grupal_PPC_G1\cmake-build-debug\conan\build\Debug\generators
+conanfile.py: Generator 'CMakeDeps' calling 'generate()'
+conanfile.py: CMakeDeps necessary find_package() and targets for your CMakeLists.txt
+    find_package(glfw3)
+    find_package(fmt)
+    target_link_libraries(... glfw fmt::fmt)
+conanfile.py: Calling generate()
+conanfile.py: Generators folder: C:\Users\Dami\Documents\CLionProjects\Grupal_PPC_G1\cmake-build-debug\conan\build\Debug\generators
+conanfile.py: CMakeToolchain generated: conan_toolchain.cmake
+conanfile.py: CMakeToolchain: Preset 'conan-debug' added to CMakePresets.json.
+    (cmake>=3.23) cmake --preset conan-debug
+    (cmake<3.23) cmake <path> -G Ninja -DCMAKE_TOOLCHAIN_FILE=generators\conan_toolchain.cmake  -DCMAKE_POLICY_DEFAULT_CMP0091=NEW -DCMAKE_BUILD_TYPE=Debug
+conanfile.py: CMakeToolchain generated: C:\Users\Dami\Documents\CLionProjects\Grupal_PPC_G1\cmake-build-debug\conan\build\Debug\generators\CMakePresets.json
+conanfile.py: Generating aggregated env files
+conanfile.py: Generated aggregated env files: ['conanbuild.bat', 'conanrun.bat']
+Install finished successfully
+-- CMake-Conan: CONAN_GENERATORS_FOLDER=C:/Users/Dami/Documents/CLionProjects/Grupal_PPC_G1/cmake-build-debug/conan/build/Debug/generators
+-- CMake-Conan: CONANFILE=C:/Users/Dami/Documents/CLionProjects/Grupal_PPC_G1/conanfile.py
+-- Could NOT find MPI (missing: MPI_DIR)
+-- CMake-Conan: find_package(PkgConfig) found, 'conan install' already ran
+-- MPI FOUND
+-- MPI C++ Version: 3.1
+-- MPI Include path: C:/Program Files (x86)/Intel/oneAPI/mpi/latest/include;C:/Program Files (x86)/Intel/oneAPI/mpi/latest/include/mpi
+-- MPI Libraries: C:/Program Files (x86)/Intel/oneAPI/mpi/latest/lib/impi.lib;C:/Program Files (x86)/Intel/oneAPI/mpi/latest/lib/impicxx.lib
+-- MPI C++ Compiler: C:/Program Files (x86)/Intel/oneAPI/mpi/latest/bin/mpicl.bat
+-- MPI Link Flags: 
+-- CMake-Conan: find_package(glfw3) found, 'conan install' already ran
+-- Conan: Target declared 'glfw'
+-- CMake-Conan: find_package(opengl_system) found, 'conan install' already ran
+-- Conan: Target declared 'opengl::opengl'
+-- CMake-Conan: find_package(OpenGL) found, 'conan install' already ran
+-- Could NOT find OpenGL (missing: OpenGL_DIR)
+-- CMake-Conan: find_package(fmt) found, 'conan install' already ran
+-- Conan: Component target declared 'fmt::fmt'
+-- Configuring done (4.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: C:/Users/Dami/Documents/CLionProjects/Grupal_PPC_G1/cmake-build-debug
