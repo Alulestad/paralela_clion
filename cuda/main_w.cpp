@@ -12,14 +12,14 @@ unsigned int _bswap32(unsigned int a) {
 }
 
 
-#define WIDTH 3840
-#define HEIGHT 2160
+#define WIDTH 1600
+#define HEIGHT 800
 
 const double x_min = -2;
 const double x_max = 1;
 const double y_min = -1;
 const double y_max = 1;
-int maxIteration = 100;
+int maxIteration = 1000;
 
 const int PALETTE_SIZE = 16;
 const unsigned int color_ramp[] = {

@@ -73,3 +73,10 @@ add_executable(suma_vectores_cl main_cl_suma_vectores.cpp)
 target_link_libraries(suma_vectores_cl ${OpenCL_LIBRARIES})
 target_include_directories(suma_vectores_cl PUBLIC ${OpenCL_INCLUDE_DIRS})
 
+
+
+
+#-- OMP reduccion de vectores
+
+
+
