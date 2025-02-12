@@ -13,7 +13,7 @@ set(Ogg_FIND_MODE "NO_MODULE")
 
 ########### VARIABLES #######################################################################
 #############################################################################################
-set(flac_PACKAGE_FOLDER_RELEASE "C:/Users/Dami/.conan2/p/b/flacc740fb918f3f3/p")
+set(flac_PACKAGE_FOLDER_RELEASE "C:/Users/fing.labcom/.conan2/p/flacd1f93feeba5ca/p")
 set(flac_BUILD_MODULES_PATHS_RELEASE )
 
 

@@ -1,124 +1,210 @@
 # CMake generation dependency list for this directory.
-C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCUDAInformation.cmake
-C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake
-C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake
-C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake
-C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake
-C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake
-C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake
-C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakePushCheckState.cmake
-C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeRCInformation.cmake
-C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake
-C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake
-C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckCXXSourceCompiles.cmake
-C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckSymbolExists.cmake
-C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake
-C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/MSVC-CXX.cmake
-C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/MSVC.cmake
-C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/NVIDIA-CUDA.cmake
-C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/NVIDIA.cmake
-C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/FindOpenCL.cmake
-C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake
-C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/FindPackageMessage.cmake
-C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake
-C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-Initialize.cmake
-C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-MSVC-CXX.cmake
-C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-MSVC.cmake
-C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-NVIDIA-CUDA.cmake
-C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows.cmake
-C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/WindowsPaths.cmake
-C:/Users/Dami/.conan2/p/b/bzip29b056da9d1fd5/p/lib/cmake/conan-official-bzip2-variables.cmake
-C:/Users/Dami/.conan2/p/b/freetca820d5d8a4cd/p/lib/cmake/conan-official-freetype-variables.cmake
-C:/Users/Dami/.conan2/p/b/opena83e857a26f199/p/lib/cmake/conan-official-openal-soft-variables.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/CMakeLists.txt
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/CMakeFiles/3.29.6/CMakeCUDACompiler.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/CMakeFiles/3.29.6/CMakeCXXCompiler.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/CMakeFiles/3.29.6/CMakeRCCompiler.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/CMakeFiles/3.29.6/CMakeSystem.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/BZip2-Target-debug.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/BZip2-Target-release.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/BZip2-debug-x86_64-data.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/BZip2-release-x86_64-data.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/BZip2Config.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/BZip2ConfigVersion.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/BZip2Targets.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/Ogg-Target-debug.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/Ogg-Target-release.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/Ogg-debug-x86_64-data.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/Ogg-release-x86_64-data.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/OggConfig.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/OggConfigVersion.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/OggTargets.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/OpenAL-Target-debug.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/OpenAL-Target-release.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/OpenAL-debug-x86_64-data.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/OpenAL-release-x86_64-data.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/OpenALConfig.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/OpenALConfigVersion.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/OpenALTargets.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/PNG-Target-debug.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/PNG-Target-release.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/PNG-debug-x86_64-data.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/PNG-release-x86_64-data.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/PNGConfig.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/PNGConfigVersion.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/PNGTargets.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/SFML-Target-debug.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/SFML-Target-release.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/SFML-debug-x86_64-data.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/SFML-release-x86_64-data.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/SFMLConfig.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/SFMLConfigVersion.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/SFMLTargets.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/Vorbis-Target-debug.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/Vorbis-Target-release.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/Vorbis-debug-x86_64-data.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/Vorbis-release-x86_64-data.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/VorbisConfig.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/VorbisConfigVersion.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/VorbisTargets.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/ZLIB-Target-debug.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/ZLIB-Target-release.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/ZLIB-debug-x86_64-data.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/ZLIB-release-x86_64-data.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/ZLIBConfig.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/ZLIBConfigVersion.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/ZLIBTargets.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/brotli-Target-debug.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/brotli-Target-release.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/brotli-config-version.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/brotli-config.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/brotli-debug-x86_64-data.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/brotli-release-x86_64-data.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/brotliTargets.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/cmakedeps_macros.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/flac-Target-debug.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/flac-Target-release.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/flac-config-version.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/flac-config.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/flac-debug-x86_64-data.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/flac-release-x86_64-data.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/flacTargets.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/fmt-Target-debug.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/fmt-Target-release.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/fmt-config-version.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/fmt-config.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/fmt-debug-x86_64-data.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/fmt-release-x86_64-data.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/fmtTargets.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/freetype-Target-debug.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/freetype-Target-release.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/freetype-config-version.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/freetype-config.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/freetype-debug-x86_64-data.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/freetype-release-x86_64-data.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/freetypeTargets.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/opengl_system-Target-debug.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/opengl_system-Target-release.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/opengl_system-config-version.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/opengl_system-config.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/opengl_system-debug-x86_64-data.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/opengl_system-release-x86_64-data.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug/conan/build/generators/opengl_systemTargets.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/conan_provider.cmake
-C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/conanfile.py
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCUDACompiler.cmake.in
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCUDACompilerABI.cu
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCUDAInformation.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCXXCompiler.cmake.in
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCXXInformation.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCompilerIdDetection.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCUDACompiler.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompiler.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerSupport.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineRCCompiler.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeFindBinUtils.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeParseImplicitIncludeInfo.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeParseImplicitLinkInfo.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeParseLibraryArchitecture.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakePushCheckState.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeRCCompiler.cmake.in
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeRCInformation.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeSystem.cmake.in
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeTestCUDACompiler.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeTestCompilerCommon.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeTestRCCompiler.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckCXXSourceCompiles.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckSymbolExists.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/ADSP-DetermineCompiler.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/ARMCC-DetermineCompiler.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/ARMClang-DetermineCompiler.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/AppleClang-DetermineCompiler.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/Borland-DetermineCompiler.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/Bruce-C-DetermineCompiler.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/Clang-DetermineCompiler.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/Clang-DetermineCompilerInternal.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/Compaq-C-DetermineCompiler.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/Cray-DetermineCompiler.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/CrayClang-DetermineCompiler.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/Embarcadero-DetermineCompiler.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/Fujitsu-DetermineCompiler.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GHS-DetermineCompiler.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU-C-DetermineCompiler.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/HP-C-DetermineCompiler.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/HP-CXX-DetermineCompiler.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/IAR-DetermineCompiler.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/Intel-DetermineCompiler.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/LCC-C-DetermineCompiler.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/MSVC-CXX.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/MSVC-DetermineCompiler.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/MSVC.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/NVHPC-DetermineCompiler.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/NVIDIA-CUDA.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/NVIDIA-DetermineCompiler.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/NVIDIA.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/OrangeC-DetermineCompiler.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/PGI-DetermineCompiler.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/PathScale-DetermineCompiler.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/SCO-DetermineCompiler.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/SDCC-C-DetermineCompiler.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/SunPro-C-DetermineCompiler.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/TI-DetermineCompiler.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/TIClang-DetermineCompiler.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/Tasking-DetermineCompiler.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/Watcom-DetermineCompiler.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/XL-C-DetermineCompiler.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/XL-CXX-DetermineCompiler.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/XLClang-C-DetermineCompiler.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/zOS-C-DetermineCompiler.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CompilerId/VS-10.vcxproj.in
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/FindOpenCL.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/FindPackageMessage.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Internal/CMakeCUDAArchitecturesAll.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Internal/CMakeCUDAArchitecturesNative.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Internal/CMakeCUDAArchitecturesValidate.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Internal/CMakeCUDAFilterImplicitLibs.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Internal/CMakeDetermineLinkerId.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Internal/CMakeNVCCFilterImplicitInfo.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Internal/CMakeNVCCParseImplicitInfo.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Internal/FeatureTesting.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-Determine-CXX.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-Initialize.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-MSVC-CXX.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-MSVC.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-NVIDIA-CUDA.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows.cmake
+C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/WindowsPaths.cmake
+C:/Users/fing.labcom/.conan2/p/b/bzip27ec75aa32c59b/p/lib/cmake/conan-official-bzip2-variables.cmake
+C:/Users/fing.labcom/.conan2/p/b/freet450ae7bb95eff/p/lib/cmake/conan-official-freetype-variables.cmake
+C:/Users/fing.labcom/.conan2/p/b/openad4f43ee373ebf/p/lib/cmake/conan-official-openal-soft-variables.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/CMakeLists.txt
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/CMakeFiles/3.30.5/CMakeCUDACompiler.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/CMakeFiles/3.30.5/CMakeCXXCompiler.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/CMakeFiles/3.30.5/CMakeRCCompiler.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/CMakeFiles/3.30.5/CMakeSystem.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/BZip2-Target-debug.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/BZip2-Target-release.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/BZip2-debug-x86_64-data.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/BZip2-release-x86_64-data.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/BZip2Config.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/BZip2ConfigVersion.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/BZip2Targets.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/Ogg-Target-debug.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/Ogg-Target-release.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/Ogg-debug-x86_64-data.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/Ogg-release-x86_64-data.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/OggConfig.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/OggConfigVersion.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/OggTargets.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/OpenAL-Target-debug.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/OpenAL-Target-release.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/OpenAL-debug-x86_64-data.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/OpenAL-release-x86_64-data.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/OpenALConfig.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/OpenALConfigVersion.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/OpenALTargets.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/PNG-Target-debug.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/PNG-Target-release.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/PNG-debug-x86_64-data.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/PNG-release-x86_64-data.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/PNGConfig.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/PNGConfigVersion.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/PNGTargets.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/SFML-Target-debug.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/SFML-Target-release.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/SFML-debug-x86_64-data.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/SFML-release-x86_64-data.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/SFMLConfig.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/SFMLConfigVersion.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/SFMLTargets.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/Vorbis-Target-debug.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/Vorbis-Target-release.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/Vorbis-debug-x86_64-data.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/Vorbis-release-x86_64-data.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/VorbisConfig.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/VorbisConfigVersion.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/VorbisTargets.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/ZLIB-Target-debug.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/ZLIB-Target-release.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/ZLIB-debug-x86_64-data.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/ZLIB-release-x86_64-data.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/ZLIBConfig.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/ZLIBConfigVersion.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/ZLIBTargets.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/brotli-Target-debug.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/brotli-Target-release.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/brotli-config-version.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/brotli-config.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/brotli-debug-x86_64-data.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/brotli-release-x86_64-data.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/brotliTargets.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/cmakedeps_macros.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/flac-Target-debug.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/flac-Target-release.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/flac-config-version.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/flac-config.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/flac-debug-x86_64-data.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/flac-release-x86_64-data.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/flacTargets.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/fmt-Target-debug.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/fmt-Target-release.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/fmt-config-version.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/fmt-config.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/fmt-debug-x86_64-data.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/fmt-release-x86_64-data.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/fmtTargets.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/freetype-Target-debug.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/freetype-Target-release.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/freetype-config-version.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/freetype-config.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/freetype-debug-x86_64-data.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/freetype-release-x86_64-data.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/freetypeTargets.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/opengl_system-Target-debug.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/opengl_system-Target-release.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/opengl_system-config-version.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/opengl_system-config.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/opengl_system-debug-x86_64-data.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/opengl_system-release-x86_64-data.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/cmake-build-debug/conan/build/generators/opengl_systemTargets.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/conan_provider.cmake
+C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda/conanfile.py

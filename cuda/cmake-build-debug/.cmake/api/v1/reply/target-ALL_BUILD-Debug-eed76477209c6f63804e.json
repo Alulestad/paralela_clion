@@ -1,0 +1,55 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "cuda::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "suma_vectores_cl::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "cuda_reduccion_vector::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "main_reduccion_vector_profe::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "cuda_fractal::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "suma_vectores_cuda::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "CMakePredefinedTargets"
+	},
+	"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+	"isGeneratorProvided" : true,
+	"name" : "ALL_BUILD",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

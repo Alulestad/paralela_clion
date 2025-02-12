@@ -25,7 +25,7 @@ foreach(_DEPENDENCY ${libpng_FIND_DEPENDENCY_NAMES} )
     endif()
 endforeach()
 
-set(PNG_VERSION_STRING "1.6.44")
+set(PNG_VERSION_STRING "1.6.45")
 set(PNG_INCLUDE_DIRS ${libpng_INCLUDE_DIRS_DEBUG} )
 set(PNG_INCLUDE_DIR ${libpng_INCLUDE_DIRS_DEBUG} )
 set(PNG_LIBRARIES ${libpng_LIBRARIES_DEBUG} )

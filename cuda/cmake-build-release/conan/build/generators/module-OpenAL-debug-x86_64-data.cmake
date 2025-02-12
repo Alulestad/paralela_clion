@@ -11,7 +11,7 @@ endif()
 
 ########### VARIABLES #######################################################################
 #############################################################################################
-set(openal-soft_PACKAGE_FOLDER_DEBUG "C:/Users/Dami/.conan2/p/b/opena83e857a26f199/p")
+set(openal-soft_PACKAGE_FOLDER_DEBUG "C:/Users/fing.labcom/.conan2/p/b/openad4f43ee373ebf/p")
 set(openal-soft_BUILD_MODULES_PATHS_DEBUG "${openal-soft_PACKAGE_FOLDER_DEBUG}/lib/cmake/conan-official-openal-soft-variables.cmake")
 
 

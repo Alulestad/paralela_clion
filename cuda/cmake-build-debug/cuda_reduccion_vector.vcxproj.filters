@@ -6,11 +6,11 @@
     </CudaCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\Dami\Documents\CLionProjectsUCE\paralela_clion\cuda\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\fing.labcom\CLionProjects\clones\paralela_clion\cuda\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{AFA91A4A-4E9C-373D-984D-2B04DE61FE56}</UniqueIdentifier>
+      <UniqueIdentifier>{B651D982-16FA-3785-BBAC-4BFA70B93221}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

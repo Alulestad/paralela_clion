@@ -11,7 +11,7 @@ endif()
 
 ########### VARIABLES #######################################################################
 #############################################################################################
-set(opengl_PACKAGE_FOLDER_RELEASE "C:/Users/Dami/.conan2/p/opengf7cff644221fc/p")
+set(opengl_PACKAGE_FOLDER_RELEASE "C:/Users/fing.labcom/.conan2/p/openg6b1f04d72d11e/p")
 set(opengl_BUILD_MODULES_PATHS_RELEASE )
 
 

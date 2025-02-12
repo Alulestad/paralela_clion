@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.29)
+cmake_minimum_required(VERSION 3.30)
 project(cuda CUDA)
 
 set(CMAKE_CUDA_STANDARD 17)
@@ -34,6 +34,22 @@ set_target_properties(cuda_reduccion_vector PROPERTIES
         CUDA_SEPARABLE_COMPILATION ON)
 
 target_link_libraries(cuda_reduccion_vector fmt::fmt sfml::sfml ${CUDA_LIBRARIES} cudart)
+
+#CUDA -- reudccion vector profe
+find_package(fmt)
+add_executable(main_reduccion_vector_profe
+        kenel_reduccion_vector_profe.cu
+        main_reduccion_vector_profe.cpp
+)
+
+target_include_directories(main_reduccion_vector_profe PUBLIC
+        ${CMAKE_CUDA_TOOLKIT_INCLUDE_DIRECTORIES})
+
+set_target_properties(main_reduccion_vector_profe PROPERTIES
+        CUDA_SEPARABLE_COMPILATION ON)
+
+target_link_libraries(main_reduccion_vector_profe fmt::fmt)
+
 
 #--------------------------------------------------------------
 #[[find_package(OpenCl)

@@ -15,7 +15,7 @@ set(brotli_FIND_MODE "NO_MODULE")
 
 ########### VARIABLES #######################################################################
 #############################################################################################
-set(freetype_PACKAGE_FOLDER_RELEASE "C:/Users/Dami/.conan2/p/freetf35e04f91db9d/p")
+set(freetype_PACKAGE_FOLDER_RELEASE "C:/Users/fing.labcom/.conan2/p/freetf35e04f91db9d/p")
 set(freetype_BUILD_MODULES_PATHS_RELEASE "${freetype_PACKAGE_FOLDER_RELEASE}/lib/cmake/conan-official-freetype-variables.cmake")
 
 
