@@ -122,10 +122,10 @@ freeglut/3.4.0: Already installed! (13 of 15)
 freetype/2.13.2: Already installed! (14 of 15)
 sfml/2.6.1: Already installed! (15 of 15)
 WARN: deprecated: Usage of deprecated Conan 1.X features that will be removed in Conan 2.X:
-WARN: deprecated:     'cpp_info.names' used in: openal-soft/1.22.2, vorbis/1.3.7, freeglut/3.4.0, fmt/11.0.2, ogg/1.3.5, glfw/3.3.8, bzip2/1.0.8, freetype/2.13.2, brotli/1.1.0, sfml/2.6.1, flac/1.4.3, zlib/1.3.1, libpng/1.6.44
-WARN: deprecated:     'cpp_info.build_modules' used in: openal-soft/1.22.2, freetype/2.13.2, glfw/3.3.8, bzip2/1.0.8, sfml/2.6.1
-WARN: deprecated:     'env_info' used in: flac/1.4.3, bzip2/1.0.8, freetype/2.13.2
-WARN: deprecated:     'cpp_info.filenames' used in: flac/1.4.3, opengl/system, freetype/2.13.2, glfw/3.3.8
+WARN: deprecated:     'cpp_info.names' used in: freeglut/3.4.0, openal-soft/1.22.2, brotli/1.1.0, glfw/3.3.8, freetype/2.13.2, vorbis/1.3.7, sfml/2.6.1, libpng/1.6.44, fmt/11.0.2, zlib/1.3.1, ogg/1.3.5, bzip2/1.0.8, flac/1.4.3
+WARN: deprecated:     'cpp_info.build_modules' used in: openal-soft/1.22.2, freetype/2.13.2, glfw/3.3.8, sfml/2.6.1, bzip2/1.0.8
+WARN: deprecated:     'env_info' used in: freetype/2.13.2, bzip2/1.0.8, flac/1.4.3
+WARN: deprecated:     'cpp_info.filenames' used in: opengl/system, freetype/2.13.2, glfw/3.3.8, flac/1.4.3
 WARN: deprecated:     'user_info' used in: freetype/2.13.2
 
 ======== Finalizing install (deploy, generators) ========
@@ -209,6 +209,6 @@ Install finished successfully
 -- MPI Libraries: C:/Program Files (x86)/Intel/oneAPI/mpi/latest/lib/impi.lib;C:/Program Files (x86)/Intel/oneAPI/mpi/latest/lib/impicxx.lib
 -- MPI Include path: C:/Program Files (x86)/Intel/oneAPI/mpi/latest/bin/mpicl.bat
 -- MPI Link Flags: 
--- Configuring done (23.8s)
--- Generating done (0.1s)
+-- Configuring done (6.7s)
+-- Generating done (0.0s)
 -- Build files have been written to: C:/Users/Dami/Documents/CLionProjects/mpi_rep/cmake-build-debug

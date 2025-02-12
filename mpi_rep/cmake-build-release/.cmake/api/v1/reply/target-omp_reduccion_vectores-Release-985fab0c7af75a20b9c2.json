@@ -15,11 +15,18 @@
 		[
 			"add_executable",
 			"target_link_libraries",
+			"set_property",
+			"include",
+			"find_package",
 			"include_directories"
 		],
 		"files" : 
 		[
-			"CMakeLists.txt"
+			"CMakeLists.txt",
+			"cmake-build-release/conan/build/Release/generators/fmt-Target-release.cmake",
+			"cmake-build-release/conan/build/Release/generators/fmtTargets.cmake",
+			"cmake-build-release/conan/build/Release/generators/fmt-config.cmake",
+			"conan_provider.cmake"
 		],
 		"nodes" : 
 		[
@@ -39,7 +46,49 @@
 				"parent" : 0
 			},
 			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 17,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 4,
+				"line" : 622,
+				"parent" : 3
+			},
+			{
+				"file" : 3,
+				"parent" : 4
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 16,
+				"parent" : 5
+			},
+			{
+				"file" : 2,
+				"parent" : 6
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 24,
+				"parent" : 7
+			},
+			{
+				"file" : 1,
+				"parent" : 8
+			},
+			{
 				"command" : 2,
+				"file" : 1,
+				"line" : 73,
+				"parent" : 9
+			},
+			{
+				"command" : 5,
 				"file" : 0,
 				"line" : 36,
 				"parent" : 0
@@ -57,17 +106,26 @@
 				{
 					"backtrace" : 2,
 					"fragment" : "-openmp"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "/utf-8"
 				}
 			],
 			"includes" : 
 			[
 				{
-					"backtrace" : 3,
+					"backtrace" : 11,
 					"path" : "C:/Program Files (x86)/Intel/oneAPI/mpi/latest/include"
 				},
 				{
-					"backtrace" : 3,
+					"backtrace" : 11,
 					"path" : "C:/Program Files (x86)/Intel/oneAPI/mpi/latest/include/mpi"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "C:/Users/Dami/.conan2/p/fmt0c230d64c2e0f/p/include"
 				}
 			],
 			"language" : "CXX",
@@ -97,6 +155,16 @@
 			{
 				"fragment" : "/machine:x64 /INCREMENTAL:NO /subsystem:console",
 				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-LIBPATH:C:\\Users\\Dami\\.conan2\\p\\fmt0c230d64c2e0f\\p\\lib",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "C:\\Users\\Dami\\.conan2\\p\\fmt0c230d64c2e0f\\p\\lib\\fmt.lib",
+				"role" : "libraries"
 			},
 			{
 				"fragment" : "kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",

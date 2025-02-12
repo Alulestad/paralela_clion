@@ -13,7 +13,7 @@
 885	1164	7589298441783938	mpi_suma.exe	e063b0005610973e
 78	1292	7603865493104679	CMakeFiles/omp_fractal.dir/omp_fractal.cpp.obj	f4475a1ee6b05e90
 37	1280	7589298433301729	CMakeFiles/mpi_promedio.dir/mpi_promedio.cpp.obj	a3c28b4bcc121c78
-48	4877	7609821825045977	build.ninja	d19f0381f87bcbea
+48	4877	7610551890328004	build.ninja	d19f0381f87bcbea
 57	1339	7589298433504688	CMakeFiles/omp_promedio.dir/omp_promedio.cpp.obj	87440b775f0b6565
 1292	1485	7603865505247709	omp_fractal.exe	8a034f4266dcd241
 875	1136	7605826398514958	mpi_fractal_other.exe	d4df7adcc2a40415
@@ -31,3 +31,7 @@
 2224	3044	7605819470269188	mpi_fractal_full.exe	30b2d004d2c39f34
 159	1512	7606444622729740	CMakeFiles/mpi_fractal_willan.dir/mpi_fractal_willan.cpp.obj	2a7832a1795d0c85
 1514	1786	7606444636285304	mpi_fractal_willan.exe	cf923dcc7aedb723
+4	632	7610563879888108	CMakeFiles/omp_reduccion_vectores.dir/omp_reduccion_vectores.cpp.obj	b1479d3a5d27e2a5
+632	788	7610563886161918	omp_reduccion_vectores.exe	f3612ef26738659b
+13	585	7610568609441999	CMakeFiles/omp_reduccion_vectores.dir/omp_reduccion_vectores.cpp.obj	b1479d3a5d27e2a5
+585	696	7610568615159473	omp_reduccion_vectores.exe	f3612ef26738659b

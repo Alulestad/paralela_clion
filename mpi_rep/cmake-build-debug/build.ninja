@@ -581,8 +581,8 @@ build omp_suma.exe: CXX_EXECUTABLE_LINKER__omp_suma_Debug CMakeFiles\omp_suma.di
 build cmake_object_order_depends_target_omp_reduccion_vectores: phony || .
 
 build CMakeFiles\omp_reduccion_vectores.dir\omp_reduccion_vectores.cpp.obj: CXX_COMPILER__omp_reduccion_vectores_unscanned_Debug C$:\Users\Dami\Documents\CLionProjects\mpi_rep\omp_reduccion_vectores.cpp || cmake_object_order_depends_target_omp_reduccion_vectores
-  FLAGS = /DWIN32 /D_WINDOWS /EHsc /openmp /Ob0 /Od /RTC1 -std:c++17 -MDd -Zi -openmp
-  INCLUDES = -I"C:\Program Files (x86)\Intel\oneAPI\mpi\latest\include" -I"C:\Program Files (x86)\Intel\oneAPI\mpi\latest\include\mpi"
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /openmp /Ob0 /Od /RTC1 -std:c++17 -MDd -Zi -openmp /utf-8
+  INCLUDES = -I"C:\Program Files (x86)\Intel\oneAPI\mpi\latest\include" -I"C:\Program Files (x86)\Intel\oneAPI\mpi\latest\include\mpi" -external:IC:\Users\Dami\.conan2\p\b\fmt60e583c66c9c6\p\include -external:W0
   OBJECT_DIR = CMakeFiles\omp_reduccion_vectores.dir
   OBJECT_FILE_DIR = CMakeFiles\omp_reduccion_vectores.dir
   TARGET_COMPILE_PDB = CMakeFiles\omp_reduccion_vectores.dir\
@@ -596,10 +596,11 @@ build CMakeFiles\omp_reduccion_vectores.dir\omp_reduccion_vectores.cpp.obj: CXX_
 #############################################
 # Link the executable omp_reduccion_vectores.exe
 
-build omp_reduccion_vectores.exe: CXX_EXECUTABLE_LINKER__omp_reduccion_vectores_Debug CMakeFiles\omp_reduccion_vectores.dir\omp_reduccion_vectores.cpp.obj
+build omp_reduccion_vectores.exe: CXX_EXECUTABLE_LINKER__omp_reduccion_vectores_Debug CMakeFiles\omp_reduccion_vectores.dir\omp_reduccion_vectores.cpp.obj | C$:\Users\Dami\.conan2\p\b\fmt60e583c66c9c6\p\lib\fmtd.lib
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /openmp /Ob0 /Od /RTC1 -MDd -Zi
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
-  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  LINK_LIBRARIES = C:\Users\Dami\.conan2\p\b\fmt60e583c66c9c6\p\lib\fmtd.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  LINK_PATH = -LIBPATH:C:\Users\Dami\.conan2\p\b\fmt60e583c66c9c6\p\lib
   OBJECT_DIR = CMakeFiles\omp_reduccion_vectores.dir
   POST_BUILD = cd .
   PRE_LINK = cd .

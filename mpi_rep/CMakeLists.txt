@@ -80,5 +80,5 @@ target_link_libraries(omp_suma OpenMP::OpenMP_CXX)
 
 #-- prueba 2023-2023 reduccion de vectores
 add_executable(omp_reduccion_vectores omp_reduccion_vectores.cpp)
-target_link_libraries(omp_reduccion_vectores OpenMP::OpenMP_CXX)
+target_link_libraries(omp_reduccion_vectores OpenMP::OpenMP_CXX fmt::fmt)
 
