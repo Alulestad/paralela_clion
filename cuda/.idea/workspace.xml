@@ -21,6 +21,7 @@
   <component name="CMakeRunConfigurationManager">
     <generated>
       <config projectName="cuda" targetName="suma_vectores_cl" />
+      <config projectName="cuda" targetName="cuda_reduccion_vector" />
       <config projectName="cuda" targetName="suma_vectores_cuda" />
       <config projectName="cuda" targetName="cuda" />
       <config projectName="cuda" targetName="cuda_fractal" />
@@ -34,17 +35,459 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="255fb2bb-86ff-4dfb-a80b-8662d0c66f30" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/kernel_reduccion_vectores.cu" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main_reduccion_vectores.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main_reduccion_vector.cu" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cache-v2-9938f3f45b83acdd3276.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-1c8a9771a43dfeb29568.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-95c76b44ee4cddda21f3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2025-02-07T15-10-59-0194.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-ALL_BUILD-Debug-f76275a15b9f501d6a2f.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-ALL_BUILD-MinSizeRel-f76275a15b9f501d6a2f.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-ALL_BUILD-RelWithDebInfo-f76275a15b9f501d6a2f.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-ALL_BUILD-Release-f76275a15b9f501d6a2f.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-ZERO_CHECK-Debug-7f865c8191cecb1296ab.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-ZERO_CHECK-MinSizeRel-7f865c8191cecb1296ab.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-ZERO_CHECK-RelWithDebInfo-7f865c8191cecb1296ab.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-ZERO_CHECK-Release-7f865c8191cecb1296ab.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-cuda-Debug-2e3b87ef2dbd7dfd4fef.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-cuda-Release-68de0bc5d57e931afb00.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-cuda_fractal-Debug-9a494e5dd14ac85f6fc6.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-cuda_fractal-MinSizeRel-7e68be6f7df824279e59.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-cuda_fractal-RelWithDebInfo-629aaef3cd05d94ef12b.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-cuda_fractal-Release-e88748360b4f087c7bd8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-suma_vectores_cl-Debug-72bb1bb10dd951f2e419.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-suma_vectores_cl-MinSizeRel-23bbdf918998e74ec9aa.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-suma_vectores_cl-RelWithDebInfo-deb92ffe647b3aca244f.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-suma_vectores_cl-Release-5ba7a58195cd5251d3b1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-suma_vectores_cuda-Debug-4062b4c7f09303c149fc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-suma_vectores_cuda-MinSizeRel-4366153f7f5d955128a2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-suma_vectores_cuda-RelWithDebInfo-56cc326e41d1cb19568f.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-suma_vectores_cuda-Release-4383055dd1b9ec18df26.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/toolchains-v1-96f7c927d7d01c1c5731.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ALL_BUILD.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/ALL_BUILD.vcxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ALL_BUILD.vcxproj.filters" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/ALL_BUILD.vcxproj.filters" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.30.5/CMakeCUDACompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.30.5/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.30.5/CMakeDetermineCompilerABI_CUDA.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.30.5/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.30.5/CMakeRCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.30.5/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.30.5/CompilerIdCUDA/CMakeCUDACompilerId.cu" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.30.5/CompilerIdCUDA/CompilerIdCUDA.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.30.5/CompilerIdCUDA/CompilerIdCUDA.exp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.30.5/CompilerIdCUDA/CompilerIdCUDA.lib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.30.5/CompilerIdCUDA/CompilerIdCUDA.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.30.5/CompilerIdCUDA/CompilerIdCUDA/x64/Debug/CMakeCUDACompilerId.cu.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.30.5/CompilerIdCUDA/Debug/CMakeCUDACompilerId.cu.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.30.5/CompilerIdCUDA/Debug/CMakeCUDACompilerId.cu925699031.deps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.30.5/CompilerIdCUDA/Debug/CompilerIdCUDA.exe.recipe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.30.5/CompilerIdCUDA/Debug/CompilerIdCUDA.tlog/CompilerIdCUDA.lastbuildstate" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.30.5/CompilerIdCUDA/Debug/CompilerIdCUDA.tlog/CudaCompile.read.1u.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.30.5/CompilerIdCUDA/Debug/CompilerIdCUDA.tlog/CudaCompile.write.1u.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.30.5/CompilerIdCUDA/Debug/CompilerIdCUDA.tlog/link.command.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.30.5/CompilerIdCUDA/Debug/CompilerIdCUDA.tlog/link.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.30.5/CompilerIdCUDA/Debug/CompilerIdCUDA.tlog/link.secondary.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.30.5/CompilerIdCUDA/Debug/CompilerIdCUDA.tlog/link.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.30.5/CompilerIdCUDA/Debug/vc143.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.30.5/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.30.5/CompilerIdCXX/CompilerIdCXX.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.30.5/CompilerIdCXX/CompilerIdCXX.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.30.5/CompilerIdCXX/Debug/CMakeCXXCompilerId.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.30.5/CompilerIdCXX/Debug/CompilerIdCXX.exe.recipe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.30.5/CompilerIdCXX/Debug/CompilerIdCXX.tlog/CL.command.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.30.5/CompilerIdCXX/Debug/CompilerIdCXX.tlog/CL.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.30.5/CompilerIdCXX/Debug/CompilerIdCXX.tlog/CL.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.30.5/CompilerIdCXX/Debug/CompilerIdCXX.tlog/Cl.items.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.30.5/CompilerIdCXX/Debug/CompilerIdCXX.tlog/CompilerIdCXX.lastbuildstate" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.30.5/CompilerIdCXX/Debug/CompilerIdCXX.tlog/link.command.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.30.5/CompilerIdCXX/Debug/CompilerIdCXX.tlog/link.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.30.5/CompilerIdCXX/Debug/CompilerIdCXX.tlog/link.secondary.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.30.5/CompilerIdCXX/Debug/CompilerIdCXX.tlog/link.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.30.5/VCTargetsPath.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.30.5/VCTargetsPath.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.30.5/VCTargetsPath/x64/Debug/VCTargetsPath.recipe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.30.5/VCTargetsPath/x64/Debug/VCTargetsPath.tlog/VCTargetsPath.lastbuildstate" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/a86091f2c38cb1249cc0cd71fc0dcc4b/generate.stamp.rule" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/generate.stamp.depend" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/generate.stamp.depend" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/generate.stamp.list" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/generate.stamp.list" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Debug/cuda_fractal.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Debug/cuda_fractal.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Debug/cuda_fractal.exp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Debug/cuda_fractal.exp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Debug/cuda_fractal.lib" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Debug/cuda_fractal.lib" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Debug/cuda_fractal.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Debug/cuda_fractal.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ZERO_CHECK.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/ZERO_CHECK.vcxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ZERO_CHECK.vcxproj.filters" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/ZERO_CHECK.vcxproj.filters" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/BZip2-Target-debug.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/BZip2-Target-debug.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/BZip2-Target-release.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/BZip2-Target-release.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/BZip2-debug-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/BZip2-debug-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/BZip2-release-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/BZip2-release-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/BZip2Config.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/BZip2Config.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/BZip2ConfigVersion.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/BZip2ConfigVersion.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/BZip2Targets.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/BZip2Targets.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/CMakePresets.json" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/CMakePresets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/FindBZip2.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/FindBZip2.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/FindFreetype.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/FindFreetype.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/FindOpenAL.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/FindOpenAL.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/FindPNG.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/FindPNG.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/FindZLIB.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/FindZLIB.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/Ogg-Target-debug.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/Ogg-Target-debug.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/Ogg-Target-release.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/Ogg-Target-release.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/Ogg-debug-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/Ogg-debug-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/Ogg-release-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/Ogg-release-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/OggConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/OggConfig.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/OggConfigVersion.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/OggConfigVersion.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/OggTargets.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/OggTargets.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/OpenAL-Target-debug.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/OpenAL-Target-debug.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/OpenAL-Target-release.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/OpenAL-Target-release.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/OpenAL-debug-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/OpenAL-debug-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/OpenAL-release-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/OpenAL-release-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/OpenALConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/OpenALConfig.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/OpenALConfigVersion.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/OpenALConfigVersion.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/OpenALTargets.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/OpenALTargets.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/PNG-Target-debug.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/PNG-Target-debug.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/PNG-Target-release.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/PNG-Target-release.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/PNG-debug-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/PNG-debug-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/PNG-release-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/PNG-release-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/PNGConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/PNGConfig.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/PNGConfigVersion.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/PNGConfigVersion.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/PNGTargets.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/PNGTargets.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/SFML-Target-debug.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/SFML-Target-debug.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/SFML-Target-release.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/SFML-Target-release.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/SFML-debug-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/SFML-debug-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/SFML-release-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/SFML-release-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/SFMLConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/SFMLConfig.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/SFMLConfigVersion.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/SFMLConfigVersion.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/SFMLTargets.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/SFMLTargets.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/Vorbis-Target-debug.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/Vorbis-Target-debug.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/Vorbis-Target-release.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/Vorbis-Target-release.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/Vorbis-debug-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/Vorbis-debug-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/Vorbis-release-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/Vorbis-release-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/VorbisConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/VorbisConfig.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/VorbisConfigVersion.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/VorbisConfigVersion.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/VorbisTargets.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/VorbisTargets.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/ZLIB-Target-debug.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/ZLIB-Target-debug.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/ZLIB-Target-release.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/ZLIB-Target-release.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/ZLIB-debug-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/ZLIB-debug-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/ZLIB-release-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/ZLIB-release-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/ZLIBConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/ZLIBConfig.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/ZLIBConfigVersion.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/ZLIBConfigVersion.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/ZLIBTargets.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/ZLIBTargets.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/brotli-Target-debug.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/brotli-Target-debug.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/brotli-Target-release.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/brotli-Target-release.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/brotli-config-version.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/brotli-config-version.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/brotli-config.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/brotli-config.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/brotli-debug-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/brotli-debug-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/brotli-release-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/brotli-release-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/brotliTargets.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/brotliTargets.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/cmakedeps_macros.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/cmakedeps_macros.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/conan_toolchain.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/conan_toolchain.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/conandeps_legacy.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/conandeps_legacy.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/flac-Target-debug.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/flac-Target-debug.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/flac-Target-release.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/flac-Target-release.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/flac-config-version.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/flac-config-version.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/flac-config.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/flac-config.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/flac-debug-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/flac-debug-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/flac-release-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/flac-release-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/flacTargets.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/flacTargets.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/fmt-Target-debug.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/fmt-Target-debug.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/fmt-Target-release.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/fmt-Target-release.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/fmt-config-version.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/fmt-config-version.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/fmt-config.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/fmt-config.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/fmt-debug-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/fmt-debug-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/fmt-release-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/fmt-release-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/fmtTargets.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/fmtTargets.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/freetype-Target-debug.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/freetype-Target-debug.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/freetype-Target-release.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/freetype-Target-release.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/freetype-config-version.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/freetype-config-version.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/freetype-config.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/freetype-config.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/freetype-debug-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/freetype-debug-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/freetype-release-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/freetype-release-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/freetypeTargets.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/freetypeTargets.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/module-BZip2-Target-debug.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/module-BZip2-Target-debug.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/module-BZip2-Target-release.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/module-BZip2-Target-release.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/module-BZip2-debug-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/module-BZip2-debug-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/module-BZip2-release-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/module-BZip2-release-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/module-BZip2Targets.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/module-BZip2Targets.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/module-Freetype-Target-debug.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/module-Freetype-Target-debug.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/module-Freetype-Target-release.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/module-Freetype-Target-release.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/module-Freetype-debug-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/module-Freetype-debug-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/module-Freetype-release-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/module-Freetype-release-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/module-FreetypeTargets.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/module-FreetypeTargets.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/module-OpenAL-Target-debug.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/module-OpenAL-Target-debug.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/module-OpenAL-Target-release.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/module-OpenAL-Target-release.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/module-OpenAL-debug-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/module-OpenAL-debug-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/module-OpenAL-release-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/module-OpenAL-release-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/module-OpenALTargets.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/module-OpenALTargets.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/module-PNG-Target-debug.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/module-PNG-Target-debug.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/module-PNG-Target-release.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/module-PNG-Target-release.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/module-PNG-debug-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/module-PNG-debug-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/module-PNG-release-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/module-PNG-release-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/module-PNGTargets.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/module-PNGTargets.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/module-ZLIB-Target-debug.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/module-ZLIB-Target-debug.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/module-ZLIB-Target-release.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/module-ZLIB-Target-release.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/module-ZLIB-debug-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/module-ZLIB-debug-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/module-ZLIB-release-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/module-ZLIB-release-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/module-ZLIBTargets.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/module-ZLIBTargets.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/opengl_system-Target-debug.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/opengl_system-Target-debug.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/opengl_system-Target-release.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/opengl_system-Target-release.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/opengl_system-config-version.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/opengl_system-config-version.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/opengl_system-config.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/opengl_system-config.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/opengl_system-debug-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/opengl_system-debug-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/opengl_system-release-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/opengl_system-release-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/opengl_systemTargets.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan/build/generators/opengl_systemTargets.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/conan_host_profile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/conan_host_profile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cuda.sln" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cuda.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cuda.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cuda.vcxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cuda.vcxproj.filters" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cuda.vcxproj.filters" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cuda_fractal.dir/Debug/cuda_fractal.device-link.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cuda_fractal.dir/Debug/cuda_fractal.device-link.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cuda_fractal.dir/Debug/cuda_fractal.exe.recipe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cuda_fractal.dir/Debug/cuda_fractal.exe.recipe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/cuda_fractal.dir/Debug/cuda_fractal.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cuda_fractal.dir/Debug/cuda_fractal.ilk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cuda_fractal.dir/Debug/cuda_fractal.tlog/CL.command.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cuda_fractal.dir/Debug/cuda_fractal.tlog/CL.command.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cuda_fractal.dir/Debug/cuda_fractal.tlog/CL.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cuda_fractal.dir/Debug/cuda_fractal.tlog/CL.read.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cuda_fractal.dir/Debug/cuda_fractal.tlog/CL.write.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cuda_fractal.dir/Debug/cuda_fractal.tlog/CL.write.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cuda_fractal.dir/Debug/cuda_fractal.tlog/Cl.items.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cuda_fractal.dir/Debug/cuda_fractal.tlog/Cl.items.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cuda_fractal.dir/Debug/cuda_fractal.tlog/CudaCompile.read.1u.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cuda_fractal.dir/Debug/cuda_fractal.tlog/CudaCompile.read.1u.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cuda_fractal.dir/Debug/cuda_fractal.tlog/CudaCompile.write.1u.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cuda_fractal.dir/Debug/cuda_fractal.tlog/CudaCompile.write.1u.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cuda_fractal.dir/Debug/cuda_fractal.tlog/CustomBuild.command.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cuda_fractal.dir/Debug/cuda_fractal.tlog/CustomBuild.command.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cuda_fractal.dir/Debug/cuda_fractal.tlog/CustomBuild.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cuda_fractal.dir/Debug/cuda_fractal.tlog/CustomBuild.read.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cuda_fractal.dir/Debug/cuda_fractal.tlog/CustomBuild.write.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cuda_fractal.dir/Debug/cuda_fractal.tlog/CustomBuild.write.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cuda_fractal.dir/Debug/cuda_fractal.tlog/cuda_fractal.lastbuildstate" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cuda_fractal.dir/Debug/cuda_fractal.tlog/cuda_fractal.lastbuildstate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cuda_fractal.dir/Debug/cuda_fractal.tlog/link.command.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cuda_fractal.dir/Debug/cuda_fractal.tlog/link.command.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cuda_fractal.dir/Debug/cuda_fractal.tlog/link.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cuda_fractal.dir/Debug/cuda_fractal.tlog/link.read.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cuda_fractal.dir/Debug/cuda_fractal.tlog/link.secondary.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cuda_fractal.dir/Debug/cuda_fractal.tlog/link.secondary.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cuda_fractal.dir/Debug/cuda_fractal.tlog/link.write.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cuda_fractal.dir/Debug/cuda_fractal.tlog/link.write.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cuda_fractal.dir/Debug/kernel_w.cu.cache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cuda_fractal.dir/Debug/kernel_w.cu.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cuda_fractal.dir/Debug/kernel_w.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cuda_fractal.dir/Debug/kernel_w.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/cuda_fractal.dir/Debug/main_w.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cuda_fractal.dir/Debug/main_w.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/cuda_fractal.dir/Debug/vc143.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cuda_fractal.dir/Debug/vc143.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_w.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main_w.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cuda_fractal.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cuda_fractal.vcxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cuda_fractal.vcxproj.filters" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cuda_fractal.vcxproj.filters" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/suma_vectores_cl.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/suma_vectores_cl.vcxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/suma_vectores_cl.vcxproj.filters" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/suma_vectores_cl.vcxproj.filters" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/suma_vectores_cuda.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/suma_vectores_cuda.vcxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/suma_vectores_cuda.vcxproj.filters" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/suma_vectores_cuda.vcxproj.filters" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/x64/Debug/ZERO_CHECK/ZERO_CHECK.recipe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/x64/Debug/ZERO_CHECK/ZERO_CHECK.recipe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/x64/Debug/ZERO_CHECK/ZERO_CHECK.tlog/CustomBuild.command.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/x64/Debug/ZERO_CHECK/ZERO_CHECK.tlog/CustomBuild.command.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/x64/Debug/ZERO_CHECK/ZERO_CHECK.tlog/CustomBuild.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/x64/Debug/ZERO_CHECK/ZERO_CHECK.tlog/CustomBuild.read.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/x64/Debug/ZERO_CHECK/ZERO_CHECK.tlog/CustomBuild.write.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/x64/Debug/ZERO_CHECK/ZERO_CHECK.tlog/CustomBuild.write.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/x64/Debug/ZERO_CHECK/ZERO_CHECK.tlog/ZERO_CHECK.lastbuildstate" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/x64/Debug/ZERO_CHECK/ZERO_CHECK.tlog/ZERO_CHECK.lastbuildstate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/.cmake/api/v1/reply/cache-v2-5c03d536fb05ebc2dd1d.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/.cmake/api/v1/reply/cmakeFiles-v1-7e6729fb5d1ff1ddcc1d.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/.cmake/api/v1/reply/codemodel-v2-7a2083bdd8553cb7df7f.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/.cmake/api/v1/reply/index-2025-02-07T15-11-07-0411.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/.cmake/api/v1/reply/target-ALL_BUILD-Debug-50eab935bfd7936e4b63.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/.cmake/api/v1/reply/target-ALL_BUILD-MinSizeRel-50eab935bfd7936e4b63.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/.cmake/api/v1/reply/target-ALL_BUILD-RelWithDebInfo-50eab935bfd7936e4b63.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/.cmake/api/v1/reply/target-ALL_BUILD-Release-50eab935bfd7936e4b63.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/.cmake/api/v1/reply/target-ZERO_CHECK-Debug-26b2502037e827ae9951.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/.cmake/api/v1/reply/target-ZERO_CHECK-MinSizeRel-26b2502037e827ae9951.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/.cmake/api/v1/reply/target-ZERO_CHECK-RelWithDebInfo-26b2502037e827ae9951.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/.cmake/api/v1/reply/target-ZERO_CHECK-Release-26b2502037e827ae9951.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/.cmake/api/v1/reply/target-cuda-Debug-c28f73e6c1391b97c56b.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/.cmake/api/v1/reply/target-cuda-Release-73bdc0ed78f313b95f9a.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/.cmake/api/v1/reply/target-cuda_fractal-Debug-c7067eefad0cffe014a9.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/.cmake/api/v1/reply/target-cuda_fractal-MinSizeRel-7e68be6f7df824279e59.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/.cmake/api/v1/reply/target-cuda_fractal-RelWithDebInfo-629aaef3cd05d94ef12b.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/.cmake/api/v1/reply/target-cuda_fractal-Release-e2087d0a85aa0d3c9ecf.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/.cmake/api/v1/reply/target-suma_vectores_cl-Debug-72bb1bb10dd951f2e419.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/.cmake/api/v1/reply/target-suma_vectores_cl-MinSizeRel-23bbdf918998e74ec9aa.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/.cmake/api/v1/reply/target-suma_vectores_cl-RelWithDebInfo-deb92ffe647b3aca244f.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/.cmake/api/v1/reply/target-suma_vectores_cl-Release-5ba7a58195cd5251d3b1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/.cmake/api/v1/reply/target-suma_vectores_cuda-Debug-4062b4c7f09303c149fc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/.cmake/api/v1/reply/target-suma_vectores_cuda-MinSizeRel-4366153f7f5d955128a2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/.cmake/api/v1/reply/target-suma_vectores_cuda-RelWithDebInfo-56cc326e41d1cb19568f.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/.cmake/api/v1/reply/target-suma_vectores_cuda-Release-4383055dd1b9ec18df26.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/.cmake/api/v1/reply/toolchains-v1-96f7c927d7d01c1c5731.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/ALL_BUILD.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/ALL_BUILD.vcxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/ALL_BUILD.vcxproj.filters" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/ALL_BUILD.vcxproj.filters" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/039f737216a3adc7b0d8175cd8f60a0b/generate.stamp.rule" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.30.5/CMakeCUDACompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.30.5/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.30.5/CMakeDetermineCompilerABI_CUDA.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.30.5/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.30.5/CMakeRCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.30.5/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.30.5/CompilerIdCUDA/CMakeCUDACompilerId.cu" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.30.5/CompilerIdCUDA/CompilerIdCUDA.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.30.5/CompilerIdCUDA/CompilerIdCUDA.exp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.30.5/CompilerIdCUDA/CompilerIdCUDA.lib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.30.5/CompilerIdCUDA/CompilerIdCUDA.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.30.5/CompilerIdCUDA/CompilerIdCUDA/x64/Debug/CMakeCUDACompilerId.cu.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.30.5/CompilerIdCUDA/Debug/CMakeCUDACompilerId.cu.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.30.5/CompilerIdCUDA/Debug/CMakeCUDACompilerId.cu1970888723.deps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.30.5/CompilerIdCUDA/Debug/CompilerIdCUDA.exe.recipe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.30.5/CompilerIdCUDA/Debug/CompilerIdCUDA.tlog/CompilerIdCUDA.lastbuildstate" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.30.5/CompilerIdCUDA/Debug/CompilerIdCUDA.tlog/CudaCompile.read.1u.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.30.5/CompilerIdCUDA/Debug/CompilerIdCUDA.tlog/CudaCompile.write.1u.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.30.5/CompilerIdCUDA/Debug/CompilerIdCUDA.tlog/link.command.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.30.5/CompilerIdCUDA/Debug/CompilerIdCUDA.tlog/link.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.30.5/CompilerIdCUDA/Debug/CompilerIdCUDA.tlog/link.secondary.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.30.5/CompilerIdCUDA/Debug/CompilerIdCUDA.tlog/link.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.30.5/CompilerIdCUDA/Debug/vc143.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.30.5/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.30.5/CompilerIdCXX/CompilerIdCXX.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.30.5/CompilerIdCXX/CompilerIdCXX.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.30.5/CompilerIdCXX/Debug/CMakeCXXCompilerId.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.30.5/CompilerIdCXX/Debug/CompilerIdCXX.exe.recipe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.30.5/CompilerIdCXX/Debug/CompilerIdCXX.tlog/CL.command.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.30.5/CompilerIdCXX/Debug/CompilerIdCXX.tlog/CL.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.30.5/CompilerIdCXX/Debug/CompilerIdCXX.tlog/CL.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.30.5/CompilerIdCXX/Debug/CompilerIdCXX.tlog/Cl.items.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.30.5/CompilerIdCXX/Debug/CompilerIdCXX.tlog/CompilerIdCXX.lastbuildstate" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.30.5/CompilerIdCXX/Debug/CompilerIdCXX.tlog/link.command.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.30.5/CompilerIdCXX/Debug/CompilerIdCXX.tlog/link.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.30.5/CompilerIdCXX/Debug/CompilerIdCXX.tlog/link.secondary.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.30.5/CompilerIdCXX/Debug/CompilerIdCXX.tlog/link.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.30.5/VCTargetsPath.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.30.5/VCTargetsPath.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.30.5/VCTargetsPath/x64/Debug/VCTargetsPath.recipe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.30.5/VCTargetsPath/x64/Debug/VCTargetsPath.tlog/VCTargetsPath.lastbuildstate" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CMakeConfigureLog.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/clion-Release-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/clion-Release-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/generate.stamp.depend" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/generate.stamp.depend" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/generate.stamp.list" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/generate.stamp.list" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/ZERO_CHECK.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/ZERO_CHECK.vcxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/ZERO_CHECK.vcxproj.filters" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/ZERO_CHECK.vcxproj.filters" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/BZip2-Target-debug.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/BZip2-Target-debug.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/BZip2-Target-release.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/BZip2-Target-release.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/BZip2-debug-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/BZip2-debug-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/BZip2-release-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/BZip2-release-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/BZip2Config.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/BZip2Config.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/BZip2ConfigVersion.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/BZip2ConfigVersion.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/BZip2Targets.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/BZip2Targets.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/CMakePresets.json" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/CMakePresets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/FindBZip2.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/FindBZip2.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/FindFreetype.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/FindFreetype.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/FindOpenAL.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/FindOpenAL.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/FindPNG.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/FindPNG.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/FindZLIB.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/FindZLIB.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/Ogg-Target-debug.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/Ogg-Target-debug.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/Ogg-Target-release.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/Ogg-Target-release.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/Ogg-debug-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/Ogg-debug-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/Ogg-release-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/Ogg-release-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/OggConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/OggConfig.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/OggConfigVersion.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/OggConfigVersion.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/OggTargets.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/OggTargets.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/OpenAL-Target-debug.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/OpenAL-Target-debug.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/OpenAL-Target-release.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/OpenAL-Target-release.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/OpenAL-debug-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/OpenAL-debug-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/OpenAL-release-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/OpenAL-release-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/OpenALConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/OpenALConfig.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/OpenALConfigVersion.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/OpenALConfigVersion.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/OpenALTargets.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/OpenALTargets.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/PNG-Target-debug.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/PNG-Target-debug.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/PNG-Target-release.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/PNG-Target-release.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/PNG-debug-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/PNG-debug-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/PNG-release-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/PNG-release-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/PNGConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/PNGConfig.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/PNGConfigVersion.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/PNGConfigVersion.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/PNGTargets.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/PNGTargets.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/SFML-Target-debug.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/SFML-Target-debug.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/SFML-Target-release.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/SFML-Target-release.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/SFML-debug-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/SFML-debug-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/SFML-release-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/SFML-release-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/SFMLConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/SFMLConfig.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/SFMLConfigVersion.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/SFMLConfigVersion.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/SFMLTargets.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/SFMLTargets.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/Vorbis-Target-debug.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/Vorbis-Target-debug.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/Vorbis-Target-release.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/Vorbis-Target-release.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/Vorbis-debug-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/Vorbis-debug-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/Vorbis-release-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/Vorbis-release-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/VorbisConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/VorbisConfig.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/VorbisConfigVersion.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/VorbisConfigVersion.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/VorbisTargets.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/VorbisTargets.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/ZLIB-Target-debug.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/ZLIB-Target-debug.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/ZLIB-Target-release.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/ZLIB-Target-release.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/ZLIB-debug-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/ZLIB-debug-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/ZLIB-release-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/ZLIB-release-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/ZLIBConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/ZLIBConfig.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/ZLIBConfigVersion.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/ZLIBConfigVersion.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/ZLIBTargets.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/ZLIBTargets.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/brotli-Target-debug.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/brotli-Target-debug.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/brotli-Target-release.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/brotli-Target-release.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/brotli-config-version.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/brotli-config-version.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/brotli-config.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/brotli-config.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/brotli-debug-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/brotli-debug-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/brotli-release-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/brotli-release-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/brotliTargets.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/brotliTargets.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/cmakedeps_macros.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/cmakedeps_macros.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/conan_toolchain.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/conan_toolchain.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/conandeps_legacy.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/conandeps_legacy.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/flac-Target-debug.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/flac-Target-debug.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/flac-Target-release.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/flac-Target-release.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/flac-config-version.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/flac-config-version.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/flac-config.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/flac-config.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/flac-debug-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/flac-debug-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/flac-release-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/flac-release-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/flacTargets.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/flacTargets.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/fmt-Target-debug.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/fmt-Target-debug.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/fmt-Target-release.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/fmt-Target-release.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/fmt-config-version.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/fmt-config-version.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/fmt-config.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/fmt-config.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/fmt-debug-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/fmt-debug-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/fmt-release-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/fmt-release-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/fmtTargets.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/fmtTargets.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/freetype-Target-debug.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/freetype-Target-debug.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/freetype-Target-release.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/freetype-Target-release.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/freetype-config-version.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/freetype-config-version.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/freetype-config.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/freetype-config.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/freetype-debug-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/freetype-debug-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/freetype-release-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/freetype-release-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/freetypeTargets.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/freetypeTargets.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/module-BZip2-Target-debug.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/module-BZip2-Target-debug.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/module-BZip2-Target-release.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/module-BZip2-Target-release.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/module-BZip2-debug-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/module-BZip2-debug-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/module-BZip2-release-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/module-BZip2-release-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/module-BZip2Targets.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/module-BZip2Targets.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/module-Freetype-Target-debug.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/module-Freetype-Target-debug.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/module-Freetype-Target-release.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/module-Freetype-Target-release.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/module-Freetype-debug-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/module-Freetype-debug-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/module-Freetype-release-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/module-Freetype-release-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/module-FreetypeTargets.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/module-FreetypeTargets.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/module-OpenAL-Target-debug.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/module-OpenAL-Target-debug.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/module-OpenAL-Target-release.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/module-OpenAL-Target-release.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/module-OpenAL-debug-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/module-OpenAL-debug-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/module-OpenAL-release-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/module-OpenAL-release-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/module-OpenALTargets.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/module-OpenALTargets.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/module-PNG-Target-debug.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/module-PNG-Target-debug.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/module-PNG-Target-release.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/module-PNG-Target-release.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/module-PNG-debug-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/module-PNG-debug-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/module-PNG-release-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/module-PNG-release-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/module-PNGTargets.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/module-PNGTargets.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/module-ZLIB-Target-debug.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/module-ZLIB-Target-debug.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/module-ZLIB-Target-release.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/module-ZLIB-Target-release.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/module-ZLIB-debug-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/module-ZLIB-debug-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/module-ZLIB-release-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/module-ZLIB-release-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/module-ZLIBTargets.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/module-ZLIBTargets.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/opengl_system-Target-debug.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/opengl_system-Target-debug.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/opengl_system-Target-release.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/opengl_system-Target-release.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/opengl_system-config-version.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/opengl_system-config-version.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/opengl_system-config.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/opengl_system-config.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/opengl_system-debug-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/opengl_system-debug-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/opengl_system-release-x86_64-data.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/opengl_system-release-x86_64-data.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/opengl_systemTargets.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan/build/generators/opengl_systemTargets.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/conan_host_profile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/conan_host_profile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/cuda.sln" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/cuda.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/cuda.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/cuda.vcxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/cuda.vcxproj.filters" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/cuda.vcxproj.filters" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/cuda_fractal.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/cuda_fractal.vcxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/cuda_fractal.vcxproj.filters" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/cuda_fractal.vcxproj.filters" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/suma_vectores_cl.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/suma_vectores_cl.vcxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/suma_vectores_cl.vcxproj.filters" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/suma_vectores_cl.vcxproj.filters" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/suma_vectores_cuda.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/suma_vectores_cuda.vcxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/suma_vectores_cuda.vcxproj.filters" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/suma_vectores_cuda.vcxproj.filters" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kernel_w.cu" beforeDir="false" afterPath="$PROJECT_DIR$/kernel_w.cu" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +525,7 @@
     "CMake Application.cl_01.executor": "Run",
     "CMake Application.cuda.executor": "Run",
     "CMake Application.cuda_fractal.executor": "Run",
+    "CMake Application.cuda_reduccion_vector.executor": "Run",
     "CMake Application.suma_vectores_cuda.executor": "Run",
     "RunOnceActivity.RadMigrateCodeStyle": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -96,7 +540,7 @@
     "com.jfrog.conanplugin.conanexecutable": "conan",
     "com.jfrog.conanplugin.hasbeensetup": "true",
     "git-widget-placeholder": "master__uce",
-    "last_opened_file_path": "C:/Users/fing.labcom/CLionProjects/clones/paralela_clion/cuda",
+    "last_opened_file_path": "C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -108,6 +552,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Dami\Documents\CLionProjectsUCE\paralela_clion\cuda" />
       <recent name="C:\Users\fing.labcom\CLionProjects\clones\paralela_clion\cuda" />
       <recent name="C:\Users\fing.labcom\CLionProjects\clones\paralela_clion\cuda\cmake-build-debug" />
       <recent name="C:\Users\fing.labcom\CLionProjects\clones\paralela_clion\cuda\cmake-build-release" />
@@ -116,13 +561,23 @@
       <recent name="C:\Users\fing.labcom\CLionProjects\clones\paralela_clion\cuda\cmake-build-release" />
     </key>
   </component>
-  <component name="RunManager" selected="CMake Application.cuda_fractal">
+  <component name="RunManager" selected="CMake Application.cuda_reduccion_vector">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="cuda" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cuda" TARGET_NAME="cuda" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cuda" RUN_TARGET_NAME="cuda">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="cuda_fractal" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cuda" TARGET_NAME="cuda_fractal" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cuda" RUN_TARGET_NAME="cuda_fractal">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="cuda_reduccion_vector" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cuda" TARGET_NAME="cuda_reduccion_vector" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cuda" RUN_TARGET_NAME="cuda_reduccion_vector">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -140,6 +595,7 @@
     <list>
       <item itemvalue="CMake Application.cuda" />
       <item itemvalue="CMake Application.cuda_fractal" />
+      <item itemvalue="CMake Application.cuda_reduccion_vector" />
       <item itemvalue="CMake Application.suma_vectores_cl" />
       <item itemvalue="CMake Application.suma_vectores_cuda" />
     </list>
@@ -159,6 +615,8 @@
       <workItem from="1738757785903" duration="6531000" />
       <workItem from="1738934828868" duration="8199000" />
       <workItem from="1739276655755" duration="1613000" />
+      <workItem from="1739290637918" duration="5483000" />
+      <workItem from="1739351843288" duration="1537000" />
     </task>
     <servers />
   </component>

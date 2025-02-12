@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\fing.labcom\CLionProjects\clones\paralela_clion\cuda\main_w.cpp">
+    <ClCompile Include="C:\Users\Dami\Documents\CLionProjectsUCE\paralela_clion\cuda\main_w.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -11,11 +11,11 @@
     </CudaCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\fing.labcom\CLionProjects\clones\paralela_clion\cuda\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\Dami\Documents\CLionProjectsUCE\paralela_clion\cuda\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{F6854034-99ED-304C-83A9-6589B411E086}</UniqueIdentifier>
+      <UniqueIdentifier>{1661BA20-BC79-3C41-B8CE-AC444A7D4874}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

@@ -12,7 +12,7 @@ endif()
 
 ########### VARIABLES #######################################################################
 #############################################################################################
-set(ogg_PACKAGE_FOLDER_RELEASE "C:/Users/fing.labcom/.conan2/p/ogg0603e0d7ed2e4/p")
+set(ogg_PACKAGE_FOLDER_RELEASE "C:/Users/Dami/.conan2/p/ogg0603e0d7ed2e4/p")
 set(ogg_BUILD_MODULES_PATHS_RELEASE )
 
 

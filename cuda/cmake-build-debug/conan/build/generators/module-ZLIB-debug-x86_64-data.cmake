@@ -11,7 +11,7 @@ endif()
 
 ########### VARIABLES #######################################################################
 #############################################################################################
-set(zlib_PACKAGE_FOLDER_DEBUG "C:/Users/fing.labcom/.conan2/p/b/zlib5b80d1460f48e/p")
+set(zlib_PACKAGE_FOLDER_DEBUG "C:/Users/Dami/.conan2/p/b/zlibd8a5d1e90a0f7/p")
 set(zlib_BUILD_MODULES_PATHS_DEBUG )
 
 

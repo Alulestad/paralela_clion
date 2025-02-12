@@ -1,0 +1,408 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.24"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "cuda",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-Debug-b8629aeaba57092ff94e.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-Debug-5612a33be57299b83652.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cuda::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cuda-Debug-ecf4fd6d2c8c4cdf7df4.json",
+					"name" : "cuda",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cuda_fractal::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cuda_fractal-Debug-e481595c8336b7ad164c.json",
+					"name" : "cuda_fractal",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cuda_reduccion_vector::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cuda_reduccion_vector-Debug-10626132d07464c00f78.json",
+					"name" : "cuda_reduccion_vector",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "suma_vectores_cl::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-suma_vectores_cl-Debug-a9501b3a53ee67a8c7f9.json",
+					"name" : "suma_vectores_cl",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "suma_vectores_cuda::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-suma_vectores_cuda-Debug-55f19916bd8165cda788.json",
+					"name" : "suma_vectores_cuda",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Release-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.24"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "cuda",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-Release-b8629aeaba57092ff94e.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-Release-5612a33be57299b83652.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cuda::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cuda-Release-81b21fdcfe118774dfc2.json",
+					"name" : "cuda",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cuda_fractal::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cuda_fractal-Release-8b654decb411247cb474.json",
+					"name" : "cuda_fractal",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cuda_reduccion_vector::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cuda_reduccion_vector-Release-0540bb835f9143c2287a.json",
+					"name" : "cuda_reduccion_vector",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "suma_vectores_cl::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-suma_vectores_cl-Release-3e9f043e8f62324263d9.json",
+					"name" : "suma_vectores_cl",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "suma_vectores_cuda::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-suma_vectores_cuda-Release-a3426b7d7ea8baf92224.json",
+					"name" : "suma_vectores_cuda",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-MinSizeRel-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.24"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"name" : "MinSizeRel",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "cuda",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-MinSizeRel-b8629aeaba57092ff94e.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-MinSizeRel-5612a33be57299b83652.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cuda::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cuda-MinSizeRel-1e86d15abe0a160ed8e2.json",
+					"name" : "cuda",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cuda_fractal::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cuda_fractal-MinSizeRel-06783800e51b1cd87dbd.json",
+					"name" : "cuda_fractal",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cuda_reduccion_vector::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cuda_reduccion_vector-MinSizeRel-4853f4c4b9480c8f7c8f.json",
+					"name" : "cuda_reduccion_vector",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "suma_vectores_cl::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-suma_vectores_cl-MinSizeRel-2bc6d2b785378042906e.json",
+					"name" : "suma_vectores_cl",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "suma_vectores_cuda::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-suma_vectores_cuda-MinSizeRel-fba00c9f44cb55d8a9a0.json",
+					"name" : "suma_vectores_cuda",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-RelWithDebInfo-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.24"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"name" : "RelWithDebInfo",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "cuda",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-RelWithDebInfo-b8629aeaba57092ff94e.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-RelWithDebInfo-5612a33be57299b83652.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cuda::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cuda-RelWithDebInfo-1d65cb9cb191136ef2c5.json",
+					"name" : "cuda",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cuda_fractal::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cuda_fractal-RelWithDebInfo-8ad12322b231a6fc911f.json",
+					"name" : "cuda_fractal",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cuda_reduccion_vector::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cuda_reduccion_vector-RelWithDebInfo-c9bef40c43a9ee1fb816.json",
+					"name" : "cuda_reduccion_vector",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "suma_vectores_cl::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-suma_vectores_cl-RelWithDebInfo-0d6f8b5a53cafce4c1b5.json",
+					"name" : "suma_vectores_cl",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "suma_vectores_cuda::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-suma_vectores_cuda-RelWithDebInfo-ce8673254370c5656827.json",
+					"name" : "suma_vectores_cuda",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-debug",
+		"source" : "C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

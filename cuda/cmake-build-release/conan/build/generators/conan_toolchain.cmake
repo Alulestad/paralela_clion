@@ -26,7 +26,7 @@ set(CMAKE_GENERATOR_TOOLSET "v143" CACHE STRING "" FORCE)
 
 ########## 'compilers' block #############
 
-set(CMAKE_CXX_COMPILER "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/bin/Hostx64/x64/cl.exe")
+set(CMAKE_CXX_COMPILER "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.42.34433/bin/Hostx64/x64/cl.exe")
 set(CMAKE_RC_COMPILER "C:/Program Files (x86)/Windows Kits/10/bin/10.0.22621.0/x64/rc.exe")
 
 
@@ -52,35 +52,14 @@ set(CMAKE_MSVC_RUNTIME_LIBRARY "$<$<CONFIG:Release>:MultiThreadedDLL>$<$<CONFIG:
 # Definition of CMAKE_VS_DEBUGGER_ENVIRONMENT from "bindirs" folders of dependencies
 # for execution of applications with shared libraries within the VS IDE
 
-set(CMAKE_VS_DEBUGGER_ENVIRONMENT "PATH=$<$<CONFIG:Release>:C:/Users/fing.labcom/.conan2/p/sfml673b2c88184fc/p/bin;C:/Users/fing.labcom/.conan2/p/freetf35e04f91db9d/p/bin;C:/Users/fing.labcom/.conan2/p/libpn8ddbdebe413ac/p/bin;C:/Users/fing.labcom/.conan2/p/zlib0e715158c1dfd/p/bin;C:/Users/fing.labcom/.conan2/p/bzip25d2dbaf142a52/p/bin;C:/Users/fing.labcom/.conan2/p/brotl79757a5cae055/p/bin;C:/Users/fing.labcom/.conan2/p/flacd1f93feeba5ca/p/bin;C:/Users/fing.labcom/.conan2/p/opena005d0fd6b1bf8/p/bin;C:/Users/fing.labcom/.conan2/p/vorbib3b87ba3196b8/p/bin;C:/Users/fing.labcom/.conan2/p/ogg0603e0d7ed2e4/p/bin;C:/Users/fing.labcom/.conan2/p/fmtbd696bc9d5187/p/bin>$<$<CONFIG:Debug>:C:/Users/fing.labcom/.conan2/p/b/sfml3693d8df301cc/p/bin;C:/Users/fing.labcom/.conan2/p/b/freet450ae7bb95eff/p/bin;C:/Users/fing.labcom/.conan2/p/b/libpn59df5266056e4/p/bin;C:/Users/fing.labcom/.conan2/p/b/zlib5b80d1460f48e/p/bin;C:/Users/fing.labcom/.conan2/p/b/bzip27ec75aa32c59b/p/bin;C:/Users/fing.labcom/.conan2/p/b/brotl6cf402c398e2a/p/bin;C:/Users/fing.labcom/.conan2/p/b/flac836a903c913b0/p/bin;C:/Users/fing.labcom/.conan2/p/b/openad4f43ee373ebf/p/bin;C:/Users/fing.labcom/.conan2/p/b/vorbi4d49eb5cef483/p/bin;C:/Users/fing.labcom/.conan2/p/b/ogg6f9a17e5d7557/p/bin;C:/Users/fing.labcom/.conan2/p/b/fmt2571dab11486d/p/bin>;%PATH%")
-
-
-########## 'cppstd' block #############
-# Define the C++ and C standards from 'compiler.cppstd' and 'compiler.cstd'
-
-function(conan_modify_std_watch variable access value current_list_file stack)
-    set(conan_watched_std_variable "14")
-    if (${variable} STREQUAL "CMAKE_C_STANDARD")
-        set(conan_watched_std_variable "")
-    endif()
-    if ("${access}" STREQUAL "MODIFIED_ACCESS" AND NOT "${value}" STREQUAL "${conan_watched_std_variable}")
-        message(STATUS "Warning: Standard ${variable} value defined in conan_toolchain.cmake to ${conan_watched_std_variable} has been modified to ${value} by ${current_list_file}")
-    endif()
-    unset(conan_watched_std_variable)
-endfunction()
-
-message(STATUS "Conan toolchain: C++ Standard 14 with extensions OFF")
-set(CMAKE_CXX_STANDARD 14)
-set(CMAKE_CXX_EXTENSIONS OFF)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
-variable_watch(CMAKE_CXX_STANDARD conan_modify_std_watch)
+set(CMAKE_VS_DEBUGGER_ENVIRONMENT "PATH=$<$<CONFIG:Release>:C:/Users/Dami/.conan2/p/b/sfmlff508b7c1a4d2/p/bin;C:/Users/Dami/.conan2/p/freetf35e04f91db9d/p/bin;C:/Users/Dami/.conan2/p/libpn9bfcc2eca1f06/p/bin;C:/Users/Dami/.conan2/p/zlib6f797a4dd16fb/p/bin;C:/Users/Dami/.conan2/p/bzip25d2dbaf142a52/p/bin;C:/Users/Dami/.conan2/p/brotl79757a5cae055/p/bin;C:/Users/Dami/.conan2/p/b/flacc740fb918f3f3/p/bin;C:/Users/Dami/.conan2/p/opena005d0fd6b1bf8/p/bin;C:/Users/Dami/.conan2/p/vorbib3b87ba3196b8/p/bin;C:/Users/Dami/.conan2/p/ogg0603e0d7ed2e4/p/bin;C:/Users/Dami/.conan2/p/b/fmt296155d48f4fe/p/bin>$<$<CONFIG:Debug>:C:/Users/Dami/.conan2/p/b/sfmle190e7647d230/p/bin;C:/Users/Dami/.conan2/p/b/freetca820d5d8a4cd/p/bin;C:/Users/Dami/.conan2/p/b/libpn1bdcfcc2a569e/p/bin;C:/Users/Dami/.conan2/p/b/zlibd8a5d1e90a0f7/p/bin;C:/Users/Dami/.conan2/p/b/bzip29b056da9d1fd5/p/bin;C:/Users/Dami/.conan2/p/b/brotl78697e6d17d47/p/bin;C:/Users/Dami/.conan2/p/b/flac6d1f648f385cb/p/bin;C:/Users/Dami/.conan2/p/b/opena83e857a26f199/p/bin;C:/Users/Dami/.conan2/p/b/vorbia3fb57a585e5d/p/bin;C:/Users/Dami/.conan2/p/b/ogg53dccae2a166b/p/bin;C:/Users/Dami/.conan2/p/b/fmt134497c031946/p/bin>;%PATH%")
 
 
 ########## 'parallel' block #############
 # Define VS paralell build /MP flags
 
-string(APPEND CONAN_CXX_FLAGS " /MP24")
-string(APPEND CONAN_C_FLAGS " /MP24")
+string(APPEND CONAN_CXX_FLAGS " /MP16")
+string(APPEND CONAN_C_FLAGS " /MP16")
 
 
 ########## 'extra_flags' block #############
@@ -158,9 +137,9 @@ list(PREPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_LIST_DIR})
 # Definition of CMAKE_PREFIX_PATH, CMAKE_XXXXX_PATH
 # The Conan local "generators" folder, where this toolchain is saved.
 list(PREPEND CMAKE_PREFIX_PATH ${CMAKE_CURRENT_LIST_DIR} )
-list(PREPEND CMAKE_LIBRARY_PATH "C:/Users/fing.labcom/.conan2/p/b/sfml3693d8df301cc/p/lib" "C:/Users/fing.labcom/.conan2/p/b/freet450ae7bb95eff/p/lib" "C:/Users/fing.labcom/.conan2/p/b/libpn59df5266056e4/p/lib" "C:/Users/fing.labcom/.conan2/p/b/zlib5b80d1460f48e/p/lib" "C:/Users/fing.labcom/.conan2/p/b/bzip27ec75aa32c59b/p/lib" "C:/Users/fing.labcom/.conan2/p/b/brotl6cf402c398e2a/p/lib" "lib" "C:/Users/fing.labcom/.conan2/p/b/flac836a903c913b0/p/lib" "C:/Users/fing.labcom/.conan2/p/b/openad4f43ee373ebf/p/lib" "C:/Users/fing.labcom/.conan2/p/b/vorbi4d49eb5cef483/p/lib" "C:/Users/fing.labcom/.conan2/p/b/ogg6f9a17e5d7557/p/lib" "lib" "C:/Users/fing.labcom/.conan2/p/b/fmt2571dab11486d/p/lib")
-list(PREPEND CMAKE_INCLUDE_PATH "C:/Users/fing.labcom/.conan2/p/b/sfml3693d8df301cc/p/include" "C:/Users/fing.labcom/.conan2/p/b/freet450ae7bb95eff/p/include" "C:/Users/fing.labcom/.conan2/p/b/freet450ae7bb95eff/p/include/freetype2" "C:/Users/fing.labcom/.conan2/p/b/libpn59df5266056e4/p/include" "C:/Users/fing.labcom/.conan2/p/b/zlib5b80d1460f48e/p/include" "C:/Users/fing.labcom/.conan2/p/b/bzip27ec75aa32c59b/p/include" "C:/Users/fing.labcom/.conan2/p/b/brotl6cf402c398e2a/p/include" "C:/Users/fing.labcom/.conan2/p/b/brotl6cf402c398e2a/p/include/brotli" "include" "C:/Users/fing.labcom/.conan2/p/b/flac836a903c913b0/p/include" "C:/Users/fing.labcom/.conan2/p/b/openad4f43ee373ebf/p/include" "C:/Users/fing.labcom/.conan2/p/b/openad4f43ee373ebf/p/include/AL" "C:/Users/fing.labcom/.conan2/p/b/vorbi4d49eb5cef483/p/include" "C:/Users/fing.labcom/.conan2/p/b/ogg6f9a17e5d7557/p/include" "include" "C:/Users/fing.labcom/.conan2/p/b/fmt2571dab11486d/p/include")
-set(CONAN_RUNTIME_LIB_DIRS "$<$<CONFIG:Release>:C:/Users/fing.labcom/.conan2/p/sfml673b2c88184fc/p/bin>" "$<$<CONFIG:Release>:C:/Users/fing.labcom/.conan2/p/freetf35e04f91db9d/p/bin>" "$<$<CONFIG:Release>:C:/Users/fing.labcom/.conan2/p/libpn8ddbdebe413ac/p/bin>" "$<$<CONFIG:Release>:C:/Users/fing.labcom/.conan2/p/zlib0e715158c1dfd/p/bin>" "$<$<CONFIG:Release>:C:/Users/fing.labcom/.conan2/p/bzip25d2dbaf142a52/p/bin>" "$<$<CONFIG:Release>:C:/Users/fing.labcom/.conan2/p/brotl79757a5cae055/p/bin>" "$<$<CONFIG:Release>:bin>" "$<$<CONFIG:Release>:C:/Users/fing.labcom/.conan2/p/flacd1f93feeba5ca/p/bin>" "$<$<CONFIG:Release>:C:/Users/fing.labcom/.conan2/p/opena005d0fd6b1bf8/p/bin>" "$<$<CONFIG:Release>:C:/Users/fing.labcom/.conan2/p/vorbib3b87ba3196b8/p/bin>" "$<$<CONFIG:Release>:C:/Users/fing.labcom/.conan2/p/ogg0603e0d7ed2e4/p/bin>" "$<$<CONFIG:Release>:bin>" "$<$<CONFIG:Release>:C:/Users/fing.labcom/.conan2/p/fmtbd696bc9d5187/p/bin>" "$<$<CONFIG:Debug>:C:/Users/fing.labcom/.conan2/p/b/sfml3693d8df301cc/p/bin>" "$<$<CONFIG:Debug>:C:/Users/fing.labcom/.conan2/p/b/freet450ae7bb95eff/p/bin>" "$<$<CONFIG:Debug>:C:/Users/fing.labcom/.conan2/p/b/libpn59df5266056e4/p/bin>" "$<$<CONFIG:Debug>:C:/Users/fing.labcom/.conan2/p/b/zlib5b80d1460f48e/p/bin>" "$<$<CONFIG:Debug>:C:/Users/fing.labcom/.conan2/p/b/bzip27ec75aa32c59b/p/bin>" "$<$<CONFIG:Debug>:C:/Users/fing.labcom/.conan2/p/b/brotl6cf402c398e2a/p/bin>" "$<$<CONFIG:Debug>:bin>" "$<$<CONFIG:Debug>:C:/Users/fing.labcom/.conan2/p/b/flac836a903c913b0/p/bin>" "$<$<CONFIG:Debug>:C:/Users/fing.labcom/.conan2/p/b/openad4f43ee373ebf/p/bin>" "$<$<CONFIG:Debug>:C:/Users/fing.labcom/.conan2/p/b/vorbi4d49eb5cef483/p/bin>" "$<$<CONFIG:Debug>:C:/Users/fing.labcom/.conan2/p/b/ogg6f9a17e5d7557/p/bin>" "$<$<CONFIG:Debug>:bin>" "$<$<CONFIG:Debug>:C:/Users/fing.labcom/.conan2/p/b/fmt2571dab11486d/p/bin>" )
+list(PREPEND CMAKE_LIBRARY_PATH "C:/Users/Dami/.conan2/p/b/sfmle190e7647d230/p/lib" "C:/Users/Dami/.conan2/p/b/freetca820d5d8a4cd/p/lib" "C:/Users/Dami/.conan2/p/b/libpn1bdcfcc2a569e/p/lib" "C:/Users/Dami/.conan2/p/b/zlibd8a5d1e90a0f7/p/lib" "C:/Users/Dami/.conan2/p/b/bzip29b056da9d1fd5/p/lib" "C:/Users/Dami/.conan2/p/b/brotl78697e6d17d47/p/lib" "lib" "C:/Users/Dami/.conan2/p/b/flac6d1f648f385cb/p/lib" "C:/Users/Dami/.conan2/p/b/opena83e857a26f199/p/lib" "C:/Users/Dami/.conan2/p/b/vorbia3fb57a585e5d/p/lib" "C:/Users/Dami/.conan2/p/b/ogg53dccae2a166b/p/lib" "lib" "C:/Users/Dami/.conan2/p/b/fmt134497c031946/p/lib")
+list(PREPEND CMAKE_INCLUDE_PATH "C:/Users/Dami/.conan2/p/b/sfmle190e7647d230/p/include" "C:/Users/Dami/.conan2/p/b/freetca820d5d8a4cd/p/include" "C:/Users/Dami/.conan2/p/b/freetca820d5d8a4cd/p/include/freetype2" "C:/Users/Dami/.conan2/p/b/libpn1bdcfcc2a569e/p/include" "C:/Users/Dami/.conan2/p/b/zlibd8a5d1e90a0f7/p/include" "C:/Users/Dami/.conan2/p/b/bzip29b056da9d1fd5/p/include" "C:/Users/Dami/.conan2/p/b/brotl78697e6d17d47/p/include" "C:/Users/Dami/.conan2/p/b/brotl78697e6d17d47/p/include/brotli" "include" "C:/Users/Dami/.conan2/p/b/flac6d1f648f385cb/p/include" "C:/Users/Dami/.conan2/p/b/opena83e857a26f199/p/include" "C:/Users/Dami/.conan2/p/b/opena83e857a26f199/p/include/AL" "C:/Users/Dami/.conan2/p/b/vorbia3fb57a585e5d/p/include" "C:/Users/Dami/.conan2/p/b/ogg53dccae2a166b/p/include" "include" "C:/Users/Dami/.conan2/p/b/fmt134497c031946/p/include")
+set(CONAN_RUNTIME_LIB_DIRS "$<$<CONFIG:Release>:C:/Users/Dami/.conan2/p/b/sfmlff508b7c1a4d2/p/bin>" "$<$<CONFIG:Release>:C:/Users/Dami/.conan2/p/freetf35e04f91db9d/p/bin>" "$<$<CONFIG:Release>:C:/Users/Dami/.conan2/p/libpn9bfcc2eca1f06/p/bin>" "$<$<CONFIG:Release>:C:/Users/Dami/.conan2/p/zlib6f797a4dd16fb/p/bin>" "$<$<CONFIG:Release>:C:/Users/Dami/.conan2/p/bzip25d2dbaf142a52/p/bin>" "$<$<CONFIG:Release>:C:/Users/Dami/.conan2/p/brotl79757a5cae055/p/bin>" "$<$<CONFIG:Release>:bin>" "$<$<CONFIG:Release>:C:/Users/Dami/.conan2/p/b/flacc740fb918f3f3/p/bin>" "$<$<CONFIG:Release>:C:/Users/Dami/.conan2/p/opena005d0fd6b1bf8/p/bin>" "$<$<CONFIG:Release>:C:/Users/Dami/.conan2/p/vorbib3b87ba3196b8/p/bin>" "$<$<CONFIG:Release>:C:/Users/Dami/.conan2/p/ogg0603e0d7ed2e4/p/bin>" "$<$<CONFIG:Release>:bin>" "$<$<CONFIG:Release>:C:/Users/Dami/.conan2/p/b/fmt296155d48f4fe/p/bin>" "$<$<CONFIG:Debug>:C:/Users/Dami/.conan2/p/b/sfmle190e7647d230/p/bin>" "$<$<CONFIG:Debug>:C:/Users/Dami/.conan2/p/b/freetca820d5d8a4cd/p/bin>" "$<$<CONFIG:Debug>:C:/Users/Dami/.conan2/p/b/libpn1bdcfcc2a569e/p/bin>" "$<$<CONFIG:Debug>:C:/Users/Dami/.conan2/p/b/zlibd8a5d1e90a0f7/p/bin>" "$<$<CONFIG:Debug>:C:/Users/Dami/.conan2/p/b/bzip29b056da9d1fd5/p/bin>" "$<$<CONFIG:Debug>:C:/Users/Dami/.conan2/p/b/brotl78697e6d17d47/p/bin>" "$<$<CONFIG:Debug>:bin>" "$<$<CONFIG:Debug>:C:/Users/Dami/.conan2/p/b/flac6d1f648f385cb/p/bin>" "$<$<CONFIG:Debug>:C:/Users/Dami/.conan2/p/b/opena83e857a26f199/p/bin>" "$<$<CONFIG:Debug>:C:/Users/Dami/.conan2/p/b/vorbia3fb57a585e5d/p/bin>" "$<$<CONFIG:Debug>:C:/Users/Dami/.conan2/p/b/ogg53dccae2a166b/p/bin>" "$<$<CONFIG:Debug>:bin>" "$<$<CONFIG:Debug>:C:/Users/Dami/.conan2/p/b/fmt134497c031946/p/bin>" )
 
 endif()
 

@@ -17,7 +17,7 @@ set(Vorbis_FIND_MODE "NO_MODULE")
 
 ########### VARIABLES #######################################################################
 #############################################################################################
-set(sfml_PACKAGE_FOLDER_DEBUG "C:/Users/fing.labcom/.conan2/p/b/sfml3693d8df301cc/p")
+set(sfml_PACKAGE_FOLDER_DEBUG "C:/Users/Dami/.conan2/p/b/sfmle190e7647d230/p")
 set(sfml_BUILD_MODULES_PATHS_DEBUG )
 
 

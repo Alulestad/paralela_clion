@@ -13,7 +13,7 @@ set(Ogg_FIND_MODE "NO_MODULE")
 
 ########### VARIABLES #######################################################################
 #############################################################################################
-set(vorbis_PACKAGE_FOLDER_DEBUG "C:/Users/fing.labcom/.conan2/p/b/vorbi4d49eb5cef483/p")
+set(vorbis_PACKAGE_FOLDER_DEBUG "C:/Users/Dami/.conan2/p/b/vorbia3fb57a585e5d/p")
 set(vorbis_BUILD_MODULES_PATHS_DEBUG )
 
 

@@ -1,0 +1,650 @@
+{
+	"inputs" : 
+	[
+		{
+			"path" : "CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/CMakeFiles/3.29.6/CMakeSystem.cmake"
+		},
+		{
+			"path" : "conan_provider.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-Initialize.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/CMakeFiles/3.29.6/CMakeCUDACompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/WindowsPaths.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCUDAInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/NVIDIA-CUDA.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/NVIDIA.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-NVIDIA-CUDA.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-MSVC.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/CMakeFiles/3.29.6/CMakeRCCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeRCInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/CMakeFiles/3.29.6/CMakeCXXCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/MSVC-CXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/MSVC.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-MSVC-CXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-MSVC.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckCXXSourceCompiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/fmt-config-version.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/fmt-config.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/cmakedeps_macros.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/fmtTargets.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/fmt-debug-x86_64-data.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/fmt-release-x86_64-data.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/fmt-Target-debug.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/fmt-Target-release.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/SFMLConfigVersion.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/SFMLConfig.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/cmakedeps_macros.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/SFMLTargets.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/SFML-debug-x86_64-data.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/SFML-release-x86_64-data.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/SFML-Target-debug.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/SFML-Target-release.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/opengl_system-config-version.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/opengl_system-config.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/cmakedeps_macros.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/opengl_systemTargets.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/opengl_system-debug-x86_64-data.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/opengl_system-release-x86_64-data.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/opengl_system-Target-debug.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/opengl_system-Target-release.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/freetype-config-version.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/freetype-config.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/cmakedeps_macros.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/freetypeTargets.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/freetype-debug-x86_64-data.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/freetype-release-x86_64-data.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/freetype-Target-debug.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/freetype-Target-release.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/PNGConfigVersion.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/PNGConfig.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/cmakedeps_macros.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/PNGTargets.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/PNG-debug-x86_64-data.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/PNG-release-x86_64-data.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/PNG-Target-debug.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/PNG-Target-release.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/ZLIBConfigVersion.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/ZLIBConfig.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/cmakedeps_macros.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/ZLIBTargets.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/ZLIB-debug-x86_64-data.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/ZLIB-release-x86_64-data.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/ZLIB-Target-debug.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/ZLIB-Target-release.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/BZip2ConfigVersion.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/BZip2Config.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/cmakedeps_macros.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/BZip2Targets.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/BZip2-debug-x86_64-data.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/BZip2-release-x86_64-data.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/BZip2-Target-debug.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/BZip2-Target-release.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Users/Dami/.conan2/p/b/bzip29b056da9d1fd5/p/lib/cmake/conan-official-bzip2-variables.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/brotli-config-version.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/brotli-config.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/cmakedeps_macros.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/brotliTargets.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/brotli-debug-x86_64-data.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/brotli-release-x86_64-data.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/brotli-Target-debug.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/brotli-Target-release.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Users/Dami/.conan2/p/b/freetca820d5d8a4cd/p/lib/cmake/conan-official-freetype-variables.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/flac-config-version.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/flac-config.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/cmakedeps_macros.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/flacTargets.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/flac-debug-x86_64-data.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/flac-release-x86_64-data.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/flac-Target-debug.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/flac-Target-release.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/OggConfigVersion.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/OggConfig.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/cmakedeps_macros.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/OggTargets.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/Ogg-debug-x86_64-data.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/Ogg-release-x86_64-data.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/Ogg-Target-debug.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/Ogg-Target-release.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/OpenALConfigVersion.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/OpenALConfig.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/cmakedeps_macros.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/OpenALTargets.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/OpenAL-debug-x86_64-data.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/OpenAL-release-x86_64-data.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/OpenAL-Target-debug.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/OpenAL-Target-release.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Users/Dami/.conan2/p/b/opena83e857a26f199/p/lib/cmake/conan-official-openal-soft-variables.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/VorbisConfigVersion.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/VorbisConfig.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/cmakedeps_macros.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/VorbisTargets.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/Vorbis-debug-x86_64-data.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/Vorbis-release-x86_64-data.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/Vorbis-Target-debug.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-release/conan/build/generators/Vorbis-Target-release.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/FindOpenCL.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckSymbolExists.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakePushCheckState.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"path" : "conanfile.py"
+		},
+		{
+			"path" : "conanfile.py"
+		}
+	],
+	"kind" : "cmakeFiles",
+	"paths" : 
+	{
+		"build" : "C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda/cmake-build-release",
+		"source" : "C:/Users/Dami/Documents/CLionProjectsUCE/paralela_clion/cuda"
+	},
+	"version" : 
+	{
+		"major" : 1,
+		"minor" : 0
+	}
+}

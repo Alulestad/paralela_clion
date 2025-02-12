@@ -5,7 +5,7 @@ const int PALETTE_SIZE = 16;
 __constant__ //bloque de memoria en la GPU
 unsigned int d_Pallete[PALETTE_SIZE];
 
-__device__
+__device__ //para uso en la GPU
 unsigned int divergente(double cx, double cy, int max_iterations) {
 
     int iter = 0;

@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\Users\fing.labcom\CLionProjects\clones\paralela_clion\cuda\cmake-build-debug\CMakeFiles\a86091f2c38cb1249cc0cd71fc0dcc4b\generate.stamp.rule">
+    <CustomBuild Include="C:\Users\Dami\Documents\CLionProjectsUCE\paralela_clion\cuda\cmake-build-debug\CMakeFiles\e67ab5183ae1ca119049bf18acd54e60\generate.stamp.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{3557B2DC-B6F9-3393-8107-24B0E8208606}</UniqueIdentifier>
+      <UniqueIdentifier>{6F2126F1-0FAC-3A2E-A99B-7E52C4C2435B}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

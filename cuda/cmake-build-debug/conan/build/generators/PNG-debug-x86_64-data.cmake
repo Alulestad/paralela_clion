@@ -12,7 +12,7 @@ set(ZLIB_FIND_MODE "NO_MODULE")
 
 ########### VARIABLES #######################################################################
 #############################################################################################
-set(libpng_PACKAGE_FOLDER_DEBUG "C:/Users/fing.labcom/.conan2/p/b/libpn59df5266056e4/p")
+set(libpng_PACKAGE_FOLDER_DEBUG "C:/Users/Dami/.conan2/p/b/libpn1bdcfcc2a569e/p")
 set(libpng_BUILD_MODULES_PATHS_DEBUG )
 
 

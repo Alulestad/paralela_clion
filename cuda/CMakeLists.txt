@@ -21,7 +21,19 @@ set_target_properties(cuda PROPERTIES
         CUDA_SEPARABLE_COMPILATION ON)
 
 target_link_libraries(cuda fmt::fmt sfml::sfml ${CUDA_LIBRARIES} cudart)
-#target_link_libraries(cuda PRIVATE /NODEFAULTLIB:LIBCMT)
+
+#CUDA -- reudccion vector
+add_executable(cuda_reduccion_vector
+        main_reduccion_vector.cu
+)
+
+target_include_directories(cuda_reduccion_vector PUBLIC
+        ${CMAKE_CUDA_TOOLKIT_INCLUDE_DIRECTORIES})
+
+set_target_properties(cuda_reduccion_vector PROPERTIES
+        CUDA_SEPARABLE_COMPILATION ON)
+
+target_link_libraries(cuda_reduccion_vector fmt::fmt sfml::sfml ${CUDA_LIBRARIES} cudart)
 
 #--------------------------------------------------------------
 #[[find_package(OpenCl)

@@ -2,10 +2,10 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\Users\fing.labcom\CLionProjects\clones\paralela_clion\cuda\cmake-build-debug\x64\Debug\ZERO_CHECK</FullPath>
+      <FullPath>C:\Users\Dami\Documents\CLionProjectsUCE\paralela_clion\cuda\cmake-build-debug\x64\Debug\ZERO_CHECK</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\Users\fing.labcom\CLionProjects\clones\paralela_clion\cuda\cmake-build-debug\Debug\cuda_fractal.exe</FullPath>
+      <FullPath>C:\Users\Dami\Documents\CLionProjectsUCE\paralela_clion\cuda\cmake-build-debug\Debug\cuda_fractal.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />
